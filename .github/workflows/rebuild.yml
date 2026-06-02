@@ -1,0 +1,74 @@
+name: Rebuild pages on XML change
+
+# Läuft automatisch bei jedem Push, der die XML-Datei oder Generator-Skripte ändert.
+# Kann auch manuell über die GitHub-UI gestartet werden (workflow_dispatch).
+on:
+  push:
+    branches: [main]
+    paths:
+      - "data/kopten_gemeinden.xml"
+      - "generate_gemeinden.py"
+      - "generate_gemeinden_en.py"
+      - "add_lang_switcher.py"
+      - "add_share_and_og.py"
+      - "generate_sitemap.py"
+      - "generate_worker_gemeinden.py"
+      - "geocode_gemeinden.py"
+      - "update_asset_versions.py"
+      - "rebuild.py"
+      # CSS / JS Änderungen sollen Cache-Versionen automatisch invalidieren
+      - "css/**"
+      - "js/**"
+  # Note: generate_diocese_pdfs.py is intentionally excluded — diocese PDFs are
+  # regenerated manually, not on every gemeinde change.
+  workflow_dispatch:
+  # Wird vom Cloudflare Worker `kopten-de-files` per repository_dispatch
+  # ausgelöst, sobald sich der R2-Bucket-Inhalt geändert hat.
+  repository_dispatch:
+    types: [files-changed]
+
+permissions:
+  contents: write   # erlaubt git push zurück ins Repo
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Fetch latest files manifest (R2)
+        run: |
+          set -e
+          # Bei Fehlern den vorherigen Stand behalten — verhindert leeres Manifest
+          curl -fsSL --max-time 30 \
+            -o data/files-manifest.json.new \
+            https://files-api.kopten.de/manifest.json && \
+            mv data/files-manifest.json.new data/files-manifest.json || \
+            echo "Manifest fetch failed — using cached file."
+          ls -la data/files-manifest.json 2>/dev/null || true
+
+      - name: Run rebuild
+        run: python3 rebuild.py
+
+      - name: Commit and push generated files
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A gemeinden/ en/communities/ sitemap.xml robots.txt worker/src/gemeinden-list.js data/gemeinden-coords.json data/files-manifest.json
+          # Asset-Version-Updates können beliebige HTML-Dateien betreffen
+          git add *.html en/*.html
+          # commit only if there are changes
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: rebuild pages from XML [skip ci]"
+            git push
+          else
+            echo "No changes to commit."
+          fi

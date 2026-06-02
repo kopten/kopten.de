@@ -1,0 +1,27 @@
+name = "kopten-de-files"
+main = "src/index.js"
+compatibility_date = "2026-06-01"
+
+# Bindings — passt im CF-Dashboard automatisch, sobald der Bucket existiert.
+[[r2_buckets]]
+binding = "FILES"
+bucket_name = "kopten-de-files"
+jurisdiction = "eu"
+
+# Manifest-Endpunkt liegt unter api.kopten.de — Routing via Worker Route.
+# Wir nutzen die existierende api.kopten.de Domain und unterscheiden per Pfad.
+# Alternativ: eigenes files-api.kopten.de mit Custom Domain + Worker Route.
+routes = [
+  { pattern = "files-api.kopten.de/*", zone_name = "kopten.de" }
+]
+
+workers_dev = false
+
+[observability]
+enabled = true
+head_sampling_rate = 1
+
+# Secrets (gesetzt via wrangler secret put):
+#   GITHUB_REPO            — "StMarkus/kopten.de"
+#   GITHUB_DISPATCH_TOKEN  — Fine-grained PAT mit "Actions: read/write"
+#   ADMIN_TOKEN            — Shared Secret zum Schutz der /rebuild-manifest Route

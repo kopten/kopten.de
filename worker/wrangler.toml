@@ -1,0 +1,16 @@
+name = "kopten-de-gemeinden-redirect"
+main = "src/index.js"
+compatibility_date = "2026-05-30"
+
+# Route fires on every request to *.kopten.de
+# Apex (kopten.de) and www are excluded by hostname check in the worker.
+routes = [
+  { pattern = "*.kopten.de/*", zone_name = "kopten.de" }
+]
+
+# Worker is not used for the apex domain itself — only subdomains.
+workers_dev = false
+
+[observability]
+enabled = true
+head_sampling_rate = 1

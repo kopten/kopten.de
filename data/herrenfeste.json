@@ -1,0 +1,36 @@
+{
+  "groups": [
+    {
+      "id": "major",
+      "title": {
+        "deu": "Die sieben großen Herrenfeste",
+        "eng": "The Seven Major Lord's Feasts"
+      },
+      "keys": [
+        "christ_annunciation",
+        "christ_nativity",
+        "christ_theophany",
+        "christ_palmsunday",
+        "christ_resurrection",
+        "christ_ascension",
+        "pentecost"
+      ]
+    },
+    {
+      "id": "minor",
+      "title": {
+        "deu": "Die sieben kleinen Herrenfeste",
+        "eng": "The Seven Minor Lord's Feasts"
+      },
+      "keys": [
+        "christ_circumcision",
+        "christ_temple",
+        "christ_egypt",
+        "christ_kana",
+        "christ_transfiguration",
+        "covenant_thursday",
+        "thomassunday"
+      ]
+    }
+  ]
+}

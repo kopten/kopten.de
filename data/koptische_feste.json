@@ -1,0 +1,830 @@
+[
+  {
+    "titleDisplay": {
+      "deu": "Koptisches Neujahr (Neyrouz)",
+      "eng": "Coptic New Year (Nayrouz)"
+    },
+    "key": "neyrouz",
+    "key_alternative": "neyrouz",
+    "time_type": "non-movable",
+    "times": {
+      "monthStart": 1,
+      "dayStart": 1,
+      "monthEnd": 1,
+      "dayEnd": 1
+    },
+    "feast_major": false,
+    "feast_minor": false,
+    "season_type": "feast",
+    "kat_book": "feast",
+    "is_fasting_day": false,
+    "description": {
+      "deu": "Beginn des koptischesn Jahres",
+      "eng": ""
+    }
+  },
+  {
+    "titleDisplay": {
+      "deu": "Koptische Neujahrsperiode",
+      "eng": "Nayrouz Period"
+    },
+    "key": "neyrouz_period",
+    "key_alternative": "neyrouz_period",
+    "time_type": "non-movable",
+    "times": {
+      "monthStart": 1,
+      "dayStart": 2,
+      "monthEnd": 1,
+      "dayEnd": 16
+    },
+    "feast_major": false,
+    "feast_minor": false,
+    "season_type": "feast",
+    "kat_book": "annual",
+    "is_fasting_day": false,
+    "description": {
+      "deu": "Die zweiwöchige Zeit nach dem koptischen Neujahr (1. Tut) gilt traditionell als Phase der inneren Umkehr und Neuausrichtung. Die Lesungen rufen die Gläubigen auf, sich auf das neue geistliche Jahr vorzubereiten und mit ganzem Herzen zum Herrn zurückzukehren.",
+      "eng": ""
+    }
+  },
+  {
+    "titleDisplay": {
+      "deu": "Fest des Kreuzes",
+      "eng": "Feast of the Cross"
+    },
+    "key": "cross_feast",
+    "key_alternative": "cross_feast",
+    "time_type": "non-movable",
+    "times": {
+      "monthStart": 1,
+      "dayStart": 17,
+      "monthEnd": 1,
+      "dayEnd": 19
+    },
+    "feast_major": false,
+    "feast_minor": false,
+    "season_type": "feast",
+    "kat_book": "feast",
+    "is_fasting_day": false,
+    "description": {
+      "deu": "Das erste Gedenken an das Kreuz am 17. Tut, dem Tag an dem Kaiser Konstantin eine Erscheinigung vom Kreuz hatte",
+      "eng": ""
+    }
+  },
+  {
+    "titleDisplay": {
+      "deu": "Fest des Eintritts Maria in den Tempel",
+      "eng": "Entry of Mary into the Temple"
+    },
+    "key": "mary_temple",
+    "key_alternative": "mary_temple",
+    "time_type": "non-movable",
+    "times": {
+      "monthStart": 4,
+      "dayStart": 3,
+      "monthEnd": 4,
+      "dayEnd": 3
+    },
+    "feast_major": false,
+    "feast_minor": false,
+    "season_type": "feast",
+    "kat_book": "annual",
+    "is_fasting_day": false,
+    "description": {
+      "deu": "Am 3. Hatour erinnert die Kirche an den Tag, an dem die heilige Jungfrau Maria im Alter von drei Jahren von ihren Eltern Joachim und Anna in den Tempel von Jerusalem gebracht wurde, um Gott geweiht zu dienen.",
+      "eng": ""
+    }
+  },
+  {
+    "titleDisplay": {
+      "deu": "Marienmonat Koojak",
+      "eng": "Marian Month of Koojak"
+    },
+    "key": "koojak",
+    "key_alternative": "koojak",
+    "time_type": "non-movable",
+    "times": {
+      "monthStart": 4,
+      "dayStart": 1,
+      "monthEnd": 4,
+      "dayEnd": 27
+    },
+    "feast_major": false,
+    "feast_minor": false,
+    "season_type": "annual",
+    "kat_book": "annual",
+    "is_fasting_day": false,
+    "description": {
+      "deu": "Bekannt sind die Koojak-Adventsnächte, in denen von Samstags auf Sonntags Preisungen gesungen werden.",
+      "eng": ""
+    }
+  },
+  {
+    "titleDisplay": {
+      "deu": "Fest der Geburt Christi (Weihnachten)",
+      "eng": "Nativity of Christ (Christmas)"
+    },
+    "key": "christ_nativity",
+    "key_alternative": "christ_nativity",
+    "time_type": "non-movable",
+    "times": {
+      "monthStart": 4,
+      "dayStart": 29,
+      "monthEnd": 4,
+      "dayEnd": 29
+    },
+    "feast_major": true,
+    "feast_minor": false,
+    "season_type": "feast",
+    "sort_order": 1,
+    "kat_book": "feast",
+    "is_fasting_day": false,
+    "description": {
+      "deu": "Koptisches Weihnachten",
+      "eng": ""
+    }
+  },
+  {
+    "titleDisplay": {
+      "deu": "2. Tag des Weihnachtsfestes",
+      "eng": "Second Day of Christmas"
+    },
+    "key": "christ_nativity_day2",
+    "key_alternative": "christ_nativity_day2",
+    "time_type": "non-movable",
+    "times": {
+      "monthStart": 4,
+      "dayStart": 30,
+      "monthEnd": 4,
+      "dayEnd": 30
+    },
+    "feast_major": true,
+    "feast_minor": false,
+    "season_type": "feast",
+    "sort_order": 1,
+    "kat_book": "feast",
+    "is_fasting_day": false,
+    "description": {
+      "deu": "Der zweite Weihnachtstag (30. Koojak) setzt die Feier der Geburt Christi fort. Die Kirche bleibt im Geist des Festes und dankt für die Menschwerdung des Wortes Gottes, das in unsere Welt gekommen ist.",
+      "eng": ""
+    }
+  },
+  {
+    "titleDisplay": {
+      "deu": "Fest der Beschneidung des Herrn",
+      "eng": "Feast of the Circumcision of the Lord"
+    },
+    "key": "christ_circumcision",
+    "key_alternative": "christ_circumcision",
+    "time_type": "non-movable",
+    "times": {
+      "monthStart": 5,
+      "dayStart": 6,
+      "monthEnd": 5,
+      "dayEnd": 6
+    },
+    "feast_major": false,
+    "feast_minor": true,
+    "season_type": "feast",
+    "kat_book": "feast",
+    "is_fasting_day": false,
+    "description": {
+      "deu": "Die Beschneidung des Herrn wird am achten Tag nach dem Fest der Christi Geburt gefeiert. Dadurch erinnern wir uns daran, dass das Wort Gottes, das uns das Gesetz gab, er selbst sich an das Gesetz hielt und es erfüllt es um uns es zu ermöglichen das Gesetz auch in der geistigen Weise zu erfüllen. So genießen wir die Beschneidung des Geistes und des Herzens (Kol 2, 11), statt von der wörtlichen Beschneidung des Fleisches.",
+      "eng": ""
+    }
+  },
+  {
+    "titleDisplay": {
+      "deu": "Taufe Jesu (Epiphanie)",
+      "eng": "Baptism of Jesus (Theophany)"
+    },
+    "key": "christ_theophany",
+    "key_alternative": "christ_theophany",
+    "time_type": "non-movable",
+    "times": {
+      "monthStart": 5,
+      "dayStart": 11,
+      "monthEnd": 5,
+      "dayEnd": 11
+    },
+    "feast_major": true,
+    "feast_minor": false,
+    "season_type": "feast",
+    "sort_order": 1,
+    "kat_book": "feast",
+    "is_fasting_day": false,
+    "description": {
+      "deu": "Die Taufe ist mit der Geburt und der Beschneidung verbunden: Denn an das Fest der Geburt Christi nahm das Wort Gottes was uns ist (unsere menschliche Natur) und in der „Beschneidung“ unterwarf er sich dem Gesetz als er einer von uns wurde, aber durch die Taufe bietet er sich selbst uns an. Durch seine Inkarnation wurde er wahrer Mensch und der eingeborene Sohn Gottes. Durch unsere Taufe werden wir Kinder Gottes in ihm.",
+      "eng": ""
+    }
+  },
+  {
+    "titleDisplay": {
+      "deu": "Erstes Wunder Jesu (Hochzeit zu Kana)",
+      "eng": "First Miracle of Jesus (Wedding at Cana)"
+    },
+    "key": "christ_kana",
+    "key_alternative": "christ_kana",
+    "time_type": "non-movable",
+    "times": {
+      "monthStart": 5,
+      "dayStart": 13,
+      "monthEnd": 5,
+      "dayEnd": 13
+    },
+    "feast_major": false,
+    "feast_minor": true,
+    "season_type": "feast",
+    "kat_book": "feast",
+    "is_fasting_day": false,
+    "description": {
+      "deu": "Unser Herr verwandelete das Wasser in Wein, als seuin erstes Wunder an der Hochzeit zu Kana von Galiläa. Es soll sein Bestreben bekräftigen uns dazu zu bringen, die himmlische Hochzeit zu erreichen und uns den Wein seiner übermäßigen Liebe zu gewähren.",
+      "eng": ""
+    }
+  },
+  {
+    "titleDisplay": {
+      "deu": "Mariä Entschlafung",
+      "eng": "Dormition of the Virgin Mary"
+    },
+    "key": "mary_dormition",
+    "key_alternative": "mary_dormition",
+    "time_type": "non-movable",
+    "times": {
+      "monthStart": 5,
+      "dayStart": 21,
+      "monthEnd": 5,
+      "dayEnd": 21
+    },
+    "feast_major": false,
+    "feast_minor": false,
+    "season_type": "feast",
+    "kat_book": "annual",
+    "is_fasting_day": false,
+    "description": {
+      "deu": "Am 21. Tubah gedenkt die Kirche des Entschlafens der heiligen Jungfrau Maria. Nach der Überlieferung übergab sie ihre Seele in die Hände ihres Sohnes Jesus Christus, umgeben von den Aposteln.",
+      "eng": ""
+    }
+  },
+  {
+    "titleDisplay": {
+      "deu": "Eintritt Jesu in den Tempel",
+      "eng": "Presentation of Jesus in the Temple"
+    },
+    "key": "christ_temple",
+    "key_alternative": "christ_temple",
+    "time_type": "non-movable",
+    "times": {
+      "monthStart": 6,
+      "dayStart": 8,
+      "monthEnd": 6,
+      "dayEnd": 8
+    },
+    "feast_major": false,
+    "feast_minor": true,
+    "season_type": "feast",
+    "kat_book": "feast",
+    "is_fasting_day": false,
+    "description": {
+      "deu": "Es ist eines der sieben kleinen Herrenfeste. An diesem Tag gedenkt die Kirche die Widmung des Herrn dem Tempel durch Maria und Josef vierzig Tage nach seiner Geburt. An diesem Tag nahm Simeon das Kind in seine Arme und sprach: „Nun lässt du, Herr, deinen Knecht, wie du gesagt hast, in Frieden scheiden. Denn meine Augen haben das Heil gesehen, das du vor allen Völkern bereitet hast, ein Licht, das die Heiden erleuchtet, und Herrlichkeit für dein Volk Israel“ (Lk 2, 29 - 32). Die Hymnen werden in der fröhlichen Melodie gesungen. Wenn der 8.Amschir (15. Februar) auf einen Mittwoch, Freitag oder in die Jona-Fastenzeit fällt, wird weiter gefastet. Das Fasten wird nicht abgebrochen, denn das Fest gehört zu den sieben kleinen Herrenfesten",
+      "eng": ""
+    }
+  },
+  {
+    "titleDisplay": {
+      "deu": "Fest der Auffindung des Kreuzes",
+      "eng": "Feast of the Finding of the Cross"
+    },
+    "key": "cross_finding",
+    "key_alternative": "cross_finding",
+    "time_type": "non-movable",
+    "times": {
+      "monthStart": 7,
+      "dayStart": 10,
+      "monthEnd": 7,
+      "dayEnd": 10
+    },
+    "feast_major": false,
+    "feast_minor": false,
+    "season_type": "feast",
+    "sort_order": 1,
+    "kat_book": "annual",
+    "is_fasting_day": false,
+    "description": {
+      "deu": "Die Kirche feiert das Fest des Kreuzes am 17. Tut, dem Tag an dem Kaiser Konstantin eine Erscheinigung vom Kreuz hatte und dem 10. Baramhat, dem Tag, als die Kaiserin Helena das Holz des heiligen Kreuzes fand. Das Kreuz hat eine gewaltige geistige Bedeutung. Es hat einen außerordentlchen Wert für jeden Christen und es ist ein Segen in unseren Leben.",
+      "eng": ""
+    }
+  },
+  {
+    "titleDisplay": {
+      "deu": "Verkündigung des Herrn",
+      "eng": "Annunciation of the Lord"
+    },
+    "key": "christ_annunciation",
+    "key_alternative": "christ_annunciation",
+    "time_type": "non-movable",
+    "times": {
+      "monthStart": 7,
+      "dayStart": 29,
+      "monthEnd": 7,
+      "dayEnd": 29
+    },
+    "feast_major": true,
+    "feast_minor": false,
+    "season_type": "feast",
+    "sort_order": 2,
+    "kat_book": "feast",
+    "is_fasting_day": false,
+    "description": {
+      "deu": "Am 29. Baramhat (7. April) feiert die Kirche die Verkündigung des Erzengels Gabriel an die Jungfrau Maria, dass sie den Sohn Gottes empfangen werde (Lk 1, 26-38). Mit diesem Tag beginnt das Geheimnis der Menschwerdung Christi.",
+      "eng": ""
+    }
+  },
+  {
+    "titleDisplay": {
+      "deu": "Einzug der Hl. Familie in Ägypten",
+      "eng": "Entry of the Holy Family into Egypt"
+    },
+    "key": "christ_egypt",
+    "key_alternative": "christ_egypt",
+    "time_type": "non-movable",
+    "times": {
+      "monthStart": 9,
+      "dayStart": 24,
+      "monthEnd": 9,
+      "dayEnd": 24
+    },
+    "feast_major": false,
+    "feast_minor": true,
+    "season_type": "feast",
+    "kat_book": "feast",
+    "is_fasting_day": false,
+    "description": {
+      "deu": "Die Kirche feiert die Ankunft der Heiligen Familie in Ägypten nach der Flucht vor König Herodes (Mt 2, 13-15). Etwa dreieinhalb Jahre lebten Maria, Josef und das Jesuskind in Ägypten — entlang ihres Weges entstanden später zahlreiche heilige Stätten, die bis heute Ziel von Pilgern sind.",
+      "eng": ""
+    }
+  },
+  {
+    "titleDisplay": {
+      "deu": "Die Verklärung Jesu",
+      "eng": "Transfiguration of Jesus"
+    },
+    "key": "christ_transfiguration",
+    "key_alternative": "christ_transfiguration",
+    "time_type": "non-movable",
+    "times": {
+      "monthStart": 12,
+      "dayStart": 13,
+      "monthEnd": 12,
+      "dayEnd": 13
+    },
+    "feast_major": false,
+    "feast_minor": true,
+    "season_type": "feast",
+    "kat_book": "feast",
+    "is_fasting_day": false,
+    "description": {
+      "deu": "Am 13. Misra erinnert die Kirche an die Verklärung Christi auf dem Berg Tabor (Mt 17, 1-9). Vor seinen Jüngern Petrus, Jakobus und Johannes offenbarte Jesus seine göttliche Herrlichkeit — ein Vorgeschmack der kommenden Auferstehung.",
+      "eng": ""
+    }
+  },
+  {
+    "titleDisplay": {
+      "deu": "Erscheinung Marias' Körpers",
+      "eng": "Assumption of the Body of Mary"
+    },
+    "key": "mary_assumption",
+    "key_alternative": "mary_assumption",
+    "time_type": "non-movable",
+    "times": {
+      "monthStart": 12,
+      "dayStart": 16,
+      "monthEnd": 12,
+      "dayEnd": 16
+    },
+    "feast_major": false,
+    "feast_minor": false,
+    "season_type": "feast",
+    "kat_book": "annual",
+    "is_fasting_day": false,
+    "description": {
+      "deu": "Den Jüngern Christi Verkündigung der Himmelfahrt des Leichnams der heiligen Maria",
+      "eng": ""
+    }
+  },
+  {
+    "titleDisplay": {
+      "deu": "Fest der Apostel",
+      "eng": "Feast of the Apostles"
+    },
+    "key": "apostle_feast",
+    "key_alternative": "apostle_feast",
+    "time_type": "non-movable",
+    "times": {
+      "monthStart": 11,
+      "dayStart": 5,
+      "monthEnd": 11,
+      "dayEnd": 5
+    },
+    "feast_major": false,
+    "feast_minor": false,
+    "season_type": "feast",
+    "kat_book": "annual",
+    "is_fasting_day": false,
+    "description": {
+      "deu": "Am 5. Abib (12. Juli) gedenkt die Kirche der heiligen Apostel — besonders der Apostelfürsten Petrus und Paulus — und ihres Martyriums in Rom. Der Tag bildet zugleich den Abschluss der Apostelfastenzeit.",
+      "eng": ""
+    }
+  },
+  {
+    "titleDisplay": {
+      "deu": "Das Fest von Jona",
+      "eng": "Feast of Jonah"
+    },
+    "key": "ninive_feast",
+    "key_alternative": "ninive_feast",
+    "time_type": "movable",
+    "times": {
+      "daysToEasternStart": 66,
+      "daysToEasternEnd": 66
+    },
+    "feast_major": false,
+    "feast_minor": false,
+    "season_type": "feast",
+    "kat_book": "lent",
+    "is_fasting_day": false,
+    "description": {
+      "deu": "Am Donnerstag nach den drei Tagen des Niniveh-Fastens feiert die Kirche die Umkehr der Stadt Ninive durch die Verkündigung des Propheten Jona. Das Ereignis ist ein Bild der Buße und Vorbereitung auf die bevorstehende Große Fastenzeit.",
+      "eng": ""
+    }
+  },
+  {
+    "titleDisplay": {
+      "deu": "Samstag des Lazarus",
+      "eng": "Lazarus Saturday"
+    },
+    "key": "lazarus",
+    "key_alternative": "lazarus",
+    "time_type": "movable",
+    "times": {
+      "daysToEasternStart": 8,
+      "daysToEasternEnd": 8
+    },
+    "feast_major": false,
+    "feast_minor": false,
+    "season_type": "feast",
+    "kat_book": "lent",
+    "is_fasting_day": false,
+    "description": {
+      "deu": "Am Samstag vor dem Palmsonntag gedenkt die Kirche der Auferweckung des Lazarus durch Christus (Joh 11). Das Wunder bezeugt die göttliche Macht Christi über Leben und Tod und kündigt die kommende Auferstehung an.",
+      "eng": ""
+    }
+  },
+  {
+    "titleDisplay": {
+      "deu": "Palmsonntag",
+      "eng": "Palm Sunday"
+    },
+    "key": "christ_palmsunday",
+    "key_alternative": "christ_palmsunday",
+    "time_type": "movable",
+    "times": {
+      "daysToEasternStart": 7,
+      "daysToEasternEnd": 7
+    },
+    "feast_major": true,
+    "feast_minor": false,
+    "season_type": "feast",
+    "sort_order": 1,
+    "kat_book": "lent",
+    "is_fasting_day": false,
+    "description": {
+      "deu": "Der Palmsonntag erinnert an den feierlichen Einzug Christi in Jerusalem (Mt 21, 1-11). Das Volk empfing ihn mit Palmzweigen und dem Ruf „Hosanna dem Sohn Davids!“. Mit diesem Tag beginnt die heilige Karwoche.",
+      "eng": ""
+    }
+  },
+  {
+    "titleDisplay": {
+      "deu": "Donnerstag des Bundes",
+      "eng": "Covenant Thursday"
+    },
+    "key": "covenant_thursday",
+    "key_alternative": "covenant_thursday",
+    "time_type": "movable",
+    "times": {
+      "daysToEasternStart": 3,
+      "daysToEasternEnd": 3
+    },
+    "feast_major": false,
+    "feast_minor": true,
+    "season_type": "feast",
+    "kat_book": "lent",
+    "is_fasting_day": false,
+    "description": {
+      "deu": "Am Donnerstag der Karwoche, auch Gründonnerstag genannt, gedenkt die Kirche des letzten Abendmahls und der Fußwaschung der Jünger durch Christus. An diesem Tag wird die Liturgie gefeiert und die heilige Kommunion empfangen — ein Zeichen des neuen Bundes.",
+      "eng": ""
+    }
+  },
+  {
+    "titleDisplay": {
+      "deu": "Der Lichtsamstag",
+      "eng": "Bright Saturday"
+    },
+    "key": "brightsaturday",
+    "key_alternative": "brightsaturday",
+    "time_type": "movable",
+    "times": {
+      "daysToEasternStart": 1,
+      "daysToEasternEnd": 1
+    },
+    "feast_major": false,
+    "feast_minor": false,
+    "season_type": "feast",
+    "kat_book": "lent",
+    "is_fasting_day": false,
+    "description": {
+      "deu": "Der Lichtsamstag, auch Karsamstag genannt, ist der Tag, an dem Christus im Grab ruhte und das Reich des Todes erleuchtete. Die Nachtliturgie führt unmittelbar in die freudige Feier der Auferstehung über.",
+      "eng": ""
+    }
+  },
+  {
+    "titleDisplay": {
+      "deu": "Fest der Auferstehung (Ostern)",
+      "eng": "Feast of the Resurrection (Easter)"
+    },
+    "key": "christ_resurrection",
+    "key_alternative": "christ_resurrection",
+    "time_type": "movable",
+    "times": {
+      "daysToEasternStart": 0,
+      "daysToEasternEnd": 0
+    },
+    "feast_major": true,
+    "feast_minor": false,
+    "season_type": "feast",
+    "sort_order": 1,
+    "kat_book": "feast",
+    "is_fasting_day": false,
+    "description": {
+      "deu": "Das höchste Fest des Kirchenjahres feiert die Auferstehung Christi am dritten Tage nach seiner Kreuzigung. Es ist der Sieg des Lebens über den Tod und das Fundament des christlichen Glaubens: „Ist Christus nicht auferstanden, dann ist unsere Verkündigung leer“ (1 Kor 15, 14).",
+      "eng": ""
+    }
+  },
+  {
+    "titleDisplay": {
+      "deu": "Die Hl. 50 Tage",
+      "eng": "The Holy 50 Days"
+    },
+    "key": "holy50",
+    "time_type": "movable",
+    "times": {
+      "daysToEasternStart": -1,
+      "daysToEasternEnd": -48
+    },
+    "feast_major": false,
+    "feast_minor": false,
+    "season_type": "feast",
+    "kat_book": "holy50",
+    "is_fasting_day": false,
+    "description": {
+      "deu": "Die fünfzig Tage zwischen Auferstehung und Pfingsten bilden eine Zeit ungebrochener Freude. Es wird in dieser Periode weder gefastet noch kniend gebetet, und die Liturgie wird in festlicher Melodie gefeiert.",
+      "eng": ""
+    }
+  },
+  {
+    "titleDisplay": {
+      "deu": "Thomas Sonntag",
+      "eng": "Thomas Sunday"
+    },
+    "key": "thomassunday",
+    "key_alternative": "thomassunday",
+    "time_type": "movable",
+    "times": {
+      "daysToEasternStart": -7,
+      "daysToEasternEnd": -7
+    },
+    "feast_major": false,
+    "feast_minor": true,
+    "season_type": "feast",
+    "sort_order": 1,
+    "kat_book": "holy50",
+    "is_fasting_day": false,
+    "description": {
+      "deu": "Der Thomassonntag findet am achten Tag des Festes der Auferstehung statt und ist eines der sieben kleinen Herrenfeste. An diesem Tag erschien der Herr der Herrlichkeit seinen Jüngern, während sie in Gegenwart des Hl. Thomas im Abendmahlssaal versammelt waren. Christus erschien ihnen jedoch eine Woche zuvor in Abwesenheit des Hl. Thomas. Die Jünger informierten den Hl. Thomas wiederholt über das Erscheinen des Herrn Christus vor ihnen, aber er weigerte sich, ihnen zu glauben, als er sagte: „Wenn ich nicht an seinen Händen das Nägelmal sehe und meinen Finger in das Nägelmal lege und meine Hand in seine Seite lege, so werde ich es niemals glauben!“ (Joh 20,25). Aus diesem Grund erschien der Herr der Herrlichkeit am achten Tag nach seiner Auferstehung und sagte zum Hl. Thomas: „Lege deinen Finger hierher und sieh meine Hände. Strecke deine Hand aus und lege sie in meine Seite. Zweifle nicht, sondern glaube“ (Joh 20,27). Das Ergebnis war verblüffend: Es führte zum Bekenntnis des Hl. Thomas, dass Christus der Herr und Gott ist, als er ausrief und sagte: „Mein Herr und mein Gott“ (Joh 20,28).",
+      "eng": ""
+    }
+  },
+  {
+    "titleDisplay": {
+      "deu": "Christi Himmelfahrt",
+      "eng": "Ascension of Christ"
+    },
+    "key": "christ_ascension",
+    "key_alternative": "christ_ascension",
+    "time_type": "movable",
+    "times": {
+      "daysToEasternStart": -39,
+      "daysToEasternEnd": -39
+    },
+    "feast_major": true,
+    "feast_minor": false,
+    "season_type": "feast",
+    "sort_order": 1,
+    "kat_book": "holy50",
+    "is_fasting_day": false,
+    "description": {
+      "deu": "Himmelfahrt Christi wird immer an einem Donnerstag gefeiert. Christus, der Herr, fuhr in den Himmel auf und sitzt zur Rechten seines Vaters. Er beendete das Werk der Menschwerdung und Erlösung und kehrte zurück in die Herrlichkeit des Vaters. Deshalb heißt es im Antwortgesang: „Gegrüßt sei seine Himmelfahrt. Er, der mit Ehre und Ruhm in den Himmel aufgefahren ist und sich zur Rechten seines Vaters setzte.“ Durch ihn wurde die Menschennatur in den Himmel erhoben und hat damit die Zuversicht auf eine Teilnahme an seiner Herrlichkeit.",
+      "eng": ""
+    }
+  },
+  {
+    "titleDisplay": {
+      "deu": "Pfingsten (Pentekost)",
+      "eng": "Pentecost"
+    },
+    "key": "pentecost",
+    "key_alternative": "pentecost",
+    "time_type": "movable",
+    "times": {
+      "daysToEasternStart": -49,
+      "daysToEasternEnd": -49
+    },
+    "feast_major": true,
+    "feast_minor": false,
+    "season_type": "feast",
+    "sort_order": 1,
+    "kat_book": "holy50",
+    "is_fasting_day": false,
+    "description": {
+      "deu": "Fünfzig Tage nach Ostern feiert die Kirche die Herabkunft des Heiligen Geistes auf die Apostel (Apg 2). Pfingsten gilt als der Geburtstag der Kirche, denn an diesem Tag begann die Verkündigung des Evangeliums an alle Völker.",
+      "eng": ""
+    }
+  },
+  {
+    "titleDisplay": {
+      "deu": "Fastenzeit der Versetzung des Mokattam-Berges",
+      "eng": "Fast of the Moving of Mount Mokattam"
+    },
+    "key": "mokattam_fast",
+    "times": {
+      "monthStart": 3,
+      "dayStart": 16,
+      "monthEnd": 3,
+      "dayEnd": 18
+    },
+    "disabled": false,
+    "time_type": "non-movable",
+    "fasting_fish_allowed": true,
+    "fasting_strict": false,
+    "season_type": "annual",
+    "kat_book": "annual",
+    "is_fasting_day": true,
+    "description": {
+      "deu": "Im ersten Jahrtausend erfuhr der damalige islamische Machthaber Ägyptens Al-Mu’izz vom Evangelium. Ihn beeindruckte Matthäus, Kapitel 17, Vers 20-21: 'Wenn ihr Glauben habt wie ein Senfkorn, so werdet ihr zu diesem Berg sagen: Hebe dich weg von hier dorthin! Und er wird sich hinwegheben. Und nichts wird euch unmöglich sein'. Er befahl deswegen dem koptischen Papst Abraham von Alexandria dieses Wunder zu vollbringen und den Berg Mokattam zu versetzen. Andernfalls würde er alle Christen umbringen! Papst Abraham fastete drei Tage ununterbrochen. Then erschien ihm die Jungfrau Maria und erzählte ihm, dass ein Mann helfen würde den Berg zu bewegen. Wenig später begegnete er dem Handwerker Simon dem Gerber. Mit seiner Hilfe beteten alal Priester, Mönche, Bischöfe und das ganze Volk gemeinsam mit Papst Abraham und der Berg wurde tatsächlich versetzt. Viele Nichtgläubige kamen zu dieser Zeit zum christlichen Glauben. Anschließend verschwand Simon in einer der Höhlen und wurde nie mehr gesehen. Auf dem Berg selbst befindet sich das Kloster Samaan Al-Kharraz (Simon der Gerber). Weiterhin sind sechs Kirchen in den Berg geschlagen. Die größte Höhle fasst 20000 Menschen.",
+      "eng": ""
+    }
+  },
+  {
+    "titleDisplay": {
+      "deu": "Fastenzeit der Geburt Christi",
+      "eng": "Nativity Fast"
+    },
+    "key": "nativity_fast",
+    "times": {
+      "monthStart": 3,
+      "dayStart": 19,
+      "monthEnd": 4,
+      "dayEnd": 28
+    },
+    "disabled": false,
+    "time_type": "non-movable",
+    "fasting_fish_allowed": true,
+    "fasting_strict": false,
+    "season_type": "fasting",
+    "sort_order": 1,
+    "kat_book": "annual",
+    "is_fasting_day": true,
+    "description": {
+      "deu": "Die Weihnachtsfastenzeit (Fasten vor Weihnachten) bezeichnet die 40-tägige Fastenzeit als Vorbereitungszeit vor Weihnachten. Sie entspricht dem vierwöchigen Advent in den westlichen Kirchen. Der Begriff der Weihnachtsfastenzeit ist in den orthodoxen Kirchen verbreiteter als der des Advents. In der Koptisch-Orthodoxen Kirche beginnt die Weihnachtsfastenzeit am 19. Hator (28. November) und endet mit dem Nachtgottesdienst an Heiligabend - 28. Koojak (6. Januar).",
+      "eng": ""
+    }
+  },
+  {
+    "titleDisplay": {
+      "deu": "Marienfastenzeit",
+      "eng": "Fast of the Virgin Mary"
+    },
+    "key": "mary_fast",
+    "times": {
+      "monthStart": 12,
+      "dayStart": 1,
+      "monthEnd": 12,
+      "dayEnd": 15
+    },
+    "disabled": false,
+    "time_type": "non-movable",
+    "fasting_fish_allowed": true,
+    "fasting_strict": false,
+    "season_type": "fasting",
+    "sort_order": 1,
+    "kat_book": "annual",
+    "is_fasting_day": true,
+    "description": {
+      "deu": "Christus der Herr übergab am Kreuz seine Mutter an seinen Jünger Johannes und sagte zu ihm: „Siehe, deine Mutter“, und zu Maria sagte er: „Frau, siehe, dein Sohn“. So lebte die heilige Jungfrau Maria nach der Kreuzigung von Jesus Christus bei dem Jünger Jesu Johannes. Die heilige Jungfrau Maria wusste, dass ihre Stunde gekommen war. Da versammelten sich die Apostel um sie, Christus der Herr kam mit tausenden von Engeln und Heiligen zu ihr. Sie freute sich sehr darüber, erhob segnend ihre Hände und übergab ihre heilige Seele in die Hände ihres Sohnes. Die Apostel fasteten zwei Wochen lang, bis auch sie die Mutter Gottes zur Rechten ihres Sohnes sahen. Die Kirche feiert dieses Ereignis am 16. Misra (22. August), nach zweiwöchigem Fasten.",
+      "eng": ""
+    }
+  },
+  {
+    "titleDisplay": {
+      "deu": "Fasten von Ninive",
+      "eng": "Fast of Nineveh"
+    },
+    "key": "ninive_fast",
+    "times": {
+      "daysToEasternStart": 69,
+      "daysToEasternEnd": 67
+    },
+    "disabled": false,
+    "time_type": "movable",
+    "fasting_fish_allowed": false,
+    "fasting_strict": false,
+    "season_type": "fasting",
+    "sort_order": 1,
+    "kat_book": "lent",
+    "is_fasting_day": true,
+    "description": {
+      "deu": "Während der dreitägigen Fastenzeit von Jonas, auch bekannt als das Fasten von Ninive erinnert sich die Koptische-Orthodoxe Kirche an die Reue der Leute von Ninive, die vor dem Urteil Gottes für ihre Boshaftigkeit standen. Darüber hinaus hebt die Kirche das Zögern und die Verstärkung von Jonas Glauben hervor. Beide Themen sind passende Themen vor der bevorstehenden großen Fastenzeit.",
+      "eng": ""
+    }
+  },
+  {
+    "titleDisplay": {
+      "deu": "Die große Fastenzeit",
+      "eng": "Great Lent"
+    },
+    "key": "lent",
+    "times": {
+      "daysToEasternStart": 55,
+      "daysToEasternEnd": 9
+    },
+    "disabled": false,
+    "time_type": "movable",
+    "fasting_fish_allowed": false,
+    "fasting_strict": false,
+    "season_type": "fasting",
+    "sort_order": 1,
+    "kat_book": "lent",
+    "is_fasting_day": true,
+    "description": {
+      "deu": "Die Zeit der großen Fastenzeit vor dem Christi Auferstehungsfest wird auch die heilige Fastenzeit genannt und ist gewiss einer der heiligsten Zeiten im koptischen Kalender. Die Fastenzeit beginnt am siebten Montag vor der heiligen Karwoche, also 55 Tage vor dem Auferstehungsfest. Die ersten 8 Tage stellen eine Vorbereitungszeit dar, die darauffolgenden sind die 40 Tage, die auch unser Herr Jesus fastete und dann folgen die 7 Tage der Karwoche, die von der großen Fastenzeit getrennt betrachtet wird.",
+      "eng": ""
+    }
+  },
+  {
+    "titleDisplay": {
+      "deu": "Karwoche",
+      "eng": "Holy Week"
+    },
+    "key": "paschaweek_fast",
+    "times": {
+      "daysToEasternStart": 6,
+      "daysToEasternEnd": 1
+    },
+    "disabled": false,
+    "time_type": "movable",
+    "fasting_fish_allowed": false,
+    "fasting_strict": true,
+    "season_type": "fasting",
+    "sort_order": 2,
+    "kat_book": "lent",
+    "is_fasting_day": true,
+    "description": {
+      "deu": "Während der gesamten Karwoche wird jeden Abend, beginnend in der Nacht zum Sonntag (dem Vorabend des Montags), und jeden Morgen bis Ostern eine Pas'kha-Andacht abgehalten. Diese finden in der Mitte der Kirche und nicht auf dem Altar statt, da Jesus auf Golgatha, außerhalb von Jerusalem, gelitten hat und gekreuzigt wurde. Der Altar wird von allen Bedeckungen und Reliquien befreit. Jede Tages-Andacht ist in 5 'Stunden' unterteilt: die erste Stunde, die dritte Stunde, die sechste Stunde, die neunte Stunde und die elfte Stunde. Ebenso ist die nächtliche Andacht in dieselben fünf Stunden unterteilt. Am Karfreitag kommt jedoch eine zusätzliche Stunde hinzu, nämlich die Zwölfte Stunde. In jeder Stunde werden zu Beginn eine oder mehrere Prophezeiungen gelesen, ein Hymnus ('Dein ist die Kraft') wird zwölfmal gesungen, ein Psalm wird in einer traurigen Melodie gesungen, ein Abschnitt aus einem Evangelium wird gelesen, und eine Erläuterung schließt die Stunde ab. Am Karfreitagabend und am Karfreitag werden alle vier Evangelien über die Ereignisse des Tages verlesen, außerdem werden weitere Prophezeiungen gelesen. Ab Dienstagabend grüßen die Menschen weder einander noch die Priester und küssen nicht einmal die Heiligenfiguren in der Kirche, weil Judas Jesus mit einem Kuss verraten hat. Am Donnerstag der Karwoche, auch Bündnisdonnerstag genannt, wird eine Liturgie gebetet und die Kommunion gereicht, um das letzte Abendmahl Jesu zu symbolisieren. Vor der Liturgie waschen die Priester den Gläubigen die Füße, um zu zeigen, wie Jesus seinen Jüngern die Füße gewaschen hat.",
+      "eng": ""
+    }
+  },
+  {
+    "titleDisplay": {
+      "deu": "Fastenzeit der Apostel",
+      "eng": "Fast of the Apostles"
+    },
+    "key": "apostle_fast",
+    "times": {
+      "daysToEasternStart": -50,
+      "monthEnd": 11,
+      "dayEnd": 4
+    },
+    "disabled": false,
+    "time_type": "movable",
+    "fasting_fish_allowed": true,
+    "fasting_strict": false,
+    "season_type": "fasting",
+    "sort_order": 1,
+    "kat_book": "annual",
+    "is_fasting_day": true,
+    "description": {
+      "deu": "Die Kirche gedenkt des Martyriums vom heiligen Petrus und heiligen Paulus am 5 Abib. Das Fest fällt immer auf den 12 Juli. Das Fasten der Apostel beginnt am folgenden Tag des Pfingstfestes, somit beginnt es am Pfingstmontag und dauert bis zum 12 Juli. Die Kirche erinnert an die Worte des Herrn an seine Apostel: „Bleibt in der Stadt, bis ihr mit der Kraft aus der Höhe erfüllt werdet“ (Lk 24, 49). Diese Kraft, die die Apostel am Pfingstfest empfangen haben, ließ sie den Namen des Herrn verkünden und auch das Martyrium in seinem Namen erlangen. Wir bereiten uns in diesem Fasten darauf vor, die Dienste der Apostel nachzuahmen, auch die Gaben des Heiligen Geistes in uns wirksam werden wie einst in ihnen, Zeugnis für den Herrn abzulegen. Der Heilige Geist erinnert uns an alles, was der Herr gesagt hat und lässt uns den Tod des eigenen Willens erlangen, wie der Herr Petrus verkündet hat: „Wenn du aber alt geworden bist, wirst du deine Hände ausstrecken und ein anderer wird dich gürten und dich führen, wohin du nicht willst. Das sagte Jesus, um anzudeuten, durch welchen Tod er Gott verherrlichen würde“ (Joh 21, 18-19).",
+      "eng": ""
+    }
+  }
+]

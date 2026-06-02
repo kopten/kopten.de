@@ -1,0 +1,18 @@
+name = "kopten-de-api"
+main = "src/index.js"
+compatibility_date = "2026-05-30"
+
+routes = [
+  { pattern = "api.kopten.de/*", zone_name = "kopten.de" }
+]
+
+workers_dev = false
+
+[observability]
+enabled = true
+head_sampling_rate = 1
+
+# Secrets are set per environment via Cloudflare Dashboard or `wrangler secret`:
+#   RESEND_API_KEY     — API key from resend.com
+#   CONTACT_TO_EMAIL   — where contact form submissions are delivered (e.g. info@kopten.de)
+#   CONTACT_FROM_EMAIL — verified sender domain (e.g. noreply@kopten.de)

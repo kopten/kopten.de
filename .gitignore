@@ -1,0 +1,12 @@
+/.claude
+__pycache__/
+*.pyc
+.DS_Store
+.venv-pdf/
+.geo-cache.json
+.tile-cache.sqlite
+
+# Wrangler / Cloudflare Worker CLI cache
+.wrangler/
+node_modules/
+.dev.vars
