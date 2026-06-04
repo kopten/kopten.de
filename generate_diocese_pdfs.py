@@ -323,10 +323,11 @@ def parse_gemeinden():
                     }
                 )
 
-        # Phones (kontakt)
+        # Phones / email (kontakt)
         kontakt = g.find("kontakt")
         telefon = txt(kontakt, "telefon")
         fax = txt(kontakt, "fax")
+        kontakt_email = txt(kontakt, "email")
 
         # Service times
         zeiten = []
@@ -384,6 +385,7 @@ def parse_gemeinden():
                 "persons": persons,
                 "telefon": telefon,
                 "fax": fax,
+                "email": kontakt_email,
                 "zeiten": zeiten,
                 "diakone": diakone,
                 "bank": {
@@ -889,8 +891,8 @@ def add_gemeinde_page(pdf, g):
             pdf.cell(0, 5, _safe(ln_text), new_x=XPos.LMARGIN, new_y=YPos.NEXT)
     pdf.ln(3)
 
-    # Phone / fax
-    if g["telefon"] or g["fax"]:
+    # Phone / fax / email
+    if g["telefon"] or g["fax"] or g.get("email"):
         _section_title(pdf, "Kontakt")
         if g["telefon"]:
             pdf.cell(
@@ -903,6 +905,15 @@ def add_gemeinde_page(pdf, g):
         if g["fax"]:
             pdf.cell(
                 0, 5, _safe(f"Fax: {g['fax']}"), new_x=XPos.LMARGIN, new_y=YPos.NEXT
+            )
+        if g.get("email"):
+            pdf.cell(
+                0,
+                5,
+                _safe(f"E-Mail: {g['email']}"),
+                new_x=XPos.LMARGIN,
+                new_y=YPos.NEXT,
+                link=f"mailto:{g['email']}",
             )
         pdf.ln(3)
 

@@ -117,13 +117,14 @@ def render_page(g):
     pname = persons[0]["name"] if persons else ""
     pmobil = persons[0].get("mobil", "") if persons else ""
 
-    telefon = fax = ""
+    telefon = fax = email = ""
     if kontakt_el is not None:
         telefon = txt(kontakt_el, "telefon")
         if not pmobil and persons:
             persons[0]["mobil"] = txt(kontakt_el, "mobil")
             pmobil = persons[0]["mobil"]
         fax = txt(kontakt_el, "fax")
+        email = txt(kontakt_el, "email")
 
     diakone = []
     if g.find("diakone") is not None:
@@ -200,12 +201,14 @@ def render_page(g):
           </div>
         </div>""")
 
-    if telefon or fax:
+    if telefon or fax or email:
         tel_items = []
         if telefon:
             tel_items.append(f'Tel.: {linkify_text_phones(esc(telefon))}')
         if fax:
             tel_items.append(f'Fax: {linkify_text_phones(esc(fax))}')
+        if email:
+            tel_items.append(f'Email: {obfuscate_mailto(email, placeholder_en="Show email")}')
         cards.append(f"""
         <div class="info-card">
           <div class="info-card__icon">
