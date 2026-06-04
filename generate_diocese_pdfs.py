@@ -39,6 +39,7 @@ from pathlib import Path
 import requests
 import requests_cache
 from fpdf import FPDF
+from fpdf.enums import XPos, YPos
 from PIL import Image
 from staticmap import CircleMarker, IconMarker, StaticMap
 
@@ -57,12 +58,12 @@ requests_cache.install_cache(
     },
 )
 
-ROOT       = Path(__file__).resolve().parent
-XML_PATH   = ROOT / "data" / "kopten_gemeinden.xml"
-GEO_CACHE  = ROOT / ".geo-cache.json"
-OUT_DIR    = ROOT / "pdfs"
-ICONS_DIR  = ROOT / "icons"
-LOGOS_DIR  = ROOT / "images" / "logos"
+ROOT = Path(__file__).resolve().parent
+XML_PATH = ROOT / "data" / "kopten_gemeinden.xml"
+GEO_CACHE = ROOT / ".geo-cache.json"
+OUT_DIR = ROOT / "pdfs"
+ICONS_DIR = ROOT / "icons"
+LOGOS_DIR = ROOT / "images" / "logos"
 
 # Page geometry (A4)
 PAGE_W = 210
@@ -71,21 +72,21 @@ MARGIN = 18
 
 # Coptic brand colours
 COL_PRIMARY = (122, 31, 31)
-COL_ACCENT  = (201, 169, 97)
-COL_INK     = (28, 28, 28)
-COL_MUTED   = (90, 90, 90)
-COL_BG      = (250, 247, 242)
+COL_ACCENT = (201, 169, 97)
+COL_INK = (28, 28, 28)
+COL_MUTED = (90, 90, 90)
+COL_BG = (250, 247, 242)
 
 # Map pin colors per bistum
 PIN_COLOURS = {
     "norddeutschland": "#7a1f1f",
-    "süddeutschland":  "#1f5a8a",
-    "kloster":         "#c9a961",
+    "süddeutschland": "#1f5a8a",
+    "kloster": "#c9a961",
 }
 
 # Bishop's-seat hero photos (gemeinde-id → image path)
 BISHOP_PHOTOS = {
-    "hoexter":      ROOT / "images" / "k_nord.webp",
+    "hoexter": ROOT / "images" / "k_nord.webp",
     "kroeffelbach": ROOT / "images" / "k_sued.webp",
 }
 
@@ -93,7 +94,7 @@ BISHOP_PHOTOS = {
 # Coptic cross polygon (same as icons/brand.svg, centred around 63.9, 85.2)
 _CROSS_POLY = "63.9,-38.34 80.94,-8.52 115.02,-8.52 89.46,21.3 89.46,59.64 127.8,59.64 157.62,34.08 157.62,68.16 187.44,85.2 157.62,102.24 157.62,136.32 127.8,110.76 89.46,110.76 89.46,149.1 115.02,178.92 80.94,178.92 63.9,208.74 46.86,178.92 12.78,178.92 38.34,149.1 38.34,110.76 0,110.76 -29.82,136.32 -29.82,102.24 -59.64,85.2 -29.82,68.16 -29.82,34.08 0,59.64 38.34,59.64 38.34,21.3 12.78,-8.52 46.86,-8.52"
 _CROSS_PTS = [tuple(map(float, p.split(","))) for p in _CROSS_POLY.split()]
-_CROSS_CX, _CROSS_CY, _CROSS_W = 63.9, 85.2, 247.26   # source-space bounds
+_CROSS_CX, _CROSS_CY, _CROSS_W = 63.9, 85.2, 247.26  # source-space bounds
 
 
 def make_pin_png(out_path, bg_hex, cross_hex, size=44, with_ring=False):
@@ -103,11 +104,13 @@ def make_pin_png(out_path, bg_hex, cross_hex, size=44, with_ring=False):
     with_ring: adds a thick gold ring outside (used for klöster).
     """
     from PIL import Image, ImageDraw
+
     def hx(c):
-        return tuple(int(c[i:i+2], 16) for i in (1, 3, 5)) + (255,)
-    bg    = hx(bg_hex)
+        return tuple(int(c[i : i + 2], 16) for i in (1, 3, 5)) + (255,)
+
+    bg = hx(bg_hex)
     cross = hx(cross_hex)
-    gold  = hx("#c9a961")
+    gold = hx("#c9a961")
     white = (255, 255, 255, 255)
 
     img = Image.new("RGBA", (size, size), (0, 0, 0, 0))
@@ -124,15 +127,16 @@ def make_pin_png(out_path, bg_hex, cross_hex, size=44, with_ring=False):
         # Coloured circle with thin white outline
         outline_w = max(2, size // 22)
         draw.ellipse([0, 0, size, size], fill=white)
-        draw.ellipse([outline_w, outline_w, size - outline_w, size - outline_w], fill=bg)
+        draw.ellipse(
+            [outline_w, outline_w, size - outline_w, size - outline_w], fill=bg
+        )
         inner_size = size - 2 * outline_w - 6
         inner_offset = (size - inner_size) / 2
 
     # Coptic cross polygon — scale to fit the inner circle, centred
     scale = inner_size / _CROSS_W * 0.95
     pts = [
-        (size / 2 + (x - _CROSS_CX) * scale,
-         size / 2 + (y - _CROSS_CY) * scale)
+        (size / 2 + (x - _CROSS_CX) * scale, size / 2 + (y - _CROSS_CY) * scale)
         for x, y in _CROSS_PTS
     ]
     draw.polygon(pts, fill=cross)
@@ -147,16 +151,42 @@ def _ensure_pin_icons():
     cache_dir = OUT_DIR / ".cache"
     cache_dir.mkdir(parents=True, exist_ok=True)
     variants = {
-        "nord":           {"file": "pin-nord.png",    "bg": "#7a1f1f", "cross": "#c9a961", "size": 44, "ring": False},
-        "sued":           {"file": "pin-sued.png",    "bg": "#1f5a8a", "cross": "#f0e0a8", "size": 44, "ring": False},
-        "kloster-nord":   {"file": "pin-kloster-n.png","bg": "#7a1f1f","cross": "#c9a961", "size": 60, "ring": True},
-        "kloster-sued":   {"file": "pin-kloster-s.png","bg": "#1f5a8a","cross": "#f0e0a8", "size": 60, "ring": True},
+        "nord": {
+            "file": "pin-nord.png",
+            "bg": "#7a1f1f",
+            "cross": "#c9a961",
+            "size": 44,
+            "ring": False,
+        },
+        "sued": {
+            "file": "pin-sued.png",
+            "bg": "#1f5a8a",
+            "cross": "#f0e0a8",
+            "size": 44,
+            "ring": False,
+        },
+        "kloster-nord": {
+            "file": "pin-kloster-n.png",
+            "bg": "#7a1f1f",
+            "cross": "#c9a961",
+            "size": 60,
+            "ring": True,
+        },
+        "kloster-sued": {
+            "file": "pin-kloster-s.png",
+            "bg": "#1f5a8a",
+            "cross": "#f0e0a8",
+            "size": 60,
+            "ring": True,
+        },
     }
     paths = {}
     for key, spec in variants.items():
         p = cache_dir / spec["file"]
         if not p.exists():
-            make_pin_png(p, spec["bg"], spec["cross"], size=spec["size"], with_ring=spec["ring"])
+            make_pin_png(
+                p, spec["bg"], spec["cross"], size=spec["size"], with_ring=spec["ring"]
+            )
         paths[key] = (p, spec["size"])
     return paths
 
@@ -202,15 +232,16 @@ def _logo_optimized_cached(src_path, target_mm=26):
     cache_dir.mkdir(parents=True, exist_ok=True)
 
     with Image.open(src_path) as im:
-        has_alpha = (im.mode in ("RGBA", "LA")) or (im.mode == "P" and "transparency" in im.info)
+        has_alpha = (im.mode in ("RGBA", "LA")) or (
+            im.mode == "P" and "transparency" in im.info
+        )
         max_px = int(target_mm / 25.4 * 600)  # 2× 300 dpi for sharpness
         iw, ih = im.size
         scale = max_px / max(iw, ih) if max(iw, ih) > max_px else 1.0
         suffix = ".png" if has_alpha else ".jpg"
         out_path = cache_dir / (src_path.stem + suffix)
 
-        if (out_path.exists()
-                and out_path.stat().st_mtime >= src_path.stat().st_mtime):
+        if out_path.exists() and out_path.stat().st_mtime >= src_path.stat().st_mtime:
             return out_path
 
         if scale < 1.0:
@@ -227,6 +258,7 @@ def _logo_optimized_cached(src_path, target_mm=26):
 # ---------------------------------------------------------------------------
 # XML helpers
 # ---------------------------------------------------------------------------
+
 
 def txt(el, tag, default=""):
     if el is None:
@@ -248,9 +280,9 @@ def parse_gemeinden():
         # Address
         addr = g.find("adresse")
         strasse = txt(addr, "strasse")
-        plz     = txt(addr, "plz")
-        ort     = txt(addr, "ort")
-        zugast  = txt(addr, "zugast").lower() == "true"
+        plz = txt(addr, "plz")
+        ort = txt(addr, "ort")
+        zugast = txt(addr, "zugast").lower() == "true"
         gast_name = txt(addr, "name") if zugast else ""
 
         # Persons (priester or bischof)
@@ -258,37 +290,43 @@ def parse_gemeinden():
         bischof = g.find("bischof")
         priester = g.find("priester")
         if bischof is not None:
-            persons.append({
-                "role":     "Bischof",
-                "name":     txt(bischof, "name"),
-                "funktion": txt(bischof, "funktion"),
-                "mobil":    txt(bischof, "mobil"),
-                "email":    txt(bischof, "email"),
-            })
+            persons.append(
+                {
+                    "role": "Bischof",
+                    "name": txt(bischof, "name"),
+                    "funktion": txt(bischof, "funktion"),
+                    "mobil": txt(bischof, "mobil"),
+                    "email": txt(bischof, "email"),
+                }
+            )
         elif priester is not None:
             pe_list = priester.findall("person")
             if pe_list:
                 for pe in pe_list:
-                    persons.append({
-                        "role":     "Priester",
-                        "name":     txt(pe, "name"),
-                        "funktion": txt(pe, "funktion"),
-                        "mobil":    txt(pe, "mobil"),
-                        "email":    txt(pe, "email"),
-                    })
+                    persons.append(
+                        {
+                            "role": "Priester",
+                            "name": txt(pe, "name"),
+                            "funktion": txt(pe, "funktion"),
+                            "mobil": txt(pe, "mobil"),
+                            "email": txt(pe, "email"),
+                        }
+                    )
             else:
-                persons.append({
-                    "role":     "Priester",
-                    "name":     txt(priester, "name"),
-                    "funktion": txt(priester, "funktion"),
-                    "mobil":    txt(priester, "mobil"),
-                    "email":    txt(priester, "email"),
-                })
+                persons.append(
+                    {
+                        "role": "Priester",
+                        "name": txt(priester, "name"),
+                        "funktion": txt(priester, "funktion"),
+                        "mobil": txt(priester, "mobil"),
+                        "email": txt(priester, "email"),
+                    }
+                )
 
         # Phones (kontakt)
         kontakt = g.find("kontakt")
         telefon = txt(kontakt, "telefon")
-        fax     = txt(kontakt, "fax")
+        fax = txt(kontakt, "fax")
 
         # Service times
         zeiten = []
@@ -312,57 +350,66 @@ def parse_gemeinden():
         # Links
         links_el = g.find("links")
         link_src = links_el if links_el is not None else g
-        website   = txt(link_src, "website")
-        facebook  = txt(link_src, "facebook")
+        website = txt(link_src, "website")
+        facebook = txt(link_src, "facebook")
         instagram = txt(link_src, "instagram")
-        youtube   = txt(link_src, "youtube")
+        youtube = txt(link_src, "youtube")
 
         # Description (beschreibung or legacy geschichte)
         beschreibung = []
-        bes = g.find("beschreibung") or g.find("geschichte")
+        bes = g.find("beschreibung")
+        if bes is None:
+            bes = g.find("geschichte")
         if bes is not None:
             p_children = bes.findall("p")
             if p_children:
-                beschreibung = [p.text.strip() for p in p_children if p.text and p.text.strip()]
+                beschreibung = [
+                    p.text.strip() for p in p_children if p.text and p.text.strip()
+                ]
             elif bes.text and bes.text.strip():
                 beschreibung = [bes.text.strip()]
 
-        out.append({
-            "id":        gid,
-            "typ":       typ,
-            "bistum":    bistum,
-            "name":      name,
-            "gemeindeort": gemeindeort,
-            "strasse":   strasse,
-            "plz":       plz,
-            "ort":       ort,
-            "zugast":    zugast,
-            "gast_name": gast_name,
-            "persons":   persons,
-            "telefon":   telefon,
-            "fax":       fax,
-            "zeiten":    zeiten,
-            "diakone":   diakone,
-            "bank": {
-                "inhaber": txt(bank, "inhaber"),
-                "bank":    txt(bank, "bank"),
-                "iban":    txt(bank, "iban"),
-                "bic":     txt(bank, "bic"),
-            } if bank is not None else None,
-            "links": {
-                "website":   website,
-                "facebook":  facebook,
-                "instagram": instagram,
-                "youtube":   youtube,
-            },
-            "beschreibung": beschreibung,
-        })
+        out.append(
+            {
+                "id": gid,
+                "typ": typ,
+                "bistum": bistum,
+                "name": name,
+                "gemeindeort": gemeindeort,
+                "strasse": strasse,
+                "plz": plz,
+                "ort": ort,
+                "zugast": zugast,
+                "gast_name": gast_name,
+                "persons": persons,
+                "telefon": telefon,
+                "fax": fax,
+                "zeiten": zeiten,
+                "diakone": diakone,
+                "bank": {
+                    "inhaber": txt(bank, "inhaber"),
+                    "bank": txt(bank, "bank"),
+                    "iban": txt(bank, "iban"),
+                    "bic": txt(bank, "bic"),
+                }
+                if bank is not None
+                else None,
+                "links": {
+                    "website": website,
+                    "facebook": facebook,
+                    "instagram": instagram,
+                    "youtube": youtube,
+                },
+                "beschreibung": beschreibung,
+            }
+        )
     return out
 
 
 # ---------------------------------------------------------------------------
 # Geocoding (Nominatim, with cache)
 # ---------------------------------------------------------------------------
+
 
 def load_geo_cache():
     if GEO_CACHE.exists():
@@ -396,7 +443,9 @@ def geocode_gemeinde(g, cache):
             r = requests.get(
                 "https://nominatim.openstreetmap.org/search",
                 params={"q": query, "format": "json", "limit": 1, "countrycodes": "de"},
-                headers={"User-Agent": "kopten.de PDF generator (contact: info@kopten.de)"},
+                headers={
+                    "User-Agent": "kopten.de PDF generator (contact: info@kopten.de)"
+                },
                 timeout=15,
             )
         time.sleep(1.1)  # respect Nominatim's 1 req/sec policy
@@ -414,7 +463,12 @@ def geocode_gemeinde(g, cache):
         with requests_cache.disabled():
             r = requests.get(
                 "https://nominatim.openstreetmap.org/search",
-                params={"q": f"{g['plz']} {g['ort']}, Deutschland", "format": "json", "limit": 1, "countrycodes": "de"},
+                params={
+                    "q": f"{g['plz']} {g['ort']}, Deutschland",
+                    "format": "json",
+                    "limit": 1,
+                    "countrycodes": "de",
+                },
                 headers={"User-Agent": "kopten.de PDF generator"},
                 timeout=15,
             )
@@ -436,6 +490,7 @@ def geocode_gemeinde(g, cache):
 # Map rendering
 # ---------------------------------------------------------------------------
 
+
 def render_map(gemeinden_with_coords, out_path):
     """Render a static map of Germany with Coptic cross pins.
 
@@ -444,9 +499,13 @@ def render_map(gemeinden_with_coords, out_path):
     pin_diameters_px: per-gemeinde icon diameter in px (for the click rectangle).
     """
     # Image size in pixels
-    width_px  = 1200
+    width_px = 1200
     height_px = 1500
-    m = StaticMap(width_px, height_px, url_template="https://tile.openstreetmap.org/{z}/{x}/{y}.png")
+    m = StaticMap(
+        width_px,
+        height_px,
+        url_template="https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+    )
 
     pin_icons = _ensure_pin_icons()
     pin_sizes = {}  # gemeinde_id → icon size px
@@ -462,13 +521,17 @@ def render_map(gemeinden_with_coords, out_path):
             icon_path, size = pin_icons["sued"]
         # IconMarker offset = position of the icon's "tip" relative to its top-left.
         # Our icons are circular and centred — offset is (size/2, size/2).
-        m.add_marker(IconMarker((g["lon"], g["lat"]), str(icon_path), size // 2, size // 2))
+        m.add_marker(
+            IconMarker((g["lon"], g["lat"]), str(icon_path), size // 2, size // 2)
+        )
         pin_sizes[g["id"]] = size
 
     image = m.render()
     # Save as JPEG with subsampling enabled — gives ~75% smaller files than PNG
     # without visible quality loss for map tiles. Strip alpha first (JPEG has none).
-    image.convert("RGB").save(out_path, "JPEG", quality=85, optimize=True, progressive=True)
+    image.convert("RGB").save(
+        out_path, "JPEG", quality=85, optimize=True, progressive=True
+    )
 
     pin_positions = []
 
@@ -476,12 +539,23 @@ def render_map(gemeinden_with_coords, out_path):
     # After m.render() the StaticMap has x_center, y_center, zoom set.
     # Standard Web-Mercator tile projection at the chosen zoom:
     import math
+
     TILE = 256
     zoom = m.zoom
+
     def _lonlat_to_px(lon, lat):
-        x_tile = ((lon + 180.0) / 360.0) * (2 ** zoom)
-        y_tile = ((1.0 - math.log(math.tan(math.radians(lat)) + 1.0 / math.cos(math.radians(lat))) / math.pi) / 2.0) * (2 ** zoom)
-        px = (x_tile - m.x_center) * TILE + m.width  / 2
+        x_tile = ((lon + 180.0) / 360.0) * (2**zoom)
+        y_tile = (
+            (
+                1.0
+                - math.log(
+                    math.tan(math.radians(lat)) + 1.0 / math.cos(math.radians(lat))
+                )
+                / math.pi
+            )
+            / 2.0
+        ) * (2**zoom)
+        px = (x_tile - m.x_center) * TILE + m.width / 2
         py = (y_tile - m.y_center) * TILE + m.height / 2
         return px, py
 
@@ -499,6 +573,7 @@ def render_map(gemeinden_with_coords, out_path):
 # ---------------------------------------------------------------------------
 # PDF generation
 # ---------------------------------------------------------------------------
+
 
 class DiocesePDF(FPDF):
     def __init__(self, diocese_title):
@@ -527,13 +602,21 @@ def _safe(s):
     """Replace characters fpdf's latin-1 cannot encode."""
     if not s:
         return ""
-    return (s
-            .replace("–", "-").replace("—", "-")
-            .replace("„", '"').replace("“", '"').replace("”", '"')
-            .replace("‚", "'").replace("‘", "'").replace("’", "'")
-            .replace("…", "...")
-            .replace("•", "-").replace("·", "-")
-            .replace("→", "->").replace("←", "<-"))
+    return (
+        s.replace("–", "-")
+        .replace("—", "-")
+        .replace("„", '"')
+        .replace("“", '"')
+        .replace("”", '"')
+        .replace("‚", "'")
+        .replace("‘", "'")
+        .replace("’", "'")
+        .replace("…", "...")
+        .replace("•", "-")
+        .replace("·", "-")
+        .replace("→", "->")
+        .replace("←", "<-")
+    )
 
 
 def add_cover(pdf, diocese_title):
@@ -567,6 +650,7 @@ def add_cover(pdf, diocese_title):
 
     # Date
     from datetime import date
+
     pdf.set_y(PAGE_H - 30)
     pdf.set_font("helvetica", "", 9)
     pdf.cell(0, 5, _safe(f"Stand: {date.today().strftime('%d.%m.%Y')}"), align="C")
@@ -576,7 +660,7 @@ def add_toc(pdf, gemeinden, page_links):
     pdf.add_page()
     pdf.set_font("helvetica", "B", 18)
     pdf.set_text_color(*COL_PRIMARY)
-    pdf.cell(0, 12, _safe("Inhaltsverzeichnis"), ln=1)
+    pdf.cell(0, 12, _safe("Inhaltsverzeichnis"), new_x=XPos.LMARGIN, new_y=YPos.NEXT)
     pdf.ln(4)
 
     # Map entry
@@ -584,7 +668,14 @@ def add_toc(pdf, gemeinden, page_links):
     pdf.set_text_color(*COL_INK)
     map_link = pdf.add_link()
     pdf.set_link(map_link, page=3)
-    pdf.cell(0, 8, _safe("Karte der Gemeinden"), link=map_link, ln=1)
+    pdf.cell(
+        0,
+        8,
+        _safe("Karte der Gemeinden"),
+        link=map_link,
+        new_x=XPos.LMARGIN,
+        new_y=YPos.NEXT,
+    )
     pdf.ln(2)
 
     # Two columns of gemeinden
@@ -613,7 +704,13 @@ def add_map_page(pdf, diocese_title, map_image_path, pin_positions, page_links):
     pdf.add_page()
     pdf.set_font("helvetica", "B", 16)
     pdf.set_text_color(*COL_PRIMARY)
-    pdf.cell(0, 10, _safe(f"Gemeinden – {diocese_title}"), ln=1)
+    pdf.cell(
+        0,
+        10,
+        _safe(f"Gemeinden – {diocese_title}"),
+        new_x=XPos.LMARGIN,
+        new_y=YPos.NEXT,
+    )
     pdf.ln(2)
 
     # Render the image. Compute aspect ratio and fit centred.
@@ -635,7 +732,8 @@ def add_map_page(pdf, diocese_title, map_image_path, pin_positions, page_links):
     # Pin link rectangles — sized to match each actual pin icon
     for entry in pin_positions:
         if len(entry) == 3:
-            gid, x_pct, y_pct = entry; size_pct = 0.04
+            gid, x_pct, y_pct = entry
+            size_pct = 0.04
         else:
             gid, x_pct, y_pct, size_pct = entry
         if x_pct is None or y_pct is None:
@@ -652,15 +750,23 @@ def add_map_page(pdf, diocese_title, map_image_path, pin_positions, page_links):
     pdf.set_y(y + h + 2)
     pdf.set_font("helvetica", "", 7)
     pdf.set_text_color(*COL_MUTED)
-    attribution = "Kartendaten: (c) OpenStreetMap-Mitwirkende - openstreetmap.org/copyright"
+    attribution = (
+        "Kartendaten: (c) OpenStreetMap-Mitwirkende - openstreetmap.org/copyright"
+    )
     pdf.set_x(MARGIN)
-    pdf.cell(PAGE_W - 2 * MARGIN, 4, _safe(attribution), align="R", link="https://www.openstreetmap.org/copyright")
+    pdf.cell(
+        PAGE_W - 2 * MARGIN,
+        4,
+        _safe(attribution),
+        align="R",
+        link="https://www.openstreetmap.org/copyright",
+    )
 
 
 def _section_title(pdf, label):
     pdf.set_font("helvetica", "B", 10)
     pdf.set_text_color(*COL_ACCENT)
-    pdf.cell(0, 5, _safe(label.upper()), ln=1)
+    pdf.cell(0, 5, _safe(label.upper()), new_x=XPos.LMARGIN, new_y=YPos.NEXT)
     pdf.set_text_color(*COL_INK)
     pdf.set_font("helvetica", "", 10)
 
@@ -678,7 +784,7 @@ def add_gemeinde_page(pdf, g):
                 iw, ih = img.size
             # Leave top margin and side margins so the photo doesn't bleed into edges.
             max_w = PAGE_W - 2 * MARGIN
-            max_h = 70   # mm
+            max_h = 70  # mm
             aspect = iw / ih
             if max_w / max_h > aspect:
                 h = max_h
@@ -693,9 +799,9 @@ def add_gemeinde_page(pdf, g):
             print(f"  ! hero image failed for {g['id']}: {e}")
 
     # Top band with logo + title — pushed below hero photo if present
-    BAND_H        = 42   # mm – overall band height
-    BAND_PAD_TOP  = 8    # mm – padding above the eyebrow / logo
-    LOGO_SIZE     = 26   # mm – square logo
+    BAND_H = 42  # mm – overall band height
+    BAND_PAD_TOP = 8  # mm – padding above the eyebrow / logo
+    LOGO_SIZE = 26  # mm – square logo
     band_top = hero_h
     pdf.set_fill_color(*COL_BG)
     pdf.rect(0, band_top, PAGE_W, BAND_H, "F")
@@ -717,10 +823,13 @@ def add_gemeinde_page(pdf, g):
                     h_mm = LOGO_SIZE
                     w_mm = LOGO_SIZE * aspect
                 y_offset = (LOGO_SIZE - h_mm) / 2
-                pdf.image(str(optimized),
-                          x=MARGIN,
-                          y=band_top + BAND_PAD_TOP + y_offset,
-                          w=w_mm, h=h_mm)
+                pdf.image(
+                    str(optimized),
+                    x=MARGIN,
+                    y=band_top + BAND_PAD_TOP + y_offset,
+                    w=w_mm,
+                    h=h_mm,
+                )
                 title_x = MARGIN + w_mm + 6
             except Exception:
                 pass
@@ -730,7 +839,14 @@ def add_gemeinde_page(pdf, g):
     if g["gemeindeort"]:
         pdf.set_font("helvetica", "B", 9)
         pdf.set_text_color(*COL_ACCENT)
-        pdf.cell(PAGE_W - title_x - MARGIN, 4, _safe(g["gemeindeort"].upper()), ln=1, align="L")
+        pdf.cell(
+            PAGE_W - title_x - MARGIN,
+            4,
+            _safe(g["gemeindeort"].upper()),
+            new_x=XPos.LMARGIN,
+            new_y=YPos.NEXT,
+            align="L",
+        )
     pdf.set_x(title_x)
     pdf.set_font("helvetica", "B", 14)
     pdf.set_text_color(*COL_PRIMARY)
@@ -738,8 +854,15 @@ def add_gemeinde_page(pdf, g):
     pdf.set_x(title_x)
     pdf.set_font("helvetica", "", 9)
     pdf.set_text_color(*COL_MUTED)
-    type_line = f"{g['typ']}  ·  Diözese {g['bistum'].title().replace('Sueddeutschland','Süddeutschland')}"
-    pdf.cell(PAGE_W - title_x - MARGIN, 4.5, _safe(type_line), ln=1, align="L")
+    type_line = f"{g['typ']}  ·  Diözese {g['bistum'].title().replace('Sueddeutschland', 'Süddeutschland')}"
+    pdf.cell(
+        PAGE_W - title_x - MARGIN,
+        4.5,
+        _safe(type_line),
+        new_x=XPos.LMARGIN,
+        new_y=YPos.NEXT,
+        align="L",
+    )
 
     # Gold separator line directly below the band
     sep_y = band_top + BAND_H + 3
@@ -754,31 +877,43 @@ def add_gemeinde_page(pdf, g):
         # Label "Zu Gast bei:" in accent colour, host name in italic
         pdf.set_font("helvetica", "B", 9)
         pdf.set_text_color(*COL_ACCENT)
-        pdf.cell(0, 5, _safe("Zu Gast bei:"), ln=1)
+        pdf.cell(0, 5, _safe("Zu Gast bei:"), new_x=XPos.LMARGIN, new_y=YPos.NEXT)
         pdf.set_text_color(*COL_INK)
         if g.get("gast_name"):
             pdf.set_font("helvetica", "I", 10)
-            pdf.cell(0, 5, _safe(g["gast_name"]), ln=1)
+            pdf.cell(0, 5, _safe(g["gast_name"]), new_x=XPos.LMARGIN, new_y=YPos.NEXT)
         pdf.set_font("helvetica", "", 10)
     addr_lines = [g["strasse"], f"{g['plz']} {g['ort']}".strip()]
     for ln_text in addr_lines:
         if ln_text:
-            pdf.cell(0, 5, _safe(ln_text), ln=1)
+            pdf.cell(0, 5, _safe(ln_text), new_x=XPos.LMARGIN, new_y=YPos.NEXT)
     pdf.ln(3)
 
     # Phone / fax
     if g["telefon"] or g["fax"]:
         _section_title(pdf, "Kontakt")
         if g["telefon"]:
-            pdf.cell(0, 5, _safe(f"Tel.: {g['telefon']}"), ln=1)
+            pdf.cell(
+                0,
+                5,
+                _safe(f"Tel.: {g['telefon']}"),
+                new_x=XPos.LMARGIN,
+                new_y=YPos.NEXT,
+            )
         if g["fax"]:
-            pdf.cell(0, 5, _safe(f"Fax: {g['fax']}"), ln=1)
+            pdf.cell(
+                0, 5, _safe(f"Fax: {g['fax']}"), new_x=XPos.LMARGIN, new_y=YPos.NEXT
+            )
         pdf.ln(3)
 
     # Persons
-    real_persons = [p for p in g["persons"] if p["name"] and p["name"].lower() != "vater"]
+    real_persons = [
+        p for p in g["persons"] if p["name"] and p["name"].lower() != "vater"
+    ]
     if real_persons:
-        _section_title(pdf, real_persons[0]["role"] if len(real_persons) == 1 else "Geistliche")
+        _section_title(
+            pdf, real_persons[0]["role"] if len(real_persons) == 1 else "Geistliche"
+        )
         for p in real_persons:
             pdf.set_x(MARGIN)
             pdf.set_font("helvetica", "B", 10)
@@ -822,9 +957,20 @@ def add_gemeinde_page(pdf, g):
         _section_title(pdf, "Bankverbindung")
         pdf.set_font("helvetica", "", 9)
         b = g["bank"]
-        for label, key in (("Kontoinhaber", "inhaber"), ("Bank", "bank"), ("IBAN", "iban"), ("BIC", "bic")):
+        for label, key in (
+            ("Kontoinhaber", "inhaber"),
+            ("Bank", "bank"),
+            ("IBAN", "iban"),
+            ("BIC", "bic"),
+        ):
             if b.get(key):
-                pdf.cell(0, 5, _safe(f"{label}: {b[key]}"), ln=1)
+                pdf.cell(
+                    0,
+                    5,
+                    _safe(f"{label}: {b[key]}"),
+                    new_x=XPos.LMARGIN,
+                    new_y=YPos.NEXT,
+                )
         pdf.ln(2)
 
     # Links
@@ -835,13 +981,21 @@ def add_gemeinde_page(pdf, g):
         pdf.set_font("helvetica", "", 9)
         for k, v in link_items:
             pdf.set_text_color(*COL_PRIMARY)
-            pdf.cell(0, 5, _safe(f"{k.title()}: {v}"), link=v, ln=1)
+            pdf.cell(
+                0,
+                5,
+                _safe(f"{k.title()}: {v}"),
+                link=v,
+                new_x=XPos.LMARGIN,
+                new_y=YPos.NEXT,
+            )
         pdf.set_text_color(*COL_INK)
 
 
 # ---------------------------------------------------------------------------
 # Cover-image rendering: convert SVG sprite to a 600px PNG via Pillow draw
 # ---------------------------------------------------------------------------
+
 
 def _render_brand_png(out_path, size=600, variant="light"):
     """Draws the Coptic cross polygon to a square PNG via Pillow.
@@ -864,6 +1018,7 @@ def _render_brand_png(out_path, size=600, variant="light"):
     fg_colour = (201, 169, 97) if variant == "light" else (122, 31, 31)
 
     from PIL import Image, ImageDraw
+
     img = Image.new("RGB", (size, size), bg_colour)
     draw = ImageDraw.Draw(img)
     # Rounded rect: use rounded_rectangle (Pillow >= 8.2)
@@ -881,8 +1036,9 @@ def _render_brand_png(out_path, size=600, variant="light"):
 # Target location in the kopten-de-files (EU) bucket. Existing files are
 # overwritten (same key = replace). The space-and-period style filenames are
 # kept as-is so they sort alphabetically in DKB next to the rest.
-R2_BUCKET   = "kopten-de-files"
+R2_BUCKET = "kopten-de-files"
 R2_KEY_PREFIX = "kroeffelbach/DKB/06 Verschiedene Bücher/"
+
 
 def upload_pdfs_to_r2(paths):
     """Upload the given PDF paths to R2 under R2_KEY_PREFIX.
@@ -954,7 +1110,9 @@ def upload_pdfs_to_r2(paths):
             if r.ok:
                 print(f"\nManifest refresh triggered: {api_url}/rebuild-manifest")
             else:
-                print(f"\nManifest refresh failed: HTTP {r.status_code} — {r.text[:200]}")
+                print(
+                    f"\nManifest refresh failed: HTTP {r.status_code} — {r.text[:200]}"
+                )
         except Exception as exc:
             print(f"\nManifest refresh error: {exc}")
     else:
@@ -964,6 +1122,7 @@ def upload_pdfs_to_r2(paths):
 # ---------------------------------------------------------------------------
 # Orchestrator
 # ---------------------------------------------------------------------------
+
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
@@ -995,18 +1154,20 @@ def main():
     for bistum, items in by_bistum.items():
         if not bistum:
             continue
-        items.sort(key=lambda g: (
-            0 if any(p["role"] == "Bischof" for p in g["persons"]) else 1,
-            (g["gemeindeort"] or g["ort"] or "").lower(),
-        ))
-        title = f"Diözese {bistum.title().replace('Sueddeutschland','Süddeutschland')}"
+        items.sort(
+            key=lambda g: (
+                0 if any(p["role"] == "Bischof" for p in g["persons"]) else 1,
+                (g["gemeindeort"] or g["ort"] or "").lower(),
+            )
+        )
+        title = f"Diözese {bistum.title().replace('Sueddeutschland', 'Süddeutschland')}"
         filename_map = {
             "norddeutschland": "01. B. Koptisch-Orthodoxe-Gemeinden-Dioezese-Nord-Deutschland.pdf",
-            "süddeutschland":  "01. C. Koptisch-Orthodoxe-Gemeinden-Dioezese-Sued-Deutschland.pdf",
+            "süddeutschland": "01. C. Koptisch-Orthodoxe-Gemeinden-Dioezese-Sued-Deutschland.pdf",
         }
         filename = filename_map.get(
             bistum,
-            f"diozese-{bistum.replace('ü','ue').replace('ö','oe').replace('ä','ae')}.pdf",
+            f"diozese-{bistum.replace('ü', 'ue').replace('ö', 'oe').replace('ä', 'ae')}.pdf",
         )
         out_path = OUT_DIR / filename
         build_pdf(items, title, out_path, map_slug=bistum, toc_groups=None)
@@ -1073,14 +1234,24 @@ def build_pdf(items, title, out_path, map_slug, toc_groups=None):
     pdf.add_page()
     pdf.set_font("helvetica", "B", 18)
     pdf.set_text_color(*COL_PRIMARY)
-    pdf.cell(0, 12, _safe("Inhaltsverzeichnis"), ln=1)
+    pdf.cell(0, 12, _safe("Inhaltsverzeichnis"), new_x=XPos.LMARGIN, new_y=YPos.NEXT)
     pdf.ln(2)
     pdf.set_font("helvetica", "", 11)
     pdf.set_text_color(*COL_INK)
     map_link = pdf.add_link()
     pdf.set_link(map_link, page=3 if with_coords else 4)
-    pdf.cell(0, 7, _safe("Karte der Gemeinden ...... Seite 3" if with_coords else "(keine Karte verfügbar)"),
-             link=map_link if with_coords else 0, ln=1)
+    pdf.cell(
+        0,
+        7,
+        _safe(
+            "Karte der Gemeinden ...... Seite 3"
+            if with_coords
+            else "(keine Karte verfügbar)"
+        ),
+        link=map_link if with_coords else 0,
+        new_x=XPos.LMARGIN,
+        new_y=YPos.NEXT,
+    )
     pdf.ln(3)
 
     gemeinde_links = {g["id"]: pdf.add_link() for g in items}
@@ -1093,7 +1264,7 @@ def build_pdf(items, title, out_path, map_slug, toc_groups=None):
                 pdf.add_page()
             pdf.set_font("helvetica", "B", 12)
             pdf.set_text_color(*COL_PRIMARY)
-            pdf.cell(0, 7, _safe(group_title), ln=1)
+            pdf.cell(0, 7, _safe(group_title), new_x=XPos.LMARGIN, new_y=YPos.NEXT)
             pdf.ln(1)
             pdf.set_font("helvetica", "", 10)
             pdf.set_text_color(*COL_INK)
