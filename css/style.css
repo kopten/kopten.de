@@ -966,6 +966,155 @@ p:last-child {
   background: var(--color-cream);
 }
 
+/* Direct parish picker — combobox above the PLZ search */
+.finder__direct {
+  position: relative;
+  padding: 1.2rem 1.6rem;
+  background: var(--color-paper);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.finder__direct-label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--color-ink-soft);
+  margin-bottom: 0.55rem;
+  letter-spacing: 0.01em;
+}
+
+.finder__direct-field {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+.finder__direct-field:focus-within {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(122, 31, 31, 0.12);
+}
+
+.finder__direct-icon {
+  width: 18px;
+  height: 18px;
+  margin: 0 0.65rem 0 0.9rem;
+  color: var(--color-primary);
+  flex-shrink: 0;
+}
+
+.finder__direct-input {
+  flex: 1;
+  border: 0;
+  background: transparent;
+  padding: 0.75rem 0.5rem;
+  font-family: inherit;
+  font-size: 1rem;
+  color: var(--color-ink);
+  outline: none;
+  min-width: 0;
+}
+
+.finder__direct-clear {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-bg-alt);
+  color: var(--color-ink-soft);
+  border: 0;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  margin-right: 0.55rem;
+  cursor: pointer;
+  transition: background var(--transition), color var(--transition);
+}
+
+.finder__direct-clear:hover {
+  background: var(--color-border);
+  color: var(--color-primary);
+}
+
+.finder__direct-list {
+  position: absolute;
+  left: 1.6rem;
+  right: 1.6rem;
+  top: calc(100% - 8px);
+  z-index: 30;
+  margin: 0;
+  padding: 0.35rem;
+  list-style: none;
+  background: var(--color-paper);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  box-shadow: 0 24px 50px -25px var(--color-shadow), 0 6px 16px -10px var(--color-shadow);
+  max-height: 340px;
+  overflow-y: auto;
+}
+
+.finder__direct-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  padding: 0.6rem 0.75rem;
+  border-radius: calc(var(--radius) - 2px);
+  color: var(--color-ink);
+  text-decoration: none;
+  cursor: pointer;
+  transition: background var(--transition), color var(--transition);
+}
+
+.finder__direct-item:hover,
+.finder__direct-item.is-highlighted {
+  background: var(--color-bg-alt);
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.finder__direct-item__name {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.finder__direct-item__name mark {
+  background: rgba(201, 169, 97, 0.35);
+  color: inherit;
+  padding: 0 0.05em;
+  border-radius: 2px;
+}
+
+.finder__direct-item__sub {
+  font-size: 0.82rem;
+  color: var(--color-ink-soft);
+}
+
+.finder__direct-item.is-highlighted .finder__direct-item__sub {
+  color: var(--color-primary);
+  opacity: 0.85;
+}
+
+.finder__direct-empty {
+  padding: 0.7rem 0.85rem;
+  color: var(--color-muted);
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+@media (max-width: 720px) {
+  .finder__direct,
+  .finder__direct-list {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .finder__direct-list {
+    left: 1rem;
+    right: 1rem;
+  }
+}
+
 .finder__input {
   flex: 1 1 240px;
   padding: 0.75rem 1rem;

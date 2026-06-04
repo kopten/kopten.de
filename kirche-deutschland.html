@@ -16,7 +16,7 @@
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/style.css?v=80fe0f89" />
+    <link rel="stylesheet" href="css/style.css?v=955a34d1" />
     <link
       rel="icon"
       type="image/svg+xml"
@@ -109,6 +109,31 @@
           </div>
 
           <div class="finder">
+            <div class="finder__direct">
+              <label for="finder-direct-input" class="finder__direct-label">
+                Du kennst die Gemeinde schon? Direkt zur Detailseite springen.
+              </label>
+              <div class="finder__direct-field">
+                <svg class="finder__direct-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <input
+                  id="finder-direct-input"
+                  type="text"
+                  class="finder__direct-input"
+                  placeholder="Gemeinde-Namen eingeben (z. B. „Aachen“, „Kröffelbach“)"
+                  autocomplete="off"
+                  spellcheck="false"
+                  role="combobox"
+                  aria-autocomplete="list"
+                  aria-expanded="false"
+                  aria-controls="finder-direct-list"
+                  aria-label="Bekannte Gemeinde auswählen"
+                />
+                <button type="button" class="finder__direct-clear" id="finder-direct-clear" aria-label="Eingabe löschen" hidden>
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                </button>
+              </div>
+              <ul id="finder-direct-list" class="finder__direct-list" role="listbox" hidden></ul>
+            </div>
             <div class="finder__controls">
               <input
                 id="finder-search"
@@ -322,7 +347,7 @@
     </footer>
 
     <script src="js/main.js?v=a45dadc1"></script>
-    <script src="js/gemeinden.js?v=2dc4a11a"></script>
+    <script src="js/gemeinden.js?v=5bf5cadc"></script>
     <script
       async
       defer

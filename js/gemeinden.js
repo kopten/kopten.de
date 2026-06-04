@@ -551,6 +551,8 @@ async function initGemeindenMap() {
   if (btnLocate) btnLocate.addEventListener("click", handleLocate);
   if (btnReset) btnReset.addEventListener("click", handleReset);
 
+  initDirectPicker();
+
   /* Auto-search from ?q=… (e.g. from the homepage finder widget) */
   const params = new URLSearchParams(window.location.search);
   const q = params.get("q");
@@ -575,6 +577,179 @@ async function initGemeindenMap() {
   geocodeAll(gemeindenData);
 }
 
+/* --------------------- Direct parish picker (combobox) ---------------------- */
+let directPickerWired = false;
+
+function escapeRegex(s) {
+  return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+function highlightMatch(text, query) {
+  if (!query) return text;
+  const re = new RegExp(`(${escapeRegex(query)})`, "ig");
+  return text.replace(re, "<mark>$1</mark>");
+}
+
+/* Loose normaliser so „Köln" matches "koln" and vice versa */
+function norm(s) {
+  return (s || "")
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[̀-ͯ]/g, "")
+    .replace(/ß/g, "ss");
+}
+
+function pickerLabel(g) {
+  /* Prefer gemeindeort (place name in church terms), fall back to <ort>, then <name> */
+  return g.gemeindeort || g.ort || g.name || "";
+}
+
+function pickerSub(g) {
+  const bits = [];
+  if (g.plz) bits.push(g.plz);
+  if (g.ort && g.ort !== pickerLabel(g)) bits.push(g.ort);
+  if (g.typ === "kloster") bits.unshift("Kloster");
+  return bits.join(" · ");
+}
+
+function buildPickerEntries(list) {
+  return list
+    .map((g) => ({
+      raw: g,
+      slug: detailSlug(g.url),
+      label: pickerLabel(g),
+      sub: pickerSub(g),
+    }))
+    .filter((e) => e.slug && e.label)
+    .sort((a, b) => a.label.localeCompare(b.label, LANG === "en" ? "en" : "de"));
+}
+
+function initDirectPicker() {
+  if (directPickerWired) return;
+  const input = document.getElementById("finder-direct-input");
+  const listEl = document.getElementById("finder-direct-list");
+  const clearBtn = document.getElementById("finder-direct-clear");
+  const field = input ? input.closest(".finder__direct-field") : null;
+  if (!input || !listEl) return;
+
+  directPickerWired = true;
+
+  const entries = buildPickerEntries(gemeindenData);
+  let highlightedIdx = -1;
+  let currentMatches = [];
+
+  const detailHref = (slug) => `${T.gemeindenPath}/${slug}/`;
+
+  function close() {
+    listEl.hidden = true;
+    input.setAttribute("aria-expanded", "false");
+    highlightedIdx = -1;
+  }
+
+  function render(matches, query) {
+    listEl.innerHTML = "";
+    if (!matches.length) {
+      const empty = document.createElement("li");
+      empty.className = "finder__direct-empty";
+      empty.textContent = LANG === "en" ? "No matching parish." : "Keine Gemeinde gefunden.";
+      listEl.appendChild(empty);
+      listEl.hidden = false;
+      input.setAttribute("aria-expanded", "true");
+      return;
+    }
+    matches.forEach((m, i) => {
+      const li = document.createElement("li");
+      li.className = "finder__direct-item";
+      li.setAttribute("role", "option");
+      li.dataset.idx = i;
+      li.dataset.href = detailHref(m.slug);
+      li.innerHTML = `
+        <span class="finder__direct-item__name">${highlightMatch(m.label, query)}</span>
+        ${m.sub ? `<span class="finder__direct-item__sub">${m.sub}</span>` : ""}
+      `;
+      li.addEventListener("mousedown", (e) => {
+        /* mousedown beats blur → keeps the click usable */
+        e.preventDefault();
+        window.location.href = li.dataset.href;
+      });
+      li.addEventListener("mouseenter", () => setHighlight(i));
+      listEl.appendChild(li);
+    });
+    listEl.hidden = false;
+    input.setAttribute("aria-expanded", "true");
+    setHighlight(matches.length ? 0 : -1);
+  }
+
+  function setHighlight(i) {
+    highlightedIdx = i;
+    Array.from(listEl.children).forEach((el, idx) => {
+      el.classList.toggle("is-highlighted", idx === i);
+      if (idx === i && el.scrollIntoView) {
+        el.scrollIntoView({ block: "nearest" });
+      }
+    });
+  }
+
+  function update() {
+    const raw = input.value.trim();
+    if (clearBtn) clearBtn.hidden = raw.length === 0;
+    const q = norm(raw);
+    if (!q) {
+      currentMatches = entries.slice(0, 30);
+    } else {
+      currentMatches = entries
+        .filter((e) => norm(e.label).includes(q) || norm(e.sub).includes(q))
+        .slice(0, 30);
+    }
+    render(currentMatches, raw);
+  }
+
+  input.addEventListener("focus", update);
+  input.addEventListener("input", update);
+  input.addEventListener("keydown", (e) => {
+    if (listEl.hidden && (e.key === "ArrowDown" || e.key === "ArrowUp")) {
+      update();
+      return;
+    }
+    if (e.key === "ArrowDown") {
+      e.preventDefault();
+      setHighlight(Math.min(highlightedIdx + 1, currentMatches.length - 1));
+    } else if (e.key === "ArrowUp") {
+      e.preventDefault();
+      setHighlight(Math.max(highlightedIdx - 1, 0));
+    } else if (e.key === "Enter") {
+      if (highlightedIdx >= 0 && currentMatches[highlightedIdx]) {
+        e.preventDefault();
+        window.location.href = detailHref(currentMatches[highlightedIdx].slug);
+      }
+    } else if (e.key === "Escape") {
+      close();
+      input.blur();
+    }
+  });
+
+  input.addEventListener("blur", () => {
+    /* Delay so mousedown on an item can still fire */
+    setTimeout(close, 120);
+  });
+
+  if (clearBtn) {
+    clearBtn.addEventListener("click", () => {
+      input.value = "";
+      clearBtn.hidden = true;
+      input.focus();
+      update();
+    });
+  }
+
+  /* Close when clicking outside the field */
+  document.addEventListener("click", (e) => {
+    if (!field) return;
+    const root = field.closest(".finder__direct");
+    if (root && !root.contains(e.target)) close();
+  });
+}
+
 /* Expose for the Maps API callback */
 window.initGemeindenMap = initGemeindenMap;
 
@@ -591,6 +766,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     applyCachedCoords(gemeindenData, cache);
   }
   renderResults(gemeindenData);
+  initDirectPicker();
 
   /* Show a hint that the map could not be loaded */
   const mapEl = document.getElementById("finder-map");
