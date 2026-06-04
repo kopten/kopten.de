@@ -208,6 +208,8 @@ p:last-child {
   display: flex;
   align-items: center;
   gap: 0.6rem;
+  flex-shrink: 0;
+  white-space: nowrap;
   font-family: var(--font-serif);
   font-size: 1.35rem;
   font-weight: 600;
@@ -244,11 +246,12 @@ p:last-child {
 
 .nav__menu a {
   display: inline-block;
-  padding: 0.55rem 0.9rem;
-  font-size: 0.95rem;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.92rem;
   font-weight: 500;
   color: var(--color-ink);
   border-radius: var(--radius);
+  white-space: nowrap;
   transition: background var(--transition), color var(--transition);
 }
 
@@ -257,6 +260,32 @@ p:last-child {
   background: var(--color-bg-alt);
   color: var(--color-primary);
   text-decoration: none;
+}
+
+.nav__menu a.nav__cta {
+  background: var(--color-primary);
+  color: var(--color-cream);
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  box-shadow: 0 4px 12px -6px var(--color-shadow);
+}
+
+.nav__menu a.nav__cta::before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  background-color: currentColor;
+  -webkit-mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'><path d='M20 10c0 7-8 13-8 13s-8-6-8-13a8 8 0 0 1 16 0z'/><circle cx='12' cy='10' r='3'/></svg>") center / contain no-repeat;
+  mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'><path d='M20 10c0 7-8 13-8 13s-8-6-8-13a8 8 0 0 1 16 0z'/><circle cx='12' cy='10' r='3'/></svg>") center / contain no-repeat;
+  flex-shrink: 0;
+}
+
+.nav__menu a.nav__cta:hover,
+.nav__menu a.nav__cta.is-active {
+  background: var(--color-primary-dark);
+  color: var(--color-cream);
 }
 
 .nav__lang {
@@ -1587,7 +1616,7 @@ p:last-child {
   }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 1024px) {
   .nav__toggle {
     display: block;
   }
@@ -1634,7 +1663,9 @@ p:last-child {
     border-bottom: 1px solid var(--color-border);
     justify-content: flex-start;
   }
+}
 
+@media (max-width: 720px) {
   .form-row {
     grid-template-columns: 1fr;
   }

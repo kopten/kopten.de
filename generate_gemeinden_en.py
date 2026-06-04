@@ -372,6 +372,7 @@ def render_page(g):
           <li><a href="../../church.html" class="is-active">Church in Germany</a></li>
           <li><a href="../../youth.html">Youth</a></li>
           <li><a href="../../contact.html">Contact</a></li>
+          <li><a href="../../church.html#finder" class="nav__cta">Parish Finder</a></li>
           <li class="nav__lang"><a class="is-active" hreflang="en" aria-label="English">EN</a><span class="nav__lang__sep">|</span><a href="../../../gemeinden/{slug}/" hreflang="de" aria-label="German">DE</a></li>
         </ul>
       </nav>

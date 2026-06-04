@@ -414,6 +414,7 @@ def render_page(g):
           <li><a href="../../kirche-deutschland.html" class="is-active">Kirche in Deutschland</a></li>
           <li><a href="../../jugend.html">Jugend</a></li>
           <li><a href="../../kontakt.html">Kontakt</a></li>
+          <li><a href="../../kirche-deutschland.html#finder" class="nav__cta">Gemeinde-Finder</a></li>
         </ul>
       </nav>
     </header>

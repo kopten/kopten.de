@@ -17,12 +17,13 @@ NAV_SVG    = '<svg viewBox="0 0 32 32" width="100%" height="100%" xmlns="http://
 FOOTER_SVG = '<svg viewBox="0 0 32 32" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><use href="../icons/brand.svg#mark-dark"/></svg>'
 
 NAV_LINKS = [
-    ("index.html",    "Home"),
-    ("about.html",    "The Copts"),
-    ("calendar.html", "Calendar"),
-    ("church.html",   "Church in Germany"),
-    ("youth.html",    "Youth"),
-    ("contact.html",  "Contact"),
+    ("index.html",         "Home",           ""),
+    ("about.html",         "The Copts",      ""),
+    ("calendar.html",      "Calendar",       ""),
+    ("church.html",        "Church in Germany", ""),
+    ("youth.html",         "Youth",          ""),
+    ("contact.html",       "Contact",        ""),
+    ("church.html#finder", "Parish Finder",  "nav__cta"),
 ]
 
 def nav(active, depth=1):
@@ -31,9 +32,16 @@ def nav(active, depth=1):
     de_link = "../" * depth + {"index.html":"index.html","about.html":"kopten-und-kirche.html","calendar.html":"kalender.html",
                                 "church.html":"kirche-deutschland.html","youth.html":"jugend.html","contact.html":"kontakt.html",
                                 "imprint.html":"impressum.html","privacy.html":"datenschutz.html"}.get(active, "index.html")
+    def _cls(href, extra):
+        parts = []
+        if href == active and not extra:
+            parts.append("is-active")
+        if extra:
+            parts.append(extra)
+        return f' class="{" ".join(parts)}"' if parts else ""
     items = "\n".join(
-        f'          <li><a href="{href}"{" class=\"is-active\"" if href == active else ""}>{label}</a></li>'
-        for href, label in NAV_LINKS
+        f'          <li><a href="{href}"{_cls(href, extra)}>{label}</a></li>'
+        for href, label, extra in NAV_LINKS
     )
     return f'''    <header class="site-header">
       <nav class="nav" aria-label="Main navigation">
