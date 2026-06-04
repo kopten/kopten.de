@@ -79,6 +79,8 @@ def render_page(g):
     strasse = txt(addr, "strasse")
     plz     = txt(addr, "plz")
     ort     = txt(addr, "ort")
+    zugast  = txt(addr, "zugast").lower() == "true"
+    gast_name = txt(addr, "name") if zugast else ""
     full_addr = ", ".join(filter(None, [strasse, f"{plz} {ort}".strip()]))
     maps_query = f"{strasse}, {plz} {ort}, Deutschland".strip(", ")
 
@@ -179,7 +181,7 @@ def render_page(g):
           </div>
           <div>
             <h3>Adresse</h3>
-            <p>{esc(strasse)}<br>{esc(plz)} {esc(ort)}</p>
+            <p>{f'<span class="info-card__guest-label">Zu Gast bei:</span><br><span class="info-card__guest-name">{esc(gast_name)}</span><br>' if zugast and gast_name else ('<span class="info-card__guest-label">Zu Gast bei:</span><br>' if zugast else '')}{esc(strasse)}<br>{esc(plz)} {esc(ort)}</p>
             <a href="{esc(gmaps)}" target="_blank" rel="noopener" class="info-card__link">In Google Maps öffnen →</a>
             <div class="info-card__route">
               <span class="info-card__route-label">Route:</span>

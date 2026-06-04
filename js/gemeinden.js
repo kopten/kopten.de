@@ -39,6 +39,7 @@ const I18N = {
     geolocationDenied:
       "Standort konnte nicht ermittelt werden. Bitte erlauben Sie den Zugriff auf Ihren Standort.",
     yourLocation: "Ihr Standort",
+    guestAt: "Zu Gast bei:",
     gemeindenPath: "gemeinden",
     xmlPath: "data/kopten_gemeinden.xml",
     coordsPath: "data/gemeinden-coords.json",
@@ -61,6 +62,7 @@ const I18N = {
     geolocationDenied:
       "Could not determine your location. Please allow access to your location.",
     yourLocation: "Your location",
+    guestAt: "Hosted at:",
     gemeindenPath: "communities",
     xmlPath: "../data/kopten_gemeinden.xml",
     coordsPath: "../data/gemeinden-coords.json",
@@ -97,8 +99,13 @@ async function loadGemeinden() {
       const addr = g.getElementsByTagName("adresse")[0];
       const a = (tag) => {
         if (!addr) return "";
-        const el = addr.getElementsByTagName(tag)[0];
-        return el ? el.textContent.trim() : "";
+        /* directly nested only — avoid catching <name> from other branches */
+        for (const c of addr.children) {
+          if (c.tagName.toLowerCase() === tag.toLowerCase()) {
+            return c.textContent.trim();
+          }
+        }
+        return "";
       };
       const priesterNode = g.getElementsByTagName("priester")[0];
       const priesterName = priesterNode
@@ -125,6 +132,8 @@ async function loadGemeinden() {
         strasse: a("strasse"),
         plz: a("plz"),
         ort: a("ort"),
+        zugast: a("zugast").toLowerCase() === "true",
+        gastName: a("name"),
         priester: priesterName,
         zeiten: zeiten,
         website: lk("website"),
@@ -262,7 +271,11 @@ function renderResults(items, userPos) {
     <div class="gemeinde-item" data-id="${escapeHtml(i.id)}">
       ${i.gemeindeort ? `<p class="gemeinde-item__ort">${escapeHtml(i.gemeindeort)}</p>` : ""}
       <h4 class="gemeinde-item__name">${escapeHtml(i.name)}</h4>
-      <p class="gemeinde-item__address">${escapeHtml([i.strasse, `${i.plz} ${i.ort}`].filter(Boolean).join(", "))}</p>
+      <p class="gemeinde-item__address">${
+        i.zugast
+          ? `<span class="gemeinde-item__guest-label">${T.guestAt}</span>${i.gastName ? ` <span class="gemeinde-item__guest-name">${escapeHtml(i.gastName)}</span>,` : ""} `
+          : ""
+      }${escapeHtml([i.strasse, `${i.plz} ${i.ort}`].filter(Boolean).join(", "))}</p>
       <span class="gemeinde-item__bistum ${bistumClass(i.bistum)}">${escapeHtml(i.typ)} · ${escapeHtml(i.bistum || "")}</span>
       ${i._dist != null ? `<span class="gemeinde-item__distance">${i._dist.toFixed(1)} km</span>` : ""}
       ${detailLink}
@@ -386,7 +399,11 @@ function renderMarkers(items) {
       <div class="gm-info">
         ${i.gemeindeort ? `<p class="gm-info__ort">${escapeHtml(i.gemeindeort)}</p>` : ""}
         <h4>${escapeHtml(i.name)}</h4>
-        <p>${escapeHtml([i.strasse, `${i.plz} ${i.ort}`].filter(Boolean).join(", "))}</p>
+        <p>${
+          i.zugast
+            ? `<span class="gm-info__guest-label">${T.guestAt}</span><br>${i.gastName ? `<span class="gm-info__guest-name">${escapeHtml(i.gastName)}</span><br>` : ""}`
+            : ""
+        }${escapeHtml([i.strasse, `${i.plz} ${i.ort}`].filter(Boolean).join(", "))}</p>
         <div class="gm-info__route">
           <span class="gm-info__route-label">${T.iwRoute}:</span>
           <a class="gm-info__route-btn" href="${routeHref('driving')}" target="_blank" rel="noopener" title="${T.iwRouteCar}" aria-label="${T.iwRouteCar}">

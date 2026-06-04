@@ -126,7 +126,9 @@
     <gemeindeort>Aachen</gemeindeort>
     <url>https://kopten.de/gemeinden/aachen/</url>
     <adresse>
-      <strasse>Zu Gast bei der katholischen Kirchengemeinde St. Bonifatius, Mataréstraße 12</strasse>
+      <zugast>true</zugast>
+      <name>Katholische Kirchengemeinde St. Bonifatius</name>
+      <strasse>Mataréstraße 12</strasse>
       <plz>52078</plz>
       <ort>Aachen</ort>
     </adresse>
@@ -198,7 +200,9 @@
     <gemeindeort>Altenstadt</gemeindeort>
     <url>https://kopten.de/gemeinden/altenstadt/</url>
     <adresse>
-      <strasse>Zu Gast bei der evangelischen Kirche Waldsiedlung: Finkenweg 1</strasse>
+      <zugast>true</zugast>
+      <name>Ev. Martin-Luther-Gemeinde Waldsiedlung</name>
+      <strasse>Finkenweg 1</strasse>
       <plz>63674</plz>
       <ort>Altenstadt</ort>
     </adresse>
@@ -553,7 +557,9 @@
     <gemeindeort>Kaiserslautern</gemeindeort>
     <url>https://kopten.de/gemeinden/kaiserslautern/</url>
     <adresse>
-      <strasse>Zu Gast bei der Gemeinde St. Martin Kirche, Spittelstr. 4</strasse>
+      <zugast>true</zugast>
+      <name>St. Martin Kirche</name>
+      <strasse>Spittelstr. 4</strasse>
       <plz>67655</plz>
       <ort>Kaiserslautern</ort>
     </adresse>
@@ -570,7 +576,9 @@
     <gemeindeort>Kaufbeuren</gemeindeort>
     <url>https://kopten.de/gemeinden/kaufbeuren/</url>
     <adresse>
-      <strasse>Zu Gast bei der Gemeinde St. Dominikus, Augsburger Str. 8</strasse>
+      <zugast>true</zugast>
+      <name>Sankt Dominikus Kirche</name>
+      <strasse>Augsburger Str. 8</strasse>
       <plz>87600</plz>
       <ort>Kaufbeuren</ort>
     </adresse>
@@ -597,9 +605,11 @@
     <gemeindeort>Kirchberg</gemeindeort>
     <url>https://kopten.de/gemeinden/kirchberg/</url>
     <adresse>
-      <strasse>Zu Gast bei der katholischen Gemeinde St. Nikolaus, Dumnissusstraße 10</strasse>
+      <zugast>true</zugast>
+      <name>Kapelle St. Nikolaus Kirchberg</name>
+      <strasse>Dumnissusstraße 10</strasse>
       <plz>55481</plz>
-      <ort>Kirchberg (Hunsrück)</ort>
+      <ort>Kirchberg Denzen (Hunsrück)</ort>
     </adresse>
     <priester>
       <person>
@@ -658,7 +668,9 @@
     <gemeindeort>Landshut</gemeindeort>
     <url>https://kopten.de/gemeinden/landshut/</url>
     <adresse>
-      <strasse>Zu Gast bei Evang.-Luth. Auferstehungskirche Landshut, Fliederstrasse 17</strasse>
+      <zugast>true</zugast>
+      <name>Evang.-Luth. Auferstehungskirche Landshut</name>
+      <strasse>Fliederstrasse 17</strasse>
       <plz>84032</plz>
       <ort>Landshut</ort>
     </adresse>
@@ -755,7 +767,9 @@
     <gemeindeort>Mering</gemeindeort>
     <url>https://kopten.de/gemeinden/mering/</url>
     <adresse>
-      <strasse>Zu Gast bei der St. Johannes evangelisch-lutherische Kirche, Martin-Luther Str. 1</strasse>
+      <zugast>true</zugast>
+      <name>St. Johannes Evangelisch-Lutherische Kirche</name>
+      <strasse>Martin-Luther Str. 1</strasse>
       <plz>86415</plz>
       <ort>Mering</ort>
     </adresse>
@@ -864,7 +878,9 @@
     <gemeindeort>Oberkochen</gemeindeort>
     <url>https://kopten.de/gemeinden/oberkochen/</url>
     <adresse>
-      <strasse>Zu Gast bei der ev. Versöhnungskirche, Bürgermeister-Bosch-Str. 11</strasse>
+      <zugast>true</zugast>
+      <name>Ev. Versöhnungskirche</name>
+      <strasse>Bürgermeister-Bosch-Str. 11</strasse>
       <plz>73447</plz>
       <ort>Oberkochen</ort>
     </adresse>
@@ -887,7 +903,9 @@
     <gemeindeort>Regensburg</gemeindeort>
     <url>https://kopten.de/gemeinden/regensburg/</url>
     <adresse>
-      <strasse>Zu Gast bei Kath. Kirche St. Wolfgang, Bischof-Wittmann-Straße 24A</strasse>
+      <zugast>true</zugast>
+      <name>Kath. Kirche St. Wolfgang</name>
+      <strasse>Bischof-Wittmann-Straße 24A</strasse>
       <plz>93051</plz>
       <ort>Regensburg</ort>
     </adresse>
@@ -974,7 +992,9 @@
     <gemeindeort>Trier</gemeindeort>
     <url>https://kopten.de/gemeinden/trier/</url>
     <adresse>
-      <strasse>Zu Gast bei dem katholischen Trierer Dom St. Petrus, Liebfrauenstraße 12</strasse>
+      <zugast>true</zugast>
+      <name>Katholischer Trierer Dom St. Petrus</name>
+      <strasse>Liebfrauenstraße 12</strasse>
       <plz>54290</plz>
       <ort>Trier</ort>
     </adresse>
@@ -989,11 +1009,11 @@
     </gottesdienstzeiten>
   </gemeinde>
   <gemeinde id="tuttlingen" typ="Gemeinde" bistum="Süddeutschland">
-    <name>St. Mina koptisch-orthodoxe Kirche</name>
+    <name>St. Mina und Anba Abraam koptisch-orthodoxe Kirche</name>
     <gemeindeort>Tuttlingen</gemeindeort>
     <url>https://kopten.de/gemeinden/tuttlingen/</url>
     <adresse>
-      <strasse>Zu Gast bei der Kirche in der Koloniestr. 21</strasse>
+      <strasse>Koloniestr. 21</strasse>
       <plz>78532</plz>
       <ort>Tuttlingen</ort>
     </adresse>
@@ -1016,7 +1036,9 @@
     <gemeindeort>Ulm</gemeindeort>
     <url>https://kopten.de/gemeinden/ulm/</url>
     <adresse>
-      <strasse>Zu Gast bei der St. Michael Kirche zu den Wengen, Wengengasse 8</strasse>
+      <zugast>true</zugast>
+      <name>St. Michael Kirche zu den Wengen</name>
+      <strasse>Wengengasse 8</strasse>
       <plz>89073</plz>
       <ort>Ulm</ort>
     </adresse>
@@ -1148,7 +1170,9 @@
     <gemeindeort>Worms</gemeindeort>
     <url>https://kopten.de/gemeinden/worms/</url>
     <adresse>
-      <strasse>Zu Gast bei der St. Amandus Kirche, Bebelstr. 71a</strasse>
+      <zugast>true</zugast>
+      <name>St. Amandus Kirche</name>
+      <strasse>Bebelstr. 71a</strasse>
       <plz>67549</plz>
       <ort>Worms</ort>
     </adresse>
@@ -1228,7 +1252,9 @@
     <gemeindeort>Bielefeld</gemeindeort>
     <url>https://kopten.de/gemeinden/bielefeld/</url>
     <adresse>
-      <strasse>Zu Gast bei der St. Lukas Kirche, Siekstr. 10</strasse>
+      <zugast>true</zugast>
+      <name>St. Lukas Kirche</name>
+      <strasse>Siekstr. 10</strasse>
       <plz>33719</plz>
       <ort>Bielefeld</ort>
     </adresse>
@@ -1338,7 +1364,9 @@
     <gemeindeort>Dresden</gemeindeort>
     <url>https://kopten.de/gemeinden/dresden/</url>
     <adresse>
-      <strasse>Zu Gast bei der kath. Gemeinde St. Petrus Kirche, Dohnaerstr. 53</strasse>
+      <zugast>true</zugast>
+      <name>Kath. Gemeinde St. Petrus Kirche</name>
+      <strasse>Dohnaerstr. 53</strasse>
       <plz>01219</plz>
       <ort>Dresden</ort>
     </adresse>
@@ -1372,7 +1400,9 @@
     <gemeindeort>Duisburg</gemeindeort>
     <url>https://kopten.de/gemeinden/duisburg/</url>
     <adresse>
-      <strasse>Zu Gast bei der kath. Gemeinde St. Bonifatius Kirche, Wanheimerstr. 161 b</strasse>
+      <zugast>true</zugast>
+      <name>Kath. Gemeinde St. Bonifatius Kirche</name>
+      <strasse>Wanheimerstr. 161 b</strasse>
       <plz>47053</plz>
       <ort>Duisburg Hochfeld</ort>
     </adresse>
@@ -1511,7 +1541,9 @@
     <gemeindeort>Leipzig</gemeindeort>
     <url>https://kopten.de/gemeinden/leipzig/</url>
     <adresse>
-      <strasse>Zu Gast bei der St. Laurentius Kirche, Witzgallstr. 20</strasse>
+      <zugast>true</zugast>
+      <name>St. Laurentius Kirche</name>
+      <strasse>Witzgallstr. 20</strasse>
       <plz>04317</plz>
       <ort>Leipzig</ort>
     </adresse>
@@ -1532,7 +1564,9 @@
     <gemeindeort>Minden</gemeindeort>
     <url>https://kopten.de/gemeinden/minden/</url>
     <adresse>
-      <strasse>Zu Gast bei St. Mauritius Kirche, Pauline-von-Mallinckrodt-Platz 5</strasse>
+      <zugast>true</zugast>
+      <name>St. Mauritius Kirche</name>
+      <strasse>Pauline-von-Mallinckrodt-Platz 5</strasse>
       <plz>32423</plz>
       <ort>Minden</ort>
     </adresse>
@@ -1556,7 +1590,9 @@
     <gemeindeort>Neubrandenburg</gemeindeort>
     <url>https://kopten.de/gemeinden/neubrandenburg/</url>
     <adresse>
-      <strasse>Zu Gast bei der evangelischen Kirchengemeinde St. Michael, Straußstrasse 8</strasse>
+      <zugast>true</zugast>
+      <name>Evangelische Kirchengemeinde St. Michael</name>
+      <strasse>Straußstrasse 8</strasse>
       <plz>17034</plz>
       <ort>Neubrandenburg</ort>
     </adresse>
@@ -1629,7 +1665,9 @@
     <gemeindeort>Paderborn</gemeindeort>
     <url>https://kopten.de/gemeinden/paderborn/</url>
     <adresse>
-      <strasse>Zu Gast bei der St. Michael Kirche, Bielefelder Str. 157, 33104 Paderborn-Sennelager</strasse>
+      <zugast>true</zugast>
+      <name>St. Michael Kirche</name>
+      <strasse>Bielefelder Str. 157</strasse>
       <plz>33102</plz>
       <ort>Paderborn</ort>
     </adresse>

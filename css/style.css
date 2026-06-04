@@ -1901,6 +1901,24 @@ p:last-child {
   color: var(--color-ink);
 }
 
+.info-card__guest-label,
+.gemeinde-item__guest-label,
+.gm-info__guest-label {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-accent-dark);
+}
+
+.info-card__guest-name,
+.gemeinde-item__guest-name,
+.gm-info__guest-name {
+  font-style: italic;
+  color: var(--color-ink-soft);
+}
+
 .info-card a {
   color: var(--color-primary);
   text-decoration: none;
