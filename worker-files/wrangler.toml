@@ -22,6 +22,7 @@ enabled = true
 head_sampling_rate = 1
 
 # Secrets (gesetzt via wrangler secret put):
-#   GITHUB_REPO            — "StMarkus/kopten.de"
-#   GITHUB_DISPATCH_TOKEN  — Fine-grained PAT mit "Actions: read/write"
+#   GITHUB_REPO            — "kopten/kopten.de"
+#   GITHUB_DISPATCH_TOKEN  — Fine-grained PAT mit "Contents: read/write"
+#                            (repository_dispatch braucht Contents, nicht Actions)
 #   ADMIN_TOKEN            — Shared Secret zum Schutz der /rebuild-manifest Route
