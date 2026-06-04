@@ -140,23 +140,6 @@
     });
   }
 
-  /* --- Homepage finder widget: "Use my location" → bounce to finder with geo flag --- */
-  document.querySelectorAll('a[data-locate]').forEach(link => {
-    link.addEventListener('click', (e) => {
-      if (!navigator.geolocation) return; /* fall through to plain href */
-      e.preventDefault();
-      navigator.geolocation.getCurrentPosition(
-        (p) => {
-          const base = link.getAttribute('href').split('#')[0];
-          const q = `${p.coords.latitude.toFixed(4)},${p.coords.longitude.toFixed(4)}`;
-          window.location.href = `${base}?q=${encodeURIComponent(q)}#finder`;
-        },
-        () => { window.location.href = link.href; },
-        { enableHighAccuracy: false, timeout: 8000 }
-      );
-    });
-  });
-
   /* --- Detail-page sub-nav: highlight active section while scrolling --- */
   const detailNav = document.querySelector('.detail-nav');
   if (detailNav) {
