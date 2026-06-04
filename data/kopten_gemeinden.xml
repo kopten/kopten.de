@@ -1232,6 +1232,10 @@
       <plz>33719</plz>
       <ort>Bielefeld</ort>
     </adresse>
+    <kontakt>
+      <telefon>+4915222892568</telefon>
+      <email>kontakt@kopten-bielefeld.de</email>
+    </kontakt>
     <priester>
       <person>
         <name>Pater Markus Soliman</name>
@@ -1243,8 +1247,14 @@
       <diakon>Herr Monir Botros, Mobil: 0049 (0) 171 15 55 434, E-Mail: info@fine-art-architekten.de</diakon>
     </diakone>
     <gottesdienstzeiten>
-      <zeit>Jeden 2. und 4. Sonntag des Monats: Liturgie 10:00-12:00 Uhr</zeit>
+      <zeit>Jeden 1., 2. und 4. Sonntag des Monats: Liturgie 10:00-12:00 Uhr</zeit>
     </gottesdienstzeiten>
+    <links>
+      <website>https://kopten-bielefeld.de/</website>
+      <facebook />
+      <instagram >https://www.instagram.com/koptischejugendbielefeld/</instagram>
+      <youtube >https://www.youtube.com/@st.mariaunddiesiebenerzeng2988</youtube>
+    </links>
   </gemeinde>
   <gemeinde id="bochum" typ="Gemeinde" bistum="Norddeutschland">
     <name>Koptisch-Orthodoxe Kirche</name>
