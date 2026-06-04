@@ -58,6 +58,6 @@ export const GEMEINDE_SLUGS = new Set([
   "wetzlar",
   "wiesbaden",
   "wilhelmshafen",
-  "wintersdorf",
-  "worms"
+  "worms",
+  "zirndorf"
 ]);

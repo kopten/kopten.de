@@ -1189,4 +1189,22 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://kopten.de/gemeinden/worms/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://kopten.de/gemeinden/worms/" />
   </url>
+  <url>
+    <loc>https://kopten.de/gemeinden/zirndorf/</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://kopten.de/gemeinden/zirndorf/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://kopten.de/en/communities/zirndorf/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kopten.de/gemeinden/zirndorf/" />
+  </url>
+  <url>
+    <loc>https://kopten.de/en/communities/zirndorf/</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kopten.de/en/communities/zirndorf/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://kopten.de/gemeinden/zirndorf/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kopten.de/gemeinden/zirndorf/" />
+  </url>
 </urlset>
