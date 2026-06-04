@@ -606,9 +606,12 @@ function pickerLabel(g) {
 
 function pickerSub(g) {
   const bits = [];
-  if (g.plz) bits.push(g.plz);
-  if (g.ort && g.ort !== pickerLabel(g)) bits.push(g.ort);
-  if (g.typ === "kloster") bits.unshift("Kloster");
+  if (g.name && g.name !== pickerLabel(g)) bits.push(g.name);
+  const loc = [g.plz, g.ort && g.ort !== pickerLabel(g) ? g.ort : ""]
+    .filter(Boolean)
+    .join(" ");
+  if (loc) bits.push(loc);
+  if (g.typ === "kloster") bits.unshift(LANG === "en" ? "Monastery" : "Kloster");
   return bits.join(" · ");
 }
 
@@ -619,6 +622,7 @@ function buildPickerEntries(list) {
       slug: detailSlug(g.url),
       label: pickerLabel(g),
       sub: pickerSub(g),
+      name: g.name || "",
     }))
     .filter((e) => e.slug && e.label)
     .sort((a, b) => a.label.localeCompare(b.label, LANG === "en" ? "en" : "de"));
@@ -695,11 +699,14 @@ function initDirectPicker() {
     if (clearBtn) clearBtn.hidden = raw.length === 0;
     const q = norm(raw);
     if (!q) {
-      currentMatches = entries.slice(0, 30);
+      currentMatches = entries.slice();
     } else {
-      currentMatches = entries
-        .filter((e) => norm(e.label).includes(q) || norm(e.sub).includes(q))
-        .slice(0, 30);
+      currentMatches = entries.filter(
+        (e) =>
+          norm(e.label).includes(q) ||
+          norm(e.name).includes(q) ||
+          norm(e.sub).includes(q),
+      );
     }
     render(currentMatches, raw);
   }
