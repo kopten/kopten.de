@@ -7,19 +7,30 @@ Per PDF:
   page 3   — Germany map with linked pins for each gemeinde
   page 4+  — One page per gemeinde with logo, address, clergy, schedules, links
 
-Requires: fpdf2, Pillow, requests, staticmap (in a venv)
+Requires: fpdf2, Pillow, requests, requests_cache, staticmap, boto3 (in a venv)
 
 Usage:
     source .venv-pdf/bin/activate
-    python3 generate_diocese_pdfs.py
+    python3 generate_diocese_pdfs.py             # build + upload to R2
+    python3 generate_diocese_pdfs.py --no-upload # build only, dry-run
 
-Output:
-    pdfs/diozese-norddeutschland.pdf
-    pdfs/diozese-sueddeutschland.pdf
+Output (local):
+    pdfs/01. A. Koptisch-Orthodoxe-Gemeinden-Deutschland.pdf
+    pdfs/01. B. Koptisch-Orthodoxe-Gemeinden-Dioezese-Nord-Deutschland.pdf
+    pdfs/01. C. Koptisch-Orthodoxe-Gemeinden-Dioezese-Sued-Deutschland.pdf
+
+R2 upload (bucket "kopten-de-files" EU, prefix
+"kroeffelbach/DKB/06 Verschiedene Bücher/"):
+    Set R2_ACCOUNT_ID, R2_ACCESS_KEY_ID, R2_SECRET_ACCESS_KEY (env vars).
+    Optional: ADMIN_TOKEN + FILES_API_URL to trigger manifest refresh.
+    No env vars → upload silently skipped (PDFs stay local).
 """
 
+import argparse
 import json
+import os
 import re
+import sys
 import time
 import xml.etree.ElementTree as ET
 from io import BytesIO
@@ -239,6 +250,8 @@ def parse_gemeinden():
         strasse = txt(addr, "strasse")
         plz     = txt(addr, "plz")
         ort     = txt(addr, "ort")
+        zugast  = txt(addr, "zugast").lower() == "true"
+        gast_name = txt(addr, "name") if zugast else ""
 
         # Persons (priester or bischof)
         persons = []
@@ -323,6 +336,8 @@ def parse_gemeinden():
             "strasse":   strasse,
             "plz":       plz,
             "ort":       ort,
+            "zugast":    zugast,
+            "gast_name": gast_name,
             "persons":   persons,
             "telefon":   telefon,
             "fax":       fax,
@@ -735,6 +750,16 @@ def add_gemeinde_page(pdf, g):
 
     # Address
     _section_title(pdf, "Adresse")
+    if g.get("zugast"):
+        # Label "Zu Gast bei:" in accent colour, host name in italic
+        pdf.set_font("helvetica", "B", 9)
+        pdf.set_text_color(*COL_ACCENT)
+        pdf.cell(0, 5, _safe("Zu Gast bei:"), ln=1)
+        pdf.set_text_color(*COL_INK)
+        if g.get("gast_name"):
+            pdf.set_font("helvetica", "I", 10)
+            pdf.cell(0, 5, _safe(g["gast_name"]), ln=1)
+        pdf.set_font("helvetica", "", 10)
     addr_lines = [g["strasse"], f"{g['plz']} {g['ort']}".strip()]
     for ln_text in addr_lines:
         if ln_text:
@@ -850,11 +875,107 @@ def _render_brand_png(out_path, size=600, variant="light"):
 
 
 # ---------------------------------------------------------------------------
+# R2 upload
+# ---------------------------------------------------------------------------
+
+# Target location in the kopten-de-files (EU) bucket. Existing files are
+# overwritten (same key = replace). The space-and-period style filenames are
+# kept as-is so they sort alphabetically in DKB next to the rest.
+R2_BUCKET   = "kopten-de-files"
+R2_KEY_PREFIX = "kroeffelbach/DKB/06 Verschiedene Bücher/"
+
+def upload_pdfs_to_r2(paths):
+    """Upload the given PDF paths to R2 under R2_KEY_PREFIX.
+
+    Reads R2_ACCOUNT_ID, R2_ACCESS_KEY_ID, R2_SECRET_ACCESS_KEY from env.
+    If any is missing → print a hint and return (do not fail the build).
+    After upload, optionally POSTs to FILES_API_URL/rebuild-manifest with
+    ADMIN_TOKEN so the website list refreshes itself.
+    """
+    needed = ("R2_ACCOUNT_ID", "R2_ACCESS_KEY_ID", "R2_SECRET_ACCESS_KEY")
+    missing = [v for v in needed if not os.environ.get(v)]
+    if missing:
+        print(f"\nR2 upload skipped — env vars not set: {', '.join(missing)}")
+        print("  (Use --no-upload to silence this, or set the secrets.)")
+        return
+
+    try:
+        import boto3
+        from botocore.config import Config
+    except ImportError:
+        print("\nR2 upload skipped — boto3 not installed (pip install boto3).")
+        return
+
+    # EU jurisdiction endpoint — same as migrate_pdfs_to_r2.py / files-api worker.
+    endpoint = f"https://{os.environ['R2_ACCOUNT_ID']}.eu.r2.cloudflarestorage.com"
+    s3 = boto3.client(
+        "s3",
+        endpoint_url=endpoint,
+        aws_access_key_id=os.environ["R2_ACCESS_KEY_ID"],
+        aws_secret_access_key=os.environ["R2_SECRET_ACCESS_KEY"],
+        region_name="auto",
+        config=Config(signature_version="s3v4"),
+    )
+
+    print(f"\nUploading {len(paths)} file(s) to R2 ({R2_BUCKET}, EU)…")
+    errors = []
+    for p in paths:
+        key = f"{R2_KEY_PREFIX}{p.name}"
+        try:
+            s3.upload_file(
+                str(p),
+                R2_BUCKET,
+                key,
+                ExtraArgs={
+                    "ContentType": "application/pdf",
+                    "CacheControl": "public, max-age=86400",
+                },
+            )
+            print(f"  ✓ {key}")
+        except Exception as exc:
+            errors.append((key, str(exc)))
+            print(f"  ✗ {key}  ({exc})")
+
+    if errors:
+        print(f"\n{len(errors)} upload error(s) — aborting manifest refresh.")
+        sys.exit(1)
+
+    # Optional: poke files-api so it rebuilds the manifest + triggers Pages
+    # rebuild. Silent no-op if not configured.
+    api_url = os.environ.get("FILES_API_URL", "https://files-api.kopten.de")
+    admin_token = os.environ.get("ADMIN_TOKEN")
+    if admin_token:
+        try:
+            r = requests.post(
+                f"{api_url}/rebuild-manifest",
+                headers={"Authorization": f"Bearer {admin_token}"},
+                timeout=30,
+            )
+            if r.ok:
+                print(f"\nManifest refresh triggered: {api_url}/rebuild-manifest")
+            else:
+                print(f"\nManifest refresh failed: HTTP {r.status_code} — {r.text[:200]}")
+        except Exception as exc:
+            print(f"\nManifest refresh error: {exc}")
+    else:
+        print("\nADMIN_TOKEN not set — skipping manifest refresh.")
+
+
+# ---------------------------------------------------------------------------
 # Orchestrator
 # ---------------------------------------------------------------------------
 
 def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--no-upload",
+        action="store_true",
+        help="PDFs nur lokal generieren — kein R2-Upload (für Dry-Runs).",
+    )
+    args = parser.parse_args()
+
     OUT_DIR.mkdir(exist_ok=True)
+    generated = []  # collect PDF paths for upload
     gemeinden = parse_gemeinden()
 
     # Geocode all
@@ -879,8 +1000,17 @@ def main():
             (g["gemeindeort"] or g["ort"] or "").lower(),
         ))
         title = f"Diözese {bistum.title().replace('Sueddeutschland','Süddeutschland')}"
-        slug = bistum.replace("ü", "ue").replace("ö", "oe").replace("ä", "ae")
-        build_pdf(items, title, OUT_DIR / f"diozese-{slug}.pdf", map_slug=bistum, toc_groups=None)
+        filename_map = {
+            "norddeutschland": "01. B. Koptisch-Orthodoxe-Gemeinden-Dioezese-Nord-Deutschland.pdf",
+            "süddeutschland":  "01. C. Koptisch-Orthodoxe-Gemeinden-Dioezese-Sued-Deutschland.pdf",
+        }
+        filename = filename_map.get(
+            bistum,
+            f"diozese-{bistum.replace('ü','ue').replace('ö','oe').replace('ä','ae')}.pdf",
+        )
+        out_path = OUT_DIR / filename
+        build_pdf(items, title, out_path, map_slug=bistum, toc_groups=None)
+        generated.append(out_path)
 
     # Combined Germany-wide PDF: both dioceses, bishop seats first, then alphabetical
     # per diocese, but TOC grouped by diocese for readability.
@@ -902,15 +1032,22 @@ def main():
             all_items.extend(sub)
 
     if all_items:
+        gesamt_path = OUT_DIR / "01. A. Koptisch-Orthodoxe-Gemeinden-Deutschland.pdf"
         build_pdf(
             all_items,
             "Alle Gemeinden in Deutschland",
-            OUT_DIR / "deutschland-gesamt.pdf",
+            gesamt_path,
             map_slug="gesamt",
             toc_groups=toc_groups,
         )
+        generated.append(gesamt_path)
 
     print("\nDone.")
+
+    if args.no_upload:
+        print("--no-upload aktiv. R2-Upload übersprungen.")
+    elif generated:
+        upload_pdfs_to_r2(generated)
 
 
 def build_pdf(items, title, out_path, map_slug, toc_groups=None):

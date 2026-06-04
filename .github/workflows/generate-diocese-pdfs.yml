@@ -1,0 +1,48 @@
+name: Generate diocese PDFs
+
+# Manueller Lauf via UI ("Run workflow"). PDFs werden generiert und in den
+# R2-Bucket "kopten-de-files" unter
+#   kroeffelbach/DKB/06 Verschiedene Bücher/
+# hochgeladen (vorhandene Dateien werden überschrieben). Anschließend wird
+# der Manifest-Refresh getriggert, sodass die Liste auf kopten.de neu
+# gebaut wird.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-upload:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          python3 -m pip install --upgrade pip
+          python3 -m pip install fpdf2 Pillow requests requests-cache staticmap boto3
+
+      - name: Cache geocoding + tile data
+        uses: actions/cache@v4
+        with:
+          path: pdfs/.cache
+          key: pdf-geo-tiles-${{ hashFiles('data/kopten_gemeinden.xml') }}
+          restore-keys: |
+            pdf-geo-tiles-
+
+      - name: Generate PDFs + upload to R2
+        env:
+          R2_ACCOUNT_ID:        ${{ secrets.R2_ACCOUNT_ID }}
+          R2_ACCESS_KEY_ID:     ${{ secrets.R2_ACCESS_KEY_ID }}
+          R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+          ADMIN_TOKEN:          ${{ secrets.FILES_ADMIN_TOKEN }}
+          FILES_API_URL:        https://files-api.kopten.de
+        run: python3 generate_diocese_pdfs.py
