@@ -20,7 +20,8 @@
       <p>Dies gilt für alle Betroffenen, ob Familien (einschließlich Kinder jeden Alters) oder Einzelpersonen.</p>
       <p>Eine Kopie des zur Reservierung vorgelegten Dokuments wird zu Archivzwecken im Reservierungsbüro des Klosters angefertigt.</p>
       <p>
-        <strong>20.11.2025</strong><br />
+        <strong>20.11.2025</strong>
+        <br />
         Anba Deuscoros<br />
         Bischof der koptisch-orthodoxen Diözese Süddeutschland und Abt des St. Antonius Klosters
       </p>
@@ -33,1663 +34,1665 @@
         <li>Eine gültige Aufenthaltserlaubnis für Deutschland, die mindestens für die Dauer der Übernachtung im Kloster gültig ist.</li>
       </ul>
       <p>Eine Reservierung ist erforderlich.</p>
-      <p>Bitte kontaktieren Sie uns per WhatsApp unter: <whatsapp>+49 155 632 410 84</whatsapp></p>
+      <p>Bitte kontaktieren Sie uns per WhatsApp unter: <whatsapp>+49 155 632 410 84</whatsapp>
+      </p>
       <p>
-        <strong>15.05.2026</strong><br />
+        <strong>15.05.2026</strong>
+        <br />
         Anba Deuscoros<br />
         Bischof der koptisch-orthodoxen Diözese Süddeutschland und Abt des St. Antonius Klosters
       </p>
     </info>
-  <url>https://kopten.de/gemeinden/kroeffelbach/</url>
-  <adresse>
-    <strasse>Sankt-Antonius-Kloster</strasse>
-    <plz>35647</plz>
-    <ort>Waldsolms-Kröffelbach</ort>
-  </adresse>
-  <bischof>
-    <name>Seine Exzellenz Bischof Anba Deuscoros</name>
-    <funktion>Bischof von Süd-Deutschland</funktion>
-    <mobil>0049-(0)15563-241084</mobil>
-    <email>anba.deuscoros@kopten-sued.de</email>
-  </bischof>
-  <diakone>
-    <diakon>Diakonen-Chor tritt in Fülle jeden Sonntag auf</diakon>
-  </diakone>
-  <gottesdienstzeiten>
-    <zeit>Mitternachtsgebete: Jeden Tag früh 05:00-07:00 Uhr</zeit>
-    <zeit>Jeden Abend Agpeya-Gebete um 17:00 Uhr</zeit>
-    <zeit>Jeden Samstag: Abendweihrauchopfer 17:00</zeit>
-    <zeit>Sonntags: Gottesdienste 09:00 bis ca. 12:00 Uhr</zeit>
-    <zeit>Tägliche Liturgie: 07:00-09:00 Uhr</zeit>
-  </gottesdienstzeiten>
-  <bankverbindung>
-    <inhaber>Koptisches Kloster Kröffelbach</inhaber>
-    <bank>Volksbank Brandoberndorf</bank>
-    <iban>DE04 5159 1300 0050 1015 09</iban>
-    <bic>GENODE51WBO</bic>
-  </bankverbindung>
-  <links>
-    <facebook />
-    <instagram />
-    <youtube />
-  </links>
-</gemeinde>
-<gemeinde id="hoexter" typ="Kloster" bistum="Norddeutschland">
-  <name>Hl. Jungfrau Maria und hl. Mauritius koptisch-orthodoxes Kloster</name>
-  <gemeindeort>Höxter</gemeindeort>
-  <url>https://kopten.de/gemeinden/hoexter/</url>
-  <adresse>
-    <strasse>Propstei Strasse 1</strasse>
-    <plz>37671</plz>
-    <ort>Höxter</ort>
-  </adresse>
-  <bischof>
-    <name>Metropolit Anba Damian</name>
-    <funktion>Metropolit von Nord-Deutschland (Koptische Gemeinden in Berlin, Sachsen, Niedersachsen, Schleswig-Holstein, Hamburg, Bremen und z.T. Nordrhein-Westfalen)</funktion>
-    <weitere_priester>
-      <priester>Pater Girgis El Moharaki (Generalvikar der Diözese), Mobil: 0049-(0)171 436 0460</priester>
-      <priester>Pater Bolikarbos El Moharaky, Tel.: 0049-(0)173 9902 895</priester>
-    </weitere_priester>
-  </bischof>
-  <kontakt>
-    <telefon>0049-(0)5271 18 905 oder 0049-(0)5271 36 854</telefon>
-    <mobil>0049-(0)172 564 3647</mobil>
-    <fax>0049-(0)5271-36 742</fax>
-  </kontakt>
-  <diakone>
-    <diakon>Herr Salip Matta, Tel.: 0049-(0)173 2911 554</diakon>
-    <diakon>Herr Adel Matta, Tel.: 0049-(0)173 2911 405</diakon>
-  </diakone>
-  <gottesdienstzeiten>
-    <zeit>Jeden Sonntag Messe 10:00-12:00 Uhr</zeit>
-    <zeit>Mittwochs und Freitags Messe 07:00-09:00 Uhr</zeit>
-    <zeit>Jeden Samstag Messe 08:00-10:00 Uhr</zeit>
-  </gottesdienstzeiten>
-  <bankverbindung>
-    <inhaber>Koptisches Kloster</inhaber>
-    <bank>Sparkasse Höxter</bank>
-    <iban>DE67 4725 1550 0023 008 88</iban>
-    <bic>WELADED1HXB</bic>
-  </bankverbindung>
-  <links>
-    <website>https://koptisches-kloster-brenkhausen.de/</website>
-    <facebook>https://www.facebook.com/KoptischOrthodoxeKircheDeutschland/</facebook>
-    <instagram />
-    <youtube />
-  </links>
-</gemeinde>
-<gemeinde id="aachen" typ="Gemeinde" bistum="Süddeutschland">
-  <name>St. Marien &amp; St. Demiana Koptisch-Orthodoxe Kirche</name>
-  <gemeindeort>Aachen</gemeindeort>
-  <url>https://kopten.de/gemeinden/aachen/</url>
-  <adresse>
-    <strasse>Zu Gast bei der katholischen Kirchengemeinde St. Bonifatius, Mataréstraße 12</strasse>
-    <plz>52078</plz>
-    <ort>Aachen</ort>
-  </adresse>
-  <priester>
-    <person>
-      <name>Vater Gerges Tawadros</name>
-      <mobil>0049-(0)17621890166</mobil>
-      <email>info@kopten-aachen.de</email>
-    </person>
-  </priester>
-  <diakone>
-    <diakon>Herr Youssef Sabry, M.Sc.: 0049-(0)1745421850</diakon>
-    <diakon>Herr George Maged: 0049-(0)15229682245</diakon>
-    <diakon>Herr Anton Abo El Saad: 0049-(0)1711924442</diakon>
-  </diakone>
-  <gottesdienstzeiten>
-    <zeit>Jeden Samstag: 09:00-12:00 Liturgie</zeit>
-    <zeit>12:00-13:00 Agape (gemeinsames Essen)</zeit>
-    <zeit>13:00-14:00 Bibelstunde</zeit>
-    <zeit>14:00-15:00 Kinder Sonntagsschule und Jugendtreffen</zeit>
-    <zeit>15:00-16:00 Diakonentreff und Chor</zeit>
-  </gottesdienstzeiten>
-  <bankverbindung>
-    <inhaber>St. Marien und St. Demiana Kirche</inhaber>
-    <bank>Sparkasse Aachen</bank>
-    <iban>DE03 3905 0000 1077 2717 63</iban>
-    <bic>AACSDE33XXX</bic>
-  </bankverbindung>
-  <links>
-    <website />
-    <facebook>https://www.facebook.com/StDemianaAachen/</facebook>
-    <instagram />
-    <youtube />
-  </links>
-</gemeinde>
-<gemeinde id="altena" typ="Gemeinde" bistum="Süddeutschland">
-  <name>Erzengel Michael koptisch-orthodoxe Kirche</name>
-  <gemeindeort>Altena</gemeindeort>
-  <url>https://kopten.de/gemeinden/altena/</url>
-  <adresse>
-    <strasse>Kirchstraße 25</strasse>
-    <plz>58762</plz>
-    <ort>Altena</ort>
-  </adresse>
-  <priester>
-    <person>
-      <name>Vater Ishak Aziz</name>
-      <email>abuna.ishak@gmail.com</email>
-      <mobil>0049-(0)176 7277 4869</mobil>
-    </person>
-  </priester>
-  <kontakt>
-    <email>erzengelmichaelaltena@gmail.com</email>
-  </kontakt>
-  <gottesdienstzeiten>
-    <zeit>Jeden Samstag und Sonntag: Liturgie 10:00-12:30 Uhr</zeit>
-    <zeit>Im Anschluss ab 12:30 Uhr: Agape, Sonntagsschule, Jugendtreffen und Bibelstunde</zeit>
-  </gottesdienstzeiten>
-  <links>
-    <website />
-    <facebook>https://www.facebook.com/Erzengelmichaelaltena/</facebook>
-    <instagram>https://www.instagram.com/erzengelmichaelaltena</instagram>
-    <youtube>https://www.youtube.com/channel/UCXyk8eTHwlqBbxR8_Qg7G5A</youtube>
-    <tiktok>https://www.tiktok.com/@erzengelmichaelaltena</tiktok>
-  </links>
-</gemeinde>
-<gemeinde id="altenstadt" typ="Gemeinde" bistum="Süddeutschland">
-  <name>Koptisch-Orthodoxe Kirche des St. Zachäus des Zöllners und der heiligen Kinder von Bethlehem</name>
-  <gemeindeort>Altenstadt</gemeindeort>
-  <url>https://kopten.de/gemeinden/altenstadt/</url>
-  <adresse>
-    <strasse>Zu Gast bei der evangelischen Kirche Waldsiedlung: Finkenweg 1</strasse>
-    <plz>63674</plz>
-    <ort>Altenstadt</ort>
-  </adresse>
-  <priester>
-
-  </priester>
-  <diakone>
-    <diakon>Herr Mario Yagoub: 0049-(0)160 9299 1049</diakon>
-  </diakone>
-  <gottesdienstzeiten>
-    <zeit>Jeden 1. Samstag des Monats: Liturgie 09:00-12:00 Uhr</zeit>
-    <zeit>In den Fastenzeiten jeden Montag: Liturgie 10:00-13:00 Uhr</zeit>
-  </gottesdienstzeiten>
-</gemeinde>
-<gemeinde id="andernach" typ="Gemeinde" bistum="Süddeutschland">
-  <name>St. Petrus koptisch-orthodoxe Kirche</name>
-  <gemeindeort>Andernach (bei Koblenz)</gemeindeort>
-  <url>https://kopten.de/gemeinden/andernach/</url>
-  <adresse>
-    <strasse>Albertstr. 2</strasse>
-    <plz>56626</plz>
-    <ort>Andernach (Koblenz)</ort>
-  </adresse>
-  <priester>
-    <person>
-      <name>Vater Philippus Abeid</name>
-      <mobil>0049-(0)163 9032 040</mobil>
-    </person>
-  </priester>
-  <diakone>
-    <diakon>Herr Bishoy Attya: 0049-(0)174 459 7849</diakon>
-  </diakone>
-  <gottesdienstzeiten>
-    <zeit>Jeden Sonntag: Liturgie 9:00-12:00 Uhr</zeit>
-    <zeit>Agape: 12:00-13:00 Uhr</zeit>
-    <zeit>Chor: 13:00-13:30 Uhr</zeit>
-    <zeit>Sonntagsschule: 13:30-14:00 Uhr</zeit>
-    <zeit>Jeden 1. und 3. Samstag des Monats: Liturgie 9:00-11:00 Uhr</zeit>
-    <zeit>Mittwochs und Freitags: Liturgie 9:00-11:00 Uhr</zeit>
-  </gottesdienstzeiten>
-  <links>
-    <facebook>https://www.facebook.com/share/19yAguWKd5/</facebook>
-    <instagram />
-    <youtube />
-  </links>
-</gemeinde>
-<gemeinde id="bergneustadt" typ="Gemeinde" bistum="Süddeutschland">
-  <name>St. Johannes Koptisch-Orthodoxe Kirche</name>
-  <gemeindeort>Bergneustadt</gemeindeort>
-  <url>https://kopten.de/gemeinden/bergneustadt/</url>
-  <adresse>
-    <strasse>Dietrich-Bonhoeffer-Weg 4</strasse>
-    <plz>51702</plz>
-    <ort>Bergneustadt</ort>
-  </adresse>
-  <priester>
-
-  </priester>
-  <gottesdienstzeiten>
-    <zeit>Jeden 4. Sonntag des Monats: Liturgie 09:30-12:00 Uhr</zeit>
-  </gottesdienstzeiten>
-</gemeinde>
-<gemeinde id="bitburg" typ="Gemeinde" bistum="Süddeutschland">
-  <name>St. Maria und St. Athanasius koptisch-orthodoxe Kirche</name>
-  <gemeindeort>Bitburg</gemeindeort>
-  <url>https://kopten.de/gemeinden/bitburg/</url>
-  <adresse>
-    <strasse>Gebäude 105 Messerschmidt Strasse 1</strasse>
-    <plz>54634</plz>
-    <ort>Bitburg</ort>
-  </adresse>
-  <priester>
-    <person>
-      <name>Pater Shenouda St. Antonius</name>
-      <mobil>0049-(0)176 6107 6389</mobil>
-    </person>
-  </priester>
-  <kontakt>
-    <telefon>0049-(0)6561 184 47</telefon>
-    <fax>0049-(0)6561 942 886</fax>
-  </kontakt>
-  <diakone>
-    <diakon>Shokry Mose: 0049-(0)173 6997 103</diakon>
-  </diakone>
-  <gottesdienstzeiten>
-    <zeit>Jeden Sonntag: Liturgie 09:30-12:30 Uhr</zeit>
-    <zeit>Jeden Samstag: Abendweihrauchopfer 20:00 Uhr</zeit>
-    <zeit>Mittwochs und Freitags: Liturgie 09:00-11:00 Uhr</zeit>
-  </gottesdienstzeiten>
-  <links>
-    <website>https://www.koptische-kirche-bitburg.de/</website>
-    <facebook >https://www.facebook.com/st.athanasius.kirche/</facebook>
-    <instagram />
-    <youtube />
-  </links>
-</gemeinde>
-<gemeinde id="bocholt" typ="Gemeinde" bistum="Süddeutschland">
-  <name>Heilige Maria und St. Antonius Koptisch-Orthodoxe Kirche</name>
-  <gemeindeort>Bocholt</gemeindeort>
-  <url>https://kopten.de/gemeinden/bocholt/</url>
-  <adresse>
-    <strasse>Norbertpl. 10</strasse>
-    <plz>46399</plz>
-    <ort>Bocholt</ort>
-  </adresse>
-  <priester>
-    <person>
-      <name>Vater Athanasius Botros</name>
-      <mobil>0049-(0)178 8930 996</mobil>
-    </person>
-  </priester>
-  <diakone>
-    <diakon>Herr Raafat Gendi, Tel: 0049-(0)1577 8768 969</diakon>
-    <diakon>Herr Emad Mansour, Tel: 0049-(0)15789182397</diakon>
-    <diakon>Herr Bishoy Mousa, Tel: 0049-(0)15901338367</diakon>
-  </diakone>
-  <gottesdienstzeiten>
-    <zeit>Jeden Sonntag: Liturgie 09:30-12:30 Uhr, anschließend Agape 12:30-13:30 Uhr</zeit>
-    <zeit>Ab 13:30 Uhr Sonntagsschule und Familientreffen</zeit>
-    <zeit>Jeden Samstag: Abendweihrauchopfer 19:00-20:00 Uhr</zeit>
-  </gottesdienstzeiten>
-  <bankverbindung>
-    <inhaber>Koptisch-Orthodoxe Kirche in Bocholt</inhaber>
-    <bank>Sparkasse Westmünsterland</bank>
-    <iban>DE41 4015 4530 0050 6499 04</iban>
-    <bic>WELADE3WEXX</bic>
-  </bankverbindung>
-  <links>
-    <website>https://koptische-kirche-bocholt.com/</website>
-    <facebook>https://www.facebook.com/koptische.kirche.bocholt/</facebook>
-    <instagram>https://www.instagram.com/koptische_kirche_boh/</instagram>
-    <youtube>https://www.youtube.com/@MAKB-Bocholt</youtube>
-  </links>
-</gemeinde>
-<gemeinde id="bonn" typ="Gemeinde" bistum="Süddeutschland">
-  <name>Kirche der sieben Erzengel koptisch-orthodoxe Kirche</name>
-  <gemeindeort>Bonn (Siegburg)</gemeindeort>
-  <url>https://kopten.de/gemeinden/bonn/</url>
-  <adresse>
-    <strasse>Aggerstraße 116</strasse>
-    <plz>53721</plz>
-    <ort>Siegburg</ort>
-  </adresse>
-  <priester>
-    <person>
-      <name>Vater Antonius Kamel</name>
-      <mobil>0049-(0)157 5484 6381</mobil>
-    </person>
-  </priester>
-  <diakone>
-    <diakon>Magdy Malek: 0049(0)17676914922</diakon>
-  </diakone>
-  <gottesdienstzeiten>
-    <zeit>Jeden Sonntag: Liturgie 09:30-12:30 Uhr</zeit>
-    <zeit>Im Anschluss Agape, Sonntagsschule, Jugendtreffen und Bibelstunde</zeit>
-  </gottesdienstzeiten>
-  <links>
-    <website />
-    <facebook>https://www.facebook.com/profile.php?id=100075825228083</facebook>
-    <instagram>https://www.instagram.com/koptischekirche_bonn/</instagram>
-    <youtube>https://www.youtube.com/@KirchederSiebenErzengel</youtube>
-  </links>
-</gemeinde>
-<gemeinde id="duesseldorf" typ="Gemeinde" bistum="Süddeutschland">
-  <name>St. Marien Koptisch-Orthodoxe Kirche</name>
-  <gemeindeort>Düsseldorf</gemeindeort>
-  <url>https://kopten.de/gemeinden/duesseldorf/</url>
-  <adresse>
-    <strasse>Pastor-Klinkhammer-Platz 1, bzw. Heerdter Landstrasse 270</strasse>
-    <plz>40549</plz>
-    <ort>Düsseldorf</ort>
-  </adresse>
-  <priester>
-    <person>
-      <name>Erzpriester Vater Boulos Shehata</name>
-      <mobil>0049-(0)176 6166 0305</mobil>
-      <email>st.maria@t-online.de</email>
-    </person>
-    <person>
-      <name>Vater Petrus Beshay</name>
-      <mobil>0049-(0)176 4335 9559</mobil>
-      <email>ugabra10@hotmail.com</email>
-    </person>
-  </priester>
-  <kontakt>
-    <telefon>0049-(0)2116 912 839</telefon>
-    <fax>0049-(0)2116 911 256</fax>
-  </kontakt>
-  <diakone>
-    <diakon>Herr Reda Habib: 0049-(0) 174 922 6401</diakon>
-    <diakon>Herr Ayman Magdy: 0049-(0) 176 473 70881</diakon>
-  </diakone>
-  <gottesdienstzeiten>
-    <zeit>Jeden Sonntag: Liturgie 10:00-12:30 Uhr</zeit>
-    <zeit>Diakonentreff: 12:45-13:15 Uhr</zeit>
-    <zeit>Sonntagsschule: 13:45-14:45 Uhr</zeit>
-    <zeit>Familien oder Bibelstunde: 14:15-14:45 Uhr</zeit>
-    <zeit>Integrations- und Deutschsprachkurs: 15:00-17:00 Uhr</zeit>
-    <zeit>Jeden Samstag: Liturgie 10:00-12:00 Uhr</zeit>
-  </gottesdienstzeiten>
-  <bankverbindung>
-    <inhaber>Koptisch-Orthodox Patriarchat St. Marienkirche Düsseldorf NRW</inhaber>
-    <bank>Stadtsparkasse Düsseldorf</bank>
-    <iban>DE 9130 0501 1010 0774 7775</iban>
-    <bic>DUSSDEDDXXX</bic>
-  </bankverbindung>
-  <links>
-    <website >https://www.koptischebunkerkirche.de/</website>
-    <facebook>https://www.facebook.com/StMarienDuesseldorf/</facebook>
-    <instagram />
-    <youtube />
-  </links>
-</gemeinde>
-<gemeinde id="erlangen" typ="Gemeinde" bistum="Süddeutschland">
-  <name>Koptisch-Orthodoxe Kirche der heiligen Maria und der heiligen Apostel</name>
-  <gemeindeort>Erlangen</gemeindeort>
-  <url>https://kopten.de/gemeinden/erlangen/</url>
-  <adresse>
-    <strasse>Friedhofstr. 19</strasse>
-    <plz>91058</plz>
-    <ort>Erlangen</ort>
-  </adresse>
-  <priester>
-    <person>
-      <name>Vater Bakhomios Ibrahim</name>
-      <mobil>0049-(0)157 5822 1822</mobil>
-    </person>
-  </priester>
-  <diakone>
-    <diakon>Herr Ragai Edward Matta, Tel: 0049-(0)17624330667</diakon>
-    <diakon>Herr Mohab Magdi Morkus, Tel: 0049-(0)1726320285</diakon>
-  </diakone>
-  <gottesdienstzeiten>
-    <zeit>Sonntags: Liturgie 10:00-13:00 Uhr</zeit>
-    <zeit>Sonntags ab 13:00 Uhr: Bibelstunde, Sonntagsschule und Agape Mahlzeit</zeit>
-    <zeit>Jeden zweiten Freitag: Liturgie 10:00-13:00 Uhr</zeit>
-  </gottesdienstzeiten>
-  <bankverbindung>
-    <inhaber>Koptisch-Orthodoxe Kirche der heiligen Maria und der heiligen Apostel in Erlangen e.V.</inhaber>
-    <bank>Sparkasse Erlangen-Höchstadt</bank>
-    <iban>DE02 7635 0000 0060 1339 48</iban>
-    <bic>BYLADEM1ERH</bic>
-  </bankverbindung>
-  <links>
-    <website />
-    <facebook>https://www.facebook.com/profile.php?id=100087460998900</facebook>
-    <instagram />
-    <youtube />
-  </links>
-</gemeinde>
-<gemeinde id="frankfurt" typ="Gemeinde" bistum="Süddeutschland">
-  <name>St. Markus Koptisch-Orthodoxe Kirche</name>
-  <gemeindeort>Frankfurt am Main</gemeindeort>
-  <beschreibung>
-    <p>Die St. Markus Gemeinde in Frankfurt am Main wurde 1975 gegründet und ist die erste koptisch-orthodoxen Gemeinde in Deutschland und wurde daher traditionell nach dem hl. Markus benannt.</p>
-    <p>In den vergangenen Jahrzehnten ist sie zu einem geistlichen Zuhause für die wachsende koptische Gemeinschaft im Rhein-Main-Gebiet geworden. Die Liturgie wird sowohl in koptischer als auch in deutscher Sprache gefeiert.</p>
-  </beschreibung>
-  <url>https://kopten.de/gemeinden/frankfurt/</url>
-  <adresse>
-    <strasse>Lötzener Straße 33</strasse>
-    <plz>60487</plz>
-    <ort>Frankfurt am Main</ort>
-  </adresse>
-  <priester>
-    <person>
-      <name>Vater Abraam Naguib Mina</name>
-      <mobil>0049-(0)152 3404 4908</mobil>
-    </person>
-    <person>
-      <name>Vater Maurice Bassili</name>
-      <mobil>0049-(0)177 9747 016</mobil>
-    </person>
-  </priester>
-  <kontakt>
-    <email>frankfurt@kopten.de</email>
-    <telefon>Gemeindesekretariat: 0049-(0)176 5780 4737</telefon>
-  </kontakt>
-  <gottesdienstzeiten>
-    <zeit>Sonntags, Gottesdienst,  10:00 - 12:30 Uhr, Herz-Jesu - Oberrad</zeit>
-    <zeit>Mittwochs, Gottesdienst, 09:00 - 11:30 Uhr, St Anna - Hausen</zeit>
-    <zeit>Donnerstags, Jugendgebetsabend, 19:00 Uhr, St Anna - Hausen</zeit>
-    <zeit>1. Freitag, monatliches Abendgebet, 19:00 Uhr, St Anna - Hausen</zeit>
-    <zeit>monatliches Abendgebet, 19:00 Uhr, St Anna - Hausen</zeit>
-    <zeit>Samstags, Gottesdienst, 09:00 - 11:30 Uhr, St Anna - Hausen</zeit>
-  </gottesdienstzeiten>
-  <bankverbindung>
-    <inhaber>St. Markus koptisch-orthodoxe Kirche Frankfurt e.V.</inhaber>
-    <iban>DE55 4401 0046 0384 1034 68</iban>
-    <bic>PBNKDEFF</bic>
-  </bankverbindung>
-  <links>
-    <website>https://stmarkus-frankfurt.de/</website>
-    <facebook>https://www.facebook.com/StMarkusFrankfurt/</facebook>
-    <instagram />
-    <youtube />
-  </links>
-</gemeinde>
-<gemeinde id="freiburg" typ="Gemeinde" bistum="Süddeutschland">
-  <name>Koptisch-Orthodoxe Kirche</name>
-  <gemeindeort>Freiburg</gemeindeort>
-  <url>https://kopten.de/gemeinden/freiburg/</url>
-  <adresse>
-    <strasse>Schützenallee 15</strasse>
-    <plz>79102</plz>
-    <ort>Freiburg</ort>
-  </adresse>
-  <priester>
-    <person>
-      <name>Vater Abanoub Fouad</name>
-      <mobil>0049-(0)160 6323 157</mobil>
-    </person>
-  </priester>
-  <diakone>
-    <diakon>Herr Dr. Mina Gerges: 0049-(0)176 82603288</diakon>
-  </diakone>
-  <gottesdienstzeiten>
-    <zeit>Jeden 1. und 3. Samstag des Monats: Liturgie 09:30-12:30 Uhr</zeit>
-  </gottesdienstzeiten>
-</gemeinde>
-<gemeinde id="heidelberg" typ="Gemeinde" bistum="Süddeutschland">
-  <name>St. Maria und St. Josef der Zimmermann koptisch-orthodoxe Kirche</name>
-  <gemeindeort>Heidelberg</gemeindeort>
-  <url>https://kopten.de/gemeinden/heidelberg/</url>
-  <adresse>
-    <strasse>Bergheimerstraße 108</strasse>
-    <plz>69115</plz>
-    <ort>Heidelberg</ort>
-  </adresse>
-  <priester>
-    <person>
-      <name>Vater Nicodemos El Makary</name>
-      <email>fr_nicodemos@yahoo.com</email>
-      <mobil>+49 (0)152 27 50 32 72</mobil>
-      <postanschrift>Untere Neckarstr. 16, 69117 Heidelberg</postanschrift>
-    </person>
-  </priester>
-  <kontakt>
-    <telefon>+49 (0)6221 72 77 728</telefon>
-  </kontakt>
-  <gottesdienstzeiten>
-    <zeit>Jeden Sonntag: Messe 09:00-12:00 Uhr</zeit>
-  </gottesdienstzeiten>
-  <links>
-    <website>http://www.koptische-kirche-heidelberg.de/</website>
-    <facebook>https://www.facebook.com/groups/205393769514499/</facebook>
-    <instagram />
-    <youtube />
-  </links>
-</gemeinde>
-<gemeinde id="kaiserslautern" typ="Gemeinde" bistum="Süddeutschland">
-  <name>Koptisch-Orthodoxe Kirche</name>
-  <gemeindeort>Kaiserslautern</gemeindeort>
-  <url>https://kopten.de/gemeinden/kaiserslautern/</url>
-  <adresse>
-    <strasse>Zu Gast bei der Gemeinde St. Martin Kirche, Spittelstr. 4</strasse>
-    <plz>67655</plz>
-    <ort>Kaiserslautern</ort>
-  </adresse>
-  <diakone>
-    <diakon>Herr Dr. Bishoy Soliman: 0049-(0)176 9318 2262</diakon>
-    <diakon>Herr Dr. Josef Iskander: 0049-(0)168 0197 776</diakon>
-  </diakone>
-  <gottesdienstzeiten>
-    <zeit>Jeden 2. Sonntag oder 3. Samstag des Monats: Liturgie 10:00-13:00 Uhr</zeit>
-  </gottesdienstzeiten>
-</gemeinde>
-<gemeinde id="kaufbeuren" typ="Gemeinde" bistum="Süddeutschland">
-  <name>Heilige Maria koptisch-orthodoxe Kirche</name>
-  <gemeindeort>Kaufbeuren</gemeindeort>
-  <url>https://kopten.de/gemeinden/kaufbeuren/</url>
-  <adresse>
-    <strasse>Zu Gast bei der Gemeinde St. Dominikus, Augsburger Str. 8</strasse>
-    <plz>87600</plz>
-    <ort>Kaufbeuren</ort>
-  </adresse>
-  <priester>
-    <person>
-      <name>Vater Paulus Hanna</name>
-      <email>Fr.PaulusHanna@yahoo.com</email>
-      <mobil>0049-(0)152 5959 9032</mobil>
-    </person>
-  </priester>
-  <kontakt>
-    <fax>0049-(0)89 154 131</fax>
-  </kontakt>
-  <diakone>
-    <diakon>Herr Hany Shafik: 0049-(0)163 6693 155</diakon>
-    <diakon>Herr Esam Boulus: 0049-(0)89 3141 600</diakon>
-  </diakone>
-  <gottesdienstzeiten>
-    <zeit>Jeden 1. Samstag des Monats: Liturgie 10:00-12:45 Uhr</zeit>
-  </gottesdienstzeiten>
-</gemeinde>
-<gemeinde id="kirchberg" typ="Gemeinde" bistum="Süddeutschland">
-  <name>St. Nikolaus koptisch-orthodoxe Kirche</name>
-  <gemeindeort>Kirchberg</gemeindeort>
-  <url>https://kopten.de/gemeinden/kirchberg/</url>
-  <adresse>
-    <strasse>Zu Gast bei der katholischen Gemeinde St. Nikolaus, Dumnissusstraße 10</strasse>
-    <plz>55481</plz>
-    <ort>Kirchberg (Hunsrück)</ort>
-  </adresse>
-  <priester>
-    <person>
-      <name>Vater Danial Abdel-Masih</name>
-      <mobil>0049-(0)178 6608 821</mobil>
-    </person>
-  </priester>
-  <diakone>
-    <diakon>Herr Dr. Baher Munier: 0049-(0)151 6894 7665</diakon>
-    <diakon>Herr Zakaria Bedrous: 0049-(0)157 5295 5210</diakon>
-  </diakone>
-  <gottesdienstzeiten>
-    <zeit>Jeden 4. Samstag des Monats: Liturgie 10:00-13:00 Uhr</zeit>
-  </gottesdienstzeiten>
-</gemeinde>
-<gemeinde id="koeln" typ="Gemeinde" bistum="Süddeutschland">
-  <name>St. Marien Koptisch-Orthodoxe Kirche</name>
-  <gemeindeort>Köln</gemeindeort>
-  <url>https://kopten.de/gemeinden/koeln/</url>
-  <adresse>
-    <strasse>St. Marien Kirche Selingenthaler Str. 9</strasse>
-    <plz>51105</plz>
-    <ort>Köln</ort>
-  </adresse>
-  <priester>
-    <person>
-      <name>Vater Gerges</name>
-      <mobil>0049-(0)176 2189 0166</mobil>
-    </person>
-  </priester>
-  <diakone>
-    <diakon>Herr Samy Youssef: 0049-(0)172 9826 757</diakon>
-    <diakon>Herr Shafik Aziz: 0049-(0)157 3666 0214</diakon>
-    <diakon>Herr Jaan Shehata: 0049-(0)157 5844 6116</diakon>
-  </diakone>
-  <gottesdienstzeiten>
-    <zeit>Jeden Sonntag: Liturgie 9:00-12:00 Uhr</zeit>
-    <zeit>Mittwochs und Freitags: Liturgie 9:00-11:00 Uhr</zeit>
-    <zeit>Freitags: 17:00-19:00 Uhr Abendgebete, Tasbeha</zeit>
-  </gottesdienstzeiten>
-  <bankverbindung>
-    <inhaber>Koptisch-orthodoxe Kirche der heiligen Maria und des heiligen Papstes Kyrillus VI.</inhaber>
-    <bank>Volksbank Köln/Bonn</bank>
-    <iban>DE73 3806 0186 7640 8110 18</iban>
-    <bic>GENODED1BRS</bic>
-  </bankverbindung>
-  <links>
-    <website />
-    <facebook>https://www.facebook.com/StMary-und-StKyrillos-Koptisch-Orthodoxe-Kirche-Köln-114539969972591/</facebook>
-    <instagram />
-    <youtube />
-  </links>
-</gemeinde>
-<gemeinde id="landshut" typ="Gemeinde" bistum="Süddeutschland">
-  <name>St. Karas koptisch-orthodoxe Kirche</name>
-  <gemeindeort>Landshut</gemeindeort>
-  <url>https://kopten.de/gemeinden/landshut/</url>
-  <adresse>
-    <strasse>Zu Gast bei Evang.-Luth. Auferstehungskirche Landshut, Fliederstrasse 17</strasse>
-    <plz>84032</plz>
-    <ort>Landshut</ort>
-  </adresse>
-  <priester>
-    <person>
-      <name>Vater Bakhomios Ibrahim</name>
-      <mobil>0049-(0)157 5822 1822</mobil>
-    </person>
-  </priester>
-  <diakone>
-    <diakon>Dr. Mina Sief: 00491739899646</diakon>
-    <diakon>Magdy Morkos: 004917645336585</diakon>
-  </diakone>
-  <gottesdienstzeiten>
-    <zeit>Siehe Facebook-Seite der Kirche für aktualisierte Gottesdienstzeiten</zeit>
-  </gottesdienstzeiten>
-  <bankverbindung>
-    <inhaber>Koptisch-Orthodoxe Gemeinde in Landshut e.V.</inhaber>
-    <iban>DE 08701500001006669905</iban>
-    <bic>SSKMDEMMXXX</bic>
-  </bankverbindung>
-  <links>
-    <website>https://www.st-karas-kirche.de/</website>
-    <facebook>https://www.facebook.com/StKarasKirche/</facebook>
-    <instagram />
-    <youtube />
-  </links>
-</gemeinde>
-<gemeinde id="luxemburg" typ="Gemeinde" bistum="Süddeutschland">
-  <name>St. Maria und St. Markus Koptisch-Orthodoxe Kirche</name>
-  <gemeindeort>Luxemburg</gemeindeort>
-  <url>https://kopten.de/gemeinden/luxemburg/</url>
-  <adresse>
-    <strasse>Eglise de Dippach Rue de Centrale</strasse>
-    <plz>4972</plz>
-    <ort>Dudelange</ort>
-  </adresse>
-  <priester>
-    <person>
-      <name>Pater Schenouda St. Antonius</name>
-      <mobil>0049-(0)176 6107 6389</mobil>
-    </person>
-  </priester>
-  <gottesdienstzeiten>
-    <zeit>Jeden 1. und 3. Samstag des Monats: Liturgie 09:00-11:00 Uhr</zeit>
-  </gottesdienstzeiten>
-</gemeinde>
-<gemeinde id="mainz" typ="Gemeinde" bistum="Süddeutschland">
-  <name>St. Kyrillos Koptisch-Orthodoxe Kirche</name>
-  <gemeindeort>Mainz</gemeindeort>
-  <url>https://kopten.de/gemeinden/mainz/</url>
-  <adresse>
-    <strasse>Westring 315-317</strasse>
-    <plz>55120</plz>
-    <ort>Mainz Mombach</ort>
-  </adresse>
-  <priester>
-    <person>
-      <name>Vater Johannes St. Antonius</name>
-      <mobil>0049-(0)1516 8843519</mobil>
-    </person>
-  </priester>
-  <kontakt>
-    <telefon>0049-(0)6131 2134 615</telefon>
-  </kontakt>
-  <diakone>
-    <diakon>Herr Samoil Matta: 0049-(0)177 343 0659</diakon>
-    <diakon>Herr Hani Farag: 0049-(0)15152421434</diakon>
-    <diakon>Herr Raouf Habib: 0049-(0)171 6731 044</diakon>
-  </diakone>
-  <gottesdienstzeiten>
-    <zeit>Jeden Samstag: Liturgie 09:00-11:00 Uhr, im Anschluss Agape, Sonntagschule und Bibelstunde</zeit>
-    <zeit>Jeden Sonntag: Liturgie 09:30-11:30 Uhr, im Anschluss Agape und Bibelstunde</zeit>
-    <zeit>Jeden Mittwoch: Liturgie 09:00-11:00 Uhr</zeit>
-    <zeit>Jeden Donnerstag: Gebetsstunde 18:00-19:30 Uhr</zeit>
-    <zeit>Montag bis Freitags: Senioren Mittagstisch 11:00-13:00 Uhr</zeit>
-    <zeit>Jeden Freitag: Mitternachtslobpreisung (Tasbeha) 18:00-19:30 Uhr</zeit>
-  </gottesdienstzeiten>
-  <bankverbindung>
-    <inhaber>St. Kyrillos koptisch-orthodoxe Kirche Mainz e.V.</inhaber>
-    <bank>Genobank Mainz eG, Hauptstr. 106, 55120 Mainz Mombach</bank>
-    <iban>DE2155 0606 1100 0034 5776</iban>
-    <bic>GENODE51MZ6</bic>
-  </bankverbindung>
-  <links>
-    <website />
-    <facebook>https://www.facebook.com/KoptischOrthodoxeKircheMainz/</facebook>
-    <instagram />
-    <youtube />
-  </links>
-</gemeinde>
-<gemeinde id="mering" typ="Gemeinde" bistum="Süddeutschland">
-  <name>St. Theodorus Koptisch-Orthodoxe Kirche</name>
-  <gemeindeort>Mering</gemeindeort>
-  <url>https://kopten.de/gemeinden/mering/</url>
-  <adresse>
-    <strasse>Zu Gast bei der St. Johannes evangelisch-lutherische Kirche, Martin-Luther Str. 1</strasse>
-    <plz>86415</plz>
-    <ort>Mering</ort>
-  </adresse>
-  <priester>
-    <person>
-      <name>Vater Paulus Hanna</name>
-      <email>Fr.PaulusHanna@yahoo.com</email>
-      <mobil>0049-(0)152 5959 9032</mobil>
-    </person>
-  </priester>
-  <gottesdienstzeiten>
-    <zeit>Jeden zweiten Samstag des Monats: Liturgie 09:30-12:00 Uhr</zeit>
-  </gottesdienstzeiten>
-</gemeinde>
-<gemeinde id="muenchen" typ="Gemeinde" bistum="Süddeutschland">
-  <name>St. Mina Koptisch-Orthodoxe Kirche</name>
-  <gemeindeort>München</gemeindeort>
-  <beschreibung>
-    <p>Die Kirche wurde 1851 erbaut und war ursprünglich Klosterkirche des Instituts der Englischen Fräulein. Heute noch ist sie in München unter dem Namen Loreto-Kirche bekannt. Seit 1996 nutzt die koptisch-orthodoxe Gemeinde von München die Loreto-Kirche in der Josephsburgstr. 24, 81673 München als ihre Pfarrkirche. Sie wurde zu einer koptischen Kirche umgestaltet durch den Einbau des Taufbeckens in einem kleinen Nebenraum, sowie der in allen orthodoxen Kirchen üblichen Ikonostase zwischen dem Altar und dem Kirchenrumpf. Im Jahr 2000 haben Gemeindemitglieder die Ikonostase aus Ägypten mitgebracht. Die Ikonen stammen aus dem Nonnenkloster St. Damiana im Nildelta nördlich von Kairo.</p>
-    <p>Die Kopten sind die Christen Ägyptens. Ihre Kirche wurde im 1. Jahrhundert n. Chr. vom heiligen Evangelisten Markus gegründet. Viele Kopten leben heute überall in der westlichen Welt. In verschiedenen deutschen Städten – so auch in München – gibt es koptisch-orthodoxe Gemeinden. Die Kirche erhielt den Namen St. Mina Kirche. St. Mina ist einer der wichtigsten Heiligen der koptisch-orthodoxen Kirche. Es gibt viele Kirchen und Klöster, die den Namen Mina tragen, und sehr viele koptische Familien nennen einen Ihrer Söhne Mina.</p>
-    <p>St. Mina wurde 285 n. Chr. geboren und war Soldat. Während der Christenverfolgung unter Kaiser Diokletian fand er den Märtyrertod. Seine Reliquien befinden sich im St. Mina Kloster südwestlich von Alexandria in Ägypten. Die Kopten und auch viele ägyptische Muslime verehren seine Reliquien als Quelle vieler Wunder und wunderbarer Heilungen.</p>
-    <p>In St. Mina finden wöchentlich Gottesdienste und Gemeindetreffen statt:</p>
-    <p>Jeden Samstag und Sonntag des Monats: Liturgie 09:30 – 12:00 Uhr</p>
-    <p>Jeden Mittwoch des Monats: Mitternachtslobpreis 18:30 – 20:00 Uhr</p>
-    <p>Außerdem werden Taufen, Hochzeiten und Trauergottesdienste in der Kirche zelebriert. Es finden auch immer wieder ökumenische Gottesdienste in der Kirche statt. Mitglieder der Gemeinde sind auch aktiv in ACK Bayern (Arbeitsgemeinschaft christlicher Kirchen in Bayern). Als 156 Jahre alter Kirchenbau ist die St. Mina Kirche ein historischer Sakralbau der Stadt München. Die koptisch-orthodoxe Gemeinde München bedankt sich bei der Erzdiözese München und Freising dafür, diese Kirche für ihre Veranstaltungen nutzen zu dürfen. Die koptische Gemeinde hat hier eine Heimat gefunden.</p>
-  </beschreibung>
-  <url>https://kopten.de/gemeinden/muenchen/</url>
-  <adresse>
-    <strasse>Josephsburg Strasse 24</strasse>
-    <plz>81673</plz>
-    <ort>München-Berg am Laim</ort>
-  </adresse>
-  <priester>
-    <person>
-      <name>Vater Paulus Hanna</name>
-      <email>Fr.PaulusHanna@yahoo.com</email>
-      <mobil>0049-(0)152 5959 9032</mobil>
-    </person>
-  </priester>
-  <diakone>
-    <diakon>Herr Ihab Noshy (Schatzmeister), E-Mail: ihab.noshy@gmail.com</diakon>
-  </diakone>
-  <gottesdienstzeiten>
-    <zeit>Jeden Samstag und Sonntag: Liturgie 09:00-12:00 Uhr</zeit>
-    <zeit>Jeden Mittwoch: Mitternachtslobpreis 18:30-20:00 Uhr</zeit>
-  </gottesdienstzeiten>
-  <bankverbindung>
-    <inhaber>St. Mina Kirche</inhaber>
-    <bank>Vereinigte Sparkassen Weilheim</bank>
-    <iban>DE93 7035 1030 0032 2775 50</iban>
-    <bic>BYLADEM1WHM</bic>
-  </bankverbindung>
-  <links>
-    <facebook>https://www.facebook.com/StMinaMuenchen/</facebook>
-    <instagram />
-    <youtube />
-  </links>
-</gemeinde>
-<gemeinde id="muenster-sarmsheim" typ="Gemeinde" bistum="Süddeutschland">
-  <name>St. Athanasius und St. Moris Koptisch-Orthodoxe Kirche</name>
-  <gemeindeort>Münster-Sarmsheim</gemeindeort>
-  <url>https://kopten.de/gemeinden/muenster-sarmsheim/</url>
-  <adresse>
-    <strasse>Saarstrasse 42</strasse>
-    <plz>55424</plz>
-    <ort>Münster-Sarmsheim</ort>
-  </adresse>
-  <priester>
-    <person>
-      <name>Vater Philippus Abeid</name>
-      <mobil>0049-(0)163 9032 040</mobil>
-    </person>
-  </priester>
-  <diakone>
-    <diakon>Herr Amgad Sef: 0049-(0)160 9901 8200, amgadsef@yahoo.de</diakon>
-  </diakone>
-  <gottesdienstzeiten>
-    <zeit>Jeden zweiten und vierten Samstag um 09:30 Uhr</zeit>
-  </gottesdienstzeiten>
-  <bankverbindung>
-    <inhaber>Trägerverein der koptisch-orthodoxen Kirche St. Athanasius e.V.</inhaber>
-    <iban>DE86 5451 0067 0967 7746 74</iban>
-  </bankverbindung>
-</gemeinde>
-<gemeinde id="neunkirchen" typ="Gemeinde" bistum="Süddeutschland">
-  <name>Koptisch-Orthodoxe Kirche</name>
-  <gemeindeort>Neunkirchen</gemeindeort>
-  <url>https://kopten.de/gemeinden/neunkirchen/</url>
-  <adresse>
-    <strasse>Kirche Schloßstr. 1</strasse>
-    <plz>66538</plz>
-    <ort>Neunkirchen</ort>
-  </adresse>
-  <priester>
-    <person>
-      <name>Vater Athanasius Botros</name>
-      <mobil>0049-(0)178 8930 996</mobil>
-    </person>
-  </priester>
-  <gottesdienstzeiten>
-    <zeit>Jeden ersten Samstag des Monats</zeit>
-  </gottesdienstzeiten>
-</gemeinde>
-<gemeinde id="oberkochen" typ="Gemeinde" bistum="Süddeutschland">
-  <name>St. Abanob Koptisch-Orthodoxe Kirche</name>
-  <gemeindeort>Oberkochen</gemeindeort>
-  <url>https://kopten.de/gemeinden/oberkochen/</url>
-  <adresse>
-    <strasse>Zu Gast bei der ev. Versöhnungskirche, Bürgermeister-Bosch-Str. 11</strasse>
-    <plz>73447</plz>
-    <ort>Oberkochen</ort>
-  </adresse>
-  <priester>
-    <person>
-      <name>Vater Johannes Ghali</name>
-      <email>paterjohannes@t-online.de</email>
-      <mobil>0049-(0)151 173 747 91</mobil>
-    </person>
-  </priester>
-  <kontakt>
-    <fax>0049-(0)711 601 9120</fax>
-  </kontakt>
-  <gottesdienstzeiten>
-    <zeit>Jeden ersten und dritten Samstag des Monats: Liturgie 09:30-12:30 Uhr</zeit>
-  </gottesdienstzeiten>
-</gemeinde>
-<gemeinde id="regensburg" typ="Gemeinde" bistum="Süddeutschland">
-  <name>St. Kyrillos koptisch-Orthodoxe Kirche</name>
-  <gemeindeort>Regensburg</gemeindeort>
-  <url>https://kopten.de/gemeinden/regensburg/</url>
-  <adresse>
-    <strasse>Zu Gast bei Kath. Kirche St. Wolfgang, Bischof-Wittmann-Straße 24A</strasse>
-    <plz>93051</plz>
-    <ort>Regensburg</ort>
-  </adresse>
-  <priester>
-    <person>
-      <name>Vater Arsenius Mikhail</name>
-      <mobil>0049170 6984865</mobil>
-    </person>
-  </priester>
-  <diakone>
-    <diakon>Dr. Ayman Ayad, Tel.: 0049176 70794592</diakon>
-  </diakone>
-  <links>
-    <facebook>https://www.facebook.com/share/1Cwd6ZNBHR/</facebook>
-    <instagram />
-    <youtube />
-  </links>
-</gemeinde>
-<gemeinde id="schwabisch-gmund" typ="Gemeinde" bistum="Süddeutschland">
-  <name>St. Abanoub Koptisch-Orthodoxe Kirche</name>
-  <gemeindeort>Schwäbisch Gmünd</gemeindeort>
-  <url>https://kopten.de/gemeinden/schwabisch-gmund-baden-wurttemberg/</url>
-  <adresse>
-    <strasse>Hauptstr. 69</strasse>
-    <plz>73527</plz>
-    <ort>Schwäbisch Gmünd</ort>
-  </adresse>
-  <priester>
-    <person>
-      <name>Vater Abanoub Fouad</name>
-      <mobil>0049-(0)160 6323 157</mobil>
-    </person>
-  </priester>
-  <gottesdienstzeiten>
-    <zeit>Jeden Sonntag: Liturgie 09:30-12:30 Uhr</zeit>
-  </gottesdienstzeiten>
-  <bankverbindung>
-    <inhaber>St. Abanoub koptisch-orthodoxe Kirche e.V.</inhaber>
-    <iban>DE90 6145 0050 1000 9834 63</iban>
-  </bankverbindung>
-</gemeinde>
-<gemeinde id="stuttgart" typ="Gemeinde" bistum="Süddeutschland">
-  <name>St. Georg Koptisch-Orthodoxe Kirche</name>
-  <gemeindeort>Stuttgart</gemeindeort>
-  <url>https://kopten.de/gemeinden/stuttgart/</url>
-  <adresse>
-    <strasse>Wurmlinger Strasse 47</strasse>
-    <plz>70597</plz>
-    <ort>Stuttgart-Degerloch</ort>
-  </adresse>
-  <priester>
-    <person>
-      <name>Vater Johannes Ghali</name>
-      <email>PaterJohannes@t-online.de</email>
-      <postanschrift>Arminstr. 12, 70178 Stuttgart</postanschrift>
-    </person>
-  </priester>
-  <kontakt>
-    <telefon>0049-(0)711 604 252</telefon>
-    <mobil>0049-(0)151 173 747 91</mobil>
-    <fax>0049-(0)711 601 9120</fax>
-  </kontakt>
-  <gottesdienstzeiten>
-    <zeit>Jeden Sonntag: Liturgie 09:30-12:30 Uhr</zeit>
-    <zeit>Jeden Samstag: Abendweihrauchopfer 19:00 Uhr</zeit>
-    <zeit>Jeden Freitag des Monats: Liturgie 07:30 Uhr</zeit>
-    <zeit>In Fastenzeiten: Mittwochs und Freitags Liturgie 10:00 Uhr</zeit>
-  </gottesdienstzeiten>
-  <bankverbindung>
-    <inhaber>Koptisch-orthodoxe St. Georg Kirche</inhaber>
-    <bank>Commerzbank Stuttgart</bank>
-    <iban>DE02 6004 0071 0550 9500 00</iban>
-    <bic>COBADEFFXXX</bic>
-  </bankverbindung>
-  <links>
-    <website>http://kopten-bw.de/</website>
-    <facebook />
-    <instagram />
-    <youtube />
-  </links>
-</gemeinde>
-<gemeinde id="trier" typ="Gemeinde" bistum="Süddeutschland">
-  <name>St. Athansius Kapelle Koptisch-Orthodoxe Kirche</name>
-  <gemeindeort>Trier</gemeindeort>
-  <url>https://kopten.de/gemeinden/trier/</url>
-  <adresse>
-    <strasse>Zu Gast bei dem katholischen Trierer Dom St. Petrus, Liebfrauenstraße 12</strasse>
-    <plz>54290</plz>
-    <ort>Trier</ort>
-  </adresse>
-  <priester>
-    <person>
-      <name>Pater Schenouda St. Antonius</name>
-      <mobil>0049-(0)176 6107 6389</mobil>
-    </person>
-  </priester>
-  <gottesdienstzeiten>
-    <zeit>Letzter Samstag des Monats: Liturgie 10:00-12:00 Uhr</zeit>
-  </gottesdienstzeiten>
-</gemeinde>
-<gemeinde id="tuttlingen" typ="Gemeinde" bistum="Süddeutschland">
-  <name>St. Mina koptisch-orthodoxe Kirche</name>
-  <gemeindeort>Tuttlingen</gemeindeort>
-  <url>https://kopten.de/gemeinden/tuttlingen/</url>
-  <adresse>
-    <strasse>Zu Gast bei der Kirche in der Koloniestr. 21</strasse>
-    <plz>78532</plz>
-    <ort>Tuttlingen</ort>
-  </adresse>
-  <priester>
-    <person>
-      <name>Vater Johannes Ghali</name>
-      <email>PaterJohannes@t-online.de</email>
-      <mobil>0049-(0)151 173 747 91</mobil>
-    </person>
-  </priester>
-  <kontakt>
-    <fax>0049-(0)711 601 9120</fax>
-  </kontakt>
-  <gottesdienstzeiten>
-    <zeit>Der 4. Samstag des Monats: Liturgie 09:30-12:30 Uhr</zeit>
-  </gottesdienstzeiten>
-</gemeinde>
-<gemeinde id="ulm" typ="Gemeinde" bistum="Süddeutschland">
-  <name>St. Michael Koptisch-Orthodoxe Kirche</name>
-  <gemeindeort>Ulm</gemeindeort>
-  <url>https://kopten.de/gemeinden/ulm/</url>
-  <adresse>
-    <strasse>Zu Gast bei der St. Michael Kirche zu den Wengen, Wengengasse 8</strasse>
-    <plz>89073</plz>
-    <ort>Ulm</ort>
-  </adresse>
-  <priester>
-    <person>
-      <name>Vater Johannes Ghali</name>
-      <email>PaterJohannes@t-online.de</email>
-      <mobil>0049-(0)151 173 747 91</mobil>
-    </person>
-  </priester>
-  <gottesdienstzeiten>
-    <zeit>Jeden zweiten Samstag des Monats: Liturgie 09:30-12:30 Uhr</zeit>
-  </gottesdienstzeiten>
-</gemeinde>
-<gemeinde id="unna" typ="Gemeinde" bistum="Süddeutschland">
-  <name>St. Maria und St. Philopater Mercurius Koptisch-Orthodoxe Kirche</name>
-  <gemeindeort>Unna</gemeindeort>
-  <url>https://kopten.de/gemeinden/dortmund/</url>
-  <adresse>
-    <strasse>Buderusstr. 46</strasse>
-    <plz>59427</plz>
-    <ort>Unna-Massen (bei Dortmund)</ort>
-  </adresse>
-  <priester>
-    <person>
-      <name>Vater Tawadros</name>
-      <email>abuna.tawadros@t-online.de</email>
-      <telefon>0049-(0)172 142 1 227</telefon>
-    </person>
-  </priester>
-  <kontakt>
-    <fax>0049-(0)2131 368 108</fax>
-  </kontakt>
-  <diakone>
-    <diakon>Herr Dr. rer.nat.Ing. Mina Abadeer: 0049-(0)1522 8182 063</diakon>
-  </diakone>
-  <gottesdienstzeiten>
-    <zeit>Jeden Samstag: Liturgie 09:30-12:00 Uhr</zeit>
-    <zeit>Jeden Samstag: Abendweihrauchopfer und Mitternachtspsalmodie 17:00 Uhr</zeit>
-    <zeit>Jeden Sonntag: Liturgie 09:30-13:00 Uhr, im Anschluss Agape</zeit>
-    <zeit>Sonntags 14:00-16:30: Kirchenchor, Sonntagsschule, Jugendveranstaltungen, Diener und Familientreff</zeit>
-  </gottesdienstzeiten>
-  <bankverbindung>
-    <inhaber>Hl. Maria-Mercurius Kirche</inhaber>
-    <bank>Volksbank Dortmund</bank>
-    <iban>DE92 4416 0014 6483 2041 00</iban>
-    <bic>GENODEM1DOR</bic>
-  </bankverbindung>
-</gemeinde>
-<gemeinde id="wetzlar" typ="Gemeinde" bistum="Süddeutschland">
-  <name>St. Maria und St. Elisabeth Koptisch-Orthodoxe Kirche</name>
-  <gemeindeort>Wetzlar</gemeindeort>
-  <url>https://kopten.de/gemeinden/wetzlar/</url>
-  <adresse>
-    <strasse>Kalsmuntstr. 66</strasse>
-    <plz>35578</plz>
-    <ort>Wetzlar-Westend</ort>
-  </adresse>
-  <priester>
-    <person>
-      <name>Mönchsvater aus dem St. Antonius Koptisch-Orthodoxen Kloster in Kröffelbach</name>
-    </person>
-  </priester>
-</gemeinde>
-<gemeinde id="wiesbaden" typ="Gemeinde" bistum="Süddeutschland">
-  <name>St. Georg und St. Mauritius Koptisch-Orthodoxe Kirche</name>
-  <gemeindeort>Wiesbaden</gemeindeort>
-  <url>https://kopten.de/gemeinden/wiesbaden/</url>
-  <adresse>
-    <strasse>Abegg Str. 37</strasse>
-    <plz>65193</plz>
-    <ort>Wiesbaden</ort>
-  </adresse>
-  <priester>
-
-  </priester>
-  <diakone>
-    <diakon>Herr Nabil Mikhail: 0049-(0)1785568753</diakon>
-    <diakon>Herr Samir Moussa: 0049-(0)17621590493</diakon>
-    <diakon>Herr Mina Ghattas: 0049-(0)1623429136</diakon>
-  </diakone>
-  <gottesdienstzeiten>
-    <zeit>Jeden Samstag: Liturgie 09:30-12:30 Uhr</zeit>
-    <zeit>Agape 12:30-13:00 Uhr</zeit>
-    <zeit>Sonntagsschule 13:00-13:30 Uhr</zeit>
-    <zeit>Bibelstunde 13:30-14:00 Uhr</zeit>
-    <zeit>Sportaktivitäten ab 14:00 Uhr</zeit>
-  </gottesdienstzeiten>
-  <bankverbindung>
-    <bank>Naspa Nassauische Sparkasse</bank>
-    <iban>DE27 5105 0015 0100 4293 15</iban>
-  </bankverbindung>
-</gemeinde>
-<gemeinde id="wintersdorf" typ="Gemeinde" bistum="Süddeutschland">
-  <name>Zirndorf - St. Maria und Erzengel Michael koptisch-orthodoxe Kirche</name>
-  <gemeindeort>Wintersdorf</gemeindeort>
-  <url>https://kopten.de/gemeinden/wintersdorf/</url>
-  <adresse>
-    <strasse>Seewald Str. 53</strasse>
-    <plz>90513</plz>
-    <ort>Wintersdorf-Zirndorf</ort>
-  </adresse>
-  <priester>
-    <person>
-      <name>Vater Danial Riad Abdel-Masih</name>
-      <mobil>0049-(0)178 6608 821</mobil>
-    </person>
-  </priester>
-  <kontakt>
-    <email>aegyptisch-koptische-Gemeinde-nbg@hotmail.de</email>
-  </kontakt>
-  <diakone>
-    <diakon>Herr Nabil Sadek, Tel: 0049-(0)170 349 0219</diakon>
-    <diakon>Herr Sobhi Zerr, Tel: 0049-(0)170 3432 367</diakon>
-  </diakone>
-  <gottesdienstzeiten>
-    <zeit>Sonntags: Liturgie 10:00-13:00 Uhr</zeit>
-    <zeit>Sonntags ab 13:00 Uhr: Sonntagsschule und Agape Mahlzeit</zeit>
-  </gottesdienstzeiten>
-  <bankverbindung>
-    <inhaber>Ägyptisch-koptisch Gemeinde Nürnberg e.V.</inhaber>
-    <bank>Sparkasse Nürnberg</bank>
-    <iban>DE75 7605 0101 0011 4471 09</iban>
-    <bic>SSKNDE77XXX</bic>
-  </bankverbindung>
-</gemeinde>
-<gemeinde id="worms" typ="Gemeinde" bistum="Süddeutschland">
-  <name>St. Maria und Erzengel Michael Koptisch-Orthodoxe Kirche</name>
-  <gemeindeort>Worms</gemeindeort>
-  <url>https://kopten.de/gemeinden/worms/</url>
-  <adresse>
-    <strasse>Zu Gast bei der St. Amandus Kirche, Bebelstr. 71a</strasse>
-    <plz>67549</plz>
-    <ort>Worms</ort>
-  </adresse>
-  <priester>
-    <person>
-      <name>Mönchsvater aus dem St. Antonius Koptisch-Orthodoxen Kloster in Kröffelbach</name>
-    </person>
-  </priester>
-  <diakone>
-    <diakon>Herr Dr. Sherif Ramsis: 0049-(0)174 9338 375</diakon>
-    <diakon>Herr Emad Mehana</diakon>
-  </diakone>
-  <gottesdienstzeiten>
-    <zeit>Jeden 2. und 4. Samstag des Monats: Liturgie 09:00-12:00 Uhr</zeit>
-  </gottesdienstzeiten>
-</gemeinde>
-<gemeinde id="bad-grund" typ="Gemeinde" bistum="Norddeutschland">
-  <name>koptisch-orthodoxe Kirche des heiligen Minas und des heiligen Papstes Kyrillus VI.</name>
-  <gemeindeort>Bad Grund</gemeindeort>
-  <url>https://kopten.de/gemeinden/bad-grund/</url>
-  <adresse>
-    <strasse>Am Rösteberg 1</strasse>
-    <plz>37539</plz>
-    <ort>Bad Grund</ort>
-  </adresse>
-  <priester>
-    <person>
+    <url>https://kopten.de/gemeinden/kroeffelbach/</url>
+    <adresse>
+      <strasse>Sankt-Antonius-Kloster</strasse>
+      <plz>35647</plz>
+      <ort>Waldsolms-Kröffelbach</ort>
+    </adresse>
+    <bischof>
+      <name>Seine Exzellenz Bischof Anba Deuscoros</name>
+      <funktion>Bischof von Süd-Deutschland</funktion>
+      <mobil>0049-(0)15563-241084</mobil>
+      <email>anba.deuscoros@kopten-sued.de</email>
+    </bischof>
+    <diakone>
+      <diakon>Diakonen-Chor tritt in Fülle jeden Sonntag auf</diakon>
+    </diakone>
+    <gottesdienstzeiten>
+      <zeit>Mitternachtsgebete: Jeden Tag früh 05:00-07:00 Uhr</zeit>
+      <zeit>Jeden Abend Agpeya-Gebete um 17:00 Uhr</zeit>
+      <zeit>Jeden Samstag: Abendweihrauchopfer 17:00</zeit>
+      <zeit>Sonntags: Gottesdienste 09:00 bis ca. 12:00 Uhr</zeit>
+      <zeit>Tägliche Liturgie: 07:00-09:00 Uhr</zeit>
+    </gottesdienstzeiten>
+    <bankverbindung>
+      <inhaber>Koptisches Kloster Kröffelbach</inhaber>
+      <bank>Volksbank Brandoberndorf</bank>
+      <iban>DE04 5159 1300 0050 1015 09</iban>
+      <bic>GENODE51WBO</bic>
+    </bankverbindung>
+    <links>
+      <facebook />
+      <instagram />
+      <youtube />
+    </links>
+  </gemeinde>
+  <gemeinde id="hoexter" typ="Kloster" bistum="Norddeutschland">
+    <name>Hl. Jungfrau Maria und hl. Mauritius koptisch-orthodoxes Kloster</name>
+    <gemeindeort>Höxter</gemeindeort>
+    <url>https://kopten.de/gemeinden/hoexter/</url>
+    <adresse>
+      <strasse>Propstei Strasse 1</strasse>
+      <plz>37671</plz>
+      <ort>Höxter</ort>
+    </adresse>
+    <bischof>
       <name>Metropolit Anba Damian</name>
-      <email>Bischof@koptisches-kloster-hoexter.de</email>
+      <funktion>Metropolit von Nord-Deutschland (Koptische Gemeinden in Berlin, Sachsen, Niedersachsen, Schleswig-Holstein, Hamburg, Bremen und z.T. Nordrhein-Westfalen)</funktion>
+      <weitere_priester>
+        <priester>Pater Girgis El Moharaki (Generalvikar der Diözese), Mobil: 0049-(0)171 436 0460</priester>
+        <priester>Pater Bolikarbos El Moharaky, Tel.: 0049-(0)173 9902 895</priester>
+      </weitere_priester>
+    </bischof>
+    <kontakt>
+      <telefon>0049-(0)5271 18 905 oder 0049-(0)5271 36 854</telefon>
       <mobil>0049-(0)172 564 3647</mobil>
-    </person>
-  </priester>
-  <gottesdienstzeiten>
-    <zeit>Jeden 1. Samstag des Monats: Liturgie 10:00-12:30 Uhr</zeit>
-  </gottesdienstzeiten>
-</gemeinde>
-<gemeinde id="berlin" typ="Gemeinde" bistum="Norddeutschland">
-  <name>St. Antonius und St. Schenouda Koptisch-Orthodoxe Kirche</name>
-  <gemeindeort>Berlin</gemeindeort>
-  <url>https://kopten.de/gemeinden/berlin/</url>
-  <adresse>
-    <strasse>Roedeliusplatz 2</strasse>
-    <plz>10365</plz>
-    <ort>Berlin-Lichtenberg</ort>
-  </adresse>
-  <priester>
-    <person>
-      <name>Pater Girgis El Moharaki</name>
-      <funktion>Generalvikar der Diözese</funktion>
-      <mobil>0049-(0)171 436 0460</mobil>
-      <email>girgiselmoharaky@hotmail.de</email>
-      <postanschrift>Schottstr. 3, 10365 Berlin</postanschrift>
-    </person>
-  </priester>
-  <kontakt>
-    <telefon>0049-(0)3055 491 013</telefon>
-    <fax>0049-(0)3031 955 869</fax>
-  </kontakt>
-  <diakone>
-    <diakon>Diakon Ramses Ibrahim: 0049-(0)172 3221223, ramsesberlin@aol.com</diakon>
-    <diakon>Diakon Tadros Keriakos: 0049-(0)172 3042 432</diakon>
-  </diakone>
-  <gottesdienstzeiten>
-    <zeit>Sonntags und mittwochs: 09:00 Uhr</zeit>
-    <zeit>Samstags Vesper und Mitternachtsgebete: 17:00 Uhr</zeit>
-    <zeit>Freitags General-Treffen: 17:00 Uhr</zeit>
-  </gottesdienstzeiten>
-  <links>
-    <website>https://koptische-gemeinde-berlin.de/</website>
-    <facebook />
-    <instagram />
-    <youtube />
-  </links>
-</gemeinde>
-<gemeinde id="bielefeld" typ="Gemeinde" bistum="Norddeutschland">
-  <name>St. Maria und die 7 Erzengel Koptisch-Orthodoxe Kirche</name>
-  <gemeindeort>Bielefeld</gemeindeort>
-  <url>https://kopten.de/gemeinden/bielefeld/</url>
-  <adresse>
-    <strasse>Zu Gast bei der St. Lukas Kirche, Siekstr. 10</strasse>
-    <plz>33719</plz>
-    <ort>Bielefeld</ort>
-  </adresse>
-  <priester>
-    <person>
-      <name>Pater Markus Soliman</name>
-      <email>dr_amirsoliman@yahoo.de</email>
-      <mobil>0049 (0) 152 22 89 25 68</mobil>
-    </person>
-  </priester>
-  <diakone>
-    <diakon>Herr Monir Botros, Mobil: 0049 (0) 171 15 55 434, E-Mail: info@fine-art-architekten.de</diakon>
-  </diakone>
-  <gottesdienstzeiten>
-    <zeit>Jeden 2. und 4. Sonntag des Monats: Liturgie 10:00-12:00 Uhr</zeit>
-  </gottesdienstzeiten>
-</gemeinde>
-<gemeinde id="bochum" typ="Gemeinde" bistum="Norddeutschland">
-  <name>Koptisch-Orthodoxe Kirche</name>
-  <gemeindeort>Bochum</gemeindeort>
-  <url>https://kopten.de/gemeinden/bochum/</url>
-  <adresse>
-    <strasse>Hölterweg 2</strasse>
-    <plz>44893</plz>
-    <ort>Bochum</ort>
-  </adresse>
-  <priester>
-    <person>
-      <name>Pater Bolikarbos El Moharaky</name>
-      <mobil>0049-(0)173 9902 895</mobil>
-    </person>
-  </priester>
-  <diakone>
-    <diakon>Herr Dr. Maged Ezzat, Tel.: 0049-(0)157 8041 0693</diakon>
-  </diakone>
-  <gottesdienstzeiten>
-    <zeit>Jeden Sonntag: Liturgie 09:30-11:30 Uhr</zeit>
-    <zeit>Agape 12:00-13:00 Uhr</zeit>
-    <zeit>Sonntagsschule: 13:00-13:30 Uhr</zeit>
-    <zeit>Bibelstudium: 13:00-13:30 Uhr</zeit>
-  </gottesdienstzeiten>
-</gemeinde>
-<gemeinde id="borgentreich" typ="Einrichtung" bistum="Norddeutschland">
-  <name>Zentrale Unterbringungseinrichtung für Flüchtlinge</name>
-  <gemeindeort>Borgentreich</gemeindeort>
-  <url>https://kopten.de/gemeinden/borgentreich/</url>
-  <adresse>
-    <strasse>Am Maihof 1</strasse>
-    <plz>34434</plz>
-    <ort>Borgentreich</ort>
-  </adresse>
-  <priester>
-    <person>
-      <name>Metropolit Damian</name>
-      <email>Bischof@koptisches-kloster-hoexter.de</email>
-      <mobil>0049-(0)173 9902 895</mobil>
-    </person>
-    <person>
-      <name>Pater Bolikarbos El Moharaky (Prior des Klosters)</name>
-      <mobil>0049-(0)173 9902 895</mobil>
-    </person>
-  </priester>
-</gemeinde>
-<gemeinde id="bremen" typ="Gemeinde" bistum="Norddeutschland">
-  <name>St. Antonius Koptisch-Orthodoxe Kirche</name>
-  <gemeindeort>Bremen</gemeindeort>
-  <url>https://kopten.de/gemeinden/bremen/</url>
-  <adresse>
-    <strasse>Christernstraße 6</strasse>
-    <plz>28309</plz>
-    <ort>Bremen</ort>
-  </adresse>
-  <priester>
-    <person>
-      <name>Pater Mankarius El Moharaky</name>
-      <email>bremen@kopten.de</email>
-      <mobil>0049-(0)15901304863</mobil>
-    </person>
-  </priester>
-  <diakone>
-    <diakon>Dipl.-Ing. Habashy Hanna, Tel.: 0049-(0)421 837 114</diakon>
-  </diakone>
-  <gottesdienstzeiten>
-    <zeit>Jeden Samstag: Vesper 19:00-20:00 Uhr</zeit>
-    <zeit>Jeden Sonntag: Liturgie 10:00-12:00 Uhr</zeit>
-  </gottesdienstzeiten>
-  <bankverbindung>
-    <inhaber>Koptisch-orthodoxe Gemeinde in Bremen e.V.</inhaber>
-    <bank>Sparkasse Bremen</bank>
-    <iban>DE36 2905 0101 0082 1269 62</iban>
-    <bic>SBREDE22XXX</bic>
-  </bankverbindung>
-  <links>
-    <facebook>https://www.facebook.com/stantonius.bremen</facebook>
-    <instagram />
-    <youtube />
-  </links>
-</gemeinde>
-<gemeinde id="dresden" typ="Gemeinde" bistum="Norddeutschland">
-  <name>St. Petrus Koptisch-Orthodoxe Kirche</name>
-  <gemeindeort>Dresden</gemeindeort>
-  <url>https://kopten.de/gemeinden/dresden/</url>
-  <adresse>
-    <strasse>Zu Gast bei der kath. Gemeinde St. Petrus Kirche, Dohnaerstr. 53</strasse>
-    <plz>01219</plz>
-    <ort>Dresden</ort>
-  </adresse>
-  <priester>
-    <person>
-      <name>Pater Girgis El Moharaki</name>
-      <funktion>Generalvikar der Diözese</funktion>
-      <email>girgiselmoharaky@hotmail.de</email>
-      <mobil>0049-(0)171 436 0460</mobil>
-    </person>
-  </priester>
-  <kontakt>
-    <fax>0049-(0)3031 955 869</fax>
-  </kontakt>
-  <diakone>
-    <diakon>Herr Sameh Iskander: 0049-(0)178 158 1273</diakon>
-    <diakon>Herr Manuel Gado: 0049-(0)176 7215 0860</diakon>
-  </diakone>
-  <gottesdienstzeiten>
-    <zeit>Jeden 3. Samstag des Monats 10:00 Uhr</zeit>
-  </gottesdienstzeiten>
-  <links>
-    <website>https://www.koptische-gemeinde.de/</website>
-    <facebook />
-    <instagram />
-    <youtube />
-  </links>
-</gemeinde>
-<gemeinde id="duisburg" typ="Gemeinde" bistum="Norddeutschland">
-  <name>Koptisch-Orthodoxe Kirche der heiligen Jungfrau Maria, die heiligen Kosman und Damian</name>
-  <gemeindeort>Duisburg</gemeindeort>
-  <url>https://kopten.de/gemeinden/duisburg/</url>
-  <adresse>
-    <strasse>Zu Gast bei der kath. Gemeinde St. Bonifatius Kirche, Wanheimerstr. 161 b</strasse>
-    <plz>47053</plz>
-    <ort>Duisburg Hochfeld</ort>
-  </adresse>
-  <priester>
-    <person>
-      <name>Vater Cozman Fam</name>
-      <email>fr.cozman.sedky@gmail.com</email>
-      <mobil>0049-(0)176 3229 1889</mobil>
-    </person>
-  </priester>
-  <diakone>
-    <diakon>Herr Milad Botros, Tel.: 0049-(0)152 0875 7971</diakon>
-    <diakon>Herr Shenouda Abdelnour, Tel.: 0049-(0)159 0125 9225</diakon>
-  </diakone>
-  <gottesdienstzeiten>
-    <zeit>Jeden Samstag: Liturgie 09:30-11:30 Uhr</zeit>
-    <zeit>Jeden Samstag: Vesper und Mitternachtsgebet 18:00-21:00 Uhr</zeit>
-    <zeit>Jeden Sonntag: Liturgie 09:30-12:00 Uhr</zeit>
-    <zeit>Jeden Sonntag: Diakonenschule 12:30-13:00 Uhr</zeit>
-    <zeit>Jeden Sonntag: Agape 13:00-13:45 Uhr</zeit>
-    <zeit>Jeden Sonntag: Sonntagsschule 13:45-14:30 Uhr</zeit>
-  </gottesdienstzeiten>
-  <bankverbindung>
-    <bank>Sparkasse Duisburg</bank>
-    <iban>DE32 3505 0000 0200 3738 35</iban>
-  </bankverbindung>
-  <links>
-    <website />
-    <facebook>https://www.facebook.com/KoptischOrthodoxDuisburg</facebook>
-    <instagram />
-    <youtube />
-  </links>
-</gemeinde>
-<gemeinde id="espelkamp" typ="Gemeinde" bistum="Norddeutschland">
-  <name>Erzengel Michael Koptisch-Orthodoxe Kirche</name>
-  <gemeindeort>Espelkamp</gemeindeort>
-  <url>https://kopten.de/gemeinden/espelkamp/</url>
-  <adresse>
-    <strasse>Isenstedter Str. 100</strasse>
-    <plz>32339</plz>
-    <ort>Espelkamp</ort>
-  </adresse>
-  <priester>
-    <person>
-      <name>Vater Markus Soliman</name>
-      <email>dr_amirsoliman@yahoo.de</email>
-      <mobil>0049-(0)1522 2892 568</mobil>
-    </person>
-  </priester>
-  <diakone>
-    <diakon>Herr Kadees Samuel, Tel.: 0049-(0)1639017696</diakon>
-    <diakon>Herr Medhat Guirguis, Tel.: 0049-(0)17624683504</diakon>
-  </diakone>
-  <gottesdienstzeiten>
-    <zeit>Jeden 4. Samstag des Monats: Liturgie 10:00-12:00 Uhr</zeit>
-  </gottesdienstzeiten>
-</gemeinde>
-<gemeinde id="hamburg" typ="Gemeinde" bistum="Norddeutschland">
-  <name>Der heilige Petrus, der letzte Märtyrer Koptisch-Orthodoxe Kirche</name>
-  <gemeindeort>Hamburg</gemeindeort>
-  <url>https://kopten.de/gemeinden/hamburg/</url>
-  <adresse>
-    <strasse>Schröderstiftstr. 34</strasse>
-    <plz>20146</plz>
-    <ort>Hamburg</ort>
-  </adresse>
-  <priester>
-    <person>
-      <name>Pater Athanasius</name>
-      <postanschrift>Doormannsweg 25, 20259 Hamburg</postanschrift>
-    </person>
-  </priester>
-  <kontakt>
-    <telefon>0049-(0)405 324 784</telefon>
-    <mobil>0049-(0)152 5954 4511</mobil>
-    <fax>0049-(0)405 324 784</fax>
-  </kontakt>
-  <diakone>
-    <diakon>Herr Josef Asaad: +49(0)15257675904</diakon>
-  </diakone>
-  <gottesdienstzeiten>
-    <zeit>Jeden 1. und 3. Samstag des Monats: Liturgie 10:00-12:30 Uhr</zeit>
-    <zeit>Jeden Sonntag des Monats: Liturgie 10:00-12:30 Uhr</zeit>
-    <zeit>Liturgie am koptischen Weihnachts- und Osterfest</zeit>
-  </gottesdienstzeiten>
-  <bankverbindung>
-    <inhaber>Koptische Gemeinde e.V.</inhaber>
-    <bank>Haspa Hamburg</bank>
-    <iban>DE92 2005 0550 1204 1240 75</iban>
-    <bic>HASPDEHHXXX</bic>
-  </bankverbindung>
-  <links>
-    <website>https://koptische-kirche-hamburg.de/</website>
-    <instagram />
-    <youtube />
-  </links>
-</gemeinde>
-<gemeinde id="hannover" typ="Gemeinde" bistum="Norddeutschland">
-  <name>St. Athanasius Koptisch-Orthodoxe Kirche</name>
-  <gemeindeort>Hannover</gemeindeort>
-  <url>https://kopten.de/gemeinden/hannover/</url>
-  <adresse>
-    <strasse>Breite Riede 13</strasse>
-    <plz>31275</plz>
-    <ort>Lehrte-Ahlten</ort>
-  </adresse>
-  <priester>
-    <person>
-      <name>Pater Ologious El Macary</name>
-      <email>ologious2012@gmail.com</email>
-      <mobil>0049-(0) 170 978 3969</mobil>
-    </person>
-  </priester>
-  <diakone>
-    <diakon>Herr Said Basta: 0049-(0)15259544511</diakon>
-    <diakon>Herr Dr. Raouf Nahkla: 0049-(0)511 8236377</diakon>
-  </diakone>
-  <gottesdienstzeiten>
-    <zeit>Jeden Sonntag des Monats: Liturgie 10:00-12:30 Uhr</zeit>
-  </gottesdienstzeiten>
-  <bankverbindung>
-    <inhaber>Koptische Gemeinde e.V. Hannover</inhaber>
-    <bank>Evangelische Kreditgenossenschaft eG</bank>
-    <iban>DE67 2519 3331 1121 7960 00</iban>
-    <bic>GENODEF1PAT</bic>
-  </bankverbindung>
-  <links>
-    <website />
-    <facebook>https://www.facebook.com/groups/740847379295912/</facebook>
-    <instagram />
-    <youtube />
-  </links>
-</gemeinde>
-<gemeinde id="leipzig" typ="Gemeinde" bistum="Norddeutschland">
-  <name>St. Georg Koptisch-Orthodoxe Kirche</name>
-  <gemeindeort>Leipzig</gemeindeort>
-  <url>https://kopten.de/gemeinden/leipzig/</url>
-  <adresse>
-    <strasse>Zu Gast bei der St. Laurentius Kirche, Witzgallstr. 20</strasse>
-    <plz>04317</plz>
-    <ort>Leipzig</ort>
-  </adresse>
-  <priester>
-    <person>
-      <name>Pater Girgis El Moharaki</name>
-      <funktion>Generalvikar der Diözese</funktion>
-      <email>girgiselmoharaky@hotmail.de</email>
-      <mobil>0049-(0)171 436 0460</mobil>
-    </person>
-  </priester>
-  <gottesdienstzeiten>
-    <zeit>Jeden 2. Samstag des Monats 10:00 Uhr</zeit>
-  </gottesdienstzeiten>
-</gemeinde>
-<gemeinde id="minden" typ="Gemeinde" bistum="Norddeutschland">
-  <name>St. Mauritius Koptisch-Orthodoxe Kirche</name>
-  <gemeindeort>Minden</gemeindeort>
-  <url>https://kopten.de/gemeinden/minden/</url>
-  <adresse>
-    <strasse>Zu Gast bei St. Mauritius Kirche, Pauline-von-Mallinckrodt-Platz 5</strasse>
-    <plz>32423</plz>
-    <ort>Minden</ort>
-  </adresse>
-  <priester>
-    <person>
-      <name>Pater Ologious Macarious</name>
-      <email>ologious2012@gmail.com</email>
-      <mobil>0049-(0) 170 978 3969</mobil>
-    </person>
-  </priester>
-  <diakone>
-    <diakon>Amgad: 0049-(0)157 5075 9500</diakon>
-    <diakon>Dr. Mina Noshy: 0049-(0)152 5167 2927</diakon>
-  </diakone>
-  <gottesdienstzeiten>
-    <zeit>Jeden 1. und 3. Samstag des Monats 10:00-12:00 Uhr</zeit>
-  </gottesdienstzeiten>
-</gemeinde>
-<gemeinde id="neubrandenburg" typ="Gemeinde" bistum="Norddeutschland">
-  <name>Koptisch-Orthodoxe Kirche</name>
-  <gemeindeort>Neubrandenburg</gemeindeort>
-  <url>https://kopten.de/gemeinden/neubrandenburg/</url>
-  <adresse>
-    <strasse>Zu Gast bei der evangelischen Kirchengemeinde St. Michael, Straußstrasse 8</strasse>
-    <plz>17034</plz>
-    <ort>Neubrandenburg</ort>
-  </adresse>
-  <priester>
-    <person>
-      <name>Pater Girgis El Moharaki</name>
-      <funktion>Generalvikar der Diözese</funktion>
-      <email>girgiselmoharaky@hotmail.de</email>
-      <mobil>0049-(0)171 436 0460</mobil>
-    </person>
-  </priester>
-  <diakone>
-    <diakon>Diakon John Sedrak, Tel.: 0049-(0)157 3373 0332</diakon>
-  </diakone>
-  <gottesdienstzeiten>
-    <zeit>Letzten Samstag des Monats 10:00 Uhr</zeit>
-  </gottesdienstzeiten>
-</gemeinde>
-<gemeinde id="nieheim" typ="Kloster" bistum="Norddeutschland">
-  <name>Koptisches Nonnenkloster</name>
-  <gemeindeort>Nieheim</gemeindeort>
-  <url>https://kopten.de/gemeinden/nieheim/</url>
-  <adresse>
-    <strasse>Friedrich-Wilhelm-Weber Str. 11</strasse>
-    <plz>33039</plz>
-    <ort>Nieheim</ort>
-  </adresse>
-  <priester>
-    <person>
-      <name>Metropolit Anba Damian</name>
-      <email>Bischof@koptisches-kloster-hoexter.de</email>
-      <mobil>0049-(0)172 564 3647</mobil>
-    </person>
-    <person>
-      <name>Mutter Aksany Wasef</name>
-    </person>
-  </priester>
-  <links>
-    <website />
-    <facebook>https://www.facebook.com/profile.php?id=61570439083653</facebook>
-    <instagram />
-    <youtube />
-  </links>
-</gemeinde>
-<gemeinde id="nordenham" typ="Gemeinde" bistum="Norddeutschland">
-  <name>Koptisch-Orthodoxe Kirche</name>
-  <gemeindeort>Nordenham</gemeindeort>
-  <url>https://kopten.de/gemeinden/nordenham/</url>
-  <adresse>
-    <strasse>Auf den Wurten 59</strasse>
-    <plz>26954</plz>
-    <ort>Nordenham</ort>
-  </adresse>
-  <priester>
-    <person>
-      <name>Pater Mankarius El Moharaky</name>
-      <mobil>0049-(0)159 0130 4863</mobil>
-    </person>
-  </priester>
-  <diakone>
-    <diakon>Herr Emad Ebrahim, Tel.: 0049-(0)15754863910</diakon>
-  </diakone>
-  <gottesdienstzeiten>
-    <zeit>Jeden Samstag: Liturgie 09:00-11:00 Uhr</zeit>
-    <zeit>Jeden Sonntag: Liturgie 09:00-11:00 Uhr</zeit>
-  </gottesdienstzeiten>
-</gemeinde>
-<gemeinde id="paderborn" typ="Gemeinde" bistum="Norddeutschland">
-  <name>St. Paul und St. Antonius Koptisch-Orthodoxe Kirche</name>
-  <gemeindeort>Paderborn</gemeindeort>
-  <url>https://kopten.de/gemeinden/paderborn/</url>
-  <adresse>
-    <strasse>Zu Gast bei der St. Michael Kirche, Bielefelder Str. 157, 33104 Paderborn-Sennelager</strasse>
-    <plz>33102</plz>
-    <ort>Paderborn</ort>
-  </adresse>
-  <priester>
-    <person>
-      <name>Vater Markus Soliman</name>
-      <email>dr_amirsoliman@yahoo.de</email>
-      <mobil>0049-(0) 1522 2892 568</mobil>
-    </person>
-  </priester>
-  <diakone>
-    <diakon>Herr Emad Khalil, Tel.: 0049-(0)173 2957 523</diakon>
-    <diakon>Herr Samy Tawfik, Tel.: 0049-(0)152 2262 3137</diakon>
-  </diakone>
-  <gottesdienstzeiten>
-    <zeit>Jeden 2. Samstag des Monats: Liturgie 10:00-12:00 Uhr</zeit>
-  </gottesdienstzeiten>
-</gemeinde>
-<gemeinde id="friedrichsaue" typ="Gemeinde" bistum="Norddeutschland">
-  <name>Friedrichsaue – Koptisch-Orthodoxe Kirche</name>
-  <gemeindeort>Seeland</gemeindeort>
-  <url>https://kopten.de/gemeinden/friedrichsaue/</url>
-  <adresse>
-    <strasse>Chausseestraße 2</strasse>
-    <plz>06449</plz>
-    <ort>Seeland – OT Friedrichsaue</ort>
-  </adresse>
-  <priester>
-    <person>
-      <name>Pater Girgis El Moharaki</name>
-      <funktion>Generalvikar der Diözese</funktion>
-      <email>girgiselmoharaky@hotmail.de</email>
-      <mobil>0049-(0)171 436 0460</mobil>
-    </person>
-  </priester>
-  <diakone>
-    <diakon>Familie Hinze: 0049-(0)34741 73231</diakon>
-  </diakone>
-  <gottesdienstzeiten>
-    <zeit>1. Samstag des Monats: Liturgie 09:30-12:30 Uhr</zeit>
-  </gottesdienstzeiten>
-  <links>
-    <website />
-    <facebook>https://www.facebook.com/groups/316865105480571/</facebook>
-    <instagram />
-    <youtube />
-  </links>
-</gemeinde>
-<gemeinde id="wilhelmshafen" typ="Gemeinde" bistum="Norddeutschland">
-  <name>St. Maria und St. Mauritius Koptisch-Orthodoxe Kirche</name>
-  <gemeindeort>Wilhelmshafen</gemeindeort>
-  <url>https://kopten.de/gemeinden/wilhelmshafen/</url>
-  <adresse>
-    <strasse>Kirche der heiligen Jungfrau Maria, Hunrichs Str. 4, Ortsteil Voslapp</strasse>
-    <plz>26388</plz>
-    <ort>Wilhelmshaven</ort>
-  </adresse>
-  <priester>
-    <person>
-      <name>Pater Sorial El Moharaky</name>
-      <mobil>0049-(0)157 3348 3792</mobil>
-    </person>
-  </priester>
-  <diakone>
-    <diakon>Herr Khela Belamon, Tel.: 0049-(0)177 6178 961</diakon>
-    <diakon>Dr. Michael Roushdy, Tel.: 0049-(0)151 1167 7660</diakon>
-  </diakone>
-  <gottesdienstzeiten>
-    <zeit>Jeden Sonntag: Liturgie 09:30 Uhr, anschließend Sonntagsschule und Bibelstunde</zeit>
-  </gottesdienstzeiten>
-</gemeinde>
+      <fax>0049-(0)5271-36 742</fax>
+    </kontakt>
+    <diakone>
+      <diakon>Herr Salip Matta, Tel.: 0049-(0)173 2911 554</diakon>
+      <diakon>Herr Adel Matta, Tel.: 0049-(0)173 2911 405</diakon>
+    </diakone>
+    <gottesdienstzeiten>
+      <zeit>Jeden Sonntag Messe 10:00-12:00 Uhr</zeit>
+      <zeit>Mittwochs und Freitags Messe 07:00-09:00 Uhr</zeit>
+      <zeit>Jeden Samstag Messe 08:00-10:00 Uhr</zeit>
+    </gottesdienstzeiten>
+    <bankverbindung>
+      <inhaber>Koptisches Kloster</inhaber>
+      <bank>Sparkasse Höxter</bank>
+      <iban>DE67 4725 1550 0023 008 88</iban>
+      <bic>WELADED1HXB</bic>
+    </bankverbindung>
+    <links>
+      <website>https://koptisches-kloster-brenkhausen.de/</website>
+      <facebook>https://www.facebook.com/KoptischOrthodoxeKircheDeutschland/</facebook>
+      <instagram />
+      <youtube />
+    </links>
+  </gemeinde>
+  <gemeinde id="aachen" typ="Gemeinde" bistum="Süddeutschland">
+    <name>St. Marien &amp; St. Demiana Koptisch-Orthodoxe Kirche</name>
+    <gemeindeort>Aachen</gemeindeort>
+    <url>https://kopten.de/gemeinden/aachen/</url>
+    <adresse>
+      <strasse>Zu Gast bei der katholischen Kirchengemeinde St. Bonifatius, Mataréstraße 12</strasse>
+      <plz>52078</plz>
+      <ort>Aachen</ort>
+    </adresse>
+    <priester>
+      <person>
+        <name>Vater Gerges Tawadros</name>
+        <mobil>0049-(0)17621890166</mobil>
+        <email>info@kopten-aachen.de</email>
+      </person>
+    </priester>
+    <diakone>
+      <diakon>Herr Youssef Sabry, M.Sc.: 0049-(0)1745421850</diakon>
+      <diakon>Herr George Maged: 0049-(0)15229682245</diakon>
+      <diakon>Herr Anton Abo El Saad: 0049-(0)1711924442</diakon>
+    </diakone>
+    <gottesdienstzeiten>
+      <zeit>Jeden Samstag: 09:00-12:00 Liturgie</zeit>
+      <zeit>12:00-13:00 Agape (gemeinsames Essen)</zeit>
+      <zeit>13:00-14:00 Bibelstunde</zeit>
+      <zeit>14:00-15:00 Kinder Sonntagsschule und Jugendtreffen</zeit>
+      <zeit>15:00-16:00 Diakonentreff und Chor</zeit>
+    </gottesdienstzeiten>
+    <bankverbindung>
+      <inhaber>St. Marien und St. Demiana Kirche</inhaber>
+      <bank>Sparkasse Aachen</bank>
+      <iban>DE03 3905 0000 1077 2717 63</iban>
+      <bic>AACSDE33XXX</bic>
+    </bankverbindung>
+    <links>
+      <website />
+      <facebook>https://www.facebook.com/StDemianaAachen/</facebook>
+      <instagram />
+      <youtube />
+    </links>
+  </gemeinde>
+  <gemeinde id="altena" typ="Gemeinde" bistum="Süddeutschland">
+    <name>Erzengel Michael koptisch-orthodoxe Kirche</name>
+    <gemeindeort>Altena</gemeindeort>
+    <url>https://kopten.de/gemeinden/altena/</url>
+    <adresse>
+      <strasse>Kirchstraße 25</strasse>
+      <plz>58762</plz>
+      <ort>Altena</ort>
+    </adresse>
+    <priester>
+      <person>
+        <name>Vater Ishak Aziz</name>
+        <email>abuna.ishak@gmail.com</email>
+        <mobil>0049-(0)176 7277 4869</mobil>
+      </person>
+    </priester>
+    <kontakt>
+      <email>erzengelmichaelaltena@gmail.com</email>
+    </kontakt>
+    <gottesdienstzeiten>
+      <zeit>Jeden Samstag und Sonntag: Liturgie 10:00-12:30 Uhr</zeit>
+      <zeit>Im Anschluss ab 12:30 Uhr: Agape, Sonntagsschule, Jugendtreffen und Bibelstunde</zeit>
+    </gottesdienstzeiten>
+    <links>
+      <website />
+      <facebook>https://www.facebook.com/Erzengelmichaelaltena/</facebook>
+      <instagram>https://www.instagram.com/erzengelmichaelaltena</instagram>
+      <youtube>https://www.youtube.com/channel/UCXyk8eTHwlqBbxR8_Qg7G5A</youtube>
+      <tiktok>https://www.tiktok.com/@erzengelmichaelaltena</tiktok>
+    </links>
+  </gemeinde>
+  <gemeinde id="altenstadt" typ="Gemeinde" bistum="Süddeutschland">
+    <name>Koptisch-Orthodoxe Kirche des St. Zachäus des Zöllners und der heiligen Kinder von Bethlehem</name>
+    <gemeindeort>Altenstadt</gemeindeort>
+    <url>https://kopten.de/gemeinden/altenstadt/</url>
+    <adresse>
+      <strasse>Zu Gast bei der evangelischen Kirche Waldsiedlung: Finkenweg 1</strasse>
+      <plz>63674</plz>
+      <ort>Altenstadt</ort>
+    </adresse>
+    <priester>
+
+    </priester>
+    <diakone>
+      <diakon>Herr Mario Yagoub: 0049-(0)160 9299 1049</diakon>
+    </diakone>
+    <gottesdienstzeiten>
+      <zeit>Jeden 1. Samstag des Monats: Liturgie 09:00-12:00 Uhr</zeit>
+      <zeit>In den Fastenzeiten jeden Montag: Liturgie 10:00-13:00 Uhr</zeit>
+    </gottesdienstzeiten>
+  </gemeinde>
+  <gemeinde id="andernach" typ="Gemeinde" bistum="Süddeutschland">
+    <name>St. Petrus koptisch-orthodoxe Kirche</name>
+    <gemeindeort>Andernach (bei Koblenz)</gemeindeort>
+    <url>https://kopten.de/gemeinden/andernach/</url>
+    <adresse>
+      <strasse>Albertstr. 2</strasse>
+      <plz>56626</plz>
+      <ort>Andernach (Koblenz)</ort>
+    </adresse>
+    <priester>
+      <person>
+        <name>Vater Philippus Abeid</name>
+        <mobil>0049-(0)163 9032 040</mobil>
+      </person>
+    </priester>
+    <diakone>
+      <diakon>Herr Bishoy Attya: 0049-(0)174 459 7849</diakon>
+    </diakone>
+    <gottesdienstzeiten>
+      <zeit>Jeden Sonntag: Liturgie 9:00-12:00 Uhr</zeit>
+      <zeit>Agape: 12:00-13:00 Uhr</zeit>
+      <zeit>Chor: 13:00-13:30 Uhr</zeit>
+      <zeit>Sonntagsschule: 13:30-14:00 Uhr</zeit>
+      <zeit>Jeden 1. und 3. Samstag des Monats: Liturgie 9:00-11:00 Uhr</zeit>
+      <zeit>Mittwochs und Freitags: Liturgie 9:00-11:00 Uhr</zeit>
+    </gottesdienstzeiten>
+    <links>
+      <facebook>https://www.facebook.com/share/19yAguWKd5/</facebook>
+      <instagram />
+      <youtube />
+    </links>
+  </gemeinde>
+  <gemeinde id="bergneustadt" typ="Gemeinde" bistum="Süddeutschland">
+    <name>St. Johannes Koptisch-Orthodoxe Kirche</name>
+    <gemeindeort>Bergneustadt</gemeindeort>
+    <url>https://kopten.de/gemeinden/bergneustadt/</url>
+    <adresse>
+      <strasse>Dietrich-Bonhoeffer-Weg 4</strasse>
+      <plz>51702</plz>
+      <ort>Bergneustadt</ort>
+    </adresse>
+    <priester>
+
+    </priester>
+    <gottesdienstzeiten>
+      <zeit>Jeden 4. Sonntag des Monats: Liturgie 09:30-12:00 Uhr</zeit>
+    </gottesdienstzeiten>
+  </gemeinde>
+  <gemeinde id="bitburg" typ="Gemeinde" bistum="Süddeutschland">
+    <name>St. Maria und St. Athanasius koptisch-orthodoxe Kirche</name>
+    <gemeindeort>Bitburg</gemeindeort>
+    <url>https://kopten.de/gemeinden/bitburg/</url>
+    <adresse>
+      <strasse>Gebäude 105 Messerschmidt Strasse 1</strasse>
+      <plz>54634</plz>
+      <ort>Bitburg</ort>
+    </adresse>
+    <priester>
+      <person>
+        <name>Pater Shenouda St. Antonius</name>
+        <mobil>0049-(0)176 6107 6389</mobil>
+      </person>
+    </priester>
+    <kontakt>
+      <telefon>0049-(0)6561 184 47</telefon>
+      <fax>0049-(0)6561 942 886</fax>
+    </kontakt>
+    <diakone>
+      <diakon>Shokry Mose: 0049-(0)173 6997 103</diakon>
+    </diakone>
+    <gottesdienstzeiten>
+      <zeit>Jeden Sonntag: Liturgie 09:30-12:30 Uhr</zeit>
+      <zeit>Jeden Samstag: Abendweihrauchopfer 20:00 Uhr</zeit>
+      <zeit>Mittwochs und Freitags: Liturgie 09:00-11:00 Uhr</zeit>
+    </gottesdienstzeiten>
+    <links>
+      <website>https://www.koptische-kirche-bitburg.de/</website>
+      <facebook >https://www.facebook.com/st.athanasius.kirche/</facebook>
+      <instagram />
+      <youtube />
+    </links>
+  </gemeinde>
+  <gemeinde id="bocholt" typ="Gemeinde" bistum="Süddeutschland">
+    <name>Heilige Maria und St. Antonius Koptisch-Orthodoxe Kirche</name>
+    <gemeindeort>Bocholt</gemeindeort>
+    <url>https://kopten.de/gemeinden/bocholt/</url>
+    <adresse>
+      <strasse>Norbertpl. 10</strasse>
+      <plz>46399</plz>
+      <ort>Bocholt</ort>
+    </adresse>
+    <priester>
+      <person>
+        <name>Vater Athanasius Botros</name>
+        <mobil>0049-(0)178 8930 996</mobil>
+      </person>
+    </priester>
+    <diakone>
+      <diakon>Herr Raafat Gendi, Tel: 0049-(0)1577 8768 969</diakon>
+      <diakon>Herr Emad Mansour, Tel: 0049-(0)15789182397</diakon>
+      <diakon>Herr Bishoy Mousa, Tel: 0049-(0)15901338367</diakon>
+    </diakone>
+    <gottesdienstzeiten>
+      <zeit>Jeden Sonntag: Liturgie 09:30-12:30 Uhr, anschließend Agape 12:30-13:30 Uhr</zeit>
+      <zeit>Ab 13:30 Uhr Sonntagsschule und Familientreffen</zeit>
+      <zeit>Jeden Samstag: Abendweihrauchopfer 19:00-20:00 Uhr</zeit>
+    </gottesdienstzeiten>
+    <bankverbindung>
+      <inhaber>Koptisch-Orthodoxe Kirche in Bocholt</inhaber>
+      <bank>Sparkasse Westmünsterland</bank>
+      <iban>DE41 4015 4530 0050 6499 04</iban>
+      <bic>WELADE3WEXX</bic>
+    </bankverbindung>
+    <links>
+      <website>https://koptische-kirche-bocholt.com/</website>
+      <facebook>https://www.facebook.com/koptische.kirche.bocholt/</facebook>
+      <instagram>https://www.instagram.com/koptische_kirche_boh/</instagram>
+      <youtube>https://www.youtube.com/@MAKB-Bocholt</youtube>
+    </links>
+  </gemeinde>
+  <gemeinde id="bonn" typ="Gemeinde" bistum="Süddeutschland">
+    <name>Kirche der sieben Erzengel koptisch-orthodoxe Kirche</name>
+    <gemeindeort>Bonn (Siegburg)</gemeindeort>
+    <url>https://kopten.de/gemeinden/bonn/</url>
+    <adresse>
+      <strasse>Aggerstraße 116</strasse>
+      <plz>53721</plz>
+      <ort>Siegburg</ort>
+    </adresse>
+    <priester>
+      <person>
+        <name>Vater Antonius Kamel</name>
+        <mobil>0049-(0)157 5484 6381</mobil>
+      </person>
+    </priester>
+    <diakone>
+      <diakon>Magdy Malek: 0049(0)17676914922</diakon>
+    </diakone>
+    <gottesdienstzeiten>
+      <zeit>Jeden Sonntag: Liturgie 09:30-12:30 Uhr</zeit>
+      <zeit>Im Anschluss Agape, Sonntagsschule, Jugendtreffen und Bibelstunde</zeit>
+    </gottesdienstzeiten>
+    <links>
+      <website />
+      <facebook>https://www.facebook.com/profile.php?id=100075825228083</facebook>
+      <instagram>https://www.instagram.com/koptischekirche_bonn/</instagram>
+      <youtube>https://www.youtube.com/@KirchederSiebenErzengel</youtube>
+    </links>
+  </gemeinde>
+  <gemeinde id="duesseldorf" typ="Gemeinde" bistum="Süddeutschland">
+    <name>St. Marien Koptisch-Orthodoxe Kirche</name>
+    <gemeindeort>Düsseldorf</gemeindeort>
+    <url>https://kopten.de/gemeinden/duesseldorf/</url>
+    <adresse>
+      <strasse>Pastor-Klinkhammer-Platz 1, bzw. Heerdter Landstrasse 270</strasse>
+      <plz>40549</plz>
+      <ort>Düsseldorf</ort>
+    </adresse>
+    <priester>
+      <person>
+        <name>Erzpriester Vater Boulos Shehata</name>
+        <mobil>0049-(0)176 6166 0305</mobil>
+        <email>st.maria@t-online.de</email>
+      </person>
+      <person>
+        <name>Vater Petrus Beshay</name>
+        <mobil>0049-(0)176 4335 9559</mobil>
+        <email>ugabra10@hotmail.com</email>
+      </person>
+    </priester>
+    <kontakt>
+      <telefon>0049-(0)2116 912 839</telefon>
+      <fax>0049-(0)2116 911 256</fax>
+    </kontakt>
+    <diakone>
+      <diakon>Herr Reda Habib: 0049-(0) 174 922 6401</diakon>
+      <diakon>Herr Ayman Magdy: 0049-(0) 176 473 70881</diakon>
+    </diakone>
+    <gottesdienstzeiten>
+      <zeit>Jeden Sonntag: Liturgie 10:00-12:30 Uhr</zeit>
+      <zeit>Diakonentreff: 12:45-13:15 Uhr</zeit>
+      <zeit>Sonntagsschule: 13:45-14:45 Uhr</zeit>
+      <zeit>Familien oder Bibelstunde: 14:15-14:45 Uhr</zeit>
+      <zeit>Integrations- und Deutschsprachkurs: 15:00-17:00 Uhr</zeit>
+      <zeit>Jeden Samstag: Liturgie 10:00-12:00 Uhr</zeit>
+    </gottesdienstzeiten>
+    <bankverbindung>
+      <inhaber>Koptisch-Orthodox Patriarchat St. Marienkirche Düsseldorf NRW</inhaber>
+      <bank>Stadtsparkasse Düsseldorf</bank>
+      <iban>DE 9130 0501 1010 0774 7775</iban>
+      <bic>DUSSDEDDXXX</bic>
+    </bankverbindung>
+    <links>
+      <website >https://www.koptischebunkerkirche.de/</website>
+      <facebook>https://www.facebook.com/StMarienDuesseldorf/</facebook>
+      <instagram />
+      <youtube />
+    </links>
+  </gemeinde>
+  <gemeinde id="erlangen" typ="Gemeinde" bistum="Süddeutschland">
+    <name>Koptisch-Orthodoxe Kirche der heiligen Maria und der heiligen Apostel</name>
+    <gemeindeort>Erlangen</gemeindeort>
+    <url>https://kopten.de/gemeinden/erlangen/</url>
+    <adresse>
+      <strasse>Friedhofstr. 19</strasse>
+      <plz>91058</plz>
+      <ort>Erlangen</ort>
+    </adresse>
+    <priester>
+      <person>
+        <name>Vater Bakhomios Ibrahim</name>
+        <mobil>0049-(0)157 5822 1822</mobil>
+      </person>
+    </priester>
+    <diakone>
+      <diakon>Herr Ragai Edward Matta, Tel: 0049-(0)17624330667</diakon>
+      <diakon>Herr Mohab Magdi Morkus, Tel: 0049-(0)1726320285</diakon>
+    </diakone>
+    <gottesdienstzeiten>
+      <zeit>Sonntags: Liturgie 10:00-13:00 Uhr</zeit>
+      <zeit>Sonntags ab 13:00 Uhr: Bibelstunde, Sonntagsschule und Agape Mahlzeit</zeit>
+      <zeit>Jeden zweiten Freitag: Liturgie 10:00-13:00 Uhr</zeit>
+    </gottesdienstzeiten>
+    <bankverbindung>
+      <inhaber>Koptisch-Orthodoxe Kirche der heiligen Maria und der heiligen Apostel in Erlangen e.V.</inhaber>
+      <bank>Sparkasse Erlangen-Höchstadt</bank>
+      <iban>DE02 7635 0000 0060 1339 48</iban>
+      <bic>BYLADEM1ERH</bic>
+    </bankverbindung>
+    <links>
+      <website />
+      <facebook>https://www.facebook.com/profile.php?id=100087460998900</facebook>
+      <instagram />
+      <youtube />
+    </links>
+  </gemeinde>
+  <gemeinde id="frankfurt" typ="Gemeinde" bistum="Süddeutschland">
+    <name>St. Markus Koptisch-Orthodoxe Kirche</name>
+    <gemeindeort>Frankfurt am Main</gemeindeort>
+    <beschreibung>
+      <p>Die St. Markus Gemeinde in Frankfurt am Main wurde 1975 gegründet und ist die erste koptisch-orthodoxen Gemeinde in Deutschland und wurde daher traditionell nach dem hl. Markus benannt.</p>
+      <p>In den vergangenen Jahrzehnten ist sie zu einem geistlichen Zuhause für die wachsende koptische Gemeinschaft im Rhein-Main-Gebiet geworden. Die Liturgie wird sowohl in koptischer als auch in deutscher Sprache gefeiert.</p>
+    </beschreibung>
+    <url>https://kopten.de/gemeinden/frankfurt/</url>
+    <adresse>
+      <strasse>Lötzener Straße 33</strasse>
+      <plz>60487</plz>
+      <ort>Frankfurt am Main</ort>
+    </adresse>
+    <priester>
+      <person>
+        <name>Vater Abraam Naguib Mina</name>
+        <mobil>0049-(0)152 3404 4908</mobil>
+      </person>
+      <person>
+        <name>Vater Maurice Bassili</name>
+        <mobil>0049-(0)177 9747 016</mobil>
+      </person>
+    </priester>
+    <kontakt>
+      <email>frankfurt@kopten.de</email>
+      <telefon>Gemeindesekretariat: 0049-(0)176 5780 4737</telefon>
+    </kontakt>
+    <gottesdienstzeiten>
+      <zeit>Sonntags, Gottesdienst,  10:00 - 12:30 Uhr, Herz-Jesu - Oberrad</zeit>
+      <zeit>Mittwochs, Gottesdienst, 09:00 - 11:30 Uhr, St Anna - Hausen</zeit>
+      <zeit>Donnerstags, Jugendgebetsabend, 19:00 Uhr, St Anna - Hausen</zeit>
+      <zeit>1. Freitag, monatliches Abendgebet, 19:00 Uhr, St Anna - Hausen</zeit>
+      <zeit>monatliches Abendgebet, 19:00 Uhr, St Anna - Hausen</zeit>
+      <zeit>Samstags, Gottesdienst, 09:00 - 11:30 Uhr, St Anna - Hausen</zeit>
+    </gottesdienstzeiten>
+    <bankverbindung>
+      <inhaber>St. Markus koptisch-orthodoxe Kirche Frankfurt e.V.</inhaber>
+      <iban>DE55 4401 0046 0384 1034 68</iban>
+      <bic>PBNKDEFF</bic>
+    </bankverbindung>
+    <links>
+      <website>https://stmarkus-frankfurt.de/</website>
+      <facebook>https://www.facebook.com/StMarkusFrankfurt/</facebook>
+      <instagram />
+      <youtube />
+    </links>
+  </gemeinde>
+  <gemeinde id="freiburg" typ="Gemeinde" bistum="Süddeutschland">
+    <name>Koptisch-Orthodoxe Kirche</name>
+    <gemeindeort>Freiburg</gemeindeort>
+    <url>https://kopten.de/gemeinden/freiburg/</url>
+    <adresse>
+      <strasse>Schützenallee 15</strasse>
+      <plz>79102</plz>
+      <ort>Freiburg</ort>
+    </adresse>
+    <priester>
+      <person>
+        <name>Vater Abanoub Fouad</name>
+        <mobil>0049-(0)160 6323 157</mobil>
+      </person>
+    </priester>
+    <diakone>
+      <diakon>Herr Dr. Mina Gerges: 0049-(0)176 82603288</diakon>
+    </diakone>
+    <gottesdienstzeiten>
+      <zeit>Jeden 1. und 3. Samstag des Monats: Liturgie 09:30-12:30 Uhr</zeit>
+    </gottesdienstzeiten>
+  </gemeinde>
+  <gemeinde id="heidelberg" typ="Gemeinde" bistum="Süddeutschland">
+    <name>St. Maria und St. Josef der Zimmermann koptisch-orthodoxe Kirche</name>
+    <gemeindeort>Heidelberg</gemeindeort>
+    <url>https://kopten.de/gemeinden/heidelberg/</url>
+    <adresse>
+      <strasse>Bergheimerstraße 108</strasse>
+      <plz>69115</plz>
+      <ort>Heidelberg</ort>
+    </adresse>
+    <priester>
+      <person>
+        <name>Vater Nicodemos El Makary</name>
+        <email>fr_nicodemos@yahoo.com</email>
+        <mobil>+49 (0)152 27 50 32 72</mobil>
+        <postanschrift>Untere Neckarstr. 16, 69117 Heidelberg</postanschrift>
+      </person>
+    </priester>
+    <kontakt>
+      <telefon>+49 (0)6221 72 77 728</telefon>
+    </kontakt>
+    <gottesdienstzeiten>
+      <zeit>Jeden Sonntag: Messe 09:00-12:00 Uhr</zeit>
+    </gottesdienstzeiten>
+    <links>
+      <website>http://www.koptische-kirche-heidelberg.de/</website>
+      <facebook>https://www.facebook.com/groups/205393769514499/</facebook>
+      <instagram />
+      <youtube />
+    </links>
+  </gemeinde>
+  <gemeinde id="kaiserslautern" typ="Gemeinde" bistum="Süddeutschland">
+    <name>Koptisch-Orthodoxe Kirche</name>
+    <gemeindeort>Kaiserslautern</gemeindeort>
+    <url>https://kopten.de/gemeinden/kaiserslautern/</url>
+    <adresse>
+      <strasse>Zu Gast bei der Gemeinde St. Martin Kirche, Spittelstr. 4</strasse>
+      <plz>67655</plz>
+      <ort>Kaiserslautern</ort>
+    </adresse>
+    <diakone>
+      <diakon>Herr Dr. Bishoy Soliman: 0049-(0)176 9318 2262</diakon>
+      <diakon>Herr Dr. Josef Iskander: 0049-(0)168 0197 776</diakon>
+    </diakone>
+    <gottesdienstzeiten>
+      <zeit>Jeden 2. Sonntag oder 3. Samstag des Monats: Liturgie 10:00-13:00 Uhr</zeit>
+    </gottesdienstzeiten>
+  </gemeinde>
+  <gemeinde id="kaufbeuren" typ="Gemeinde" bistum="Süddeutschland">
+    <name>Heilige Maria koptisch-orthodoxe Kirche</name>
+    <gemeindeort>Kaufbeuren</gemeindeort>
+    <url>https://kopten.de/gemeinden/kaufbeuren/</url>
+    <adresse>
+      <strasse>Zu Gast bei der Gemeinde St. Dominikus, Augsburger Str. 8</strasse>
+      <plz>87600</plz>
+      <ort>Kaufbeuren</ort>
+    </adresse>
+    <priester>
+      <person>
+        <name>Vater Paulus Hanna</name>
+        <email>Fr.PaulusHanna@yahoo.com</email>
+        <mobil>0049-(0)152 5959 9032</mobil>
+      </person>
+    </priester>
+    <kontakt>
+      <fax>0049-(0)89 154 131</fax>
+    </kontakt>
+    <diakone>
+      <diakon>Herr Hany Shafik: 0049-(0)163 6693 155</diakon>
+      <diakon>Herr Esam Boulus: 0049-(0)89 3141 600</diakon>
+    </diakone>
+    <gottesdienstzeiten>
+      <zeit>Jeden 1. Samstag des Monats: Liturgie 10:00-12:45 Uhr</zeit>
+    </gottesdienstzeiten>
+  </gemeinde>
+  <gemeinde id="kirchberg" typ="Gemeinde" bistum="Süddeutschland">
+    <name>St. Nikolaus koptisch-orthodoxe Kirche</name>
+    <gemeindeort>Kirchberg</gemeindeort>
+    <url>https://kopten.de/gemeinden/kirchberg/</url>
+    <adresse>
+      <strasse>Zu Gast bei der katholischen Gemeinde St. Nikolaus, Dumnissusstraße 10</strasse>
+      <plz>55481</plz>
+      <ort>Kirchberg (Hunsrück)</ort>
+    </adresse>
+    <priester>
+      <person>
+        <name>Vater Danial Abdel-Masih</name>
+        <mobil>0049-(0)178 6608 821</mobil>
+      </person>
+    </priester>
+    <diakone>
+      <diakon>Herr Dr. Baher Munier: 0049-(0)151 6894 7665</diakon>
+      <diakon>Herr Zakaria Bedrous: 0049-(0)157 5295 5210</diakon>
+    </diakone>
+    <gottesdienstzeiten>
+      <zeit>Jeden 4. Samstag des Monats: Liturgie 10:00-13:00 Uhr</zeit>
+    </gottesdienstzeiten>
+  </gemeinde>
+  <gemeinde id="koeln" typ="Gemeinde" bistum="Süddeutschland">
+    <name>St. Marien Koptisch-Orthodoxe Kirche</name>
+    <gemeindeort>Köln</gemeindeort>
+    <url>https://kopten.de/gemeinden/koeln/</url>
+    <adresse>
+      <strasse>St. Marien Kirche Selingenthaler Str. 9</strasse>
+      <plz>51105</plz>
+      <ort>Köln</ort>
+    </adresse>
+    <priester>
+      <person>
+        <name>Vater Gerges</name>
+        <mobil>0049-(0)176 2189 0166</mobil>
+      </person>
+    </priester>
+    <diakone>
+      <diakon>Herr Samy Youssef: 0049-(0)172 9826 757</diakon>
+      <diakon>Herr Shafik Aziz: 0049-(0)157 3666 0214</diakon>
+      <diakon>Herr Jaan Shehata: 0049-(0)157 5844 6116</diakon>
+    </diakone>
+    <gottesdienstzeiten>
+      <zeit>Jeden Sonntag: Liturgie 9:00-12:00 Uhr</zeit>
+      <zeit>Mittwochs und Freitags: Liturgie 9:00-11:00 Uhr</zeit>
+      <zeit>Freitags: 17:00-19:00 Uhr Abendgebete, Tasbeha</zeit>
+    </gottesdienstzeiten>
+    <bankverbindung>
+      <inhaber>Koptisch-orthodoxe Kirche der heiligen Maria und des heiligen Papstes Kyrillus VI.</inhaber>
+      <bank>Volksbank Köln/Bonn</bank>
+      <iban>DE73 3806 0186 7640 8110 18</iban>
+      <bic>GENODED1BRS</bic>
+    </bankverbindung>
+    <links>
+      <website />
+      <facebook>https://www.facebook.com/StMary-und-StKyrillos-Koptisch-Orthodoxe-Kirche-Köln-114539969972591/</facebook>
+      <instagram />
+      <youtube />
+    </links>
+  </gemeinde>
+  <gemeinde id="landshut" typ="Gemeinde" bistum="Süddeutschland">
+    <name>St. Karas koptisch-orthodoxe Kirche</name>
+    <gemeindeort>Landshut</gemeindeort>
+    <url>https://kopten.de/gemeinden/landshut/</url>
+    <adresse>
+      <strasse>Zu Gast bei Evang.-Luth. Auferstehungskirche Landshut, Fliederstrasse 17</strasse>
+      <plz>84032</plz>
+      <ort>Landshut</ort>
+    </adresse>
+    <priester>
+      <person>
+        <name>Vater Bakhomios Ibrahim</name>
+        <mobil>0049-(0)157 5822 1822</mobil>
+      </person>
+    </priester>
+    <diakone>
+      <diakon>Dr. Mina Sief: 00491739899646</diakon>
+      <diakon>Magdy Morkos: 004917645336585</diakon>
+    </diakone>
+    <gottesdienstzeiten>
+      <zeit>Siehe Facebook-Seite der Kirche für aktualisierte Gottesdienstzeiten</zeit>
+    </gottesdienstzeiten>
+    <bankverbindung>
+      <inhaber>Koptisch-Orthodoxe Gemeinde in Landshut e.V.</inhaber>
+      <iban>DE 08701500001006669905</iban>
+      <bic>SSKMDEMMXXX</bic>
+    </bankverbindung>
+    <links>
+      <website>https://www.st-karas-kirche.de/</website>
+      <facebook>https://www.facebook.com/StKarasKirche/</facebook>
+      <instagram />
+      <youtube />
+    </links>
+  </gemeinde>
+  <gemeinde id="luxemburg" typ="Gemeinde" bistum="Süddeutschland">
+    <name>St. Maria und St. Markus Koptisch-Orthodoxe Kirche</name>
+    <gemeindeort>Luxemburg</gemeindeort>
+    <url>https://kopten.de/gemeinden/luxemburg/</url>
+    <adresse>
+      <strasse>Eglise de Dippach Rue de Centrale</strasse>
+      <plz>4972</plz>
+      <ort>Dudelange</ort>
+    </adresse>
+    <priester>
+      <person>
+        <name>Pater Schenouda St. Antonius</name>
+        <mobil>0049-(0)176 6107 6389</mobil>
+      </person>
+    </priester>
+    <gottesdienstzeiten>
+      <zeit>Jeden 1. und 3. Samstag des Monats: Liturgie 09:00-11:00 Uhr</zeit>
+    </gottesdienstzeiten>
+  </gemeinde>
+  <gemeinde id="mainz" typ="Gemeinde" bistum="Süddeutschland">
+    <name>St. Kyrillos Koptisch-Orthodoxe Kirche</name>
+    <gemeindeort>Mainz</gemeindeort>
+    <url>https://kopten.de/gemeinden/mainz/</url>
+    <adresse>
+      <strasse>Westring 315-317</strasse>
+      <plz>55120</plz>
+      <ort>Mainz Mombach</ort>
+    </adresse>
+    <priester>
+      <person>
+        <name>Vater Johannes St. Antonius</name>
+        <mobil>0049-(0)1516 8843519</mobil>
+      </person>
+    </priester>
+    <kontakt>
+      <telefon>0049-(0)6131 2134 615</telefon>
+    </kontakt>
+    <diakone>
+      <diakon>Herr Samoil Matta: 0049-(0)177 343 0659</diakon>
+      <diakon>Herr Hani Farag: 0049-(0)15152421434</diakon>
+      <diakon>Herr Raouf Habib: 0049-(0)171 6731 044</diakon>
+    </diakone>
+    <gottesdienstzeiten>
+      <zeit>Jeden Samstag: Liturgie 09:00-11:00 Uhr, im Anschluss Agape, Sonntagschule und Bibelstunde</zeit>
+      <zeit>Jeden Sonntag: Liturgie 09:30-11:30 Uhr, im Anschluss Agape und Bibelstunde</zeit>
+      <zeit>Jeden Mittwoch: Liturgie 09:00-11:00 Uhr</zeit>
+      <zeit>Jeden Donnerstag: Gebetsstunde 18:00-19:30 Uhr</zeit>
+      <zeit>Montag bis Freitags: Senioren Mittagstisch 11:00-13:00 Uhr</zeit>
+      <zeit>Jeden Freitag: Mitternachtslobpreisung (Tasbeha) 18:00-19:30 Uhr</zeit>
+    </gottesdienstzeiten>
+    <bankverbindung>
+      <inhaber>St. Kyrillos koptisch-orthodoxe Kirche Mainz e.V.</inhaber>
+      <bank>Genobank Mainz eG, Hauptstr. 106, 55120 Mainz Mombach</bank>
+      <iban>DE2155 0606 1100 0034 5776</iban>
+      <bic>GENODE51MZ6</bic>
+    </bankverbindung>
+    <links>
+      <website />
+      <facebook>https://www.facebook.com/KoptischOrthodoxeKircheMainz/</facebook>
+      <instagram />
+      <youtube />
+    </links>
+  </gemeinde>
+  <gemeinde id="mering" typ="Gemeinde" bistum="Süddeutschland">
+    <name>St. Theodorus Koptisch-Orthodoxe Kirche</name>
+    <gemeindeort>Mering</gemeindeort>
+    <url>https://kopten.de/gemeinden/mering/</url>
+    <adresse>
+      <strasse>Zu Gast bei der St. Johannes evangelisch-lutherische Kirche, Martin-Luther Str. 1</strasse>
+      <plz>86415</plz>
+      <ort>Mering</ort>
+    </adresse>
+    <priester>
+      <person>
+        <name>Vater Paulus Hanna</name>
+        <email>Fr.PaulusHanna@yahoo.com</email>
+        <mobil>0049-(0)152 5959 9032</mobil>
+      </person>
+    </priester>
+    <gottesdienstzeiten>
+      <zeit>Jeden zweiten Samstag des Monats: Liturgie 09:30-12:00 Uhr</zeit>
+    </gottesdienstzeiten>
+  </gemeinde>
+  <gemeinde id="muenchen" typ="Gemeinde" bistum="Süddeutschland">
+    <name>St. Mina Koptisch-Orthodoxe Kirche</name>
+    <gemeindeort>München</gemeindeort>
+    <beschreibung>
+      <p>Die Kirche wurde 1851 erbaut und war ursprünglich Klosterkirche des Instituts der Englischen Fräulein. Heute noch ist sie in München unter dem Namen Loreto-Kirche bekannt. Seit 1996 nutzt die koptisch-orthodoxe Gemeinde von München die Loreto-Kirche in der Josephsburgstr. 24, 81673 München als ihre Pfarrkirche. Sie wurde zu einer koptischen Kirche umgestaltet durch den Einbau des Taufbeckens in einem kleinen Nebenraum, sowie der in allen orthodoxen Kirchen üblichen Ikonostase zwischen dem Altar und dem Kirchenrumpf. Im Jahr 2000 haben Gemeindemitglieder die Ikonostase aus Ägypten mitgebracht. Die Ikonen stammen aus dem Nonnenkloster St. Damiana im Nildelta nördlich von Kairo.</p>
+      <p>Die Kopten sind die Christen Ägyptens. Ihre Kirche wurde im 1. Jahrhundert n. Chr. vom heiligen Evangelisten Markus gegründet. Viele Kopten leben heute überall in der westlichen Welt. In verschiedenen deutschen Städten – so auch in München – gibt es koptisch-orthodoxe Gemeinden. Die Kirche erhielt den Namen St. Mina Kirche. St. Mina ist einer der wichtigsten Heiligen der koptisch-orthodoxen Kirche. Es gibt viele Kirchen und Klöster, die den Namen Mina tragen, und sehr viele koptische Familien nennen einen Ihrer Söhne Mina.</p>
+      <p>St. Mina wurde 285 n. Chr. geboren und war Soldat. Während der Christenverfolgung unter Kaiser Diokletian fand er den Märtyrertod. Seine Reliquien befinden sich im St. Mina Kloster südwestlich von Alexandria in Ägypten. Die Kopten und auch viele ägyptische Muslime verehren seine Reliquien als Quelle vieler Wunder und wunderbarer Heilungen.</p>
+      <p>In St. Mina finden wöchentlich Gottesdienste und Gemeindetreffen statt:</p>
+      <p>Jeden Samstag und Sonntag des Monats: Liturgie 09:30 – 12:00 Uhr</p>
+      <p>Jeden Mittwoch des Monats: Mitternachtslobpreis 18:30 – 20:00 Uhr</p>
+      <p>Außerdem werden Taufen, Hochzeiten und Trauergottesdienste in der Kirche zelebriert. Es finden auch immer wieder ökumenische Gottesdienste in der Kirche statt. Mitglieder der Gemeinde sind auch aktiv in ACK Bayern (Arbeitsgemeinschaft christlicher Kirchen in Bayern). Als 156 Jahre alter Kirchenbau ist die St. Mina Kirche ein historischer Sakralbau der Stadt München. Die koptisch-orthodoxe Gemeinde München bedankt sich bei der Erzdiözese München und Freising dafür, diese Kirche für ihre Veranstaltungen nutzen zu dürfen. Die koptische Gemeinde hat hier eine Heimat gefunden.</p>
+    </beschreibung>
+    <url>https://kopten.de/gemeinden/muenchen/</url>
+    <adresse>
+      <strasse>Josephsburg Strasse 24</strasse>
+      <plz>81673</plz>
+      <ort>München-Berg am Laim</ort>
+    </adresse>
+    <priester>
+      <person>
+        <name>Vater Paulus Hanna</name>
+        <email>Fr.PaulusHanna@yahoo.com</email>
+        <mobil>0049-(0)152 5959 9032</mobil>
+      </person>
+    </priester>
+    <diakone>
+      <diakon>Herr Ihab Noshy (Schatzmeister), E-Mail: ihab.noshy@gmail.com</diakon>
+    </diakone>
+    <gottesdienstzeiten>
+      <zeit>Jeden Samstag und Sonntag: Liturgie 09:00-12:00 Uhr</zeit>
+      <zeit>Jeden Mittwoch: Mitternachtslobpreis 18:30-20:00 Uhr</zeit>
+    </gottesdienstzeiten>
+    <bankverbindung>
+      <inhaber>St. Mina Kirche</inhaber>
+      <bank>Vereinigte Sparkassen Weilheim</bank>
+      <iban>DE93 7035 1030 0032 2775 50</iban>
+      <bic>BYLADEM1WHM</bic>
+    </bankverbindung>
+    <links>
+      <facebook>https://www.facebook.com/StMinaMuenchen/</facebook>
+      <instagram />
+      <youtube />
+    </links>
+  </gemeinde>
+  <gemeinde id="muenster-sarmsheim" typ="Gemeinde" bistum="Süddeutschland">
+    <name>St. Athanasius und St. Moris Koptisch-Orthodoxe Kirche</name>
+    <gemeindeort>Münster-Sarmsheim</gemeindeort>
+    <url>https://kopten.de/gemeinden/muenster-sarmsheim/</url>
+    <adresse>
+      <strasse>Saarstrasse 42</strasse>
+      <plz>55424</plz>
+      <ort>Münster-Sarmsheim</ort>
+    </adresse>
+    <priester>
+      <person>
+        <name>Vater Philippus Abeid</name>
+        <mobil>0049-(0)163 9032 040</mobil>
+      </person>
+    </priester>
+    <diakone>
+      <diakon>Herr Amgad Sef: 0049-(0)160 9901 8200, amgadsef@yahoo.de</diakon>
+    </diakone>
+    <gottesdienstzeiten>
+      <zeit>Jeden zweiten und vierten Samstag um 09:30 Uhr</zeit>
+    </gottesdienstzeiten>
+    <bankverbindung>
+      <inhaber>Trägerverein der koptisch-orthodoxen Kirche St. Athanasius e.V.</inhaber>
+      <iban>DE86 5451 0067 0967 7746 74</iban>
+    </bankverbindung>
+  </gemeinde>
+  <gemeinde id="neunkirchen" typ="Gemeinde" bistum="Süddeutschland">
+    <name>Koptisch-Orthodoxe Kirche</name>
+    <gemeindeort>Neunkirchen</gemeindeort>
+    <url>https://kopten.de/gemeinden/neunkirchen/</url>
+    <adresse>
+      <strasse>Kirche Schloßstr. 1</strasse>
+      <plz>66538</plz>
+      <ort>Neunkirchen</ort>
+    </adresse>
+    <priester>
+      <person>
+        <name>Vater Athanasius Botros</name>
+        <mobil>0049-(0)178 8930 996</mobil>
+      </person>
+    </priester>
+    <gottesdienstzeiten>
+      <zeit>Jeden ersten Samstag des Monats</zeit>
+    </gottesdienstzeiten>
+  </gemeinde>
+  <gemeinde id="oberkochen" typ="Gemeinde" bistum="Süddeutschland">
+    <name>St. Abanob Koptisch-Orthodoxe Kirche</name>
+    <gemeindeort>Oberkochen</gemeindeort>
+    <url>https://kopten.de/gemeinden/oberkochen/</url>
+    <adresse>
+      <strasse>Zu Gast bei der ev. Versöhnungskirche, Bürgermeister-Bosch-Str. 11</strasse>
+      <plz>73447</plz>
+      <ort>Oberkochen</ort>
+    </adresse>
+    <priester>
+      <person>
+        <name>Vater Johannes Ghali</name>
+        <email>paterjohannes@t-online.de</email>
+        <mobil>0049-(0)151 173 747 91</mobil>
+      </person>
+    </priester>
+    <kontakt>
+      <fax>0049-(0)711 601 9120</fax>
+    </kontakt>
+    <gottesdienstzeiten>
+      <zeit>Jeden ersten und dritten Samstag des Monats: Liturgie 09:30-12:30 Uhr</zeit>
+    </gottesdienstzeiten>
+  </gemeinde>
+  <gemeinde id="regensburg" typ="Gemeinde" bistum="Süddeutschland">
+    <name>St. Kyrillos koptisch-Orthodoxe Kirche</name>
+    <gemeindeort>Regensburg</gemeindeort>
+    <url>https://kopten.de/gemeinden/regensburg/</url>
+    <adresse>
+      <strasse>Zu Gast bei Kath. Kirche St. Wolfgang, Bischof-Wittmann-Straße 24A</strasse>
+      <plz>93051</plz>
+      <ort>Regensburg</ort>
+    </adresse>
+    <priester>
+      <person>
+        <name>Vater Arsenius Mikhail</name>
+        <mobil>0049170 6984865</mobil>
+      </person>
+    </priester>
+    <diakone>
+      <diakon>Dr. Ayman Ayad, Tel.: 0049176 70794592</diakon>
+    </diakone>
+    <links>
+      <facebook>https://www.facebook.com/share/1Cwd6ZNBHR/</facebook>
+      <instagram />
+      <youtube />
+    </links>
+  </gemeinde>
+  <gemeinde id="schwabisch-gmund" typ="Gemeinde" bistum="Süddeutschland">
+    <name>St. Abanoub Koptisch-Orthodoxe Kirche</name>
+    <gemeindeort>Schwäbisch Gmünd</gemeindeort>
+    <url>https://kopten.de/gemeinden/schwabisch-gmund-baden-wurttemberg/</url>
+    <adresse>
+      <strasse>Hauptstr. 69</strasse>
+      <plz>73527</plz>
+      <ort>Schwäbisch Gmünd</ort>
+    </adresse>
+    <priester>
+      <person>
+        <name>Vater Abanoub Fouad</name>
+        <mobil>0049-(0)160 6323 157</mobil>
+      </person>
+    </priester>
+    <gottesdienstzeiten>
+      <zeit>Jeden Sonntag: Liturgie 09:30-12:30 Uhr</zeit>
+    </gottesdienstzeiten>
+    <bankverbindung>
+      <inhaber>St. Abanoub koptisch-orthodoxe Kirche e.V.</inhaber>
+      <iban>DE90 6145 0050 1000 9834 63</iban>
+    </bankverbindung>
+  </gemeinde>
+  <gemeinde id="stuttgart" typ="Gemeinde" bistum="Süddeutschland">
+    <name>St. Georg Koptisch-Orthodoxe Kirche</name>
+    <gemeindeort>Stuttgart</gemeindeort>
+    <url>https://kopten.de/gemeinden/stuttgart/</url>
+    <adresse>
+      <strasse>Wurmlinger Strasse 47</strasse>
+      <plz>70597</plz>
+      <ort>Stuttgart-Degerloch</ort>
+    </adresse>
+    <priester>
+      <person>
+        <name>Vater Johannes Ghali</name>
+        <email>PaterJohannes@t-online.de</email>
+        <postanschrift>Arminstr. 12, 70178 Stuttgart</postanschrift>
+      </person>
+    </priester>
+    <kontakt>
+      <telefon>0049-(0)711 604 252</telefon>
+      <mobil>0049-(0)151 173 747 91</mobil>
+      <fax>0049-(0)711 601 9120</fax>
+    </kontakt>
+    <gottesdienstzeiten>
+      <zeit>Jeden Sonntag: Liturgie 09:30-12:30 Uhr</zeit>
+      <zeit>Jeden Samstag: Abendweihrauchopfer 19:00 Uhr</zeit>
+      <zeit>Jeden Freitag des Monats: Liturgie 07:30 Uhr</zeit>
+      <zeit>In Fastenzeiten: Mittwochs und Freitags Liturgie 10:00 Uhr</zeit>
+    </gottesdienstzeiten>
+    <bankverbindung>
+      <inhaber>Koptisch-orthodoxe St. Georg Kirche</inhaber>
+      <bank>Commerzbank Stuttgart</bank>
+      <iban>DE02 6004 0071 0550 9500 00</iban>
+      <bic>COBADEFFXXX</bic>
+    </bankverbindung>
+    <links>
+      <website>http://kopten-bw.de/</website>
+      <facebook />
+      <instagram />
+      <youtube />
+    </links>
+  </gemeinde>
+  <gemeinde id="trier" typ="Gemeinde" bistum="Süddeutschland">
+    <name>St. Athansius Kapelle Koptisch-Orthodoxe Kirche</name>
+    <gemeindeort>Trier</gemeindeort>
+    <url>https://kopten.de/gemeinden/trier/</url>
+    <adresse>
+      <strasse>Zu Gast bei dem katholischen Trierer Dom St. Petrus, Liebfrauenstraße 12</strasse>
+      <plz>54290</plz>
+      <ort>Trier</ort>
+    </adresse>
+    <priester>
+      <person>
+        <name>Pater Schenouda St. Antonius</name>
+        <mobil>0049-(0)176 6107 6389</mobil>
+      </person>
+    </priester>
+    <gottesdienstzeiten>
+      <zeit>Letzter Samstag des Monats: Liturgie 10:00-12:00 Uhr</zeit>
+    </gottesdienstzeiten>
+  </gemeinde>
+  <gemeinde id="tuttlingen" typ="Gemeinde" bistum="Süddeutschland">
+    <name>St. Mina koptisch-orthodoxe Kirche</name>
+    <gemeindeort>Tuttlingen</gemeindeort>
+    <url>https://kopten.de/gemeinden/tuttlingen/</url>
+    <adresse>
+      <strasse>Zu Gast bei der Kirche in der Koloniestr. 21</strasse>
+      <plz>78532</plz>
+      <ort>Tuttlingen</ort>
+    </adresse>
+    <priester>
+      <person>
+        <name>Vater Johannes Ghali</name>
+        <email>PaterJohannes@t-online.de</email>
+        <mobil>0049-(0)151 173 747 91</mobil>
+      </person>
+    </priester>
+    <kontakt>
+      <fax>0049-(0)711 601 9120</fax>
+    </kontakt>
+    <gottesdienstzeiten>
+      <zeit>Der 4. Samstag des Monats: Liturgie 09:30-12:30 Uhr</zeit>
+    </gottesdienstzeiten>
+  </gemeinde>
+  <gemeinde id="ulm" typ="Gemeinde" bistum="Süddeutschland">
+    <name>St. Michael Koptisch-Orthodoxe Kirche</name>
+    <gemeindeort>Ulm</gemeindeort>
+    <url>https://kopten.de/gemeinden/ulm/</url>
+    <adresse>
+      <strasse>Zu Gast bei der St. Michael Kirche zu den Wengen, Wengengasse 8</strasse>
+      <plz>89073</plz>
+      <ort>Ulm</ort>
+    </adresse>
+    <priester>
+      <person>
+        <name>Vater Johannes Ghali</name>
+        <email>PaterJohannes@t-online.de</email>
+        <mobil>0049-(0)151 173 747 91</mobil>
+      </person>
+    </priester>
+    <gottesdienstzeiten>
+      <zeit>Jeden zweiten Samstag des Monats: Liturgie 09:30-12:30 Uhr</zeit>
+    </gottesdienstzeiten>
+  </gemeinde>
+  <gemeinde id="unna" typ="Gemeinde" bistum="Süddeutschland">
+    <name>St. Maria und St. Philopater Mercurius Koptisch-Orthodoxe Kirche</name>
+    <gemeindeort>Unna</gemeindeort>
+    <url>https://kopten.de/gemeinden/dortmund/</url>
+    <adresse>
+      <strasse>Buderusstr. 46</strasse>
+      <plz>59427</plz>
+      <ort>Unna-Massen (bei Dortmund)</ort>
+    </adresse>
+    <priester>
+      <person>
+        <name>Vater Tawadros</name>
+        <email>abuna.tawadros@t-online.de</email>
+        <telefon>0049-(0)172 142 1 227</telefon>
+      </person>
+    </priester>
+    <kontakt>
+      <fax>0049-(0)2131 368 108</fax>
+    </kontakt>
+    <diakone>
+      <diakon>Herr Dr. rer.nat.Ing. Mina Abadeer: 0049-(0)1522 8182 063</diakon>
+    </diakone>
+    <gottesdienstzeiten>
+      <zeit>Jeden Samstag: Liturgie 09:30-12:00 Uhr</zeit>
+      <zeit>Jeden Samstag: Abendweihrauchopfer und Mitternachtspsalmodie 17:00 Uhr</zeit>
+      <zeit>Jeden Sonntag: Liturgie 09:30-13:00 Uhr, im Anschluss Agape</zeit>
+      <zeit>Sonntags 14:00-16:30: Kirchenchor, Sonntagsschule, Jugendveranstaltungen, Diener und Familientreff</zeit>
+    </gottesdienstzeiten>
+    <bankverbindung>
+      <inhaber>Hl. Maria-Mercurius Kirche</inhaber>
+      <bank>Volksbank Dortmund</bank>
+      <iban>DE92 4416 0014 6483 2041 00</iban>
+      <bic>GENODEM1DOR</bic>
+    </bankverbindung>
+  </gemeinde>
+  <gemeinde id="wetzlar" typ="Gemeinde" bistum="Süddeutschland">
+    <name>St. Maria und St. Elisabeth Koptisch-Orthodoxe Kirche</name>
+    <gemeindeort>Wetzlar</gemeindeort>
+    <url>https://kopten.de/gemeinden/wetzlar/</url>
+    <adresse>
+      <strasse>Kalsmuntstr. 66</strasse>
+      <plz>35578</plz>
+      <ort>Wetzlar-Westend</ort>
+    </adresse>
+    <priester>
+      <person>
+        <name>Mönchsvater aus dem St. Antonius Koptisch-Orthodoxen Kloster in Kröffelbach</name>
+      </person>
+    </priester>
+  </gemeinde>
+  <gemeinde id="wiesbaden" typ="Gemeinde" bistum="Süddeutschland">
+    <name>St. Georg und St. Mauritius Koptisch-Orthodoxe Kirche</name>
+    <gemeindeort>Wiesbaden</gemeindeort>
+    <url>https://kopten.de/gemeinden/wiesbaden/</url>
+    <adresse>
+      <strasse>Abegg Str. 37</strasse>
+      <plz>65193</plz>
+      <ort>Wiesbaden</ort>
+    </adresse>
+    <priester>
+
+    </priester>
+    <diakone>
+      <diakon>Herr Nabil Mikhail: 0049-(0)1785568753</diakon>
+      <diakon>Herr Samir Moussa: 0049-(0)17621590493</diakon>
+      <diakon>Herr Mina Ghattas: 0049-(0)1623429136</diakon>
+    </diakone>
+    <gottesdienstzeiten>
+      <zeit>Jeden Samstag: Liturgie 09:30-12:30 Uhr</zeit>
+      <zeit>Agape 12:30-13:00 Uhr</zeit>
+      <zeit>Sonntagsschule 13:00-13:30 Uhr</zeit>
+      <zeit>Bibelstunde 13:30-14:00 Uhr</zeit>
+      <zeit>Sportaktivitäten ab 14:00 Uhr</zeit>
+    </gottesdienstzeiten>
+    <bankverbindung>
+      <bank>Naspa Nassauische Sparkasse</bank>
+      <iban>DE27 5105 0015 0100 4293 15</iban>
+    </bankverbindung>
+  </gemeinde>
+  <gemeinde id="wintersdorf" typ="Gemeinde" bistum="Süddeutschland">
+    <name>Zirndorf - St. Maria und Erzengel Michael koptisch-orthodoxe Kirche</name>
+    <gemeindeort>Wintersdorf</gemeindeort>
+    <url>https://kopten.de/gemeinden/wintersdorf/</url>
+    <adresse>
+      <strasse>Seewald Str. 53</strasse>
+      <plz>90513</plz>
+      <ort>Wintersdorf-Zirndorf</ort>
+    </adresse>
+    <priester>
+      <person>
+        <name>Vater Danial Riad Abdel-Masih</name>
+        <mobil>0049-(0)178 6608 821</mobil>
+      </person>
+    </priester>
+    <kontakt>
+      <email>aegyptisch-koptische-Gemeinde-nbg@hotmail.de</email>
+    </kontakt>
+    <diakone>
+      <diakon>Herr Nabil Sadek, Tel: 0049-(0)170 349 0219</diakon>
+      <diakon>Herr Sobhi Zerr, Tel: 0049-(0)170 3432 367</diakon>
+    </diakone>
+    <gottesdienstzeiten>
+      <zeit>Sonntags: Liturgie 10:00-13:00 Uhr</zeit>
+      <zeit>Sonntags ab 13:00 Uhr: Sonntagsschule und Agape Mahlzeit</zeit>
+    </gottesdienstzeiten>
+    <bankverbindung>
+      <inhaber>Ägyptisch-koptisch Gemeinde Nürnberg e.V.</inhaber>
+      <bank>Sparkasse Nürnberg</bank>
+      <iban>DE75 7605 0101 0011 4471 09</iban>
+      <bic>SSKNDE77XXX</bic>
+    </bankverbindung>
+  </gemeinde>
+  <gemeinde id="worms" typ="Gemeinde" bistum="Süddeutschland">
+    <name>St. Maria und Erzengel Michael Koptisch-Orthodoxe Kirche</name>
+    <gemeindeort>Worms</gemeindeort>
+    <url>https://kopten.de/gemeinden/worms/</url>
+    <adresse>
+      <strasse>Zu Gast bei der St. Amandus Kirche, Bebelstr. 71a</strasse>
+      <plz>67549</plz>
+      <ort>Worms</ort>
+    </adresse>
+    <priester>
+      <person>
+        <name>Mönchsvater aus dem St. Antonius Koptisch-Orthodoxen Kloster in Kröffelbach</name>
+      </person>
+    </priester>
+    <diakone>
+      <diakon>Herr Dr. Sherif Ramsis: 0049-(0)174 9338 375</diakon>
+      <diakon>Herr Emad Mehana</diakon>
+    </diakone>
+    <gottesdienstzeiten>
+      <zeit>Jeden 2. und 4. Samstag des Monats: Liturgie 09:00-12:00 Uhr</zeit>
+    </gottesdienstzeiten>
+  </gemeinde>
+  <gemeinde id="bad-grund" typ="Gemeinde" bistum="Norddeutschland">
+    <name>koptisch-orthodoxe Kirche des heiligen Minas und des heiligen Papstes Kyrillus VI.</name>
+    <gemeindeort>Bad Grund</gemeindeort>
+    <url>https://kopten.de/gemeinden/bad-grund/</url>
+    <adresse>
+      <strasse>Am Rösteberg 1</strasse>
+      <plz>37539</plz>
+      <ort>Bad Grund</ort>
+    </adresse>
+    <priester>
+      <person>
+        <name>Metropolit Anba Damian</name>
+        <email>Bischof@koptisches-kloster-hoexter.de</email>
+        <mobil>0049-(0)172 564 3647</mobil>
+      </person>
+    </priester>
+    <gottesdienstzeiten>
+      <zeit>Jeden 1. Samstag des Monats: Liturgie 10:00-12:30 Uhr</zeit>
+    </gottesdienstzeiten>
+  </gemeinde>
+  <gemeinde id="berlin" typ="Gemeinde" bistum="Norddeutschland">
+    <name>St. Antonius und St. Schenouda Koptisch-Orthodoxe Kirche</name>
+    <gemeindeort>Berlin</gemeindeort>
+    <url>https://kopten.de/gemeinden/berlin/</url>
+    <adresse>
+      <strasse>Roedeliusplatz 2</strasse>
+      <plz>10365</plz>
+      <ort>Berlin-Lichtenberg</ort>
+    </adresse>
+    <priester>
+      <person>
+        <name>Pater Girgis El Moharaki</name>
+        <funktion>Generalvikar der Diözese</funktion>
+        <mobil>0049-(0)171 436 0460</mobil>
+        <email>girgiselmoharaky@hotmail.de</email>
+        <postanschrift>Schottstr. 3, 10365 Berlin</postanschrift>
+      </person>
+    </priester>
+    <kontakt>
+      <telefon>0049-(0)3055 491 013</telefon>
+      <fax>0049-(0)3031 955 869</fax>
+    </kontakt>
+    <diakone>
+      <diakon>Diakon Ramses Ibrahim: 0049-(0)172 3221223, ramsesberlin@aol.com</diakon>
+      <diakon>Diakon Tadros Keriakos: 0049-(0)172 3042 432</diakon>
+    </diakone>
+    <gottesdienstzeiten>
+      <zeit>Sonntags und mittwochs: 09:00 Uhr</zeit>
+      <zeit>Samstags Vesper und Mitternachtsgebete: 17:00 Uhr</zeit>
+      <zeit>Freitags General-Treffen: 17:00 Uhr</zeit>
+    </gottesdienstzeiten>
+    <links>
+      <website>https://koptische-gemeinde-berlin.de/</website>
+      <facebook />
+      <instagram />
+      <youtube />
+    </links>
+  </gemeinde>
+  <gemeinde id="bielefeld" typ="Gemeinde" bistum="Norddeutschland">
+    <name>St. Maria und die 7 Erzengel Koptisch-Orthodoxe Kirche</name>
+    <gemeindeort>Bielefeld</gemeindeort>
+    <url>https://kopten.de/gemeinden/bielefeld/</url>
+    <adresse>
+      <strasse>Zu Gast bei der St. Lukas Kirche, Siekstr. 10</strasse>
+      <plz>33719</plz>
+      <ort>Bielefeld</ort>
+    </adresse>
+    <priester>
+      <person>
+        <name>Pater Markus Soliman</name>
+        <email>dr_amirsoliman@yahoo.de</email>
+        <mobil>0049 (0) 152 22 89 25 68</mobil>
+      </person>
+    </priester>
+    <diakone>
+      <diakon>Herr Monir Botros, Mobil: 0049 (0) 171 15 55 434, E-Mail: info@fine-art-architekten.de</diakon>
+    </diakone>
+    <gottesdienstzeiten>
+      <zeit>Jeden 2. und 4. Sonntag des Monats: Liturgie 10:00-12:00 Uhr</zeit>
+    </gottesdienstzeiten>
+  </gemeinde>
+  <gemeinde id="bochum" typ="Gemeinde" bistum="Norddeutschland">
+    <name>Koptisch-Orthodoxe Kirche</name>
+    <gemeindeort>Bochum</gemeindeort>
+    <url>https://kopten.de/gemeinden/bochum/</url>
+    <adresse>
+      <strasse>Hölterweg 2</strasse>
+      <plz>44893</plz>
+      <ort>Bochum</ort>
+    </adresse>
+    <priester>
+      <person>
+        <name>Pater Bolikarbos El Moharaky</name>
+        <mobil>0049-(0)173 9902 895</mobil>
+      </person>
+    </priester>
+    <diakone>
+      <diakon>Herr Dr. Maged Ezzat, Tel.: 0049-(0)157 8041 0693</diakon>
+    </diakone>
+    <gottesdienstzeiten>
+      <zeit>Jeden Sonntag: Liturgie 09:30-11:30 Uhr</zeit>
+      <zeit>Agape 12:00-13:00 Uhr</zeit>
+      <zeit>Sonntagsschule: 13:00-13:30 Uhr</zeit>
+      <zeit>Bibelstudium: 13:00-13:30 Uhr</zeit>
+    </gottesdienstzeiten>
+  </gemeinde>
+  <gemeinde id="borgentreich" typ="Einrichtung" bistum="Norddeutschland">
+    <name>Zentrale Unterbringungseinrichtung für Flüchtlinge</name>
+    <gemeindeort>Borgentreich</gemeindeort>
+    <url>https://kopten.de/gemeinden/borgentreich/</url>
+    <adresse>
+      <strasse>Am Maihof 1</strasse>
+      <plz>34434</plz>
+      <ort>Borgentreich</ort>
+    </adresse>
+    <priester>
+      <person>
+        <name>Metropolit Damian</name>
+        <email>Bischof@koptisches-kloster-hoexter.de</email>
+        <mobil>0049-(0)173 9902 895</mobil>
+      </person>
+      <person>
+        <name>Pater Bolikarbos El Moharaky (Prior des Klosters)</name>
+        <mobil>0049-(0)173 9902 895</mobil>
+      </person>
+    </priester>
+  </gemeinde>
+  <gemeinde id="bremen" typ="Gemeinde" bistum="Norddeutschland">
+    <name>St. Antonius Koptisch-Orthodoxe Kirche</name>
+    <gemeindeort>Bremen</gemeindeort>
+    <url>https://kopten.de/gemeinden/bremen/</url>
+    <adresse>
+      <strasse>Christernstraße 6</strasse>
+      <plz>28309</plz>
+      <ort>Bremen</ort>
+    </adresse>
+    <priester>
+      <person>
+        <name>Pater Mankarius El Moharaky</name>
+        <email>bremen@kopten.de</email>
+        <mobil>0049-(0)15901304863</mobil>
+      </person>
+    </priester>
+    <diakone>
+      <diakon>Dipl.-Ing. Habashy Hanna, Tel.: 0049-(0)421 837 114</diakon>
+    </diakone>
+    <gottesdienstzeiten>
+      <zeit>Jeden Samstag: Vesper 19:00-20:00 Uhr</zeit>
+      <zeit>Jeden Sonntag: Liturgie 10:00-12:00 Uhr</zeit>
+    </gottesdienstzeiten>
+    <bankverbindung>
+      <inhaber>Koptisch-orthodoxe Gemeinde in Bremen e.V.</inhaber>
+      <bank>Sparkasse Bremen</bank>
+      <iban>DE36 2905 0101 0082 1269 62</iban>
+      <bic>SBREDE22XXX</bic>
+    </bankverbindung>
+    <links>
+      <facebook>https://www.facebook.com/stantonius.bremen</facebook>
+      <instagram />
+      <youtube />
+    </links>
+  </gemeinde>
+  <gemeinde id="dresden" typ="Gemeinde" bistum="Norddeutschland">
+    <name>St. Petrus Koptisch-Orthodoxe Kirche</name>
+    <gemeindeort>Dresden</gemeindeort>
+    <url>https://kopten.de/gemeinden/dresden/</url>
+    <adresse>
+      <strasse>Zu Gast bei der kath. Gemeinde St. Petrus Kirche, Dohnaerstr. 53</strasse>
+      <plz>01219</plz>
+      <ort>Dresden</ort>
+    </adresse>
+    <priester>
+      <person>
+        <name>Pater Girgis El Moharaki</name>
+        <funktion>Generalvikar der Diözese</funktion>
+        <email>girgiselmoharaky@hotmail.de</email>
+        <mobil>0049-(0)171 436 0460</mobil>
+      </person>
+    </priester>
+    <kontakt>
+      <fax>0049-(0)3031 955 869</fax>
+    </kontakt>
+    <diakone>
+      <diakon>Herr Sameh Iskander: 0049-(0)178 158 1273</diakon>
+      <diakon>Herr Manuel Gado: 0049-(0)176 7215 0860</diakon>
+    </diakone>
+    <gottesdienstzeiten>
+      <zeit>Jeden 3. Samstag des Monats 10:00 Uhr</zeit>
+    </gottesdienstzeiten>
+    <links>
+      <website>https://www.koptische-gemeinde.de/</website>
+      <facebook />
+      <instagram />
+      <youtube />
+    </links>
+  </gemeinde>
+  <gemeinde id="duisburg" typ="Gemeinde" bistum="Norddeutschland">
+    <name>Koptisch-Orthodoxe Kirche der heiligen Jungfrau Maria, die heiligen Kosman und Damian</name>
+    <gemeindeort>Duisburg</gemeindeort>
+    <url>https://kopten.de/gemeinden/duisburg/</url>
+    <adresse>
+      <strasse>Zu Gast bei der kath. Gemeinde St. Bonifatius Kirche, Wanheimerstr. 161 b</strasse>
+      <plz>47053</plz>
+      <ort>Duisburg Hochfeld</ort>
+    </adresse>
+    <priester>
+      <person>
+        <name>Vater Cozman Fam</name>
+        <email>fr.cozman.sedky@gmail.com</email>
+        <mobil>0049-(0)176 3229 1889</mobil>
+      </person>
+    </priester>
+    <diakone>
+      <diakon>Herr Milad Botros, Tel.: 0049-(0)152 0875 7971</diakon>
+      <diakon>Herr Shenouda Abdelnour, Tel.: 0049-(0)159 0125 9225</diakon>
+    </diakone>
+    <gottesdienstzeiten>
+      <zeit>Jeden Samstag: Liturgie 09:30-11:30 Uhr</zeit>
+      <zeit>Jeden Samstag: Vesper und Mitternachtsgebet 18:00-21:00 Uhr</zeit>
+      <zeit>Jeden Sonntag: Liturgie 09:30-12:00 Uhr</zeit>
+      <zeit>Jeden Sonntag: Diakonenschule 12:30-13:00 Uhr</zeit>
+      <zeit>Jeden Sonntag: Agape 13:00-13:45 Uhr</zeit>
+      <zeit>Jeden Sonntag: Sonntagsschule 13:45-14:30 Uhr</zeit>
+    </gottesdienstzeiten>
+    <bankverbindung>
+      <bank>Sparkasse Duisburg</bank>
+      <iban>DE32 3505 0000 0200 3738 35</iban>
+    </bankverbindung>
+    <links>
+      <website />
+      <facebook>https://www.facebook.com/KoptischOrthodoxDuisburg</facebook>
+      <instagram />
+      <youtube />
+    </links>
+  </gemeinde>
+  <gemeinde id="espelkamp" typ="Gemeinde" bistum="Norddeutschland">
+    <name>Erzengel Michael Koptisch-Orthodoxe Kirche</name>
+    <gemeindeort>Espelkamp</gemeindeort>
+    <url>https://kopten.de/gemeinden/espelkamp/</url>
+    <adresse>
+      <strasse>Isenstedter Str. 100</strasse>
+      <plz>32339</plz>
+      <ort>Espelkamp</ort>
+    </adresse>
+    <priester>
+      <person>
+        <name>Vater Markus Soliman</name>
+        <email>dr_amirsoliman@yahoo.de</email>
+        <mobil>0049-(0)1522 2892 568</mobil>
+      </person>
+    </priester>
+    <diakone>
+      <diakon>Herr Kadees Samuel, Tel.: 0049-(0)1639017696</diakon>
+      <diakon>Herr Medhat Guirguis, Tel.: 0049-(0)17624683504</diakon>
+    </diakone>
+    <gottesdienstzeiten>
+      <zeit>Jeden 4. Samstag des Monats: Liturgie 10:00-12:00 Uhr</zeit>
+    </gottesdienstzeiten>
+  </gemeinde>
+  <gemeinde id="hamburg" typ="Gemeinde" bistum="Norddeutschland">
+    <name>Der heilige Petrus, der letzte Märtyrer Koptisch-Orthodoxe Kirche</name>
+    <gemeindeort>Hamburg</gemeindeort>
+    <url>https://kopten.de/gemeinden/hamburg/</url>
+    <adresse>
+      <strasse>Schröderstiftstr. 34</strasse>
+      <plz>20146</plz>
+      <ort>Hamburg</ort>
+    </adresse>
+    <priester>
+      <person>
+        <name>Pater Athanasius</name>
+        <postanschrift>Doormannsweg 25, 20259 Hamburg</postanschrift>
+      </person>
+    </priester>
+    <kontakt>
+      <telefon>0049-(0)405 324 784</telefon>
+      <mobil>0049-(0)152 5954 4511</mobil>
+      <fax>0049-(0)405 324 784</fax>
+    </kontakt>
+    <diakone>
+      <diakon>Herr Josef Asaad: +49(0)15257675904</diakon>
+    </diakone>
+    <gottesdienstzeiten>
+      <zeit>Jeden 1. und 3. Samstag des Monats: Liturgie 10:00-12:30 Uhr</zeit>
+      <zeit>Jeden Sonntag des Monats: Liturgie 10:00-12:30 Uhr</zeit>
+      <zeit>Liturgie am koptischen Weihnachts- und Osterfest</zeit>
+    </gottesdienstzeiten>
+    <bankverbindung>
+      <inhaber>Koptische Gemeinde e.V.</inhaber>
+      <bank>Haspa Hamburg</bank>
+      <iban>DE92 2005 0550 1204 1240 75</iban>
+      <bic>HASPDEHHXXX</bic>
+    </bankverbindung>
+    <links>
+      <website>https://koptische-kirche-hamburg.de/</website>
+      <instagram />
+      <youtube />
+    </links>
+  </gemeinde>
+  <gemeinde id="hannover" typ="Gemeinde" bistum="Norddeutschland">
+    <name>St. Athanasius Koptisch-Orthodoxe Kirche</name>
+    <gemeindeort>Hannover</gemeindeort>
+    <url>https://kopten.de/gemeinden/hannover/</url>
+    <adresse>
+      <strasse>Breite Riede 13</strasse>
+      <plz>31275</plz>
+      <ort>Lehrte-Ahlten</ort>
+    </adresse>
+    <priester>
+      <person>
+        <name>Pater Ologious El Macary</name>
+        <email>ologious2012@gmail.com</email>
+        <mobil>0049-(0) 170 978 3969</mobil>
+      </person>
+    </priester>
+    <diakone>
+      <diakon>Herr Said Basta: 0049-(0)15259544511</diakon>
+      <diakon>Herr Dr. Raouf Nahkla: 0049-(0)511 8236377</diakon>
+    </diakone>
+    <gottesdienstzeiten>
+      <zeit>Jeden Sonntag des Monats: Liturgie 10:00-12:30 Uhr</zeit>
+    </gottesdienstzeiten>
+    <bankverbindung>
+      <inhaber>Koptische Gemeinde e.V. Hannover</inhaber>
+      <bank>Evangelische Kreditgenossenschaft eG</bank>
+      <iban>DE67 2519 3331 1121 7960 00</iban>
+      <bic>GENODEF1PAT</bic>
+    </bankverbindung>
+    <links>
+      <website />
+      <facebook>https://www.facebook.com/groups/740847379295912/</facebook>
+      <instagram />
+      <youtube />
+    </links>
+  </gemeinde>
+  <gemeinde id="leipzig" typ="Gemeinde" bistum="Norddeutschland">
+    <name>St. Georg Koptisch-Orthodoxe Kirche</name>
+    <gemeindeort>Leipzig</gemeindeort>
+    <url>https://kopten.de/gemeinden/leipzig/</url>
+    <adresse>
+      <strasse>Zu Gast bei der St. Laurentius Kirche, Witzgallstr. 20</strasse>
+      <plz>04317</plz>
+      <ort>Leipzig</ort>
+    </adresse>
+    <priester>
+      <person>
+        <name>Pater Girgis El Moharaki</name>
+        <funktion>Generalvikar der Diözese</funktion>
+        <email>girgiselmoharaky@hotmail.de</email>
+        <mobil>0049-(0)171 436 0460</mobil>
+      </person>
+    </priester>
+    <gottesdienstzeiten>
+      <zeit>Jeden 2. Samstag des Monats 10:00 Uhr</zeit>
+    </gottesdienstzeiten>
+  </gemeinde>
+  <gemeinde id="minden" typ="Gemeinde" bistum="Norddeutschland">
+    <name>St. Mauritius Koptisch-Orthodoxe Kirche</name>
+    <gemeindeort>Minden</gemeindeort>
+    <url>https://kopten.de/gemeinden/minden/</url>
+    <adresse>
+      <strasse>Zu Gast bei St. Mauritius Kirche, Pauline-von-Mallinckrodt-Platz 5</strasse>
+      <plz>32423</plz>
+      <ort>Minden</ort>
+    </adresse>
+    <priester>
+      <person>
+        <name>Pater Ologious Macarious</name>
+        <email>ologious2012@gmail.com</email>
+        <mobil>0049-(0) 170 978 3969</mobil>
+      </person>
+    </priester>
+    <diakone>
+      <diakon>Amgad: 0049-(0)157 5075 9500</diakon>
+      <diakon>Dr. Mina Noshy: 0049-(0)152 5167 2927</diakon>
+    </diakone>
+    <gottesdienstzeiten>
+      <zeit>Jeden 1. und 3. Samstag des Monats 10:00-12:00 Uhr</zeit>
+    </gottesdienstzeiten>
+  </gemeinde>
+  <gemeinde id="neubrandenburg" typ="Gemeinde" bistum="Norddeutschland">
+    <name>Koptisch-Orthodoxe Kirche</name>
+    <gemeindeort>Neubrandenburg</gemeindeort>
+    <url>https://kopten.de/gemeinden/neubrandenburg/</url>
+    <adresse>
+      <strasse>Zu Gast bei der evangelischen Kirchengemeinde St. Michael, Straußstrasse 8</strasse>
+      <plz>17034</plz>
+      <ort>Neubrandenburg</ort>
+    </adresse>
+    <priester>
+      <person>
+        <name>Pater Girgis El Moharaki</name>
+        <funktion>Generalvikar der Diözese</funktion>
+        <email>girgiselmoharaky@hotmail.de</email>
+        <mobil>0049-(0)171 436 0460</mobil>
+      </person>
+    </priester>
+    <diakone>
+      <diakon>Diakon John Sedrak, Tel.: 0049-(0)157 3373 0332</diakon>
+    </diakone>
+    <gottesdienstzeiten>
+      <zeit>Letzten Samstag des Monats 10:00 Uhr</zeit>
+    </gottesdienstzeiten>
+  </gemeinde>
+  <gemeinde id="nieheim" typ="Kloster" bistum="Norddeutschland">
+    <name>Koptisches Nonnenkloster</name>
+    <gemeindeort>Nieheim</gemeindeort>
+    <url>https://kopten.de/gemeinden/nieheim/</url>
+    <adresse>
+      <strasse>Friedrich-Wilhelm-Weber Str. 11</strasse>
+      <plz>33039</plz>
+      <ort>Nieheim</ort>
+    </adresse>
+    <priester>
+      <person>
+        <name>Metropolit Anba Damian</name>
+        <email>Bischof@koptisches-kloster-hoexter.de</email>
+        <mobil>0049-(0)172 564 3647</mobil>
+      </person>
+      <person>
+        <name>Mutter Aksany Wasef</name>
+      </person>
+    </priester>
+    <links>
+      <website />
+      <facebook>https://www.facebook.com/profile.php?id=61570439083653</facebook>
+      <instagram />
+      <youtube />
+    </links>
+  </gemeinde>
+  <gemeinde id="nordenham" typ="Gemeinde" bistum="Norddeutschland">
+    <name>Koptisch-Orthodoxe Kirche</name>
+    <gemeindeort>Nordenham</gemeindeort>
+    <url>https://kopten.de/gemeinden/nordenham/</url>
+    <adresse>
+      <strasse>Auf den Wurten 59</strasse>
+      <plz>26954</plz>
+      <ort>Nordenham</ort>
+    </adresse>
+    <priester>
+      <person>
+        <name>Pater Mankarius El Moharaky</name>
+        <mobil>0049-(0)159 0130 4863</mobil>
+      </person>
+    </priester>
+    <diakone>
+      <diakon>Herr Emad Ebrahim, Tel.: 0049-(0)15754863910</diakon>
+    </diakone>
+    <gottesdienstzeiten>
+      <zeit>Jeden Samstag: Liturgie 09:00-11:00 Uhr</zeit>
+      <zeit>Jeden Sonntag: Liturgie 09:00-11:00 Uhr</zeit>
+    </gottesdienstzeiten>
+  </gemeinde>
+  <gemeinde id="paderborn" typ="Gemeinde" bistum="Norddeutschland">
+    <name>St. Paul und St. Antonius Koptisch-Orthodoxe Kirche</name>
+    <gemeindeort>Paderborn</gemeindeort>
+    <url>https://kopten.de/gemeinden/paderborn/</url>
+    <adresse>
+      <strasse>Zu Gast bei der St. Michael Kirche, Bielefelder Str. 157, 33104 Paderborn-Sennelager</strasse>
+      <plz>33102</plz>
+      <ort>Paderborn</ort>
+    </adresse>
+    <priester>
+      <person>
+        <name>Vater Markus Soliman</name>
+        <email>dr_amirsoliman@yahoo.de</email>
+        <mobil>0049-(0) 1522 2892 568</mobil>
+      </person>
+    </priester>
+    <diakone>
+      <diakon>Herr Emad Khalil, Tel.: 0049-(0)173 2957 523</diakon>
+      <diakon>Herr Samy Tawfik, Tel.: 0049-(0)152 2262 3137</diakon>
+    </diakone>
+    <gottesdienstzeiten>
+      <zeit>Jeden 2. Samstag des Monats: Liturgie 10:00-12:00 Uhr</zeit>
+    </gottesdienstzeiten>
+  </gemeinde>
+  <gemeinde id="friedrichsaue" typ="Gemeinde" bistum="Norddeutschland">
+    <name>Friedrichsaue – Koptisch-Orthodoxe Kirche</name>
+    <gemeindeort>Seeland</gemeindeort>
+    <url>https://kopten.de/gemeinden/friedrichsaue/</url>
+    <adresse>
+      <strasse>Chausseestraße 2</strasse>
+      <plz>06449</plz>
+      <ort>Seeland – OT Friedrichsaue</ort>
+    </adresse>
+    <priester>
+      <person>
+        <name>Pater Girgis El Moharaki</name>
+        <funktion>Generalvikar der Diözese</funktion>
+        <email>girgiselmoharaky@hotmail.de</email>
+        <mobil>0049-(0)171 436 0460</mobil>
+      </person>
+    </priester>
+    <diakone>
+      <diakon>Familie Hinze: 0049-(0)34741 73231</diakon>
+    </diakone>
+    <gottesdienstzeiten>
+      <zeit>1. Samstag des Monats: Liturgie 09:30-12:30 Uhr</zeit>
+    </gottesdienstzeiten>
+    <links>
+      <website />
+      <facebook>https://www.facebook.com/groups/316865105480571/</facebook>
+      <instagram />
+      <youtube />
+    </links>
+  </gemeinde>
+  <gemeinde id="wilhelmshafen" typ="Gemeinde" bistum="Norddeutschland">
+    <name>St. Maria und St. Mauritius Koptisch-Orthodoxe Kirche</name>
+    <gemeindeort>Wilhelmshafen</gemeindeort>
+    <url>https://kopten.de/gemeinden/wilhelmshafen/</url>
+    <adresse>
+      <strasse>Kirche der heiligen Jungfrau Maria, Hunrichs Str. 4, Ortsteil Voslapp</strasse>
+      <plz>26388</plz>
+      <ort>Wilhelmshaven</ort>
+    </adresse>
+    <priester>
+      <person>
+        <name>Pater Sorial El Moharaky</name>
+        <mobil>0049-(0)157 3348 3792</mobil>
+      </person>
+    </priester>
+    <diakone>
+      <diakon>Herr Khela Belamon, Tel.: 0049-(0)177 6178 961</diakon>
+      <diakon>Dr. Michael Roushdy, Tel.: 0049-(0)151 1167 7660</diakon>
+    </diakone>
+    <gottesdienstzeiten>
+      <zeit>Jeden Sonntag: Liturgie 09:30 Uhr, anschließend Sonntagsschule und Bibelstunde</zeit>
+    </gottesdienstzeiten>
+  </gemeinde>
 </gemeinden>
