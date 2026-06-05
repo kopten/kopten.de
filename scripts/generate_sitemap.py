@@ -5,7 +5,7 @@ import os
 from datetime import date
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parent.parent
 BASE_URL = "https://kopten.de"  # production canonical URL
 TODAY = date.today().isoformat()
 

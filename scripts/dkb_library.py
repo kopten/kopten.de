@@ -33,7 +33,7 @@ import re
 import urllib.parse
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parent.parent
 MANIFEST_PATH = ROOT / "data" / "files-manifest.json"
 
 # Öffentliche Domain des R2-Buckets — wird per CF Custom Domain gemappt.

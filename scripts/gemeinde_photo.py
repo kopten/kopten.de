@@ -7,7 +7,7 @@ correctly (no layout shift while the image is loading).
 
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parent.parent
 
 
 def _jpeg_dimensions(path):

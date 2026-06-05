@@ -29,7 +29,7 @@ import urllib.request
 from pathlib import Path
 from xml.etree import ElementTree as ET
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parent.parent
 XML_FILE = ROOT / "data" / "kopten_gemeinden.xml"
 JSON_FILE = ROOT / "data" / "gemeinden-coords.json"
 

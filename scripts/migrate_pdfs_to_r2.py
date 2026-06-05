@@ -42,7 +42,7 @@ except ImportError:
     print("Bitte zuerst 'pip install boto3' ausführen.", file=sys.stderr)
     sys.exit(1)
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT / "data"
 
 

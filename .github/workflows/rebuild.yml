@@ -7,20 +7,16 @@ on:
     branches: [main]
     paths:
       - "data/kopten_gemeinden.xml"
-      - "generate_gemeinden.py"
-      - "generate_gemeinden_en.py"
-      - "add_lang_switcher.py"
-      - "add_share_and_og.py"
-      - "generate_sitemap.py"
-      - "generate_worker_gemeinden.py"
-      - "geocode_gemeinden.py"
-      - "update_asset_versions.py"
+      - "scripts/**.py"
+      - "!scripts/generate_diocese_pdfs.py"
+      - "!scripts/migrate_pdfs_to_r2.py"
+      - "!scripts/build_en_pages.py"
       - "rebuild.py"
       # CSS / JS Änderungen sollen Cache-Versionen automatisch invalidieren
       - "css/**"
       - "js/**"
-  # Note: generate_diocese_pdfs.py is intentionally excluded — diocese PDFs are
-  # regenerated manually, not on every gemeinde change.
+  # Note: scripts/generate_diocese_pdfs.py is intentionally excluded —
+  # diocese PDFs are regenerated manually, not on every gemeinde change.
   workflow_dispatch:
   # Wird vom Cloudflare Worker `kopten-de-files` per repository_dispatch
   # ausgelöst, sobald sich der R2-Bucket-Inhalt geändert hat.

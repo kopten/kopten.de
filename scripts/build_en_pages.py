@@ -9,7 +9,7 @@ The current EN pages are already in the repo and edited manually."""
 import os
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parent.parent
 OUT  = ROOT / "en"
 
 NAV_SVG    = '<svg viewBox="0 0 32 32" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><use href="../icons/brand.svg#mark-light"/></svg>'

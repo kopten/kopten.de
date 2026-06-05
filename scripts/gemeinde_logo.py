@@ -8,7 +8,7 @@ correctly (no layout shift while the image is loading).
 import struct
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parent.parent
 
 # Try these extensions in order
 LOGO_EXTENSIONS = ("png", "jpg", "jpeg")

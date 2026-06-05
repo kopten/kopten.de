@@ -19,7 +19,7 @@ import hashlib
 import re
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parent.parent
 
 # Assets to track. Add new entries here when introducing new CSS/JS files.
 ASSETS = [

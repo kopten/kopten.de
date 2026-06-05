@@ -13,6 +13,7 @@ import time
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
+SCRIPTS = ROOT / "scripts"
 
 STEPS = [
     ("Generate German detail pages",     "generate_gemeinden.py"),
@@ -25,12 +26,12 @@ STEPS = [
     ("Refresh asset ?v=<hash>",          "update_asset_versions.py"),
 ]
 
-# Note: generate_diocese_pdfs.py is intentionally NOT part of rebuild.py
-# and not triggered by the GitHub Actions workflow. It must be invoked
-# manually when diocese PDFs need to be regenerated.
+# Note: scripts/generate_diocese_pdfs.py is intentionally NOT part of
+# rebuild.py and not triggered by the GitHub Actions workflow. It must be
+# invoked manually when diocese PDFs need to be regenerated.
 
 def run_step(label, script):
-    path = ROOT / script
+    path = SCRIPTS / script
     if not path.exists():
         print(f"  ✗ {label}: script {script} not found")
         return False

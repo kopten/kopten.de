@@ -47,7 +47,7 @@ from staticmap import CircleMarker, IconMarker, StaticMap
 #   - tiles cached on disk for 30 days
 #   - staticmap uses requests.get() internally → automatically benefits
 #   - dramatically faster on subsequent runs and respects OSM tile-usage policy
-TILE_CACHE = Path(__file__).resolve().parent / ".tile-cache.sqlite"
+TILE_CACHE = Path(__file__).resolve().parent.parent / ".tile-cache.sqlite"
 requests_cache.install_cache(
     str(TILE_CACHE).removesuffix(".sqlite"),  # CachedSession appends extension
     backend="sqlite",
@@ -58,7 +58,7 @@ requests_cache.install_cache(
     },
 )
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parent.parent
 XML_PATH = ROOT / "data" / "kopten_gemeinden.xml"
 GEO_CACHE = ROOT / ".geo-cache.json"
 OUT_DIR = ROOT / "pdfs"
