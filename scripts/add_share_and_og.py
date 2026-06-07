@@ -5,11 +5,43 @@ to the footer of every page (DE + EN, root + detail).
 
 import os
 import re
+import struct
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 BASE_URL = "https://kopten.de"  # canonical production URL — adjust if different
 OG_IMAGE = "/images/church.webp"
+OG_IMAGE_DIMS = (1200, 630)
+LOGOS_DIR = ROOT / "images" / "logos"
+
+
+def _png_dims(path):
+    """Read PNG width/height from the IHDR chunk (no external deps)."""
+    with open(path, "rb") as f:
+        head = f.read(24)
+    # 8-byte signature, then chunk-length(4) chunk-type(4) width(4) height(4)
+    return struct.unpack(">II", head[16:24])
+
+
+def _logo_for_slug(slug):
+    """Return (relative_url, width, height) if a logo PNG exists, else None."""
+    if not slug:
+        return None
+    logo_path = LOGOS_DIR / f"{slug}.png"
+    if not logo_path.exists():
+        return None
+    try:
+        w, h = _png_dims(logo_path)
+    except Exception:
+        return None
+    return (f"/images/logos/{slug}.png", w, h)
+
+
+def _slug_from_url_path(url_path):
+    """Extract gemeinde slug from a URL path like /gemeinden/aachen/ or
+    /en/communities/aachen/. Returns None for non-gemeinde pages."""
+    m = re.match(r"^/(?:gemeinden|en/communities)/([^/]+)/?$", url_path)
+    return m.group(1) if m else None
 
 SHARE_TEXTS = {
     "de": {
@@ -70,18 +102,22 @@ def _pct(s):
     return urllib.parse.quote(s, safe="")
 
 
-def og_block(lang, title, description, page_url, image_url):
+def og_block(lang, title, description, page_url, image_url, image_dims):
     t = SHARE_TEXTS[lang]
+    w, h = image_dims
+    # Square logos -> "summary" (Twitter shows small square thumbnail);
+    # landscape hero image -> "summary_large_image" (big banner).
+    twitter_card = "summary" if w == h else "summary_large_image"
     return f'''    <meta property="og:type" content="website" />
     <meta property="og:title" content="{_html_esc(title)}" />
     <meta property="og:description" content="{_html_esc(description)}" />
     <meta property="og:url" content="{page_url}" />
     <meta property="og:image" content="{image_url}" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
+    <meta property="og:image:width" content="{w}" />
+    <meta property="og:image:height" content="{h}" />
     <meta property="og:locale" content="{t['locale']}" />
     <meta property="og:site_name" content="{'Kopten Deutschland' if lang == 'de' else 'Copts Germany'}" />
-    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:card" content="{twitter_card}" />
     <meta name="twitter:title" content="{_html_esc(title)}" />
     <meta name="twitter:description" content="{_html_esc(description)}" />
     <meta name="twitter:image" content="{image_url}" />'''
@@ -94,10 +130,7 @@ def _html_esc(s):
 def patch_file(path, lang, rel_to_root, page_url_path):
     """Adds OG block + share footer block. rel_to_root is e.g. '' for root, '../' for /en/, '../../' for /en/communities/x/."""
     html = path.read_text(encoding='utf-8')
-
-    # Skip if already done
-    if 'og:type' in html and 'footer-share' in html:
-        return False
+    original = html
 
     # 1) Extract title and description for OG
     m_title = re.search(r'<title>\s*(.*?)\s*</title>', html, re.DOTALL)
@@ -106,12 +139,39 @@ def patch_file(path, lang, rel_to_root, page_url_path):
     description = m_desc.group(1) if m_desc else ""
 
     page_url = BASE_URL + page_url_path
-    image_url = BASE_URL + OG_IMAGE
 
-    # 2) Insert OG block before </head>
+    # Pick OG image: per-gemeinde logo if available, fallback to site default.
+    slug = _slug_from_url_path(page_url_path)
+    logo = _logo_for_slug(slug)
+    if logo:
+        image_path, img_w, img_h = logo
+    else:
+        image_path, (img_w, img_h) = OG_IMAGE, OG_IMAGE_DIMS
+    image_url = BASE_URL + image_path
+
+    # 2) Insert or refresh OG block before </head>
     if 'og:type' not in html:
-        og = og_block(lang, title, description, page_url, image_url)
+        og = og_block(lang, title, description, page_url, image_url, (img_w, img_h))
         html = re.sub(r'(\s*</head>)', '\n' + og + r'\1', html, count=1)
+    else:
+        # Update existing OG image + dimensions + twitter:image so re-runs
+        # pick up a newly-added logo without needing a full regen.
+        html = re.sub(
+            r'(<meta property="og:image" content=")[^"]*(")',
+            r'\g<1>' + image_url + r'\g<2>', html, count=1)
+        html = re.sub(
+            r'(<meta property="og:image:width" content=")\d+(")',
+            r'\g<1>' + str(img_w) + r'\g<2>', html, count=1)
+        html = re.sub(
+            r'(<meta property="og:image:height" content=")\d+(")',
+            r'\g<1>' + str(img_h) + r'\g<2>', html, count=1)
+        html = re.sub(
+            r'(<meta name="twitter:image" content=")[^"]*(")',
+            r'\g<1>' + image_url + r'\g<2>', html, count=1)
+        twitter_card = "summary" if img_w == img_h else "summary_large_image"
+        html = re.sub(
+            r'(<meta name="twitter:card" content=")[^"]*(")',
+            r'\g<1>' + twitter_card + r'\g<2>', html, count=1)
 
     # 3) Insert share block before </footer>'s closing </div> for .container
     if 'footer-share' not in html:
@@ -127,6 +187,8 @@ def patch_file(path, lang, rel_to_root, page_url_path):
             # Fallback: insert at end of <footer><div class="container">
             html = re.sub(r'(</footer>)', sb + '\n      </div>\n    \\1', html, count=1)
 
+    if html == original:
+        return False
     path.write_text(html, encoding='utf-8')
     return True
 
