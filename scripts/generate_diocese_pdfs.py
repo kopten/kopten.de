@@ -577,15 +577,22 @@ def render_map(gemeinden_with_coords, out_path):
 # ---------------------------------------------------------------------------
 
 
+FONTS_DIR = Path(__file__).resolve().parent / "fonts"
+
+
 class DiocesePDF(FPDF):
     def __init__(self, diocese_title):
         super().__init__(unit="mm", format="A4")
         self.diocese_title = diocese_title
         self.set_auto_page_break(auto=True, margin=MARGIN)
         self.set_margins(MARGIN, MARGIN, MARGIN)
-        # Register fonts (use built-in Helvetica)
-        # For umlauts and quotes, FPDF's helvetica supports latin1; for unicode
-        # we'd add a TTF. Built-in is fine for our text.
+        # Register DejaVu Sans (Unicode TTF, bundled in scripts/fonts/).
+        # Helvetica (Latin-1 only) wirft auf zerlegten Umlauten/Combining-
+        # Marks UnicodeEncodeError — DejaVu deckt den vollen BMP-Bereich.
+        self.add_font("DejaVu", "",   str(FONTS_DIR / "DejaVuSans.ttf"))
+        self.add_font("DejaVu", "B",  str(FONTS_DIR / "DejaVuSans-Bold.ttf"))
+        self.add_font("DejaVu", "I",  str(FONTS_DIR / "DejaVuSans-Oblique.ttf"))
+        self.add_font("DejaVu", "BI", str(FONTS_DIR / "DejaVuSans-BoldOblique.ttf"))
 
     def header(self):
         # No header on cover or TOC; small on detail pages (set elsewhere)
@@ -595,7 +602,7 @@ class DiocesePDF(FPDF):
         if self.page_no() < 2:
             return  # no footer on cover
         self.set_y(-12)
-        self.set_font("helvetica", "", 8)
+        self.set_font("DejaVu", "", 8)
         self.set_text_color(*COL_MUTED)
         self.cell(0, 5, f"{self.diocese_title}  ·  Seite {self.page_no()}", align="C")
 
@@ -636,17 +643,17 @@ def add_cover(pdf, diocese_title):
 
     # Title text
     pdf.set_xy(MARGIN, 160)
-    pdf.set_font("helvetica", "B", 22)
+    pdf.set_font("DejaVu", "B", 22)
     pdf.set_text_color(*COL_PRIMARY)
     pdf.multi_cell(0, 12, _safe("Koptisch-Orthodoxe Kirche"), align="C")
     pdf.set_x(MARGIN)
-    pdf.set_font("helvetica", "", 16)
+    pdf.set_font("DejaVu", "", 16)
     pdf.set_text_color(*COL_INK)
     pdf.cell(PAGE_W - 2 * MARGIN, 10, _safe(diocese_title), align="C")
 
     # Subtitle
     pdf.set_y(195)
-    pdf.set_font("helvetica", "", 11)
+    pdf.set_font("DejaVu", "", 11)
     pdf.set_text_color(*COL_MUTED)
     pdf.cell(0, 6, _safe("Gemeindenverzeichnis"), align="C")
 
@@ -654,19 +661,19 @@ def add_cover(pdf, diocese_title):
     from datetime import date
 
     pdf.set_y(PAGE_H - 30)
-    pdf.set_font("helvetica", "", 9)
+    pdf.set_font("DejaVu", "", 9)
     pdf.cell(0, 5, _safe(f"Stand: {date.today().strftime('%d.%m.%Y')}"), align="C")
 
 
 def add_toc(pdf, gemeinden, page_links):
     pdf.add_page()
-    pdf.set_font("helvetica", "B", 18)
+    pdf.set_font("DejaVu", "B", 18)
     pdf.set_text_color(*COL_PRIMARY)
     pdf.cell(0, 12, _safe("Inhaltsverzeichnis"), new_x=XPos.LMARGIN, new_y=YPos.NEXT)
     pdf.ln(4)
 
     # Map entry
-    pdf.set_font("helvetica", "", 11)
+    pdf.set_font("DejaVu", "", 11)
     pdf.set_text_color(*COL_INK)
     map_link = pdf.add_link()
     pdf.set_link(map_link, page=3)
@@ -682,7 +689,7 @@ def add_toc(pdf, gemeinden, page_links):
 
     # Two columns of gemeinden
     line_h = 7
-    pdf.set_font("helvetica", "", 10)
+    pdf.set_font("DejaVu", "", 10)
     col_w = (PAGE_W - 2 * MARGIN - 6) / 2
     col_start_y = pdf.get_y()
     n_per_col = (len(gemeinden) + 1) // 2
@@ -704,7 +711,7 @@ def add_toc(pdf, gemeinden, page_links):
 
 def add_map_page(pdf, diocese_title, map_image_path, pin_positions, page_links):
     pdf.add_page()
-    pdf.set_font("helvetica", "B", 16)
+    pdf.set_font("DejaVu", "B", 16)
     pdf.set_text_color(*COL_PRIMARY)
     pdf.cell(
         0,
@@ -750,7 +757,7 @@ def add_map_page(pdf, diocese_title, map_image_path, pin_positions, page_links):
 
     # OSM attribution caption directly under the map (ODbL requirement)
     pdf.set_y(y + h + 2)
-    pdf.set_font("helvetica", "", 7)
+    pdf.set_font("DejaVu", "", 7)
     pdf.set_text_color(*COL_MUTED)
     attribution = (
         "Kartendaten: (c) OpenStreetMap-Mitwirkende - openstreetmap.org/copyright"
@@ -766,11 +773,11 @@ def add_map_page(pdf, diocese_title, map_image_path, pin_positions, page_links):
 
 
 def _section_title(pdf, label):
-    pdf.set_font("helvetica", "B", 10)
+    pdf.set_font("DejaVu", "B", 10)
     pdf.set_text_color(*COL_ACCENT)
     pdf.cell(0, 5, _safe(label.upper()), new_x=XPos.LMARGIN, new_y=YPos.NEXT)
     pdf.set_text_color(*COL_INK)
-    pdf.set_font("helvetica", "", 10)
+    pdf.set_font("DejaVu", "", 10)
 
 
 def add_gemeinde_page(pdf, g):
@@ -839,7 +846,7 @@ def add_gemeinde_page(pdf, g):
 
     pdf.set_xy(title_x, band_top + BAND_PAD_TOP)
     if g["gemeindeort"]:
-        pdf.set_font("helvetica", "B", 9)
+        pdf.set_font("DejaVu", "B", 9)
         pdf.set_text_color(*COL_ACCENT)
         pdf.cell(
             PAGE_W - title_x - MARGIN,
@@ -850,11 +857,11 @@ def add_gemeinde_page(pdf, g):
             align="L",
         )
     pdf.set_x(title_x)
-    pdf.set_font("helvetica", "B", 14)
+    pdf.set_font("DejaVu", "B", 14)
     pdf.set_text_color(*COL_PRIMARY)
     pdf.multi_cell(PAGE_W - title_x - MARGIN, 6, _safe(g["name"]), align="L")
     pdf.set_x(title_x)
-    pdf.set_font("helvetica", "", 9)
+    pdf.set_font("DejaVu", "", 9)
     pdf.set_text_color(*COL_MUTED)
     type_line = f"{g['typ']}  ·  Diözese {g['bistum'].title().replace('Sueddeutschland', 'Süddeutschland')}"
     pdf.cell(
@@ -877,14 +884,14 @@ def add_gemeinde_page(pdf, g):
     _section_title(pdf, "Adresse")
     if g.get("zugast"):
         # Label "Zu Gast bei:" in accent colour, host name in italic
-        pdf.set_font("helvetica", "B", 9)
+        pdf.set_font("DejaVu", "B", 9)
         pdf.set_text_color(*COL_ACCENT)
         pdf.cell(0, 5, _safe("Zu Gast bei:"), new_x=XPos.LMARGIN, new_y=YPos.NEXT)
         pdf.set_text_color(*COL_INK)
         if g.get("gast_name"):
-            pdf.set_font("helvetica", "I", 10)
+            pdf.set_font("DejaVu", "I", 10)
             pdf.cell(0, 5, _safe(g["gast_name"]), new_x=XPos.LMARGIN, new_y=YPos.NEXT)
-        pdf.set_font("helvetica", "", 10)
+        pdf.set_font("DejaVu", "", 10)
     addr_lines = [g["strasse"], f"{g['plz']} {g['ort']}".strip()]
     for ln_text in addr_lines:
         if ln_text:
@@ -927,10 +934,10 @@ def add_gemeinde_page(pdf, g):
         )
         for p in real_persons:
             pdf.set_x(MARGIN)
-            pdf.set_font("helvetica", "B", 10)
+            pdf.set_font("DejaVu", "B", 10)
             pdf.set_text_color(*COL_INK)
             pdf.multi_cell(0, 5, _safe(p["name"]), align="L")
-            pdf.set_font("helvetica", "", 9)
+            pdf.set_font("DejaVu", "", 9)
             pdf.set_text_color(*COL_MUTED)
             if p.get("funktion"):
                 pdf.set_x(MARGIN)
@@ -948,7 +955,7 @@ def add_gemeinde_page(pdf, g):
     # Service times
     if g["zeiten"]:
         _section_title(pdf, "Gottesdienstzeiten")
-        pdf.set_font("helvetica", "", 9)
+        pdf.set_font("DejaVu", "", 9)
         for z in g["zeiten"]:
             pdf.set_x(MARGIN)
             pdf.multi_cell(0, 4.5, _safe("• " + z))
@@ -957,7 +964,7 @@ def add_gemeinde_page(pdf, g):
     # Diakone
     if g["diakone"]:
         _section_title(pdf, "Diakone")
-        pdf.set_font("helvetica", "", 9)
+        pdf.set_font("DejaVu", "", 9)
         for d in g["diakone"]:
             pdf.set_x(MARGIN)
             pdf.multi_cell(0, 4.5, _safe("• " + d))
@@ -966,7 +973,7 @@ def add_gemeinde_page(pdf, g):
     # Bank
     if g["bank"] and g["bank"].get("iban"):
         _section_title(pdf, "Bankverbindung")
-        pdf.set_font("helvetica", "", 9)
+        pdf.set_font("DejaVu", "", 9)
         b = g["bank"]
         for label, key in (
             ("Kontoinhaber", "inhaber"),
@@ -989,7 +996,7 @@ def add_gemeinde_page(pdf, g):
     link_items = [(k, v) for k, v in lk.items() if v]
     if link_items:
         _section_title(pdf, "Online")
-        pdf.set_font("helvetica", "", 9)
+        pdf.set_font("DejaVu", "", 9)
         for k, v in link_items:
             pdf.set_text_color(*COL_PRIMARY)
             pdf.cell(
@@ -1243,11 +1250,11 @@ def build_pdf(items, title, out_path, map_slug, toc_groups=None):
 
     # TOC page
     pdf.add_page()
-    pdf.set_font("helvetica", "B", 18)
+    pdf.set_font("DejaVu", "B", 18)
     pdf.set_text_color(*COL_PRIMARY)
     pdf.cell(0, 12, _safe("Inhaltsverzeichnis"), new_x=XPos.LMARGIN, new_y=YPos.NEXT)
     pdf.ln(2)
-    pdf.set_font("helvetica", "", 11)
+    pdf.set_font("DejaVu", "", 11)
     pdf.set_text_color(*COL_INK)
     map_link = pdf.add_link()
     pdf.set_link(map_link, page=3 if with_coords else 4)
@@ -1273,11 +1280,11 @@ def build_pdf(items, title, out_path, map_slug, toc_groups=None):
             # Ensure room for a heading + at least 2 entries; otherwise new page
             if pdf.get_y() > PAGE_H - MARGIN - 30:
                 pdf.add_page()
-            pdf.set_font("helvetica", "B", 12)
+            pdf.set_font("DejaVu", "B", 12)
             pdf.set_text_color(*COL_PRIMARY)
             pdf.cell(0, 7, _safe(group_title), new_x=XPos.LMARGIN, new_y=YPos.NEXT)
             pdf.ln(1)
-            pdf.set_font("helvetica", "", 10)
+            pdf.set_font("DejaVu", "", 10)
             pdf.set_text_color(*COL_INK)
             line_h = 6
             col_w = (PAGE_W - 2 * MARGIN - 6) / 2
