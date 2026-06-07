@@ -218,7 +218,7 @@
     </gottesdienstzeiten>
   </gemeinde>
   <gemeinde id="andernach" typ="Gemeinde" bistum="Süddeutschland">
-    <name>St. Petrus koptisch-orthodoxe Kirche</name>
+    <name>Hl. Maria und St. Petrus koptisch-orthodoxe Kirche</name>
     <gemeindeort>Andernach (bei Koblenz)</gemeindeort>
     <url>https://kopten.de/gemeinden/andernach/</url>
     <adresse>
@@ -243,10 +243,16 @@
       <zeit>Jeden 1. und 3. Samstag des Monats: Liturgie 9:00-11:00 Uhr</zeit>
       <zeit>Mittwochs und Freitags: Liturgie 9:00-11:00 Uhr</zeit>
     </gottesdienstzeiten>
+    <bankverbindung>
+      <inhaber>Hl. Maria und St. Petrus koptisch-orthodoxe Kirche e.V.</inhaber>
+      <bank>Kreissparkasse Mayen</bank>
+      <iban>DE21 5765 0010 0098 0690 16</iban>
+      <bic>MALADE51MYN</bic>
+    </bankverbindung>
     <links>
       <facebook>https://www.facebook.com/share/19yAguWKd5/</facebook>
       <instagram />
-      <youtube />
+      <youtube >https://www.youtube.com/@hl.maria.st.petrus</youtube>
     </links>
   </gemeinde>
   <gemeinde id="bergneustadt" typ="Gemeinde" bistum="Süddeutschland">
