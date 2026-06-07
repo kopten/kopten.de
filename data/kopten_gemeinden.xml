@@ -613,7 +613,7 @@
     </adresse>
     <priester>
       <person>
-        <name>Vater Danial Abdel-Masih</name>
+        <name>Vater Danial Riad</name>
         <mobil>0049-(0)178 6608 821</mobil>
       </person>
     </priester>
@@ -622,7 +622,7 @@
       <diakon>Herr Zakaria Bedrous: 0049-(0)157 5295 5210</diakon>
     </diakone>
     <gottesdienstzeiten>
-      <zeit>Jeden 4. Samstag des Monats: Liturgie 10:00-13:00 Uhr</zeit>
+      <zeit>1. und 3. Samstag des Monats: Liturgie 09:30-12:30 Uhr</zeit>
     </gottesdienstzeiten>
   </gemeinde>
   <gemeinde id="koeln" typ="Gemeinde" bistum="Süddeutschland">
@@ -630,7 +630,8 @@
     <gemeindeort>Köln</gemeindeort>
     <url>https://kopten.de/gemeinden/koeln/</url>
     <adresse>
-      <strasse>St. Marien Kirche Selingenthaler Str. 9</strasse>
+      <name>St. Marien Kirche</name>
+      <strasse>Selingenthaler Str. 9</strasse>
       <plz>51105</plz>
       <ort>Köln</ort>
     </adresse>
@@ -1133,7 +1134,7 @@
     </bankverbindung>
   </gemeinde>
   <gemeinde id="zirndorf" typ="Gemeinde" bistum="Süddeutschland">
-    <name>Zirndorf - St. Maria und Erzengel Michael Koptisch-Orthodoxe Kirche</name>
+    <name>St. Maria und Erzengel Michael Koptisch-Orthodoxe Kirche</name>
     <gemeindeort>Zirndorf</gemeindeort>
     <url>https://kopten.de/gemeinden/zirndorf/</url>
     <adresse>
@@ -1143,7 +1144,7 @@
     </adresse>
     <priester>
       <person>
-        <name>Vater Danial Riad Abdel-Masih</name>
+        <name>Vater Danial Riad</name>
         <mobil>0049-(0)178 6608 821</mobil>
       </person>
     </priester>
@@ -1155,11 +1156,11 @@
       <diakon>Herr Sobhi Zerr, Tel: 0049-(0)170 3432 367</diakon>
     </diakone>
     <gottesdienstzeiten>
-      <zeit>Sonntags: Liturgie 10:00-13:00 Uhr</zeit>
+      <zeit>1. (auf Deutsch), 2. und 4. Sonntag im Monat: Liturgie (09:00 – 12:30 Uhr)</zeit>
       <zeit>Sonntags ab 13:00 Uhr: Sonntagsschule und Agape Mahlzeit</zeit>
     </gottesdienstzeiten>
     <bankverbindung>
-      <inhaber>Ägyptisch-koptisch Gemeinde Nürnberg e.V.</inhaber>
+      <inhaber>Ägyptisch-koptische Gemeinde Nürnberg e.V.</inhaber>
       <bank>Sparkasse Nürnberg</bank>
       <iban>DE75 7605 0101 0011 4471 09</iban>
       <bic>SSKNDE77XXX</bic>
@@ -1170,579 +1171,580 @@
       <instagram />
       <youtube />
     </links>
-    </gemeinde>
-    <gemeinde id="worms" typ="Gemeinde" bistum="Süddeutschland">
-      <name>St. Maria und Erzengel Michael Koptisch-Orthodoxe Kirche</name>
-      <gemeindeort>Worms</gemeindeort>
-      <url>https://kopten.de/gemeinden/worms/</url>
-      <adresse>
-        <zugast>true</zugast>
-        <name>St. Amandus Kirche</name>
-        <strasse>Bebelstr. 71a</strasse>
-        <plz>67549</plz>
-        <ort>Worms</ort>
-      </adresse>
-      <priester>
-        <person>
-          <name>Mönchsvater aus dem St. Antonius Koptisch-Orthodoxen Kloster in Kröffelbach</name>
-        </person>
-      </priester>
-      <diakone>
-        <diakon>Herr Dr. Sherif Ramsis: 0049-(0)174 9338 375</diakon>
-        <diakon>Herr Emad Mehana</diakon>
-      </diakone>
-      <gottesdienstzeiten>
-        <zeit>Jeden 2. und 4. Samstag des Monats: Liturgie 09:00-12:00 Uhr</zeit>
-      </gottesdienstzeiten>
-    </gemeinde>
-    <gemeinde id="bad-grund" typ="Gemeinde" bistum="Norddeutschland">
-      <name>koptisch-orthodoxe Kirche des heiligen Minas und des heiligen Papstes Kyrillus VI.</name>
-      <gemeindeort>Bad Grund</gemeindeort>
-      <url>https://kopten.de/gemeinden/bad-grund/</url>
-      <adresse>
-        <strasse>Am Rösteberg 1</strasse>
-        <plz>37539</plz>
-        <ort>Bad Grund</ort>
-      </adresse>
-      <priester>
-        <person>
-          <name>Metropolit Anba Damian</name>
-          <email>Bischof@koptisches-kloster-hoexter.de</email>
-          <mobil>0049-(0)172 564 3647</mobil>
-        </person>
-      </priester>
-      <gottesdienstzeiten>
-        <zeit>Jeden 1. Samstag des Monats: Liturgie 10:00-12:30 Uhr</zeit>
-      </gottesdienstzeiten>
-    </gemeinde>
-    <gemeinde id="berlin" typ="Gemeinde" bistum="Norddeutschland">
-      <name>St. Antonius und St. Schenouda Koptisch-Orthodoxe Kirche</name>
-      <gemeindeort>Berlin</gemeindeort>
-      <url>https://kopten.de/gemeinden/berlin/</url>
-      <adresse>
-        <strasse>Roedeliusplatz 2</strasse>
-        <plz>10365</plz>
-        <ort>Berlin-Lichtenberg</ort>
-      </adresse>
-      <priester>
-        <person>
-          <name>Pater Girgis El Moharaki</name>
-          <funktion>Generalvikar der Diözese</funktion>
-          <mobil>0049-(0)171 436 0460</mobil>
-          <email>girgiselmoharaky@hotmail.de</email>
-          <postanschrift>Schottstr. 3, 10365 Berlin</postanschrift>
-        </person>
-      </priester>
-      <kontakt>
-        <telefon>0049-(0)3055 491 013</telefon>
-        <fax>0049-(0)3031 955 869</fax>
-      </kontakt>
-      <diakone>
-        <diakon>Diakon Ramses Ibrahim: 0049-(0)172 3221223, ramsesberlin@aol.com</diakon>
-        <diakon>Diakon Tadros Keriakos: 0049-(0)172 3042 432</diakon>
-      </diakone>
-      <gottesdienstzeiten>
-        <zeit>Sonntags und mittwochs: 09:00 Uhr</zeit>
-        <zeit>Samstags Vesper und Mitternachtsgebete: 17:00 Uhr</zeit>
-        <zeit>Freitags General-Treffen: 17:00 Uhr</zeit>
-      </gottesdienstzeiten>
-      <links>
-        <website>https://koptische-gemeinde-berlin.de/</website>
-        <facebook />
-        <instagram />
-        <youtube />
-      </links>
-    </gemeinde>
-    <gemeinde id="bielefeld" typ="Gemeinde" bistum="Norddeutschland">
-      <name>St. Maria und die 7 Erzengel Koptisch-Orthodoxe Kirche</name>
-      <gemeindeort>Bielefeld</gemeindeort>
-      <url>https://kopten.de/gemeinden/bielefeld/</url>
-      <adresse>
-        <zugast>true</zugast>
-        <name>St. Lukas Kirche</name>
-        <strasse>Siekstr. 10</strasse>
-        <plz>33719</plz>
-        <ort>Bielefeld</ort>
-      </adresse>
-      <priester>
-        <person>
-          <name>Pater Markus Soliman</name>
-          <email>dr_amirsoliman@yahoo.de</email>
-          <mobil>0049 (0) 152 22 89 25 68</mobil>
-        </person>
-      </priester>
-      <diakone>
-        <diakon>Herr Monir Botros, Mobil: 0049 (0) 171 15 55 434, E-Mail: info@fine-art-architekten.de</diakon>
-      </diakone>
-      <gottesdienstzeiten>
-        <zeit>Jeden 1., 2. und 4. Sonntag des Monats: Liturgie 10:00-12:00 Uhr</zeit>
-      </gottesdienstzeiten>
-      <links>
-        <website>https://kopten-bielefeld.de/</website>
-        <facebook />
-        <instagram >https://www.instagram.com/koptischejugendbielefeld/</instagram>
-        <youtube >https://www.youtube.com/@st.mariaunddiesiebenerzeng2988</youtube>
-      </links>
-    </gemeinde>
-    <gemeinde id="bochum" typ="Gemeinde" bistum="Norddeutschland">
-      <name>Koptisch-Orthodoxe Kirche</name>
-      <gemeindeort>Bochum</gemeindeort>
-      <url>https://kopten.de/gemeinden/bochum/</url>
-      <adresse>
-        <strasse>Hölterweg 2</strasse>
-        <plz>44893</plz>
-        <ort>Bochum</ort>
-      </adresse>
-      <priester>
-        <person>
-          <name>Pater Bolikarbos El Moharaky</name>
-          <mobil>0049-(0)173 9902 895</mobil>
-        </person>
-      </priester>
-      <diakone>
-        <diakon>Herr Dr. Maged Ezzat, Tel.: 0049-(0)157 8041 0693</diakon>
-      </diakone>
-      <gottesdienstzeiten>
-        <zeit>Jeden Sonntag: Liturgie 09:30-11:30 Uhr</zeit>
-        <zeit>Agape 12:00-13:00 Uhr</zeit>
-        <zeit>Sonntagsschule: 13:00-13:30 Uhr</zeit>
-        <zeit>Bibelstudium: 13:00-13:30 Uhr</zeit>
-      </gottesdienstzeiten>
-    </gemeinde>
-    <gemeinde id="borgentreich" typ="Einrichtung" bistum="Norddeutschland">
-      <name>Zentrale Unterbringungseinrichtung für Flüchtlinge</name>
-      <gemeindeort>Borgentreich</gemeindeort>
-      <url>https://kopten.de/gemeinden/borgentreich/</url>
-      <adresse>
-        <strasse>Am Maihof 1</strasse>
-        <plz>34434</plz>
-        <ort>Borgentreich</ort>
-      </adresse>
-      <priester>
-        <person>
-          <name>Metropolit Damian</name>
-          <email>Bischof@koptisches-kloster-hoexter.de</email>
-          <mobil>0049-(0)173 9902 895</mobil>
-        </person>
-        <person>
-          <name>Pater Bolikarbos El Moharaky (Prior des Klosters)</name>
-          <mobil>0049-(0)173 9902 895</mobil>
-        </person>
-      </priester>
-    </gemeinde>
-    <gemeinde id="bremen" typ="Gemeinde" bistum="Norddeutschland">
-      <name>St. Antonius Koptisch-Orthodoxe Kirche</name>
-      <gemeindeort>Bremen</gemeindeort>
-      <url>https://kopten.de/gemeinden/bremen/</url>
-      <adresse>
-        <strasse>Christernstraße 6</strasse>
-        <plz>28309</plz>
-        <ort>Bremen</ort>
-      </adresse>
-      <priester>
-        <person>
-          <name>Pater Mankarius El Moharaky</name>
-          <email>bremen@kopten.de</email>
-          <mobil>0049-(0)15901304863</mobil>
-        </person>
-      </priester>
-      <diakone>
-        <diakon>Dipl.-Ing. Habashy Hanna, Tel.: 0049-(0)421 837 114</diakon>
-      </diakone>
-      <gottesdienstzeiten>
-        <zeit>Jeden Samstag: Vesper 19:00-20:00 Uhr</zeit>
-        <zeit>Jeden Sonntag: Liturgie 10:00-12:00 Uhr</zeit>
-      </gottesdienstzeiten>
-      <bankverbindung>
-        <inhaber>Koptisch-orthodoxe Gemeinde in Bremen e.V.</inhaber>
-        <bank>Sparkasse Bremen</bank>
-        <iban>DE36 2905 0101 0082 1269 62</iban>
-        <bic>SBREDE22XXX</bic>
-      </bankverbindung>
-      <links>
-        <facebook>https://www.facebook.com/stantonius.bremen</facebook>
-        <instagram />
-        <youtube />
-      </links>
-    </gemeinde>
-    <gemeinde id="dresden" typ="Gemeinde" bistum="Norddeutschland">
-      <name>St. Petrus Koptisch-Orthodoxe Kirche</name>
-      <gemeindeort>Dresden</gemeindeort>
-      <url>https://kopten.de/gemeinden/dresden/</url>
-      <adresse>
-        <zugast>true</zugast>
-        <name>Kath. Gemeinde St. Petrus Kirche</name>
-        <strasse>Dohnaerstr. 53</strasse>
-        <plz>01219</plz>
-        <ort>Dresden</ort>
-      </adresse>
-      <priester>
-        <person>
-          <name>Pater Girgis El Moharaki</name>
-          <funktion>Generalvikar der Diözese</funktion>
-          <email>girgiselmoharaky@hotmail.de</email>
-          <mobil>0049-(0)171 436 0460</mobil>
-        </person>
-      </priester>
-      <kontakt>
-        <fax>0049-(0)3031 955 869</fax>
-      </kontakt>
-      <diakone>
-        <diakon>Herr Sameh Iskander: 0049-(0)178 158 1273</diakon>
-        <diakon>Herr Manuel Gado: 0049-(0)176 7215 0860</diakon>
-      </diakone>
-      <gottesdienstzeiten>
-        <zeit>Jeden 3. Samstag des Monats 10:00 Uhr</zeit>
-      </gottesdienstzeiten>
-      <links>
-        <website>https://www.koptische-gemeinde.de/</website>
-        <facebook />
-        <instagram />
-        <youtube />
-      </links>
-    </gemeinde>
-    <gemeinde id="duisburg" typ="Gemeinde" bistum="Norddeutschland">
-      <name>Koptisch-Orthodoxe Kirche der heiligen Jungfrau Maria, die heiligen Kosman und Damian</name>
-      <gemeindeort>Duisburg</gemeindeort>
-      <url>https://kopten.de/gemeinden/duisburg/</url>
-      <adresse>
-        <zugast>true</zugast>
-        <name>Kath. Gemeinde St. Bonifatius Kirche</name>
-        <strasse>Wanheimerstr. 161 b</strasse>
-        <plz>47053</plz>
-        <ort>Duisburg Hochfeld</ort>
-      </adresse>
-      <priester>
-        <person>
-          <name>Vater Cozman Fam</name>
-          <email>fr.cozman.sedky@gmail.com</email>
-          <mobil>0049-(0)176 3229 1889</mobil>
-        </person>
-      </priester>
-      <diakone>
-        <diakon>Herr Milad Botros, Tel.: 0049-(0)152 0875 7971</diakon>
-        <diakon>Herr Shenouda Abdelnour, Tel.: 0049-(0)159 0125 9225</diakon>
-      </diakone>
-      <gottesdienstzeiten>
-        <zeit>Jeden Samstag: Liturgie 09:30-11:30 Uhr</zeit>
-        <zeit>Jeden Samstag: Vesper und Mitternachtsgebet 18:00-21:00 Uhr</zeit>
-        <zeit>Jeden Sonntag: Liturgie 09:30-12:00 Uhr</zeit>
-        <zeit>Jeden Sonntag: Diakonenschule 12:30-13:00 Uhr</zeit>
-        <zeit>Jeden Sonntag: Agape 13:00-13:45 Uhr</zeit>
-        <zeit>Jeden Sonntag: Sonntagsschule 13:45-14:30 Uhr</zeit>
-      </gottesdienstzeiten>
-      <bankverbindung>
-        <bank>Sparkasse Duisburg</bank>
-        <iban>DE32 3505 0000 0200 3738 35</iban>
-      </bankverbindung>
-      <links>
-        <website />
-        <facebook>https://www.facebook.com/KoptischOrthodoxDuisburg</facebook>
-        <instagram />
-        <youtube />
-      </links>
-    </gemeinde>
-    <gemeinde id="espelkamp" typ="Gemeinde" bistum="Norddeutschland">
-      <name>Erzengel Michael Koptisch-Orthodoxe Kirche</name>
-      <gemeindeort>Espelkamp</gemeindeort>
-      <url>https://kopten.de/gemeinden/espelkamp/</url>
-      <adresse>
-        <strasse>Isenstedter Str. 100</strasse>
-        <plz>32339</plz>
-        <ort>Espelkamp</ort>
-      </adresse>
-      <priester>
-        <person>
-          <name>Vater Markus Soliman</name>
-          <email>dr_amirsoliman@yahoo.de</email>
-          <mobil>0049-(0)1522 2892 568</mobil>
-        </person>
-      </priester>
-      <diakone>
-        <diakon>Herr Kadees Samuel, Tel.: 0049-(0)1639017696</diakon>
-        <diakon>Herr Medhat Guirguis, Tel.: 0049-(0)17624683504</diakon>
-      </diakone>
-      <gottesdienstzeiten>
-        <zeit>Jeden 4. Samstag des Monats: Liturgie 10:00-12:00 Uhr</zeit>
-      </gottesdienstzeiten>
-    </gemeinde>
-    <gemeinde id="hamburg" typ="Gemeinde" bistum="Norddeutschland">
-      <name>Der heilige Petrus, der letzte Märtyrer Koptisch-Orthodoxe Kirche</name>
-      <gemeindeort>Hamburg</gemeindeort>
-      <url>https://kopten.de/gemeinden/hamburg/</url>
-      <adresse>
-        <strasse>Schröderstiftstr. 34</strasse>
-        <plz>20146</plz>
-        <ort>Hamburg</ort>
-      </adresse>
-      <priester>
-        <person>
-          <name>Pater Athanasius</name>
-          <postanschrift>Doormannsweg 25, 20259 Hamburg</postanschrift>
-        </person>
-      </priester>
-      <kontakt>
-        <telefon>0049-(0)405 324 784</telefon>
-        <mobil>0049-(0)152 5954 4511</mobil>
-        <fax>0049-(0)405 324 784</fax>
-      </kontakt>
-      <diakone>
-        <diakon>Herr Josef Asaad: +49(0)15257675904</diakon>
-      </diakone>
-      <gottesdienstzeiten>
-        <zeit>Jeden 1. und 3. Samstag des Monats: Liturgie 10:00-12:30 Uhr</zeit>
-        <zeit>Jeden Sonntag des Monats: Liturgie 10:00-12:30 Uhr</zeit>
-        <zeit>Liturgie am koptischen Weihnachts- und Osterfest</zeit>
-      </gottesdienstzeiten>
-      <bankverbindung>
-        <inhaber>Koptische Gemeinde e.V.</inhaber>
-        <bank>Haspa Hamburg</bank>
-        <iban>DE92 2005 0550 1204 1240 75</iban>
-        <bic>HASPDEHHXXX</bic>
-      </bankverbindung>
-      <links>
-        <website>https://koptische-kirche-hamburg.de/</website>
-        <instagram />
-        <youtube />
-      </links>
-    </gemeinde>
-    <gemeinde id="hannover" typ="Gemeinde" bistum="Norddeutschland">
-      <name>St. Athanasius Koptisch-Orthodoxe Kirche</name>
-      <gemeindeort>Hannover</gemeindeort>
-      <url>https://kopten.de/gemeinden/hannover/</url>
-      <adresse>
-        <strasse>Breite Riede 13</strasse>
-        <plz>31275</plz>
-        <ort>Lehrte-Ahlten</ort>
-      </adresse>
-      <priester>
-        <person>
-          <name>Pater Ologious El Macary</name>
-          <email>ologious2012@gmail.com</email>
-          <mobil>0049-(0) 170 978 3969</mobil>
-        </person>
-      </priester>
-      <diakone>
-        <diakon>Herr Said Basta: 0049-(0)15259544511</diakon>
-        <diakon>Herr Dr. Raouf Nahkla: 0049-(0)511 8236377</diakon>
-      </diakone>
-      <gottesdienstzeiten>
-        <zeit>Jeden Sonntag des Monats: Liturgie 10:00-12:30 Uhr</zeit>
-      </gottesdienstzeiten>
-      <bankverbindung>
-        <inhaber>Koptische Gemeinde e.V. Hannover</inhaber>
-        <bank>Evangelische Kreditgenossenschaft eG</bank>
-        <iban>DE67 2519 3331 1121 7960 00</iban>
-        <bic>GENODEF1PAT</bic>
-      </bankverbindung>
-      <links>
-        <website />
-        <facebook>https://www.facebook.com/groups/740847379295912/</facebook>
-        <instagram />
-        <youtube />
-      </links>
-    </gemeinde>
-    <gemeinde id="leipzig" typ="Gemeinde" bistum="Norddeutschland">
-      <name>St. Georg Koptisch-Orthodoxe Kirche</name>
-      <gemeindeort>Leipzig</gemeindeort>
-      <url>https://kopten.de/gemeinden/leipzig/</url>
-      <adresse>
-        <zugast>true</zugast>
-        <name>St. Laurentius Kirche</name>
-        <strasse>Witzgallstr. 20</strasse>
-        <plz>04317</plz>
-        <ort>Leipzig</ort>
-      </adresse>
-      <priester>
-        <person>
-          <name>Pater Girgis El Moharaki</name>
-          <funktion>Generalvikar der Diözese</funktion>
-          <email>girgiselmoharaky@hotmail.de</email>
-          <mobil>0049-(0)171 436 0460</mobil>
-        </person>
-      </priester>
-      <gottesdienstzeiten>
-        <zeit>Jeden 2. Samstag des Monats 10:00 Uhr</zeit>
-      </gottesdienstzeiten>
-    </gemeinde>
-    <gemeinde id="minden" typ="Gemeinde" bistum="Norddeutschland">
-      <name>St. Mauritius Koptisch-Orthodoxe Kirche</name>
-      <gemeindeort>Minden</gemeindeort>
-      <url>https://kopten.de/gemeinden/minden/</url>
-      <adresse>
-        <zugast>true</zugast>
-        <name>St. Mauritius Kirche</name>
-        <strasse>Pauline-von-Mallinckrodt-Platz 5</strasse>
-        <plz>32423</plz>
-        <ort>Minden</ort>
-      </adresse>
-      <priester>
-        <person>
-          <name>Pater Ologious Macarious</name>
-          <email>ologious2012@gmail.com</email>
-          <mobil>0049-(0) 170 978 3969</mobil>
-        </person>
-      </priester>
-      <diakone>
-        <diakon>Amgad: 0049-(0)157 5075 9500</diakon>
-        <diakon>Dr. Mina Noshy: 0049-(0)152 5167 2927</diakon>
-      </diakone>
-      <gottesdienstzeiten>
-        <zeit>Jeden 1. und 3. Samstag des Monats 10:00-12:00 Uhr</zeit>
-      </gottesdienstzeiten>
-    </gemeinde>
-    <gemeinde id="neubrandenburg" typ="Gemeinde" bistum="Norddeutschland">
-      <name>Koptisch-Orthodoxe Kirche</name>
-      <gemeindeort>Neubrandenburg</gemeindeort>
-      <url>https://kopten.de/gemeinden/neubrandenburg/</url>
-      <adresse>
-        <zugast>true</zugast>
-        <name>Evangelische Kirchengemeinde St. Michael</name>
-        <strasse>Straußstrasse 8</strasse>
-        <plz>17034</plz>
-        <ort>Neubrandenburg</ort>
-      </adresse>
-      <priester>
-        <person>
-          <name>Pater Girgis El Moharaki</name>
-          <funktion>Generalvikar der Diözese</funktion>
-          <email>girgiselmoharaky@hotmail.de</email>
-          <mobil>0049-(0)171 436 0460</mobil>
-        </person>
-      </priester>
-      <diakone>
-        <diakon>Diakon John Sedrak, Tel.: 0049-(0)157 3373 0332</diakon>
-      </diakone>
-      <gottesdienstzeiten>
-        <zeit>Letzten Samstag des Monats 10:00 Uhr</zeit>
-      </gottesdienstzeiten>
-    </gemeinde>
-    <gemeinde id="nieheim" typ="Kloster" bistum="Norddeutschland">
-      <name>Koptisches Nonnenkloster</name>
-      <gemeindeort>Nieheim</gemeindeort>
-      <url>https://kopten.de/gemeinden/nieheim/</url>
-      <adresse>
-        <strasse>Friedrich-Wilhelm-Weber Str. 11</strasse>
-        <plz>33039</plz>
-        <ort>Nieheim</ort>
-      </adresse>
-      <priester>
-        <person>
-          <name>Metropolit Anba Damian</name>
-          <email>Bischof@koptisches-kloster-hoexter.de</email>
-          <mobil>0049-(0)172 564 3647</mobil>
-        </person>
-        <person>
-          <name>Mutter Aksany Wasef</name>
-        </person>
-      </priester>
-      <links>
-        <website />
-        <facebook>https://www.facebook.com/profile.php?id=61570439083653</facebook>
-        <instagram />
-        <youtube />
-      </links>
-    </gemeinde>
-    <gemeinde id="nordenham" typ="Gemeinde" bistum="Norddeutschland">
-      <name>Koptisch-Orthodoxe Kirche</name>
-      <gemeindeort>Nordenham</gemeindeort>
-      <url>https://kopten.de/gemeinden/nordenham/</url>
-      <adresse>
-        <strasse>Auf den Wurten 59</strasse>
-        <plz>26954</plz>
-        <ort>Nordenham</ort>
-      </adresse>
-      <priester>
-        <person>
-          <name>Pater Mankarius El Moharaky</name>
-          <mobil>0049-(0)159 0130 4863</mobil>
-        </person>
-      </priester>
-      <diakone>
-        <diakon>Herr Emad Ebrahim, Tel.: 0049-(0)15754863910</diakon>
-      </diakone>
-      <gottesdienstzeiten>
-        <zeit>Jeden Samstag: Liturgie 09:00-11:00 Uhr</zeit>
-        <zeit>Jeden Sonntag: Liturgie 09:00-11:00 Uhr</zeit>
-      </gottesdienstzeiten>
-    </gemeinde>
-    <gemeinde id="paderborn" typ="Gemeinde" bistum="Norddeutschland">
-      <name>St. Paul und St. Antonius Koptisch-Orthodoxe Kirche</name>
-      <gemeindeort>Paderborn</gemeindeort>
-      <url>https://kopten.de/gemeinden/paderborn/</url>
-      <adresse>
-        <zugast>true</zugast>
-        <name>St. Michael Kirche</name>
-        <strasse>Bielefelder Str. 157</strasse>
-        <plz>33102</plz>
-        <ort>Paderborn</ort>
-      </adresse>
-      <priester>
-        <person>
-          <name>Vater Markus Soliman</name>
-          <email>dr_amirsoliman@yahoo.de</email>
-          <mobil>0049-(0) 1522 2892 568</mobil>
-        </person>
-      </priester>
-      <diakone>
-        <diakon>Herr Emad Khalil, Tel.: 0049-(0)173 2957 523</diakon>
-        <diakon>Herr Samy Tawfik, Tel.: 0049-(0)152 2262 3137</diakon>
-      </diakone>
-      <gottesdienstzeiten>
-        <zeit>Jeden 2. Samstag des Monats: Liturgie 10:00-12:00 Uhr</zeit>
-      </gottesdienstzeiten>
-    </gemeinde>
-    <gemeinde id="friedrichsaue" typ="Gemeinde" bistum="Norddeutschland">
-      <name>Friedrichsaue – Koptisch-Orthodoxe Kirche</name>
-      <gemeindeort>Seeland</gemeindeort>
-      <url>https://kopten.de/gemeinden/friedrichsaue/</url>
-      <adresse>
-        <strasse>Chausseestraße 2</strasse>
-        <plz>06449</plz>
-        <ort>Seeland – OT Friedrichsaue</ort>
-      </adresse>
-      <priester>
-        <person>
-          <name>Pater Girgis El Moharaki</name>
-          <funktion>Generalvikar der Diözese</funktion>
-          <email>girgiselmoharaky@hotmail.de</email>
-          <mobil>0049-(0)171 436 0460</mobil>
-        </person>
-      </priester>
-      <diakone>
-        <diakon>Familie Hinze: 0049-(0)34741 73231</diakon>
-      </diakone>
-      <gottesdienstzeiten>
-        <zeit>1. Samstag des Monats: Liturgie 09:30-12:30 Uhr</zeit>
-      </gottesdienstzeiten>
-      <links>
-        <website />
-        <facebook>https://www.facebook.com/groups/316865105480571/</facebook>
-        <instagram />
-        <youtube />
-      </links>
-    </gemeinde>
-    <gemeinde id="wilhelmshafen" typ="Gemeinde" bistum="Norddeutschland">
-      <name>St. Maria und St. Mauritius Koptisch-Orthodoxe Kirche</name>
-      <gemeindeort>Wilhelmshafen</gemeindeort>
-      <url>https://kopten.de/gemeinden/wilhelmshafen/</url>
-      <adresse>
-        <strasse>Kirche der heiligen Jungfrau Maria, Hunrichs Str. 4, Ortsteil Voslapp</strasse>
-        <plz>26388</plz>
-        <ort>Wilhelmshaven</ort>
-      </adresse>
-      <priester>
-        <person>
-          <name>Pater Sorial El Moharaky</name>
-          <mobil>0049-(0)157 3348 3792</mobil>
-        </person>
-      </priester>
-      <diakone>
-        <diakon>Herr Khela Belamon, Tel.: 0049-(0)177 6178 961</diakon>
-        <diakon>Dr. Michael Roushdy, Tel.: 0049-(0)151 1167 7660</diakon>
-      </diakone>
-      <gottesdienstzeiten>
-        <zeit>Jeden Sonntag: Liturgie 09:30 Uhr, anschließend Sonntagsschule und Bibelstunde</zeit>
-      </gottesdienstzeiten>
-    </gemeinde>
-  </gemeinden>
+  </gemeinde>
+  <gemeinde id="worms" typ="Gemeinde" bistum="Süddeutschland">
+    <name>St. Maria und Erzengel Michael Koptisch-Orthodoxe Kirche</name>
+    <gemeindeort>Worms</gemeindeort>
+    <url>https://kopten.de/gemeinden/worms/</url>
+    <adresse>
+      <zugast>true</zugast>
+      <name>St. Amandus Kirche</name>
+      <strasse>Bebelstr. 71a</strasse>
+      <plz>67549</plz>
+      <ort>Worms</ort>
+    </adresse>
+    <priester>
+      <person>
+        <name>Vater Danial Riad</name>
+        <mobil>0049-(0)178 6608 821</mobil>
+      </person>
+    </priester>
+    <diakone>
+      <diakon>Herr Dr. Sherif Ramsis: 0049-(0)174 9338 375</diakon>
+      <diakon>Herr Emad Mehana</diakon>
+    </diakone>
+    <gottesdienstzeiten>
+      <zeit>Jeden 2. und 4. Samstag des Monats: Liturgie 09:00-12:00 Uhr</zeit>
+    </gottesdienstzeiten>
+  </gemeinde>
+  <gemeinde id="bad-grund" typ="Gemeinde" bistum="Norddeutschland">
+    <name>koptisch-orthodoxe Kirche des heiligen Minas und des heiligen Papstes Kyrillus VI.</name>
+    <gemeindeort>Bad Grund</gemeindeort>
+    <url>https://kopten.de/gemeinden/bad-grund/</url>
+    <adresse>
+      <strasse>Am Rösteberg 1</strasse>
+      <plz>37539</plz>
+      <ort>Bad Grund</ort>
+    </adresse>
+    <priester>
+      <person>
+        <name>Metropolit Anba Damian</name>
+        <email>Bischof@koptisches-kloster-hoexter.de</email>
+        <mobil>0049-(0)172 564 3647</mobil>
+      </person>
+    </priester>
+    <gottesdienstzeiten>
+      <zeit>Jeden 1. Samstag des Monats: Liturgie 10:00-12:30 Uhr</zeit>
+    </gottesdienstzeiten>
+  </gemeinde>
+  <gemeinde id="berlin" typ="Gemeinde" bistum="Norddeutschland">
+    <name>St. Antonius und St. Schenouda Koptisch-Orthodoxe Kirche</name>
+    <gemeindeort>Berlin</gemeindeort>
+    <url>https://kopten.de/gemeinden/berlin/</url>
+    <adresse>
+      <strasse>Roedeliusplatz 2</strasse>
+      <plz>10365</plz>
+      <ort>Berlin-Lichtenberg</ort>
+    </adresse>
+    <priester>
+      <person>
+        <name>Pater Girgis El Moharaki</name>
+        <funktion>Generalvikar der Diözese</funktion>
+        <mobil>0049-(0)171 436 0460</mobil>
+        <email>girgiselmoharaky@hotmail.de</email>
+        <postanschrift>Schottstr. 3, 10365 Berlin</postanschrift>
+      </person>
+    </priester>
+    <kontakt>
+      <telefon>0049-(0)3055 491 013</telefon>
+      <fax>0049-(0)3031 955 869</fax>
+    </kontakt>
+    <diakone>
+      <diakon>Diakon Ramses Ibrahim: 0049-(0)172 3221223, ramsesberlin@aol.com</diakon>
+      <diakon>Diakon Tadros Keriakos: 0049-(0)172 3042 432</diakon>
+    </diakone>
+    <gottesdienstzeiten>
+      <zeit>Sonntags und mittwochs: 09:00 Uhr</zeit>
+      <zeit>Samstags Vesper und Mitternachtsgebete: 17:00 Uhr</zeit>
+      <zeit>Freitags General-Treffen: 17:00 Uhr</zeit>
+    </gottesdienstzeiten>
+    <links>
+      <website>https://koptische-gemeinde-berlin.de/</website>
+      <facebook />
+      <instagram />
+      <youtube />
+    </links>
+  </gemeinde>
+  <gemeinde id="bielefeld" typ="Gemeinde" bistum="Norddeutschland">
+    <name>St. Maria und die 7 Erzengel Koptisch-Orthodoxe Kirche</name>
+    <gemeindeort>Bielefeld</gemeindeort>
+    <url>https://kopten.de/gemeinden/bielefeld/</url>
+    <adresse>
+      <zugast>true</zugast>
+      <name>St. Lukas Kirche</name>
+      <strasse>Siekstr. 10</strasse>
+      <plz>33719</plz>
+      <ort>Bielefeld</ort>
+    </adresse>
+    <priester>
+      <person>
+        <name>Pater Markus Soliman</name>
+        <email>dr_amirsoliman@yahoo.de</email>
+        <mobil>0049 (0) 152 22 89 25 68</mobil>
+      </person>
+    </priester>
+    <diakone>
+      <diakon>Herr Monir Botros, Mobil: 0049 (0) 171 15 55 434, E-Mail: info@fine-art-architekten.de</diakon>
+    </diakone>
+    <gottesdienstzeiten>
+      <zeit>Jeden 1., 2. und 4. Sonntag des Monats: Liturgie 10:00-12:00 Uhr</zeit>
+    </gottesdienstzeiten>
+    <links>
+      <website>https://kopten-bielefeld.de/</website>
+      <facebook />
+      <instagram >https://www.instagram.com/koptischejugendbielefeld/</instagram>
+      <youtube >https://www.youtube.com/@st.mariaunddiesiebenerzeng2988</youtube>
+    </links>
+  </gemeinde>
+  <gemeinde id="bochum" typ="Gemeinde" bistum="Norddeutschland">
+    <name>Koptisch-Orthodoxe Kirche</name>
+    <gemeindeort>Bochum</gemeindeort>
+    <url>https://kopten.de/gemeinden/bochum/</url>
+    <adresse>
+      <strasse>Hölterweg 2</strasse>
+      <plz>44893</plz>
+      <ort>Bochum</ort>
+    </adresse>
+    <priester>
+      <person>
+        <name>Pater Bolikarbos El Moharaky</name>
+        <mobil>0049-(0)173 9902 895</mobil>
+      </person>
+    </priester>
+    <diakone>
+      <diakon>Herr Dr. Maged Ezzat, Tel.: 0049-(0)157 8041 0693</diakon>
+    </diakone>
+    <gottesdienstzeiten>
+      <zeit>Jeden Sonntag: Liturgie 09:30-11:30 Uhr</zeit>
+      <zeit>Agape 12:00-13:00 Uhr</zeit>
+      <zeit>Sonntagsschule: 13:00-13:30 Uhr</zeit>
+      <zeit>Bibelstudium: 13:00-13:30 Uhr</zeit>
+    </gottesdienstzeiten>
+  </gemeinde>
+  <gemeinde id="borgentreich" typ="Einrichtung" bistum="Norddeutschland">
+    <name>Zentrale Unterbringungseinrichtung für Flüchtlinge</name>
+    <gemeindeort>Borgentreich</gemeindeort>
+    <url>https://kopten.de/gemeinden/borgentreich/</url>
+    <adresse>
+      <strasse>Am Maihof 1</strasse>
+      <plz>34434</plz>
+      <ort>Borgentreich</ort>
+    </adresse>
+    <priester>
+      <person>
+        <name>Metropolit Damian</name>
+        <email>Bischof@koptisches-kloster-hoexter.de</email>
+        <mobil>0049-(0)173 9902 895</mobil>
+      </person>
+      <person>
+        <name>Pater Bolikarbos El Moharaky (Prior des Klosters)</name>
+        <mobil>0049-(0)173 9902 895</mobil>
+      </person>
+    </priester>
+  </gemeinde>
+  <gemeinde id="bremen" typ="Gemeinde" bistum="Norddeutschland">
+    <name>St. Antonius Koptisch-Orthodoxe Kirche</name>
+    <gemeindeort>Bremen</gemeindeort>
+    <url>https://kopten.de/gemeinden/bremen/</url>
+    <adresse>
+      <strasse>Christernstraße 6</strasse>
+      <plz>28309</plz>
+      <ort>Bremen</ort>
+    </adresse>
+    <priester>
+      <person>
+        <name>Pater Mankarius El Moharaky</name>
+        <email>bremen@kopten.de</email>
+        <mobil>0049-(0)15901304863</mobil>
+      </person>
+    </priester>
+    <diakone>
+      <diakon>Dipl.-Ing. Habashy Hanna, Tel.: 0049-(0)421 837 114</diakon>
+    </diakone>
+    <gottesdienstzeiten>
+      <zeit>Jeden Samstag: Vesper 19:00-20:00 Uhr</zeit>
+      <zeit>Jeden Sonntag: Liturgie 10:00-12:00 Uhr</zeit>
+    </gottesdienstzeiten>
+    <bankverbindung>
+      <inhaber>Koptisch-orthodoxe Gemeinde in Bremen e.V.</inhaber>
+      <bank>Sparkasse Bremen</bank>
+      <iban>DE36 2905 0101 0082 1269 62</iban>
+      <bic>SBREDE22XXX</bic>
+    </bankverbindung>
+    <links>
+      <facebook>https://www.facebook.com/stantonius.bremen</facebook>
+      <instagram />
+      <youtube />
+    </links>
+  </gemeinde>
+  <gemeinde id="dresden" typ="Gemeinde" bistum="Norddeutschland">
+    <name>St. Petrus Koptisch-Orthodoxe Kirche</name>
+    <gemeindeort>Dresden</gemeindeort>
+    <url>https://kopten.de/gemeinden/dresden/</url>
+    <adresse>
+      <zugast>true</zugast>
+      <name>Kath. Gemeinde St. Petrus Kirche</name>
+      <strasse>Dohnaerstr. 53</strasse>
+      <plz>01219</plz>
+      <ort>Dresden</ort>
+    </adresse>
+    <priester>
+      <person>
+        <name>Pater Girgis El Moharaki</name>
+        <funktion>Generalvikar der Diözese</funktion>
+        <email>girgiselmoharaky@hotmail.de</email>
+        <mobil>0049-(0)171 436 0460</mobil>
+      </person>
+    </priester>
+    <kontakt>
+      <fax>0049-(0)3031 955 869</fax>
+    </kontakt>
+    <diakone>
+      <diakon>Herr Sameh Iskander: 0049-(0)178 158 1273</diakon>
+      <diakon>Herr Manuel Gado: 0049-(0)176 7215 0860</diakon>
+    </diakone>
+    <gottesdienstzeiten>
+      <zeit>Jeden 3. Samstag des Monats 10:00 Uhr</zeit>
+    </gottesdienstzeiten>
+    <links>
+      <website>https://www.koptische-gemeinde.de/</website>
+      <facebook />
+      <instagram />
+      <youtube />
+    </links>
+  </gemeinde>
+  <gemeinde id="duisburg" typ="Gemeinde" bistum="Norddeutschland">
+    <name>Koptisch-Orthodoxe Kirche der heiligen Jungfrau Maria, die heiligen Kosman und Damian</name>
+    <gemeindeort>Duisburg</gemeindeort>
+    <url>https://kopten.de/gemeinden/duisburg/</url>
+    <adresse>
+      <zugast>true</zugast>
+      <name>Kath. Gemeinde St. Bonifatius Kirche</name>
+      <strasse>Wanheimerstr. 161 b</strasse>
+      <plz>47053</plz>
+      <ort>Duisburg Hochfeld</ort>
+    </adresse>
+    <priester>
+      <person>
+        <name>Vater Cozman Fam</name>
+        <email>fr.cozman.sedky@gmail.com</email>
+        <mobil>0049-(0)176 3229 1889</mobil>
+      </person>
+    </priester>
+    <diakone>
+      <diakon>Herr Milad Botros, Tel.: 0049-(0)152 0875 7971</diakon>
+      <diakon>Herr Shenouda Abdelnour, Tel.: 0049-(0)159 0125 9225</diakon>
+    </diakone>
+    <gottesdienstzeiten>
+      <zeit>Jeden Samstag: Liturgie 09:30-11:30 Uhr</zeit>
+      <zeit>Jeden Samstag: Vesper und Mitternachtsgebet 18:00-21:00 Uhr</zeit>
+      <zeit>Jeden Sonntag: Liturgie 09:30-12:00 Uhr</zeit>
+      <zeit>Jeden Sonntag: Diakonenschule 12:30-13:00 Uhr</zeit>
+      <zeit>Jeden Sonntag: Agape 13:00-13:45 Uhr</zeit>
+      <zeit>Jeden Sonntag: Sonntagsschule 13:45-14:30 Uhr</zeit>
+    </gottesdienstzeiten>
+    <bankverbindung>
+      <bank>Sparkasse Duisburg</bank>
+      <iban>DE32 3505 0000 0200 3738 35</iban>
+    </bankverbindung>
+    <links>
+      <website />
+      <facebook>https://www.facebook.com/KoptischOrthodoxDuisburg</facebook>
+      <instagram />
+      <youtube />
+    </links>
+  </gemeinde>
+  <gemeinde id="espelkamp" typ="Gemeinde" bistum="Norddeutschland">
+    <name>Erzengel Michael Koptisch-Orthodoxe Kirche</name>
+    <gemeindeort>Espelkamp</gemeindeort>
+    <url>https://kopten.de/gemeinden/espelkamp/</url>
+    <adresse>
+      <strasse>Isenstedter Str. 100</strasse>
+      <plz>32339</plz>
+      <ort>Espelkamp</ort>
+    </adresse>
+    <priester>
+      <person>
+        <name>Vater Markus Soliman</name>
+        <email>dr_amirsoliman@yahoo.de</email>
+        <mobil>0049-(0)1522 2892 568</mobil>
+      </person>
+    </priester>
+    <diakone>
+      <diakon>Herr Kadees Samuel, Tel.: 0049-(0)1639017696</diakon>
+      <diakon>Herr Medhat Guirguis, Tel.: 0049-(0)17624683504</diakon>
+    </diakone>
+    <gottesdienstzeiten>
+      <zeit>Jeden 4. Samstag des Monats: Liturgie 10:00-12:00 Uhr</zeit>
+    </gottesdienstzeiten>
+  </gemeinde>
+  <gemeinde id="hamburg" typ="Gemeinde" bistum="Norddeutschland">
+    <name>Der heilige Petrus, der letzte Märtyrer Koptisch-Orthodoxe Kirche</name>
+    <gemeindeort>Hamburg</gemeindeort>
+    <url>https://kopten.de/gemeinden/hamburg/</url>
+    <adresse>
+      <strasse>Schröderstiftstr. 34</strasse>
+      <plz>20146</plz>
+      <ort>Hamburg</ort>
+    </adresse>
+    <priester>
+      <person>
+        <name>Pater Athanasius</name>
+        <postanschrift>Doormannsweg 25, 20259 Hamburg</postanschrift>
+      </person>
+    </priester>
+    <kontakt>
+      <telefon>0049-(0)405 324 784</telefon>
+      <mobil>0049-(0)152 5954 4511</mobil>
+      <fax>0049-(0)405 324 784</fax>
+    </kontakt>
+    <diakone>
+      <diakon>Herr Josef Asaad: +49(0)15257675904</diakon>
+    </diakone>
+    <gottesdienstzeiten>
+      <zeit>Jeden 1. und 3. Samstag des Monats: Liturgie 10:00-12:30 Uhr</zeit>
+      <zeit>Jeden Sonntag des Monats: Liturgie 10:00-12:30 Uhr</zeit>
+      <zeit>Liturgie am koptischen Weihnachts- und Osterfest</zeit>
+    </gottesdienstzeiten>
+    <bankverbindung>
+      <inhaber>Koptische Gemeinde e.V.</inhaber>
+      <bank>Haspa Hamburg</bank>
+      <iban>DE92 2005 0550 1204 1240 75</iban>
+      <bic>HASPDEHHXXX</bic>
+    </bankverbindung>
+    <links>
+      <website>https://koptische-kirche-hamburg.de/</website>
+      <instagram />
+      <youtube />
+    </links>
+  </gemeinde>
+  <gemeinde id="hannover" typ="Gemeinde" bistum="Norddeutschland">
+    <name>St. Athanasius Koptisch-Orthodoxe Kirche</name>
+    <gemeindeort>Hannover</gemeindeort>
+    <url>https://kopten.de/gemeinden/hannover/</url>
+    <adresse>
+      <strasse>Breite Riede 13</strasse>
+      <plz>31275</plz>
+      <ort>Lehrte-Ahlten</ort>
+    </adresse>
+    <priester>
+      <person>
+        <name>Pater Ologious El Macary</name>
+        <email>ologious2012@gmail.com</email>
+        <mobil>0049-(0) 170 978 3969</mobil>
+      </person>
+    </priester>
+    <diakone>
+      <diakon>Herr Said Basta: 0049-(0)15259544511</diakon>
+      <diakon>Herr Dr. Raouf Nahkla: 0049-(0)511 8236377</diakon>
+    </diakone>
+    <gottesdienstzeiten>
+      <zeit>Jeden Sonntag des Monats: Liturgie 10:00-12:30 Uhr</zeit>
+    </gottesdienstzeiten>
+    <bankverbindung>
+      <inhaber>Koptische Gemeinde e.V. Hannover</inhaber>
+      <bank>Evangelische Kreditgenossenschaft eG</bank>
+      <iban>DE67 2519 3331 1121 7960 00</iban>
+      <bic>GENODEF1PAT</bic>
+    </bankverbindung>
+    <links>
+      <website />
+      <facebook>https://www.facebook.com/groups/740847379295912/</facebook>
+      <instagram />
+      <youtube />
+    </links>
+  </gemeinde>
+  <gemeinde id="leipzig" typ="Gemeinde" bistum="Norddeutschland">
+    <name>St. Georg Koptisch-Orthodoxe Kirche</name>
+    <gemeindeort>Leipzig</gemeindeort>
+    <url>https://kopten.de/gemeinden/leipzig/</url>
+    <adresse>
+      <zugast>true</zugast>
+      <name>St. Laurentius Kirche</name>
+      <strasse>Witzgallstr. 20</strasse>
+      <plz>04317</plz>
+      <ort>Leipzig</ort>
+    </adresse>
+    <priester>
+      <person>
+        <name>Pater Girgis El Moharaki</name>
+        <funktion>Generalvikar der Diözese</funktion>
+        <email>girgiselmoharaky@hotmail.de</email>
+        <mobil>0049-(0)171 436 0460</mobil>
+      </person>
+    </priester>
+    <gottesdienstzeiten>
+      <zeit>Jeden 2. Samstag des Monats 10:00 Uhr</zeit>
+    </gottesdienstzeiten>
+  </gemeinde>
+  <gemeinde id="minden" typ="Gemeinde" bistum="Norddeutschland">
+    <name>St. Mauritius Koptisch-Orthodoxe Kirche</name>
+    <gemeindeort>Minden</gemeindeort>
+    <url>https://kopten.de/gemeinden/minden/</url>
+    <adresse>
+      <zugast>true</zugast>
+      <name>St. Mauritius Kirche</name>
+      <strasse>Pauline-von-Mallinckrodt-Platz 5</strasse>
+      <plz>32423</plz>
+      <ort>Minden</ort>
+    </adresse>
+    <priester>
+      <person>
+        <name>Pater Ologious Macarious</name>
+        <email>ologious2012@gmail.com</email>
+        <mobil>0049-(0) 170 978 3969</mobil>
+      </person>
+    </priester>
+    <diakone>
+      <diakon>Amgad: 0049-(0)157 5075 9500</diakon>
+      <diakon>Dr. Mina Noshy: 0049-(0)152 5167 2927</diakon>
+    </diakone>
+    <gottesdienstzeiten>
+      <zeit>Jeden 1. und 3. Samstag des Monats 10:00-12:00 Uhr</zeit>
+    </gottesdienstzeiten>
+  </gemeinde>
+  <gemeinde id="neubrandenburg" typ="Gemeinde" bistum="Norddeutschland">
+    <name>Koptisch-Orthodoxe Kirche</name>
+    <gemeindeort>Neubrandenburg</gemeindeort>
+    <url>https://kopten.de/gemeinden/neubrandenburg/</url>
+    <adresse>
+      <zugast>true</zugast>
+      <name>Evangelische Kirchengemeinde St. Michael</name>
+      <strasse>Straußstrasse 8</strasse>
+      <plz>17034</plz>
+      <ort>Neubrandenburg</ort>
+    </adresse>
+    <priester>
+      <person>
+        <name>Pater Girgis El Moharaki</name>
+        <funktion>Generalvikar der Diözese</funktion>
+        <email>girgiselmoharaky@hotmail.de</email>
+        <mobil>0049-(0)171 436 0460</mobil>
+      </person>
+    </priester>
+    <diakone>
+      <diakon>Diakon John Sedrak, Tel.: 0049-(0)157 3373 0332</diakon>
+    </diakone>
+    <gottesdienstzeiten>
+      <zeit>Letzten Samstag des Monats 10:00 Uhr</zeit>
+    </gottesdienstzeiten>
+  </gemeinde>
+  <gemeinde id="nieheim" typ="Kloster" bistum="Norddeutschland">
+    <name>Koptisches Nonnenkloster</name>
+    <gemeindeort>Nieheim</gemeindeort>
+    <url>https://kopten.de/gemeinden/nieheim/</url>
+    <adresse>
+      <strasse>Friedrich-Wilhelm-Weber Str. 11</strasse>
+      <plz>33039</plz>
+      <ort>Nieheim</ort>
+    </adresse>
+    <priester>
+      <person>
+        <name>Metropolit Anba Damian</name>
+        <email>Bischof@koptisches-kloster-hoexter.de</email>
+        <mobil>0049-(0)172 564 3647</mobil>
+      </person>
+      <person>
+        <name>Mutter Aksany Wasef</name>
+      </person>
+    </priester>
+    <links>
+      <website />
+      <facebook>https://www.facebook.com/profile.php?id=61570439083653</facebook>
+      <instagram />
+      <youtube />
+    </links>
+  </gemeinde>
+  <gemeinde id="nordenham" typ="Gemeinde" bistum="Norddeutschland">
+    <name>Koptisch-Orthodoxe Kirche</name>
+    <gemeindeort>Nordenham</gemeindeort>
+    <url>https://kopten.de/gemeinden/nordenham/</url>
+    <adresse>
+      <strasse>Auf den Wurten 59</strasse>
+      <plz>26954</plz>
+      <ort>Nordenham</ort>
+    </adresse>
+    <priester>
+      <person>
+        <name>Pater Mankarius El Moharaky</name>
+        <mobil>0049-(0)159 0130 4863</mobil>
+      </person>
+    </priester>
+    <diakone>
+      <diakon>Herr Emad Ebrahim, Tel.: 0049-(0)15754863910</diakon>
+    </diakone>
+    <gottesdienstzeiten>
+      <zeit>Jeden Samstag: Liturgie 09:00-11:00 Uhr</zeit>
+      <zeit>Jeden Sonntag: Liturgie 09:00-11:00 Uhr</zeit>
+    </gottesdienstzeiten>
+  </gemeinde>
+  <gemeinde id="paderborn" typ="Gemeinde" bistum="Norddeutschland">
+    <name>St. Paul und St. Antonius Koptisch-Orthodoxe Kirche</name>
+    <gemeindeort>Paderborn</gemeindeort>
+    <url>https://kopten.de/gemeinden/paderborn/</url>
+    <adresse>
+      <zugast>true</zugast>
+      <name>St. Michael Kirche</name>
+      <strasse>Bielefelder Str. 157</strasse>
+      <plz>33102</plz>
+      <ort>Paderborn</ort>
+    </adresse>
+    <priester>
+      <person>
+        <name>Vater Markus Soliman</name>
+        <email>dr_amirsoliman@yahoo.de</email>
+        <mobil>0049-(0) 1522 2892 568</mobil>
+      </person>
+    </priester>
+    <diakone>
+      <diakon>Herr Emad Khalil, Tel.: 0049-(0)173 2957 523</diakon>
+      <diakon>Herr Samy Tawfik, Tel.: 0049-(0)152 2262 3137</diakon>
+    </diakone>
+    <gottesdienstzeiten>
+      <zeit>Jeden 2. Samstag des Monats: Liturgie 10:00-12:00 Uhr</zeit>
+    </gottesdienstzeiten>
+  </gemeinde>
+  <gemeinde id="friedrichsaue" typ="Gemeinde" bistum="Norddeutschland">
+    <name>Friedrichsaue – Koptisch-Orthodoxe Kirche</name>
+    <gemeindeort>Seeland</gemeindeort>
+    <url>https://kopten.de/gemeinden/friedrichsaue/</url>
+    <adresse>
+      <strasse>Chausseestraße 2</strasse>
+      <plz>06449</plz>
+      <ort>Seeland – OT Friedrichsaue</ort>
+    </adresse>
+    <priester>
+      <person>
+        <name>Pater Girgis El Moharaki</name>
+        <funktion>Generalvikar der Diözese</funktion>
+        <email>girgiselmoharaky@hotmail.de</email>
+        <mobil>0049-(0)171 436 0460</mobil>
+      </person>
+    </priester>
+    <diakone>
+      <diakon>Familie Hinze: 0049-(0)34741 73231</diakon>
+    </diakone>
+    <gottesdienstzeiten>
+      <zeit>1. Samstag des Monats: Liturgie 09:30-12:30 Uhr</zeit>
+    </gottesdienstzeiten>
+    <links>
+      <website />
+      <facebook>https://www.facebook.com/groups/316865105480571/</facebook>
+      <instagram />
+      <youtube />
+    </links>
+  </gemeinde>
+  <gemeinde id="wilhelmshafen" typ="Gemeinde" bistum="Norddeutschland">
+    <name>St. Maria und St. Mauritius Koptisch-Orthodoxe Kirche</name>
+    <gemeindeort>Wilhelmshafen</gemeindeort>
+    <url>https://kopten.de/gemeinden/wilhelmshafen/</url>
+    <adresse>
+      <strasse>Kirche der heiligen Jungfrau Maria, Hunrichs Str. 4, Ortsteil Voslapp</strasse>
+      <plz>26388</plz>
+      <ort>Wilhelmshaven</ort>
+    </adresse>
+    <priester>
+      <person>
+        <name>Pater Sorial El Moharaky</name>
+        <mobil>0049-(0)157 3348 3792</mobil>
+      </person>
+    </priester>
+    <diakone>
+      <diakon>Herr Khela Belamon, Tel.: 0049-(0)177 6178 961</diakon>
+      <diakon>Dr. Michael Roushdy, Tel.: 0049-(0)151 1167 7660</diakon>
+    </diakone>
+    <gottesdienstzeiten>
+      <zeit>Jeden Sonntag: Liturgie 09:30 Uhr, anschließend Sonntagsschule und Bibelstunde</zeit>
+    </gottesdienstzeiten>
+  </gemeinde>
+</gemeinden>
