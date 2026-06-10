@@ -931,15 +931,18 @@
       <youtube />
     </links>
   </gemeinde>
-  <gemeinde id="schwabisch-gmund" typ="Gemeinde" bistum="Süddeutschland">
-    <name>St. Abanoub Koptisch-Orthodoxe Kirche</name>
+  <gemeinde id="schwaebisch-gmund" typ="Gemeinde" bistum="Süddeutschland">
+    <name>Hl. Abanoub Koptisch-Orthodoxe Kirche</name>
     <gemeindeort>Schwäbisch Gmünd</gemeindeort>
-    <url>https://kopten.de/gemeinden/schwabisch-gmund-baden-wurttemberg/</url>
+    <url>https://kopten.de/gemeinden/schwaebisch-gmund/</url>
     <adresse>
       <strasse>Hauptstr. 69</strasse>
       <plz>73527</plz>
       <ort>Schwäbisch Gmünd</ort>
     </adresse>
+    <kontakt>
+      <email>info@koptische-orthodoxe-kirche-gd.de</email>      
+    </kontakt>    
     <priester>
       <person>
         <name>Vater Abanoub Fouad</name>
@@ -948,11 +951,19 @@
     </priester>
     <gottesdienstzeiten>
       <zeit>Jeden Sonntag: Liturgie 09:30-12:30 Uhr</zeit>
+      <zeit>Jeden Donnerstag: Lobpreis 18:00 Uhr</zeit>
+      <zeit>Jeden Samstag: Abendgebet 18:00 Uhr</zeit>
     </gottesdienstzeiten>
     <bankverbindung>
       <inhaber>St. Abanoub koptisch-orthodoxe Kirche e.V.</inhaber>
       <iban>DE90 6145 0050 1000 9834 63</iban>
     </bankverbindung>
+    <links>
+      <website>https://koptische-orthodoxe-kirche-gd.de/</website>
+      <facebook />
+      <instagram />
+      <youtube >https://www.youtube.com/@Kopten.Gm%C3%BCnd</youtube>
+    </links>
   </gemeinde>
   <gemeinde id="stuttgart" typ="Gemeinde" bistum="Süddeutschland">
     <name>St. Georg Koptisch-Orthodoxe Kirche</name>
@@ -1063,7 +1074,7 @@
   <gemeinde id="unna" typ="Gemeinde" bistum="Süddeutschland">
     <name>St. Maria und St. Philopater Mercurius Koptisch-Orthodoxe Kirche</name>
     <gemeindeort>Unna</gemeindeort>
-    <url>https://kopten.de/gemeinden/dortmund/</url>
+    <url>https://kopten.de/gemeinden/unna/</url>
     <adresse>
       <strasse>Buderusstr. 46</strasse>
       <plz>59427</plz>
@@ -1203,10 +1214,10 @@
       <zeit>Jeden 2. und 4. Samstag des Monats: Liturgie 09:00-12:00 Uhr</zeit>
     </gottesdienstzeiten>
   </gemeinde>
-  <gemeinde id="bad-grund" typ="Gemeinde" bistum="Norddeutschland">
+  <gemeinde id="badgrund" typ="Gemeinde" bistum="Norddeutschland">
     <name>koptisch-orthodoxe Kirche des heiligen Minas und des heiligen Papstes Kyrillus VI.</name>
     <gemeindeort>Bad Grund</gemeindeort>
-    <url>https://kopten.de/gemeinden/bad-grund/</url>
+    <url>https://kopten.de/gemeinden/badgrund/</url>
     <adresse>
       <strasse>Am Rösteberg 1</strasse>
       <plz>37539</plz>
@@ -1700,10 +1711,10 @@
       <zeit>Jeden 2. Samstag des Monats: Liturgie 10:00-12:00 Uhr</zeit>
     </gottesdienstzeiten>
   </gemeinde>
-  <gemeinde id="friedrichsaue" typ="Gemeinde" bistum="Norddeutschland">
-    <name>Friedrichsaue – Koptisch-Orthodoxe Kirche</name>
+  <gemeinde id="seeland" typ="Gemeinde" bistum="Norddeutschland">
+    <name>Koptisch-Orthodoxe Kirche der Jungfrau Maria und des Erzengels Michael</name>
     <gemeindeort>Seeland</gemeindeort>
-    <url>https://kopten.de/gemeinden/friedrichsaue/</url>
+    <url>https://kopten.de/gemeinden/seeland/</url>
     <adresse>
       <strasse>Chausseestraße 2</strasse>
       <plz>06449</plz>
@@ -1724,18 +1735,18 @@
       <zeit>1. Samstag des Monats: Liturgie 09:30-12:30 Uhr</zeit>
     </gottesdienstzeiten>
     <links>
-      <website />
+      <website />https://www.facebook.com/groups/316865105480571/
       <facebook>https://www.facebook.com/groups/316865105480571/</facebook>
       <instagram />
       <youtube />
     </links>
   </gemeinde>
-  <gemeinde id="wilhelmshafen" typ="Gemeinde" bistum="Norddeutschland">
+  <gemeinde id="wilhelmshaven" typ="Gemeinde" bistum="Norddeutschland">
     <name>St. Maria und St. Mauritius Koptisch-Orthodoxe Kirche</name>
-    <gemeindeort>Wilhelmshafen</gemeindeort>
-    <url>https://kopten.de/gemeinden/wilhelmshafen/</url>
+    <gemeindeort>Wilhelmshaven</gemeindeort>
+    <url>https://kopten.de/gemeinden/wilhelmshaven/</url>
     <adresse>
-      <strasse>Kirche der heiligen Jungfrau Maria, Hunrichs Str. 4, Ortsteil Voslapp</strasse>
+      <strasse>Kirche der hl. Jungfrau Maria, Hunrichs Str. 4, Ortsteil Voslapp</strasse>
       <plz>26388</plz>
       <ort>Wilhelmshaven</ort>
     </adresse>
