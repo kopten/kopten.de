@@ -29,36 +29,33 @@
     "postalCode": "59427",
     "addressLocality": "Unna-Massen (bei Dortmund)"
   },
-  "openingHoursSpecification": [
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": "Saturday",
-      "opens": "09:30",
-      "closes": "12:00"
-    },
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": "Sunday",
-      "opens": "09:30",
-      "closes": "13:00"
-    },
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": "Sunday",
-      "opens": "14:00",
-      "closes": "16:30"
-    }
-  ],
+  "logo": "https://kopten.de/images/logos/unna.png",
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": "Sunday",
+    "opens": "14:00",
+    "closes": "16:30"
+  },
   "parentOrganization": {
     "@type": "ReligiousOrganization",
     "name": "Coptic Orthodox Diocese of Southern Germany",
     "url": "https://kopten-sued.de"
   },
-  "employee": {
-    "@type": "Person",
-    "name": "Vater Tawadros",
-    "email": "abuna.tawadros@t-online.de"
-  },
+  "employee": [
+    {
+      "@type": "Person",
+      "name": "Vater Tawadros",
+      "email": "abuna.tawadros@t-online.de"
+    },
+    {
+      "@type": "Person",
+      "name": "Vater Markus Gendi",
+      "email": "abunamarkusgendi@gmail.com"
+    }
+  ],
+  "sameAs": [
+    "https://www.facebook.com/share/14nicDH3KY1/?mibextid=wwXIfr"
+  ],
   "availableLanguage": [
     "German",
     "Arabic",
@@ -70,15 +67,15 @@
     <meta property="og:title" content="Unna — St. Maria und St. Philopater Mercurius Koptisch-Orthodoxe Kirche — Copts Germany" />
     <meta property="og:description" content="Unna: St. Maria und St. Philopater Mercurius Koptisch-Orthodoxe Kirche — address, service times, priest and contact." />
     <meta property="og:url" content="https://kopten.de/en/communities/unna/" />
-    <meta property="og:image" content="https://kopten.de/images/church.webp" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
+    <meta property="og:image" content="https://kopten.de/images/logos/unna.png" />
+    <meta property="og:image:width" content="833" />
+    <meta property="og:image:height" content="834" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:site_name" content="Copts Germany" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Unna — St. Maria und St. Philopater Mercurius Koptisch-Orthodoxe Kirche — Copts Germany" />
     <meta name="twitter:description" content="Unna: St. Maria und St. Philopater Mercurius Koptisch-Orthodoxe Kirche — address, service times, priest and contact." />
-    <meta name="twitter:image" content="https://kopten.de/images/church.webp" />
+    <meta name="twitter:image" content="https://kopten.de/images/logos/unna.png" />
   </head>
   <body>
     <header class="site-header">
@@ -114,10 +111,10 @@
         </div>
       </nav>
 
-      <section class="page-header">
+      <section class="page-header page-header--with-logo">
         <div class="container-narrow">
           <div class="page-header__layout">
-            
+            <div class="page-header__logo"><img class="page-header__logo-img" src="../../../images/logos/unna.png" alt="Parish logo" width="833" height="834" loading="eager" /></div>
             <div class="page-header__text">
               <p class="page-header__ort">Unna</p>
               <h1>St. Maria und St. Philopater Mercurius Koptisch-Orthodoxe Kirche</h1>
@@ -130,7 +127,7 @@
 
       <nav class="detail-nav" aria-label="Sections of this parish">
         <div class="container">
-          <ul class="detail-nav__list"><li><a href="#kontakt">Contact</a></li><li><a href="#gottesdienste">Services</a></li><li><a href="#diakone">Deacons</a></li><li><a href="#spenden">Donations</a></li></ul>
+          <ul class="detail-nav__list"><li><a href="#kontakt">Contact</a></li><li><a href="#links">Links</a></li><li><a href="#gottesdienste">Services</a></li><li><a href="#diakone">Deacons</a></li><li><a href="#spenden">Donations</a></li></ul>
         </div>
       </nav>
       
@@ -161,8 +158,8 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
           </div>
           <div>
-            <h3>Priest</h3>
-            <p style="margin-top:0"><strong>Vater Tawadros</strong></p><p><a class="eml" href="#" data-u="sordawat.anuba" data-d="ed.enilno-t" rel="noopener">Show email</a></p>
+            <h3>Priests</h3>
+            <p style="margin-top:0"><strong>Vater Tawadros</strong></p><p><a class="eml" href="#" data-u="sordawat.anuba" data-d="ed.enilno-t" rel="noopener">Show email</a></p><p style="margin-top:0.8rem"><strong>Vater Markus Gendi</strong></p><p><a class="eml" href="#" data-u="idnegsukramanuba" data-d="moc.liamg" rel="noopener">Show email</a></p>
           </div>
         </div>
         <div class="info-card">
@@ -176,12 +173,20 @@
         </div></div>
         </div>
       </section>
+      <section class="section" id="links">
+        <div class="container">
+          <div class="section-header">
+            <h2>On the web</h2>
+          </div>
+          <div class="social-links" style="justify-content:center"><a class="social-link" href="https://www.facebook.com/share/14nicDH3KY1/?mibextid=wwXIfr" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>Facebook</a></div>
+        </div>
+      </section>
       <section class="section section--alt" id="gottesdienste">
         <div class="container">
           <div class="section-header">
             <h2>Service times</h2></div>
           <div class="container-narrow">
-            <ul class="service-times"><li>Jeden Samstag: Liturgie 09:30-12:00 Uhr</li><li>Jeden Samstag: Abendweihrauchopfer und Mitternachtspsalmodie 17:00 Uhr</li><li>Jeden Sonntag: Liturgie 09:30-13:00 Uhr, im Anschluss Agape</li><li>Sonntags 14:00-16:30: Kirchenchor, Sonntagsschule, Jugendveranstaltungen, Diener und Familientreff</li></ul>
+            <ul class="service-times"><li>Gottesdienst: Jeden Samstag und Sonntag ab 9:30 Uhr.</li><li>Die Sonntagsschule, das Jugendtreffen und das Familientreffen finden jeden Sonntag um 13:30 Uhr statt.</li><li>Der Bibelunterricht findet am letzten Samstag des Monats nach der Heiligen Liturgie statt.</li><li>Sonntags 14:00-16:30: Kirchenchor, Sonntagsschule, Jugendveranstaltungen, Diener und Familientreff</li></ul>
             <p style="color:var(--color-ink-soft);font-size:0.9rem;margin-top:1rem">Please note that times may change during fasting and festive seasons. Please contact the parish for up-to-date information.</p>
           </div>
         </div>
