@@ -88,10 +88,16 @@ function handleApex(url, request) {
 
 /** Gemeinde-Subdomain-Handler: <slug>.kopten.de/<path> */
 function handleGemeindeSubdomain(slug, url) {
-  // PDF-Spezialfall: alte kroeffelbach-Uploads → R2
   if (slug === 'kroeffelbach') {
+    // PDF-Spezialfall: alte Uploads → R2
     const mapped = mapKroeffelbachUpload(url.pathname);
     if (mapped) return redirect(mapped);
+
+    // /dkb, /dkb/, /dkb/<kategorie>/ → Bibliothek-Anker auf der Gemeinde-Seite
+    // (Kategorien haben aktuell keine eigenen IDs — Besucher klappt manuell auf.)
+    if (/^\/dkb(\/|$)/i.test(url.pathname)) {
+      return redirect('https://kopten.de/gemeinden/kroeffelbach/#bibliothek');
+    }
   }
 
   // Default: jede Unterseite landet auf der neuen Gemeinde-Hauptseite.
