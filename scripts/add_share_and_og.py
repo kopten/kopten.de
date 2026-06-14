@@ -13,6 +13,7 @@ BASE_URL = "https://kopten.de"  # canonical production URL — adjust if differe
 OG_IMAGE = "/images/church.webp"
 OG_IMAGE_DIMS = (1200, 630)
 LOGOS_DIR = ROOT / "images" / "logos"
+OG_DIR = ROOT / "images" / "og"
 
 
 def _png_dims(path):
@@ -23,18 +24,52 @@ def _png_dims(path):
     return struct.unpack(">II", head[16:24])
 
 
-def _logo_for_slug(slug):
-    """Return (relative_url, width, height) if a logo PNG exists, else None."""
+def _jpeg_dims(path):
+    """Read JPEG width/height from its SOF marker (no external deps)."""
+    with open(path, "rb") as f:
+        data = f.read()
+    i = 0
+    while i < len(data) - 8:
+        if data[i] != 0xFF:
+            i += 1
+            continue
+        m = data[i + 1]
+        if m in (0xC0, 0xC1, 0xC2):
+            h = (data[i + 5] << 8) | data[i + 6]
+            w = (data[i + 7] << 8) | data[i + 8]
+            return w, h
+        if m == 0xD8 or (0xD0 <= m <= 0xD9):
+            i += 2
+            continue
+        seg = (data[i + 2] << 8) | data[i + 3]
+        i += 2 + seg
+    raise ValueError("no SOF marker")
+
+
+def _og_image_for_slug(slug):
+    """Pick the OG image for a gemeinde, in priority order:
+      1) generated combo / photo-only at images/og/<slug>.jpg
+      2) raw logo at images/logos/<slug>.png
+      3) None (caller falls back to site default)
+    Returns (relative_url, width, height) or None.
+    """
     if not slug:
         return None
-    logo_path = LOGOS_DIR / f"{slug}.png"
-    if not logo_path.exists():
-        return None
-    try:
-        w, h = _png_dims(logo_path)
-    except Exception:
-        return None
-    return (f"/images/logos/{slug}.png", w, h)
+    combo = OG_DIR / f"{slug}.jpg"
+    if combo.exists():
+        try:
+            w, h = _jpeg_dims(combo)
+            return (f"/images/og/{slug}.jpg", w, h)
+        except Exception:
+            pass
+    logo = LOGOS_DIR / f"{slug}.png"
+    if logo.exists():
+        try:
+            w, h = _png_dims(logo)
+            return (f"/images/logos/{slug}.png", w, h)
+        except Exception:
+            pass
+    return None
 
 
 def _slug_from_url_path(url_path):
@@ -140,11 +175,11 @@ def patch_file(path, lang, rel_to_root, page_url_path):
 
     page_url = BASE_URL + page_url_path
 
-    # Pick OG image: per-gemeinde logo if available, fallback to site default.
+    # Pick OG image: per-gemeinde combo/photo/logo if available, else site default.
     slug = _slug_from_url_path(page_url_path)
-    logo = _logo_for_slug(slug)
-    if logo:
-        image_path, img_w, img_h = logo
+    picked = _og_image_for_slug(slug)
+    if picked:
+        image_path, img_w, img_h = picked
     else:
         image_path, (img_w, img_h) = OG_IMAGE, OG_IMAGE_DIMS
     image_url = BASE_URL + image_path

@@ -19,6 +19,7 @@ STEPS = [
     ("Generate German detail pages",     "generate_gemeinden.py"),
     ("Generate English detail pages",    "generate_gemeinden_en.py"),
     ("Add language switcher to DE",      "add_lang_switcher.py"),
+    ("Generate OG share images",         "generate_og_images.py"),
     ("Add share buttons + OG tags",      "add_share_and_og.py"),
     ("Refresh sitemap.xml",              "generate_sitemap.py"),
     ("Update worker gemeinde allowlist", "generate_worker_gemeinden.py"),
