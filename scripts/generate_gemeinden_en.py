@@ -80,6 +80,7 @@ def render_page(g):
     gast_name = txt(addr, "name") if zugast else ""
     full_addr = ", ".join(filter(None, [strasse, f"{plz} {ort}".strip()]))
     maps_query = f"{strasse}, {plz} {ort}, Deutschland".strip(", ")
+    gmaps_url  = txt(g, "gmaps")
 
     ansp_el    = g.find("ansprechpartner")
     kontakt_el = g.find("kontakt")
@@ -131,7 +132,7 @@ def render_page(g):
     cards = []
 
     if full_addr:
-        gmaps = f"https://www.google.com/maps/search/?api=1&query={maps_query.replace(' ', '+').replace(',', '%2C')}"
+        gmaps = gmaps_url or f"https://www.google.com/maps/search/?api=1&query={maps_query.replace(' ', '+').replace(',', '%2C')}"
         dest = maps_query.replace(' ', '+').replace(',', '%2C')
         dir_car  = f"https://www.google.com/maps/dir/?api=1&destination={dest}&travelmode=driving"
         dir_tr   = f"https://www.google.com/maps/dir/?api=1&destination={dest}&travelmode=transit"

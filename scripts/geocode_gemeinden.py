@@ -49,7 +49,8 @@ def load_xml_entries() -> list[dict]:
         strasse = (addr.findtext("strasse") or "").strip()
         plz = (addr.findtext("plz") or "").strip()
         ort = (addr.findtext("ort") or "").strip()
-        out.append({"id": gid, "strasse": strasse, "plz": plz, "ort": ort})
+        gmaps = (g.findtext("gmaps") or "").strip()
+        out.append({"id": gid, "strasse": strasse, "plz": plz, "ort": ort, "gmaps": gmaps})
     return out
 
 
@@ -95,6 +96,28 @@ def clean(s: str) -> str:
     s = re.sub(r"\bOT\s+", "", s)              # remove "OT" Ortsteil marker
     s = re.sub(r"\s*[–—-]\s*", ", ", s)        # "Seeland – OT X" → "Seeland, X"
     return re.sub(r"\s+", " ", s).strip()
+
+
+def resolve_gmaps_coords(url: str) -> dict | None:
+    """Follow a Google Maps short URL and extract lat/lon from the final URL."""
+    import re
+    req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+    try:
+        with urllib.request.urlopen(req, timeout=10) as resp:
+            final_url = resp.geturl()
+    except Exception as e:
+        print(f"  ! failed to resolve {url}: {e}", file=sys.stderr)
+        return None
+    # https://www.google.com/maps/place/.../@lat,lon,zoomz/...
+    m = re.search(r"@(-?\d+\.\d+),(-?\d+\.\d+)", final_url)
+    if m:
+        return {"lat": float(m.group(1)), "lng": float(m.group(2)), "source": "gmaps"}
+    # fallback: ?q=lat,lon
+    m = re.search(r"[?&]q=(-?\d+\.\d+),(-?\d+\.\d+)", final_url)
+    if m:
+        return {"lat": float(m.group(1)), "lng": float(m.group(2)), "source": "gmaps"}
+    print(f"  ! could not extract coords from: {final_url}", file=sys.stderr)
+    return None
 
 
 def geocode_entry(entry: dict) -> dict | None:
@@ -150,14 +173,17 @@ def main() -> int:
             skipped += 1
             continue
 
-        # Rate limit between calls
-        elapsed = time.time() - last_request
-        if elapsed < REQUEST_INTERVAL_SEC:
-            time.sleep(REQUEST_INTERVAL_SEC - elapsed)
-
-        print(f"▸ {gid}: geocoding …", end=" ", flush=True)
-        result = geocode_entry(entry)
-        last_request = time.time()
+        if entry.get("gmaps"):
+            print(f"▸ {gid}: resolving gmaps …", end=" ", flush=True)
+            result = resolve_gmaps_coords(entry["gmaps"])
+        else:
+            # Rate limit between Nominatim calls
+            elapsed = time.time() - last_request
+            if elapsed < REQUEST_INTERVAL_SEC:
+                time.sleep(REQUEST_INTERVAL_SEC - elapsed)
+            print(f"▸ {gid}: geocoding …", end=" ", flush=True)
+            result = geocode_entry(entry)
+            last_request = time.time()
 
         if result is None:
             print("FAILED")
@@ -166,7 +192,8 @@ def main() -> int:
 
         cache[gid] = {"lat": result["lat"], "lng": result["lng"]}
         new_count += 1
-        print(f"({result['lat']:.4f}, {result['lng']:.4f})")
+        source = " [gmaps]" if result.get("source") == "gmaps" else ""
+        print(f"({result['lat']:.4f}, {result['lng']:.4f}){source}")
 
         # Save after every successful entry — safe against interruption
         save_cache(cache)

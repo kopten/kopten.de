@@ -327,6 +327,9 @@ def parse_gemeinden():
         # Bank
         bank = g.find("bankverbindung")
 
+        # Google Maps direct link (optional)
+        gmaps_url = (g.findtext("gmaps") or "").strip()
+
         # Links
         links_el = g.find("links")
         link_src = links_el if links_el is not None else g
@@ -382,14 +385,34 @@ def parse_gemeinden():
                     "youtube": youtube,
                 },
                 "beschreibung": beschreibung,
+                "gmaps_url": gmaps_url,
             }
         )
     return out
 
 
 # ---------------------------------------------------------------------------
-# Geocoding (Nominatim, with cache)
+# Geocoding (Nominatim, with cache; or Google Maps short-URL resolution)
 # ---------------------------------------------------------------------------
+
+
+def _resolve_gmaps_coords(url: str) -> tuple[float, float] | tuple[None, None]:
+    """Follow a Google Maps short URL and extract (lat, lon) from the final URL."""
+    try:
+        resp = requests.get(url, allow_redirects=True, timeout=10,
+                            headers={"User-Agent": "kopten.de PDF generator"})
+        final_url = resp.url
+    except Exception as e:
+        print(f"    ! gmaps resolve failed: {e}")
+        return None, None
+    m = re.search(r"@(-?\d+\.\d+),(-?\d+\.\d+)", final_url)
+    if m:
+        return float(m.group(1)), float(m.group(2))
+    m = re.search(r"[?&]q=(-?\d+\.\d+),(-?\d+\.\d+)", final_url)
+    if m:
+        return float(m.group(1)), float(m.group(2))
+    print(f"    ! could not extract coords from: {final_url}")
+    return None, None
 
 
 def load_geo_cache():
@@ -406,13 +429,23 @@ def save_geo_cache(cache):
 
 
 def geocode_gemeinde(g, cache):
-    """Returns (lat, lon) or (None, None). Uses Nominatim with simple caching.
+    """Returns (lat, lon) or (None, None).
 
+    If the gemeinde has a <gmaps> URL, resolves it directly (exact pin).
+    Otherwise falls back to Nominatim address lookup.
     Bypasses the HTTP tile-cache: Nominatim responses have their own JSON cache.
     """
     if g["id"] in cache:
         c = cache[g["id"]]
         return c.get("lat"), c.get("lon")
+
+    if g.get("gmaps_url"):
+        print(f"    resolving gmaps for {g['id']}…")
+        lat, lon = _resolve_gmaps_coords(g["gmaps_url"])
+        if lat is not None:
+            cache[g["id"]] = {"lat": lat, "lon": lon, "source": "gmaps"}
+            return lat, lon
+        # fall through to Nominatim if resolution failed
 
     query = f"{g['strasse']}, {g['plz']} {g['ort']}, Deutschland".strip(" ,")
     if not query.strip(" ,"):
