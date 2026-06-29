@@ -81,48 +81,31 @@ def render_page(g):
     full_addr = ", ".join(filter(None, [strasse, f"{plz} {ort}".strip()]))
     maps_query = f"{strasse}, {plz} {ort}, Deutschland".strip(", ")
 
-    priester_el = g.find("priester")
-    bischof_el  = g.find("bischof")
-    kontakt_el  = g.find("kontakt")
+    ansp_el    = g.find("ansprechpartner")
+    kontakt_el = g.find("kontakt")
 
-    persons = []
+    contacts = []  # [{type: "bischof"|"priester", name, funktion, mobil, email}, ...]
 
-    if bischof_el is not None:
-        persons.append({
-            "name":     txt(bischof_el, "name"),
-            "funktion": txt(bischof_el, "funktion"),
-            "mobil":    txt(bischof_el, "mobil"),
-            "email":    txt(bischof_el, "email"),
-        })
-    elif priester_el is not None:
-        person_els = priester_el.findall("person")
-        if person_els:
-            for pe in person_els:
-                persons.append({
-                    "name":          txt(pe, "name"),
-                    "funktion":      txt(pe, "funktion"),
-                    "mobil":         txt(pe, "mobil"),
-                    "email":         txt(pe, "email"),
-                    "postanschrift": txt(pe, "postanschrift"),
-                })
-        else:
-            persons.append({
-                "name":          txt(priester_el, "name"),
-                "funktion":      txt(priester_el, "funktion"),
-                "mobil":         txt(priester_el, "mobil"),
-                "email":         txt(priester_el, "email"),
-                "postanschrift": txt(priester_el, "postanschrift"),
+    if ansp_el is not None:
+        for child in ansp_el:
+            contacts.append({
+                "type":     child.tag,
+                "name":     txt(child, "name"),
+                "funktion": txt(child, "funktion"),
+                "mobil":    txt(child, "mobil"),
+                "email":    txt(child, "email"),
             })
 
-    pname = persons[0]["name"] if persons else ""
-    pmobil = persons[0].get("mobil", "") if persons else ""
+    contacts.sort(key=lambda c: 0 if c["type"] == "bischof" else 1)
+
+    pmobil = contacts[0].get("mobil", "") if contacts else ""
 
     telefon = fax = email = ""
     if kontakt_el is not None:
         telefon = txt(kontakt_el, "telefon")
-        if not pmobil and persons:
-            persons[0]["mobil"] = txt(kontakt_el, "mobil")
-            pmobil = persons[0]["mobil"]
+        if not pmobil and contacts:
+            contacts[0]["mobil"] = txt(kontakt_el, "mobil")
+            pmobil = contacts[0]["mobil"]
         fax = txt(kontakt_el, "fax")
         email = txt(kontakt_el, "email")
 
@@ -171,25 +154,21 @@ def render_page(g):
           </div>
         </div>""")
 
-    real_persons = [p for p in persons if p.get("name") and p["name"].lower() != "vater"]
-    if real_persons:
-        is_bishop = bischof_el is not None
-        card_title = "Bishop" if is_bishop else ("Priest" if len(real_persons) == 1 else "Priests")
-        person_blocks = []
-        for idx, person in enumerate(real_persons):
-            block = f'<p style="margin-top:{ "0.8rem" if idx > 0 else "0" }"><strong>{esc(person["name"])}</strong></p>'
-            if person.get("funktion"):
-                block += f'<p style="color:var(--color-ink-soft);font-size:0.9rem">{esc(person["funktion"])}</p>'
-            contact_items = []
-            if person.get("mobil"):
-                mobil_raw = person["mobil"]
-                contact_items.append(f'<a href="{tel_href(mobil_raw)}">{esc(format_phone_display(mobil_raw))}</a>')
-            if person.get("email"):
-                contact_items.append(obfuscate_mailto(person["email"], placeholder_en="Show email"))
-            if contact_items:
-                block += "<p>" + " · ".join(contact_items) + "</p>"
-            person_blocks.append(block)
-
+    for contact in contacts:
+        if not contact.get("name") or contact["name"].lower() == "vater":
+            continue
+        card_title = "Bishop" if contact["type"] == "bischof" else "Priest"
+        block = f'<p><strong>{esc(contact["name"])}</strong></p>'
+        if contact.get("funktion"):
+            block += f'<p style="color:var(--color-ink-soft);font-size:0.9rem">{esc(contact["funktion"])}</p>'
+        contact_items = []
+        if contact.get("mobil"):
+            mobil_raw = contact["mobil"]
+            contact_items.append(f'<a href="{tel_href(mobil_raw)}">{esc(format_phone_display(mobil_raw))}</a>')
+        if contact.get("email"):
+            contact_items.append(obfuscate_mailto(contact["email"], placeholder_en="Show email"))
+        if contact_items:
+            block += "<p>" + " · ".join(contact_items) + "</p>"
         cards.append(f"""
         <div class="info-card">
           <div class="info-card__icon">
@@ -197,7 +176,7 @@ def render_page(g):
           </div>
           <div>
             <h3>{card_title}</h3>
-            {"".join(person_blocks)}
+            {block}
           </div>
         </div>""")
 

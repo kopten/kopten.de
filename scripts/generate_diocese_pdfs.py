@@ -285,43 +285,22 @@ def parse_gemeinden():
         zugast = txt(addr, "zugast").lower() == "true"
         gast_name = txt(addr, "name") if zugast else ""
 
-        # Persons (priester or bischof)
+        # Persons — read from new <ansprechpartner> container
         persons = []
-        bischof = g.find("bischof")
-        priester = g.find("priester")
-        if bischof is not None:
-            persons.append(
-                {
-                    "role": "Bischof",
-                    "name": txt(bischof, "name"),
-                    "funktion": txt(bischof, "funktion"),
-                    "mobil": txt(bischof, "mobil"),
-                    "email": txt(bischof, "email"),
-                }
-            )
-        elif priester is not None:
-            pe_list = priester.findall("person")
-            if pe_list:
-                for pe in pe_list:
-                    persons.append(
-                        {
-                            "role": "Priester",
-                            "name": txt(pe, "name"),
-                            "funktion": txt(pe, "funktion"),
-                            "mobil": txt(pe, "mobil"),
-                            "email": txt(pe, "email"),
-                        }
-                    )
-            else:
+        ansp = g.find("ansprechpartner")
+        if ansp is not None:
+            for child in ansp:
+                role = "Bischof" if child.tag == "bischof" else "Priester"
                 persons.append(
                     {
-                        "role": "Priester",
-                        "name": txt(priester, "name"),
-                        "funktion": txt(priester, "funktion"),
-                        "mobil": txt(priester, "mobil"),
-                        "email": txt(priester, "email"),
+                        "role": role,
+                        "name": txt(child, "name"),
+                        "funktion": txt(child, "funktion"),
+                        "mobil": txt(child, "mobil"),
+                        "email": txt(child, "email"),
                     }
                 )
+        persons.sort(key=lambda p: 0 if p["role"] == "Bischof" else 1)
 
         # Phones / email (kontakt)
         kontakt = g.find("kontakt")
@@ -924,15 +903,13 @@ def add_gemeinde_page(pdf, g):
             )
         pdf.ln(3)
 
-    # Persons
+    # Persons — bishop always first (guaranteed by persons.sort() in parse_gemeinden)
     real_persons = [
         p for p in g["persons"] if p["name"] and p["name"].lower() != "vater"
     ]
     if real_persons:
-        _section_title(
-            pdf, real_persons[0]["role"] if len(real_persons) == 1 else "Geistliche"
-        )
         for p in real_persons:
+            _section_title(pdf, p["role"])
             pdf.set_x(MARGIN)
             pdf.set_font("DejaVu", "B", 10)
             pdf.set_text_color(*COL_INK)
@@ -949,8 +926,8 @@ def add_gemeinde_page(pdf, g):
                 pdf.set_x(MARGIN)
                 pdf.multi_cell(0, 4.5, _safe(f"E-Mail: {p['email']}"), align="L")
             pdf.set_text_color(*COL_INK)
-            pdf.ln(1)
-        pdf.ln(2)
+            pdf.ln(2)
+        pdf.ln(1)
 
     # Service times
     if g["zeiten"]:

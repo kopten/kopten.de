@@ -10,7 +10,6 @@
     </beschreibung>
     <info>
       <titel>Infos</titel>
-
       <h3>Übernachtungen — wichtige Hinweise</h3>
       <p>Gemäß den deutschen Gesetzen zur Übernachtung und den Anweisungen des Klosters ist eine Übernachtung im Kloster nur mit einem der folgenden Dokumente gestattet:</p>
       <ul>
@@ -25,7 +24,6 @@
         Anba Deuscoros<br />
         Bischof der koptisch-orthodoxen Diözese Süddeutschland und Abt des St. Antonius Klosters
       </p>
-
       <h3>Sommerferien 2026 — Öffnung der Übernachtungsräume</h3>
       <p>Zum Auftakt der Sommerferien in Europa öffnet das St. Antonius Kloster in Kröffelbach seine Übernachtungsräume täglich vom 1. Juni bis 31. August für junge Männer und Familien.</p>
       <p>Für eine Übernachtung wird eines der folgenden Dokumente benötigt:</p>
@@ -49,18 +47,18 @@
       <plz>35647</plz>
       <ort>Waldsolms-Kröffelbach</ort>
     </adresse>
-    <bischof>
-      <name>Seine Exzellenz Bischof Anba Deuscoros</name>
-      <funktion>Bischof von Süd-Deutschland</funktion>
-      <mobil>0049-(0)15563-241084</mobil>
-      <email>anba.deuscoros@kopten-sued.de</email>
-    </bischof>
-    <priester>
-      <person>
+    <ansprechpartner>
+      <bischof>
+        <name>Seine Exzellenz Bischof Anba Deuscoros</name>
+        <funktion>Bischof von Süd-Deutschland</funktion>
+        <mobil>0049-(0)15563-241084</mobil>
+        <email>anba.deuscoros@kopten-sued.de</email>
+      </bischof>
+      <priester>
         <name>Vater Morcos Bekheit</name>
         <mobil>0049-(0)160 8502165</mobil>
-      </person>
-    </priester>
+      </priester>
+    </ansprechpartner>
     <diakone>
       <diakon>Diakonen-Chor tritt in Fülle jeden Sonntag auf</diakon>
     </diakone>
@@ -92,14 +90,21 @@
       <plz>37671</plz>
       <ort>Höxter</ort>
     </adresse>
-    <bischof>
-      <name>Metropolit Anba Damian</name>
-      <funktion>Metropolit von Nord-Deutschland (Koptische Gemeinden in Berlin, Sachsen, Niedersachsen, Schleswig-Holstein, Hamburg, Bremen und z.T. Nordrhein-Westfalen)</funktion>
-      <weitere_priester>
-        <priester>Pater Girgis El Moharaki (Generalvikar der Diözese), Mobil: 0049-(0)171 436 0460</priester>
-        <priester>Pater Bolikarbos El Moharaky, Tel.: 0049-(0)173 9902 895</priester>
-      </weitere_priester>
-    </bischof>
+    <ansprechpartner>
+      <bischof>
+        <name>Metropolit Anba Damian</name>
+        <funktion>Metropolit von Nord-Deutschland (Koptische Gemeinden in Berlin, Sachsen, Niedersachsen, Schleswig-Holstein, Hamburg, Bremen und z.T. Nordrhein-Westfalen)</funktion>
+      </bischof>
+      <priester>
+        <name>Pater Girgis El Moharaki</name>
+        <funktion>Generalvikar der Diözese</funktion>
+        <mobil>0049-(0)171 436 0460</mobil>
+      </priester>
+      <priester>
+        <name>Pater Bolikarbos El Moharaky</name>
+        <mobil>0049-(0)173 9902 895</mobil>
+      </priester>
+    </ansprechpartner>
     <kontakt>
       <telefon>0049-(0)5271 18 905 oder 0049-(0)5271 36 854</telefon>
       <mobil>0049-(0)172 564 3647</mobil>
@@ -138,13 +143,13 @@
       <plz>52078</plz>
       <ort>Aachen</ort>
     </adresse>
-    <priester>
-      <person>
+    <ansprechpartner>
+      <priester>
         <name>Vater Gerges Tawadros</name>
         <mobil>0049-(0)17621890166</mobil>
         <email>info@kopten-aachen.de</email>
-      </person>
-    </priester>
+      </priester>
+    </ansprechpartner>
     <diakone>
       <diakon>Herr Youssef Sabry, M.Sc.: 0049-(0)1745421850</diakon>
       <diakon>Herr George Maged: 0049-(0)15229682245</diakon>
@@ -179,13 +184,13 @@
       <plz>58762</plz>
       <ort>Altena</ort>
     </adresse>
-    <priester>
-      <person>
+    <ansprechpartner>
+      <priester>
         <name>Vater Ishak Aziz</name>
-        <email>abuna.ishak@gmail.com</email>
         <mobil>0049-(0)176 7277 4869</mobil>
-      </person>
-    </priester>
+        <email>abuna.ishak@gmail.com</email>
+      </priester>
+    </ansprechpartner>
     <kontakt>
       <email>erzengelmichaelaltena@gmail.com</email>
     </kontakt>
@@ -212,9 +217,7 @@
       <plz>63674</plz>
       <ort>Altenstadt</ort>
     </adresse>
-    <priester>
-
-    </priester>
+    <ansprechpartner />
     <diakone>
       <diakon>Herr Mario Yagoub: 0049-(0)160 9299 1049</diakon>
     </diakone>
@@ -232,12 +235,12 @@
       <plz>56626</plz>
       <ort>Andernach (Koblenz)</ort>
     </adresse>
-    <priester>
-      <person>
+    <ansprechpartner>
+      <priester>
         <name>Vater Philippus Abeid</name>
         <mobil>0049-(0)163 9032 040</mobil>
-      </person>
-    </priester>
+      </priester>
+    </ansprechpartner>
     <diakone>
       <diakon>Herr Bishoy Attya: 0049-(0)174 459 7849</diakon>
     </diakone>
@@ -258,7 +261,7 @@
     <links>
       <facebook>https://www.facebook.com/share/19yAguWKd5/</facebook>
       <instagram />
-      <youtube >https://www.youtube.com/@hl.maria.st.petrus</youtube>
+      <youtube>https://www.youtube.com/@hl.maria.st.petrus</youtube>
     </links>
   </gemeinde>
   <gemeinde id="bergneustadt" typ="Gemeinde" bistum="Süddeutschland">
@@ -270,9 +273,7 @@
       <plz>51702</plz>
       <ort>Bergneustadt</ort>
     </adresse>
-    <priester>
-
-    </priester>
+    <ansprechpartner />
     <gottesdienstzeiten>
       <zeit>Jeden 4. Sonntag des Monats: Liturgie 09:30-12:00 Uhr</zeit>
     </gottesdienstzeiten>
@@ -286,12 +287,12 @@
       <plz>54634</plz>
       <ort>Bitburg</ort>
     </adresse>
-    <priester>
-      <person>
+    <ansprechpartner>
+      <priester>
         <name>Pater Shenouda St. Antonius</name>
         <mobil>0049-(0)176 6107 6389</mobil>
-      </person>
-    </priester>
+      </priester>
+    </ansprechpartner>
     <kontakt>
       <telefon>0049-(0)6561 184 47</telefon>
       <fax>0049-(0)6561 942 886</fax>
@@ -306,7 +307,7 @@
     </gottesdienstzeiten>
     <links>
       <website>https://www.koptische-kirche-bitburg.de/</website>
-      <facebook >https://www.facebook.com/st.athanasius.kirche/</facebook>
+      <facebook>https://www.facebook.com/st.athanasius.kirche/</facebook>
       <instagram />
       <youtube />
     </links>
@@ -320,12 +321,12 @@
       <plz>46399</plz>
       <ort>Bocholt</ort>
     </adresse>
-    <priester>
-      <person>
+    <ansprechpartner>
+      <priester>
         <name>Vater Athanasius Botros</name>
         <mobil>0049-(0)178 8930 996</mobil>
-      </person>
-    </priester>
+      </priester>
+    </ansprechpartner>
     <diakone>
       <diakon>Herr Raafat Gendi, Tel: 0049-(0)1577 8768 969</diakon>
       <diakon>Herr Emad Mansour, Tel: 0049-(0)15789182397</diakon>
@@ -358,12 +359,12 @@
       <plz>53721</plz>
       <ort>Siegburg</ort>
     </adresse>
-    <priester>
-      <person>
+    <ansprechpartner>
+      <priester>
         <name>Vater Antonius Kamel</name>
         <mobil>0049-(0)157 5484 6381</mobil>
-      </person>
-    </priester>
+      </priester>
+    </ansprechpartner>
     <diakone>
       <diakon>Magdy Malek: 0049(0)17676914922</diakon>
     </diakone>
@@ -387,18 +388,18 @@
       <plz>40549</plz>
       <ort>Düsseldorf</ort>
     </adresse>
-    <priester>
-      <person>
+    <ansprechpartner>
+      <priester>
         <name>Erzpriester Vater Boulos Shehata</name>
         <mobil>0049-(0)176 6166 0305</mobil>
         <email>st.maria@t-online.de</email>
-      </person>
-      <person>
+      </priester>
+      <priester>
         <name>Vater Petrus Beshay</name>
         <mobil>0049-(0)176 4335 9559</mobil>
         <email>ugabra10@hotmail.com</email>
-      </person>
-    </priester>
+      </priester>
+    </ansprechpartner>
     <kontakt>
       <telefon>0049-(0)2116 912 839</telefon>
       <fax>0049-(0)2116 911 256</fax>
@@ -422,7 +423,7 @@
       <bic>DUSSDEDDXXX</bic>
     </bankverbindung>
     <links>
-      <website >https://www.koptischebunkerkirche.de/</website>
+      <website>https://www.koptischebunkerkirche.de/</website>
       <facebook>https://www.facebook.com/StMarienDuesseldorf/</facebook>
       <instagram />
       <youtube />
@@ -437,12 +438,12 @@
       <plz>91058</plz>
       <ort>Erlangen</ort>
     </adresse>
-    <priester>
-      <person>
+    <ansprechpartner>
+      <priester>
         <name>Vater Bakhomios Ibrahim</name>
         <mobil>0049-(0)157 5822 1822</mobil>
-      </person>
-    </priester>
+      </priester>
+    </ansprechpartner>
     <diakone>
       <diakon>Herr Ragai Edward Matta, Tel: 0049-(0)17624330667</diakon>
       <diakon>Herr Mohab Magdi Morkus, Tel: 0049-(0)1726320285</diakon>
@@ -478,16 +479,16 @@
       <plz>60487</plz>
       <ort>Frankfurt am Main</ort>
     </adresse>
-    <priester>
-      <person>
+    <ansprechpartner>
+      <priester>
         <name>Vater Abraam Naguib Mina</name>
         <mobil>0049-(0)152 3404 4908</mobil>
-      </person>
-      <person>
+      </priester>
+      <priester>
         <name>Vater Maurice Bassili</name>
         <mobil>0049-(0)177 9747 016</mobil>
-      </person>
-    </priester>
+      </priester>
+    </ansprechpartner>
     <kontakt>
       <email>frankfurt@kopten.de</email>
       <telefon>Gemeindesekretariat: 0049-(0)176 5780 4737</telefon>
@@ -521,12 +522,12 @@
       <plz>79102</plz>
       <ort>Freiburg</ort>
     </adresse>
-    <priester>
-      <person>
+    <ansprechpartner>
+      <priester>
         <name>Vater Abanoub Fouad</name>
         <mobil>0049-(0)160 6323 157</mobil>
-      </person>
-    </priester>
+      </priester>
+    </ansprechpartner>
     <diakone>
       <diakon>Herr Dr. Mina Gerges: 0049-(0)176 82603288</diakon>
     </diakone>
@@ -543,14 +544,14 @@
       <plz>69115</plz>
       <ort>Heidelberg</ort>
     </adresse>
-    <priester>
-      <person>
+    <ansprechpartner>
+      <priester>
         <name>Vater Nicodemos El Makary</name>
-        <email>fr_nicodemos@yahoo.com</email>
         <mobil>+49 (0)152 27 50 32 72</mobil>
+        <email>fr_nicodemos@yahoo.com</email>
         <postanschrift>Untere Neckarstr. 16, 69117 Heidelberg</postanschrift>
-      </person>
-    </priester>
+      </priester>
+    </ansprechpartner>
     <kontakt>
       <telefon>+49 (0)6221 72 77 728</telefon>
     </kontakt>
@@ -594,13 +595,13 @@
       <plz>87600</plz>
       <ort>Kaufbeuren</ort>
     </adresse>
-    <priester>
-      <person>
+    <ansprechpartner>
+      <priester>
         <name>Vater Paulus Hanna</name>
-        <email>Fr.PaulusHanna@yahoo.com</email>
         <mobil>0049-(0)152 5959 9032</mobil>
-      </person>
-    </priester>
+        <email>Fr.PaulusHanna@yahoo.com</email>
+      </priester>
+    </ansprechpartner>
     <kontakt>
       <fax>0049-(0)89 154 131</fax>
     </kontakt>
@@ -623,12 +624,12 @@
       <plz>55481</plz>
       <ort>Kirchberg Denzen (Hunsrück)</ort>
     </adresse>
-    <priester>
-      <person>
+    <ansprechpartner>
+      <priester>
         <name>Vater Danial Riad</name>
         <mobil>0049-(0)178 6608 821</mobil>
-      </person>
-    </priester>
+      </priester>
+    </ansprechpartner>
     <diakone>
       <diakon>Herr Dr. Baher Munier: 0049-(0)151 6894 7665</diakon>
       <diakon>Herr Zakaria Bedrous: 0049-(0)157 5295 5210</diakon>
@@ -647,12 +648,12 @@
       <plz>51105</plz>
       <ort>Köln</ort>
     </adresse>
-    <priester>
-      <person>
+    <ansprechpartner>
+      <priester>
         <name>Vater Gerges</name>
         <mobil>0049-(0)176 2189 0166</mobil>
-      </person>
-    </priester>
+      </priester>
+    </ansprechpartner>
     <diakone>
       <diakon>Herr Samy Youssef: 0049-(0)172 9826 757</diakon>
       <diakon>Herr Shafik Aziz: 0049-(0)157 3666 0214</diakon>
@@ -687,12 +688,12 @@
       <plz>84032</plz>
       <ort>Landshut</ort>
     </adresse>
-    <priester>
-      <person>
+    <ansprechpartner>
+      <priester>
         <name>Vater Bakhomios Ibrahim</name>
         <mobil>0049-(0)157 5822 1822</mobil>
-      </person>
-    </priester>
+      </priester>
+    </ansprechpartner>
     <diakone>
       <diakon>Dr. Mina Sief: 00491739899646</diakon>
       <diakon>Magdy Morkos: 004917645336585</diakon>
@@ -721,12 +722,12 @@
       <plz>4972</plz>
       <ort>Dudelange</ort>
     </adresse>
-    <priester>
-      <person>
+    <ansprechpartner>
+      <priester>
         <name>Pater Schenouda St. Antonius</name>
         <mobil>0049-(0)176 6107 6389</mobil>
-      </person>
-    </priester>
+      </priester>
+    </ansprechpartner>
     <gottesdienstzeiten>
       <zeit>Jeden 1. und 3. Samstag des Monats: Liturgie 09:00-11:00 Uhr</zeit>
     </gottesdienstzeiten>
@@ -740,12 +741,12 @@
       <plz>55120</plz>
       <ort>Mainz Mombach</ort>
     </adresse>
-    <priester>
-      <person>
+    <ansprechpartner>
+      <priester>
         <name>Vater Johannes St. Antonius</name>
         <mobil>0049-(0)1516 8843519</mobil>
-      </person>
-    </priester>
+      </priester>
+    </ansprechpartner>
     <kontakt>
       <telefon>0049-(0)6131 2134 615</telefon>
     </kontakt>
@@ -786,13 +787,13 @@
       <plz>86415</plz>
       <ort>Mering</ort>
     </adresse>
-    <priester>
-      <person>
+    <ansprechpartner>
+      <priester>
         <name>Vater Paulus Hanna</name>
-        <email>Fr.PaulusHanna@yahoo.com</email>
         <mobil>0049-(0)152 5959 9032</mobil>
-      </person>
-    </priester>
+        <email>Fr.PaulusHanna@yahoo.com</email>
+      </priester>
+    </ansprechpartner>
     <gottesdienstzeiten>
       <zeit>Jeden zweiten Samstag des Monats: Liturgie 09:30-12:00 Uhr</zeit>
     </gottesdienstzeiten>
@@ -815,13 +816,13 @@
       <plz>81673</plz>
       <ort>München-Berg am Laim</ort>
     </adresse>
-    <priester>
-      <person>
+    <ansprechpartner>
+      <priester>
         <name>Vater Paulus Hanna</name>
-        <email>Fr.PaulusHanna@yahoo.com</email>
         <mobil>0049-(0)152 5959 9032</mobil>
-      </person>
-    </priester>
+        <email>Fr.PaulusHanna@yahoo.com</email>
+      </priester>
+    </ansprechpartner>
     <diakone>
       <diakon>Herr Ihab Noshy (Schatzmeister), E-Mail: ihab.noshy@gmail.com</diakon>
     </diakone>
@@ -850,12 +851,12 @@
       <plz>55424</plz>
       <ort>Münster-Sarmsheim</ort>
     </adresse>
-    <priester>
-      <person>
+    <ansprechpartner>
+      <priester>
         <name>Vater Philippus Abeid</name>
         <mobil>0049-(0)163 9032 040</mobil>
-      </person>
-    </priester>
+      </priester>
+    </ansprechpartner>
     <diakone>
       <diakon>Herr Amgad Sef: 0049-(0)160 9901 8200, amgadsef@yahoo.de</diakon>
     </diakone>
@@ -876,12 +877,12 @@
       <plz>66538</plz>
       <ort>Neunkirchen</ort>
     </adresse>
-    <priester>
-      <person>
+    <ansprechpartner>
+      <priester>
         <name>Vater Athanasius Botros</name>
         <mobil>0049-(0)178 8930 996</mobil>
-      </person>
-    </priester>
+      </priester>
+    </ansprechpartner>
     <gottesdienstzeiten>
       <zeit>Jeden ersten Samstag des Monats</zeit>
     </gottesdienstzeiten>
@@ -897,13 +898,13 @@
       <plz>73447</plz>
       <ort>Oberkochen</ort>
     </adresse>
-    <priester>
-      <person>
+    <ansprechpartner>
+      <priester>
         <name>Vater Johannes Ghali</name>
-        <email>paterjohannes@t-online.de</email>
         <mobil>0049-(0)151 173 747 91</mobil>
-      </person>
-    </priester>
+        <email>paterjohannes@t-online.de</email>
+      </priester>
+    </ansprechpartner>
     <kontakt>
       <fax>0049-(0)711 601 9120</fax>
     </kontakt>
@@ -922,12 +923,12 @@
       <plz>93051</plz>
       <ort>Regensburg</ort>
     </adresse>
-    <priester>
-      <person>
+    <ansprechpartner>
+      <priester>
         <name>Vater Arsenius Mikhail</name>
         <mobil>0049170 6984865</mobil>
-      </person>
-    </priester>
+      </priester>
+    </ansprechpartner>
     <diakone>
       <diakon>Dr. Ayman Ayad, Tel.: 0049176 70794592</diakon>
     </diakone>
@@ -949,12 +950,12 @@
     <kontakt>
       <email>kontakt@koptische-orthodoxe-kirche-gd.de</email>
     </kontakt>
-    <priester>
-      <person>
+    <ansprechpartner>
+      <priester>
         <name>Vater Abanoub Fouad</name>
         <mobil>0049-(0)160 6323 157</mobil>
-      </person>
-    </priester>
+      </priester>
+    </ansprechpartner>
     <gottesdienstzeiten>
       <zeit>Jeden Sonntag: Liturgie 09:30-12:30 Uhr</zeit>
       <zeit>Jeden Donnerstag: Lobpreis 18:00 Uhr</zeit>
@@ -968,7 +969,7 @@
       <website>https://koptische-orthodoxe-kirche-gd.de/</website>
       <facebook />
       <instagram />
-      <youtube >https://www.youtube.com/@Kopten.Gm%C3%BCnd</youtube>
+      <youtube>https://www.youtube.com/@Kopten.Gm%C3%BCnd</youtube>
     </links>
   </gemeinde>
   <gemeinde id="stuttgart" typ="Gemeinde" bistum="Süddeutschland">
@@ -980,13 +981,13 @@
       <plz>70597</plz>
       <ort>Stuttgart-Degerloch</ort>
     </adresse>
-    <priester>
-      <person>
+    <ansprechpartner>
+      <priester>
         <name>Vater Johannes Ghali</name>
         <email>PaterJohannes@t-online.de</email>
         <postanschrift>Arminstr. 12, 70178 Stuttgart</postanschrift>
-      </person>
-    </priester>
+      </priester>
+    </ansprechpartner>
     <kontakt>
       <telefon>0049-(0)711 604 252</telefon>
       <mobil>0049-(0)151 173 747 91</mobil>
@@ -1022,12 +1023,12 @@
       <plz>54290</plz>
       <ort>Trier</ort>
     </adresse>
-    <priester>
-      <person>
+    <ansprechpartner>
+      <priester>
         <name>Pater Schenouda St. Antonius</name>
         <mobil>0049-(0)176 6107 6389</mobil>
-      </person>
-    </priester>
+      </priester>
+    </ansprechpartner>
     <gottesdienstzeiten>
       <zeit>Letzter Samstag des Monats: Liturgie 10:00-12:00 Uhr</zeit>
     </gottesdienstzeiten>
@@ -1041,13 +1042,13 @@
       <plz>78532</plz>
       <ort>Tuttlingen</ort>
     </adresse>
-    <priester>
-      <person>
+    <ansprechpartner>
+      <priester>
         <name>Vater Johannes Ghali</name>
-        <email>PaterJohannes@t-online.de</email>
         <mobil>0049-(0)151 173 747 91</mobil>
-      </person>
-    </priester>
+        <email>PaterJohannes@t-online.de</email>
+      </priester>
+    </ansprechpartner>
     <kontakt>
       <fax>0049-(0)711 601 9120</fax>
     </kontakt>
@@ -1066,13 +1067,13 @@
       <plz>89073</plz>
       <ort>Ulm</ort>
     </adresse>
-    <priester>
-      <person>
+    <ansprechpartner>
+      <priester>
         <name>Vater Johannes Ghali</name>
-        <email>PaterJohannes@t-online.de</email>
         <mobil>0049-(0)151 173 747 91</mobil>
-      </person>
-    </priester>
+        <email>PaterJohannes@t-online.de</email>
+      </priester>
+    </ansprechpartner>
     <gottesdienstzeiten>
       <zeit>Jeden zweiten Samstag des Monats: Liturgie 09:30-12:30 Uhr</zeit>
     </gottesdienstzeiten>
@@ -1086,18 +1087,18 @@
       <plz>59427</plz>
       <ort>Unna-Massen (bei Dortmund)</ort>
     </adresse>
-    <priester>
-      <person>
+    <ansprechpartner>
+      <priester>
         <name>Vater Tawadros</name>
-        <email>abuna.tawadros@t-online.de</email>
         <mobil>0049-(0)172 142 1 227</mobil>
-      </person>
-      <person>
+        <email>abuna.tawadros@t-online.de</email>
+      </priester>
+      <priester>
         <name>Vater Markus Gendi</name>
-        <email>abunamarkusgendi@gmail.com</email>
         <mobil>0049-(0)176 56887900</mobil>
-      </person>
-    </priester>
+        <email>abunamarkusgendi@gmail.com</email>
+      </priester>
+    </ansprechpartner>
     <kontakt>
       <fax>0049-(0)2131 368 108</fax>
     </kontakt>
@@ -1132,11 +1133,11 @@
       <plz>35578</plz>
       <ort>Wetzlar-Westend</ort>
     </adresse>
-    <priester>
-      <person>
+    <ansprechpartner>
+      <priester>
         <name>Mönchsvater aus dem St. Antonius Koptisch-Orthodoxen Kloster in Kröffelbach</name>
-      </person>
-    </priester>
+      </priester>
+    </ansprechpartner>
   </gemeinde>
   <gemeinde id="wiesbaden" typ="Gemeinde" bistum="Süddeutschland">
     <name>St. Georg und St. Mauritius Koptisch-Orthodoxe Kirche</name>
@@ -1147,9 +1148,7 @@
       <plz>65193</plz>
       <ort>Wiesbaden</ort>
     </adresse>
-    <priester>
-
-    </priester>
+    <ansprechpartner />
     <diakone>
       <diakon>Herr Nabil Mikhail: 0049-(0)1785568753</diakon>
       <diakon>Herr Samir Moussa: 0049-(0)17621590493</diakon>
@@ -1176,12 +1175,12 @@
       <plz>90513</plz>
       <ort>Wintersdorf-Zirndorf</ort>
     </adresse>
-    <priester>
-      <person>
+    <ansprechpartner>
+      <priester>
         <name>Vater Danial Riad</name>
         <mobil>0049-(0)178 6608 821</mobil>
-      </person>
-    </priester>
+      </priester>
+    </ansprechpartner>
     <kontakt>
       <email>aegyptisch-koptische-Gemeinde-nbg@hotmail.de</email>
     </kontakt>
@@ -1217,12 +1216,12 @@
       <plz>67549</plz>
       <ort>Worms</ort>
     </adresse>
-    <priester>
-      <person>
+    <ansprechpartner>
+      <priester>
         <name>Vater Danial Riad</name>
         <mobil>0049-(0)178 6608 821</mobil>
-      </person>
-    </priester>
+      </priester>
+    </ansprechpartner>
     <diakone>
       <diakon>Herr Dr. Sherif Ramsis: 0049-(0)174 9338 375</diakon>
       <diakon>Herr Emad Mehana</diakon>
@@ -1240,13 +1239,13 @@
       <plz>37539</plz>
       <ort>Bad Grund</ort>
     </adresse>
-    <priester>
-      <person>
+    <ansprechpartner>
+      <priester>
         <name>Metropolit Anba Damian</name>
-        <email>Bischof@koptisches-kloster-hoexter.de</email>
         <mobil>0049-(0)172 564 3647</mobil>
-      </person>
-    </priester>
+        <email>Bischof@koptisches-kloster-hoexter.de</email>
+      </priester>
+    </ansprechpartner>
     <gottesdienstzeiten>
       <zeit>Jeden 1. Samstag des Monats: Liturgie 10:00-12:30 Uhr</zeit>
     </gottesdienstzeiten>
@@ -1260,15 +1259,15 @@
       <plz>10365</plz>
       <ort>Berlin-Lichtenberg</ort>
     </adresse>
-    <priester>
-      <person>
+    <ansprechpartner>
+      <priester>
         <name>Pater Girgis El Moharaki</name>
         <funktion>Generalvikar der Diözese</funktion>
         <mobil>0049-(0)171 436 0460</mobil>
         <email>girgiselmoharaky@hotmail.de</email>
         <postanschrift>Schottstr. 3, 10365 Berlin</postanschrift>
-      </person>
-    </priester>
+      </priester>
+    </ansprechpartner>
     <kontakt>
       <telefon>0049-(0)3055 491 013</telefon>
       <fax>0049-(0)3031 955 869</fax>
@@ -1300,13 +1299,13 @@
       <plz>33719</plz>
       <ort>Bielefeld</ort>
     </adresse>
-    <priester>
-      <person>
+    <ansprechpartner>
+      <priester>
         <name>Pater Markus Soliman</name>
-        <email>dr_amirsoliman@yahoo.de</email>
         <mobil>0049 (0) 152 22 89 25 68</mobil>
-      </person>
-    </priester>
+        <email>dr_amirsoliman@yahoo.de</email>
+      </priester>
+    </ansprechpartner>
     <diakone>
       <diakon>Herr Monir Botros, Mobil: 0049 (0) 171 15 55 434, E-Mail: info@fine-art-architekten.de</diakon>
     </diakone>
@@ -1316,8 +1315,8 @@
     <links>
       <website>https://kopten-bielefeld.de/</website>
       <facebook />
-      <instagram >https://www.instagram.com/koptischejugendbielefeld/</instagram>
-      <youtube >https://www.youtube.com/@st.mariaunddiesiebenerzeng2988</youtube>
+      <instagram>https://www.instagram.com/koptischejugendbielefeld/</instagram>
+      <youtube>https://www.youtube.com/@st.mariaunddiesiebenerzeng2988</youtube>
     </links>
   </gemeinde>
   <gemeinde id="bochum" typ="Gemeinde" bistum="Norddeutschland">
@@ -1329,12 +1328,12 @@
       <plz>44893</plz>
       <ort>Bochum</ort>
     </adresse>
-    <priester>
-      <person>
+    <ansprechpartner>
+      <priester>
         <name>Pater Bolikarbos El Moharaky</name>
         <mobil>0049-(0)173 9902 895</mobil>
-      </person>
-    </priester>
+      </priester>
+    </ansprechpartner>
     <diakone>
       <diakon>Herr Dr. Maged Ezzat, Tel.: 0049-(0)157 8041 0693</diakon>
     </diakone>
@@ -1354,17 +1353,17 @@
       <plz>34434</plz>
       <ort>Borgentreich</ort>
     </adresse>
-    <priester>
-      <person>
+    <ansprechpartner>
+      <priester>
         <name>Metropolit Damian</name>
-        <email>Bischof@koptisches-kloster-hoexter.de</email>
         <mobil>0049-(0)173 9902 895</mobil>
-      </person>
-      <person>
+        <email>Bischof@koptisches-kloster-hoexter.de</email>
+      </priester>
+      <priester>
         <name>Pater Bolikarbos El Moharaky (Prior des Klosters)</name>
         <mobil>0049-(0)173 9902 895</mobil>
-      </person>
-    </priester>
+      </priester>
+    </ansprechpartner>
   </gemeinde>
   <gemeinde id="bremen" typ="Gemeinde" bistum="Norddeutschland">
     <name>St. Antonius Koptisch-Orthodoxe Kirche</name>
@@ -1375,13 +1374,13 @@
       <plz>28309</plz>
       <ort>Bremen</ort>
     </adresse>
-    <priester>
-      <person>
+    <ansprechpartner>
+      <priester>
         <name>Pater Mankarius El Moharaky</name>
-        <email>bremen@kopten.de</email>
         <mobil>0049-(0)15901304863</mobil>
-      </person>
-    </priester>
+        <email>bremen@kopten.de</email>
+      </priester>
+    </ansprechpartner>
     <diakone>
       <diakon>Dipl.-Ing. Habashy Hanna, Tel.: 0049-(0)421 837 114</diakon>
     </diakone>
@@ -1412,14 +1411,14 @@
       <plz>01219</plz>
       <ort>Dresden</ort>
     </adresse>
-    <priester>
-      <person>
+    <ansprechpartner>
+      <priester>
         <name>Pater Girgis El Moharaki</name>
         <funktion>Generalvikar der Diözese</funktion>
-        <email>girgiselmoharaky@hotmail.de</email>
         <mobil>0049-(0)171 436 0460</mobil>
-      </person>
-    </priester>
+        <email>girgiselmoharaky@hotmail.de</email>
+      </priester>
+    </ansprechpartner>
     <kontakt>
       <fax>0049-(0)3031 955 869</fax>
     </kontakt>
@@ -1448,13 +1447,13 @@
       <plz>47053</plz>
       <ort>Duisburg Hochfeld</ort>
     </adresse>
-    <priester>
-      <person>
+    <ansprechpartner>
+      <priester>
         <name>Vater Cozman Fam</name>
-        <email>fr.cozman.sedky@gmail.com</email>
         <mobil>0049-(0)176 3229 1889</mobil>
-      </person>
-    </priester>
+        <email>fr.cozman.sedky@gmail.com</email>
+      </priester>
+    </ansprechpartner>
     <diakone>
       <diakon>Herr Milad Botros, Tel.: 0049-(0)152 0875 7971</diakon>
       <diakon>Herr Shenouda Abdelnour, Tel.: 0049-(0)159 0125 9225</diakon>
@@ -1487,13 +1486,13 @@
       <plz>32339</plz>
       <ort>Espelkamp</ort>
     </adresse>
-    <priester>
-      <person>
+    <ansprechpartner>
+      <priester>
         <name>Vater Markus Soliman</name>
-        <email>dr_amirsoliman@yahoo.de</email>
         <mobil>0049-(0)1522 2892 568</mobil>
-      </person>
-    </priester>
+        <email>dr_amirsoliman@yahoo.de</email>
+      </priester>
+    </ansprechpartner>
     <diakone>
       <diakon>Herr Kadees Samuel, Tel.: 0049-(0)1639017696</diakon>
       <diakon>Herr Medhat Guirguis, Tel.: 0049-(0)17624683504</diakon>
@@ -1511,12 +1510,12 @@
       <plz>20146</plz>
       <ort>Hamburg</ort>
     </adresse>
-    <priester>
-      <person>
+    <ansprechpartner>
+      <priester>
         <name>Pater Athanasius</name>
         <postanschrift>Doormannsweg 25, 20259 Hamburg</postanschrift>
-      </person>
-    </priester>
+      </priester>
+    </ansprechpartner>
     <kontakt>
       <telefon>0049-(0)405 324 784</telefon>
       <mobil>0049-(0)152 5954 4511</mobil>
@@ -1551,13 +1550,13 @@
       <plz>31275</plz>
       <ort>Lehrte-Ahlten</ort>
     </adresse>
-    <priester>
-      <person>
+    <ansprechpartner>
+      <priester>
         <name>Pater Ologious El Macary</name>
-        <email>ologious2012@gmail.com</email>
         <mobil>0049-(0) 170 978 3969</mobil>
-      </person>
-    </priester>
+        <email>ologious2012@gmail.com</email>
+      </priester>
+    </ansprechpartner>
     <diakone>
       <diakon>Herr Said Basta: 0049-(0)15259544511</diakon>
       <diakon>Herr Dr. Raouf Nahkla: 0049-(0)511 8236377</diakon>
@@ -1589,14 +1588,14 @@
       <plz>04317</plz>
       <ort>Leipzig</ort>
     </adresse>
-    <priester>
-      <person>
+    <ansprechpartner>
+      <priester>
         <name>Pater Girgis El Moharaki</name>
         <funktion>Generalvikar der Diözese</funktion>
-        <email>girgiselmoharaky@hotmail.de</email>
         <mobil>0049-(0)171 436 0460</mobil>
-      </person>
-    </priester>
+        <email>girgiselmoharaky@hotmail.de</email>
+      </priester>
+    </ansprechpartner>
     <gottesdienstzeiten>
       <zeit>Jeden 2. Samstag des Monats 10:00 Uhr</zeit>
     </gottesdienstzeiten>
@@ -1612,13 +1611,13 @@
       <plz>32423</plz>
       <ort>Minden</ort>
     </adresse>
-    <priester>
-      <person>
+    <ansprechpartner>
+      <priester>
         <name>Pater Ologious Macarious</name>
-        <email>ologious2012@gmail.com</email>
         <mobil>0049-(0) 170 978 3969</mobil>
-      </person>
-    </priester>
+        <email>ologious2012@gmail.com</email>
+      </priester>
+    </ansprechpartner>
     <diakone>
       <diakon>Amgad: 0049-(0)157 5075 9500</diakon>
       <diakon>Dr. Mina Noshy: 0049-(0)152 5167 2927</diakon>
@@ -1638,14 +1637,14 @@
       <plz>17034</plz>
       <ort>Neubrandenburg</ort>
     </adresse>
-    <priester>
-      <person>
+    <ansprechpartner>
+      <priester>
         <name>Pater Girgis El Moharaki</name>
         <funktion>Generalvikar der Diözese</funktion>
-        <email>girgiselmoharaky@hotmail.de</email>
         <mobil>0049-(0)171 436 0460</mobil>
-      </person>
-    </priester>
+        <email>girgiselmoharaky@hotmail.de</email>
+      </priester>
+    </ansprechpartner>
     <diakone>
       <diakon>Diakon John Sedrak, Tel.: 0049-(0)157 3373 0332</diakon>
     </diakone>
@@ -1662,16 +1661,16 @@
       <plz>33039</plz>
       <ort>Nieheim</ort>
     </adresse>
-    <priester>
-      <person>
+    <ansprechpartner>
+      <priester>
         <name>Metropolit Anba Damian</name>
-        <email>Bischof@koptisches-kloster-hoexter.de</email>
         <mobil>0049-(0)172 564 3647</mobil>
-      </person>
-      <person>
+        <email>Bischof@koptisches-kloster-hoexter.de</email>
+      </priester>
+      <priester>
         <name>Mutter Aksany Wasef</name>
-      </person>
-    </priester>
+      </priester>
+    </ansprechpartner>
     <links>
       <website />
       <facebook>https://www.facebook.com/profile.php?id=61570439083653</facebook>
@@ -1688,12 +1687,12 @@
       <plz>26954</plz>
       <ort>Nordenham</ort>
     </adresse>
-    <priester>
-      <person>
+    <ansprechpartner>
+      <priester>
         <name>Pater Mankarius El Moharaky</name>
         <mobil>0049-(0)159 0130 4863</mobil>
-      </person>
-    </priester>
+      </priester>
+    </ansprechpartner>
     <diakone>
       <diakon>Herr Emad Ebrahim, Tel.: 0049-(0)15754863910</diakon>
     </diakone>
@@ -1713,13 +1712,13 @@
       <plz>33102</plz>
       <ort>Paderborn</ort>
     </adresse>
-    <priester>
-      <person>
+    <ansprechpartner>
+      <priester>
         <name>Vater Markus Soliman</name>
-        <email>dr_amirsoliman@yahoo.de</email>
         <mobil>0049-(0) 1522 2892 568</mobil>
-      </person>
-    </priester>
+        <email>dr_amirsoliman@yahoo.de</email>
+      </priester>
+    </ansprechpartner>
     <diakone>
       <diakon>Herr Emad Khalil, Tel.: 0049-(0)173 2957 523</diakon>
       <diakon>Herr Samy Tawfik, Tel.: 0049-(0)152 2262 3137</diakon>
@@ -1737,14 +1736,14 @@
       <plz>06449</plz>
       <ort>Seeland – OT Friedrichsaue</ort>
     </adresse>
-    <priester>
-      <person>
+    <ansprechpartner>
+      <priester>
         <name>Pater Girgis El Moharaki</name>
         <funktion>Generalvikar der Diözese</funktion>
-        <email>girgiselmoharaky@hotmail.de</email>
         <mobil>0049-(0)171 436 0460</mobil>
-      </person>
-    </priester>
+        <email>girgiselmoharaky@hotmail.de</email>
+      </priester>
+    </ansprechpartner>
     <diakone>
       <diakon>Familie Hinze: 0049-(0)34741 73231</diakon>
     </diakone>
@@ -1768,12 +1767,12 @@ https://www.facebook.com/groups/316865105480571/
       <plz>26388</plz>
       <ort>Wilhelmshaven</ort>
     </adresse>
-    <priester>
-      <person>
+    <ansprechpartner>
+      <priester>
         <name>Pater Sorial El Moharaky</name>
         <mobil>0049-(0)157 3348 3792</mobil>
-      </person>
-    </priester>
+      </priester>
+    </ansprechpartner>
     <diakone>
       <diakon>Herr Khela Belamon, Tel.: 0049-(0)177 6178 961</diakon>
       <diakon>Dr. Michael Roushdy, Tel.: 0049-(0)151 1167 7660</diakon>
