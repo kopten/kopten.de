@@ -67,7 +67,7 @@
     <gottesdienstzeiten>
       <zeit>Jeden Abend Agpeya-Gebete um 17:00 Uhr</zeit>
       <zeit>Jeden Samstag: Abendweihrauchopfer 17:00</zeit>
-      <zeit>Samstags und Sonntags: Gottesdienste 08:00 bis ca. 10:300 Uhr</zeit>
+      <zeit>Samstags und Sonntags: Gottesdienste 08:00 bis ca. 10:30 Uhr</zeit>
       <zeit>Liturgie in den Fastenzeiten Mittwochs und Freitags von 10:00 bis 12:00 Uhr</zeit>
       <zeit>Liturgie in den NICHT Fastenzeiten Mittwochs und Freitags von 10:00 bis 12:00 Uhr</zeit>
     </gottesdienstzeiten>
@@ -1232,7 +1232,7 @@
     </gottesdienstzeiten>
   </gemeinde>
   <gemeinde id="badgrund" typ="Gemeinde" bistum="Norddeutschland">
-    <name>koptisch-orthodoxe Kirche des heiligen Minas und des heiligen Papstes Kyrillus VI.</name>
+    <name>Koptisch-orthodoxe Kirche des hl. Minas und des hl. Papstes Kyrillus VI.</name>
     <gemeindeort>Bad Grund</gemeindeort>
     <url>https://kopten.de/gemeinden/badgrund/</url>
     <adresse>
