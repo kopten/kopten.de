@@ -61,7 +61,6 @@ export const GEMEINDE_SLUGS = new Set([
   "unna",
   "wetzlar",
   "wiesbaden",
-  "wilhelmshafen",
   "wilhelmshaven",
   "wintersdorf",
   "worms",

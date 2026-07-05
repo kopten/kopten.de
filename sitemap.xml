@@ -1208,24 +1208,6 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://kopten.de/gemeinden/wiesbaden/" />
   </url>
   <url>
-    <loc>https://kopten.de/gemeinden/wilhelmshafen/</loc>
-    <lastmod>2026-07-01</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="de" href="https://kopten.de/gemeinden/wilhelmshafen/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://kopten.de/en/communities/wilhelmshafen/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://kopten.de/gemeinden/wilhelmshafen/" />
-  </url>
-  <url>
-    <loc>https://kopten.de/en/communities/wilhelmshafen/</loc>
-    <lastmod>2026-07-01</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://kopten.de/en/communities/wilhelmshafen/" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://kopten.de/gemeinden/wilhelmshafen/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://kopten.de/gemeinden/wilhelmshafen/" />
-  </url>
-  <url>
     <loc>https://kopten.de/gemeinden/wilhelmshaven/</loc>
     <lastmod>2026-07-01</lastmod>
     <changefreq>yearly</changefreq>
