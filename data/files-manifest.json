@@ -466,15 +466,15 @@
         },
         {
           "name": "01. A. Koptisch-Orthodoxe-Gemeinden-Deutschland.pdf",
-          "size": 5990733
+          "size": 5991760
         },
         {
           "name": "01. B. Koptisch-Orthodoxe-Gemeinden-Dioezese-Nord-Deutschland.pdf",
-          "size": 1679614
+          "size": 1680679
         },
         {
           "name": "01. C. Koptisch-Orthodoxe-Gemeinden-Dioezese-Sued-Deutschland.pdf",
-          "size": 4972902
+          "size": 4972689
         },
         {
           "name": "02. koptische webseiten weltweit.pdf",
@@ -559,34 +559,40 @@
         {
           "name": "21. beweise dass die christliche theologie nicht von der altägyptischen theologie abgeleitet ist.pdf",
           "size": 1419413
-        },
+        }
+      ],
+      "07 St. Markus Zeitschrift": [
         {
-          "name": "22. 2021-1 st. markus zeitschrift.pdf",
+          "name": "2021-1_StMarkus_Zeitschrift_ar.pdf",
           "size": 2656124
         },
         {
-          "name": "23. 2021-2 st. markus zeitschrift.pdf",
+          "name": "2021-2_StMarkus_Zeitschrift.pdf",
           "size": 2924685
         },
         {
-          "name": "24. 2022-2 st. markus zeitschrift.pdf",
+          "name": "2022-2_StMarkus_Zeitschrift.pdf",
           "size": 5119662
         },
         {
-          "name": "25. 2022-2 st. markus zeitschrift.pdf",
-          "size": 5119064
-        },
-        {
-          "name": "26. 2023-2 st. markus zeitschrift - 10-jährige jubiläumsschrift der kopt. diözese süddeutschland.pdf",
+          "name": "2023-2_StMarkus_Zeitschrift_10jähriges_Jubiläum.pdf",
           "size": 14446029
         },
         {
-          "name": "27. 2026-1 st. markus zeitschrift - ar.pdf",
+          "name": "2026-1_StMarkus_Zeitschrift_ar.pdf",
           "size": 5276652
         },
         {
-          "name": "28. 2026-1 st. markus zeitschrift - de.pdf",
+          "name": "2026-1_StMarkus_Zeitschrift_de.pdf",
           "size": 5751280
+        },
+        {
+          "name": "2026-2_StMarkus_Zeitschrift_ar.pdf",
+          "size": 2688236
+        },
+        {
+          "name": "2026-2_StMarkus_Zeitschrift_de.pdf",
+          "size": 2673276
         }
       ]
     }
