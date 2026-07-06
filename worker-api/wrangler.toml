@@ -1,5 +1,6 @@
 name = "kopten-de-api"
 main = "src/index.js"
+account_id = "b24ece17d5e54c71ab7e1c062cd0d955"
 compatibility_date = "2026-05-30"
 
 routes = [
