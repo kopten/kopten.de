@@ -1,21 +1,20 @@
 name = "kopten-de-files"
 main = "src/index.js"
+account_id = "b24ece17d5e54c71ab7e1c062cd0d955"
 compatibility_date = "2026-06-01"
+
+workers_dev = false
+
+# Manifest-Endpunkt liegt unter files-api.kopten.de — Routing via Worker Route.
+routes = [
+  { pattern = "files-api.kopten.de/*", zone_name = "kopten.de" }
+]
 
 # Bindings — passt im CF-Dashboard automatisch, sobald der Bucket existiert.
 [[r2_buckets]]
 binding = "FILES"
 bucket_name = "kopten-de-files"
 jurisdiction = "eu"
-
-# Manifest-Endpunkt liegt unter api.kopten.de — Routing via Worker Route.
-# Wir nutzen die existierende api.kopten.de Domain und unterscheiden per Pfad.
-# Alternativ: eigenes files-api.kopten.de mit Custom Domain + Worker Route.
-routes = [
-  { pattern = "files-api.kopten.de/*", zone_name = "kopten.de" }
-]
-
-workers_dev = false
 
 [observability]
 enabled = true
