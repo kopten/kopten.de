@@ -416,12 +416,14 @@
       <diakon>Herr Ayman Magdy: 0049-(0) 176 473 70881</diakon>
     </diakone>
     <gottesdienstzeiten>
-      <zeit>Jeden Sonntag: Liturgie 10:00-12:30 Uhr</zeit>
-      <zeit>Diakonentreff: 12:45-13:15 Uhr</zeit>
-      <zeit>Sonntagsschule: 13:45-14:45 Uhr</zeit>
-      <zeit>Familien oder Bibelstunde: 14:15-14:45 Uhr</zeit>
-      <zeit>Integrations- und Deutschsprachkurs: 15:00-17:00 Uhr</zeit>
-      <zeit>Jeden Samstag: Liturgie 10:00-12:00 Uhr</zeit>
+      <zeit>Jeden Sonntag: Liturgie 08:30 bis 11:30 Uhr</zeit>
+      <zeit>Jeden Mittwoch und Freitag: Liturgie 08:30 bis 10:30 Uhr</zeit>
+      <zeit>Jeden Samstag: Liturgie 08:30 bis 11:00 Uhr</zeit>
+      <zeit>Jeden 3. Samstag: deutschsprachige Liturgie 08:30 bis 11:00 Uhr, Bibelstunde (Deutsch) 12:00 - 13:30</zeit>
+      <zeit>Jeden Sonntag: Diakonentreff: 12:45-13:15 Uhr</zeit>
+      <zeit>Jeden Sonntag: Sonntagsschule: 13:45-14:45 Uhr</zeit>
+      <zeit>Jeden Sonntag: Familien oder Bibelstunde: 14:15-14:45 Uhr</zeit>
+      <zeit>Jeden Sonntag: Integrations- und Deutschsprachkurs: 15:00-17:00 Uhr</zeit>
     </gottesdienstzeiten>
     <bankverbindung>
       <inhaber>Koptisch-Orthodox Patriarchat St. Marienkirche Düsseldorf NRW</inhaber>
