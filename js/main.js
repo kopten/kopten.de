@@ -88,7 +88,9 @@
       categories.forEach(cat => {
         let catMatches = 0;
         Array.from(cat.querySelectorAll('.dkb-list li')).forEach(li => {
-          const name = norm(li.querySelector('.dkb-item__name')?.textContent || '');
+          /* data-search enthält den vollständigen Original-Dateinamen, damit
+             auch die in der Anzeige gekürzten Reihen-Präfixe treffen. */
+          const name = norm(li.dataset.search || li.querySelector('.dkb-item__name')?.textContent || '');
           const hit = name.includes(query);
           li.hidden = !hit;
           if (hit) catMatches++;
