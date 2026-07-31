@@ -31,6 +31,7 @@ Die URL-Auflösung erfolgt zur Build-Zeit:
 import json
 import re
 import urllib.parse
+from collections import Counter
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -64,19 +65,126 @@ def _format_size(n_bytes: int) -> str:
     return f"{n_bytes} B"
 
 
-def _clean_filename(name: str) -> str:
-    """ '01. lebensgeschichten_die heilige jungfrau.pdf'
-        → '01. Die heilige Jungfrau' """
-    stem = re.sub(r"\.pdf$", "", name, flags=re.IGNORECASE)
-    m = re.match(r"^(\d+)\.?\s*(.+)$", stem)
-    if m:
-        num, rest = m.group(1), m.group(2)
-        rest = re.sub(r"^[a-zäöüß]+_", "", rest, count=1, flags=re.IGNORECASE)
-        rest = rest.replace("_", " ").strip()
-        rest = rest[:1].upper() + rest[1:] if rest else ""
-        return f"{num}. {rest}" if rest else num
-    out = stem.replace("_", " ").strip()
-    return out[:1].upper() + out[1:] if out else stem
+# Tokens, die in Dateinamen klein geschrieben sind, aber groß gehören.
+_ROMAN = {"ii", "iii", "iv", "vi", "vii", "viii", "ix", "xi", "xii"}
+_ACRONYMS = {"ppt", "pdf", "dkb", "nt", "at", "orth", "kg"}
+
+# Sprachkürzel als letztes Segment ('..._Zeitschrift_ar') — wird als Badge
+# ausgegeben statt als Teil des Titels.
+_LANG_CODES = {"ar", "de", "en", "cop", "fr", "it"}
+
+# Führende Nummer: max. 3 Ziffern + optionaler Buchstaben-Suffix ("01a"),
+# gefolgt von Punkt, Unterstrich oder Leerzeichen. Bewusst eng gefasst,
+# damit Jahrgänge wie "2008-1_StMarkus_Zeitschrift" nicht zerlegt werden.
+_NUM_RE = re.compile(r"^(\d{1,3}[a-z]{0,2})(?:[._]\s*|\s+)(.+)$", re.IGNORECASE)
+
+
+def _smart_case(seg: str) -> str:
+    """Erster Buchstabe groß, römische Ziffern/Abkürzungen in Versalien."""
+    words = []
+    for w in seg.split(" "):
+        core = w.strip(".,()[]")
+        if core and core.lower() in _ROMAN | _ACRONYMS:
+            w = w.replace(core, core.upper())
+        words.append(w)
+    s = " ".join(words).strip()
+    return s[:1].upper() + s[1:] if s else s
+
+
+def _split_filename(name: str) -> tuple[str, str, list[str]]:
+    """'01b. liturgiebuecher_das heilige messbuch_euchologion.pdf'
+        → ('01b', '', ['liturgiebuecher', 'das heilige messbuch', 'euchologion'])
+
+    Der Unterstrich ist in diesem Bestand ein *Strukturtrenner* (Reihe →
+    Werk → Teil), kein Leerzeichen. Deshalb wird er nicht ersetzt, sondern
+    ausgewertet.
+    """
+    stem = re.sub(r"\.pdf$", "", name, flags=re.IGNORECASE).strip()
+    m = _NUM_RE.match(stem)
+    num, rest = (m.group(1), m.group(2)) if m else ("", stem)
+    segs = [s.strip(" -–_") for s in rest.split("_")]
+    segs = [s for s in segs if s]
+
+    lang = ""
+    if len(segs) > 1 and segs[-1].lower() in _LANG_CODES:
+        lang = segs.pop().upper()
+
+    return num, lang, segs
+
+
+def _merge_word_segments(segs: list[str]) -> list[str]:
+    """Unterstriche werden im Bestand uneinheitlich benutzt: mal als
+    Strukturtrenner zwischen Phrasen ('das heilige messbuch_euchologion'),
+    mal als reiner Wort-Trenner ('Anba_Michael_1_Sonderheft'). Aufeinander
+    folgende Ein-Wort-Segmente werden daher wieder zu einem Segment
+    zusammengezogen — nur echte Phrasen bleiben eigene Ebenen."""
+    out: list[str] = []
+    prev_single = False
+    for s in segs:
+        single = " " not in s
+        if out and single and prev_single:
+            out[-1] = f"{out[-1]} {s}"
+        else:
+            out.append(s)
+        prev_single = single
+    return out
+
+
+def _strip_shared_segments(seg_lists: list[list[str]], end: int) -> None:
+    """Entfernt in-place die Reihen-Bausteine, die (fast) alle Dateien einer
+    Kategorie teilen — vorn 'liturgiebuecher_' / 'papst_schenouda iii_',
+    hinten '_StMarkus_Zeitschrift'. Diese Teile stehen bereits im
+    Kategorie-Titel und machen die Liste unruhig.
+
+    `end` = 0 für Präfix, -1 für Suffix. Der Mehrheits-Nenner bleibt über
+    alle Runden konstant, damit nicht in Folgerunden eine kleine Restmenge
+    ihr eigenes gemeinsames Segment verliert.
+    """
+    total = len([s for s in seg_lists if len(s) > 1])
+    if total < 2:
+        return
+    for _ in range(4):  # mehrstufig: 'papst' → 'schenouda iii'
+        candidates = [segs for segs in seg_lists if len(segs) > 1]
+        if not candidates:
+            return
+        token, hits = Counter(s[end].lower() for s in candidates).most_common(1)[0]
+        # Nur echte Schema-Bausteine: müssen die klare Mehrheit tragen.
+        if hits < 2 or hits < 0.6 * total:
+            return
+        for segs in seg_lists:
+            if len(segs) > 1 and segs[end].lower() == token:
+                segs.pop(end)
+
+
+def _clean_files(files: list[str]) -> list[dict]:
+    """Kategorie-weite Aufbereitung: Nummer, Titel, Untertitel, Sprache."""
+    parsed = [_split_filename(n) for n in files]
+    seg_lists = [segs for _num, _lang, segs in parsed]
+    _strip_shared_segments(seg_lists, 0)
+    _strip_shared_segments(seg_lists, -1)
+
+    merged = [_merge_word_segments(segs) for segs in seg_lists]
+
+    # Ein Untertitel lohnt nur, wenn das erste Segment wirklich ein Werk ist,
+    # zu dem es mehrere Teile gibt ('Das heilige Messbuch', 'Katameros').
+    # Sonst wurde der Unterstrich nur als Zeilenumbruch missbraucht — dann
+    # ergibt das Zusammenziehen den lesbareren Titel.
+    head_counts = Counter(s[0].lower() for s in merged if s)
+
+    out = []
+    for (num, lang, _), segs in zip(parsed, merged):
+        if not segs:
+            segs = [""]
+        is_series = (len(segs) > 1
+                     and head_counts[segs[0].lower()] > 1
+                     and len(segs[0].split()) <= 4)
+        if is_series:
+            title = _smart_case(segs[0])
+            sub = " · ".join(_smart_case(s) for s in segs[1:])
+        else:
+            title, sub = _smart_case(" ".join(segs)), ""
+        out.append({"num": num, "lang": lang, "title": title, "sub": sub})
+    return out
 
 
 def _clean_category(name: str) -> str:
@@ -120,16 +228,21 @@ def _resolve_library(slug: str, manifest: dict):
     for cat_name, files in sorted(lib_data.items()):
         if not isinstance(files, list) or not files:
             continue
+        pdfs = [f for f in files
+                if (f.get("name") or "").lower().endswith(".pdf")]
+        cleaned = _clean_files([f["name"] for f in pdfs])
+
         rendered = []
-        for f in files:
-            name = f.get("name") or ""
-            if not name.lower().endswith(".pdf"):
-                continue
-            href = _build_href(slug, prefix + [cat_name, name])
+        for f, c in zip(pdfs, cleaned):
+            name = f["name"]
             rendered.append({
-                "display": _clean_filename(name),
+                **c,
                 "size": _format_size(f.get("size") or 0),
-                "href": href,
+                "href": _build_href(slug, prefix + [cat_name, name]),
+                # Suchindex: kompletter Original-Dateiname, damit auch
+                # weggekürzte Reihen-Präfixe weiter auffindbar bleiben.
+                "search": re.sub(r"\.pdf$", "", name, flags=re.IGNORECASE)
+                            .replace("_", " "),
             })
         if rendered:
             categories.append((_clean_category(cat_name), rendered))
@@ -199,13 +312,20 @@ def render_section(slug: str, lang: str = "de", depth: int = 2) -> str:
 
     for cat_name, files in cats:
         items = "".join(
-            f'''<li>
+            f'''<li data-search="{_esc(f['search'])}">
               <a class="dkb-item" href="{f['href']}" download target="_blank" rel="noopener">
                 <svg class="dkb-item__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                   <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
                   <polyline points="14 2 14 8 20 8"/>
                 </svg>
-                <span class="dkb-item__name">{_esc(f['display'])}</span>
+                <span class="dkb-item__num">{_esc(f['num'])}</span>
+                <span class="dkb-item__name">
+                  <span class="dkb-item__title">{_esc(f['title'])}{
+                    f'<span class="dkb-item__lang">' + _esc(f['lang']) + '</span>' if f['lang'] else ''
+                  }</span>{
+                    f'<span class="dkb-item__sub">' + _esc(f['sub']) + '</span>' if f['sub'] else ''
+                  }
+                </span>
                 <span class="dkb-item__size">{_esc(f['size'])}</span>
               </a>
             </li>'''
