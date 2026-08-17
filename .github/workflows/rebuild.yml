@@ -26,6 +26,13 @@ on:
 permissions:
   contents: write   # erlaubt git push zurück ins Repo
 
+# Verhindert Race Conditions: mehrere Trigger kurz hintereinander (z. B. vom
+# Cloudflare Worker) laufen sonst parallel und ihr `git push` kollidiert.
+# Läuft ein Job bereits, warten weitere in der Queue statt gleichzeitig zu pushen.
+concurrency:
+  group: rebuild-pages
+  cancel-in-progress: false
+
 jobs:
   rebuild:
     runs-on: ubuntu-latest
