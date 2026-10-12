@@ -4,13 +4,17 @@
  * Route: api.kopten.de/*
  *
  * Endpunkte:
- *   POST /contact   — empfängt Kontaktformular, sendet via Resend an CONTACT_TO_EMAIL
+ *   POST /contact   — empfängt Kontaktformular, sendet via Resend an die gewählte Gemeinde
+ *                     (GEMEINDEN) mit CONTACT_TO_EMAIL in CC; bei "allgemein" oder Gemeinde
+ *                     ohne E-Mail nur an CONTACT_TO_EMAIL
  *
  * Secrets (via `wrangler secret put` oder CF Dashboard → Settings → Variables):
  *   RESEND_API_KEY     — Resend API Key
  *   CONTACT_TO_EMAIL   — Empfänger (z.B. info@kopten.de)
  *   CONTACT_FROM_EMAIL — Absender mit verifizierter Domain (z.B. noreply@kopten.de)
  */
+
+import { GEMEINDEN } from './gemeinden-contacts.js';
 
 const ALLOWED_ORIGIN = 'https://kopten.de';
 
@@ -55,16 +59,27 @@ async function handleContact(request, env) {
   const subject = clamp(body.subject, 200) || 'Anfrage über die Website';
   const message = clamp(body.message, 5000);
   const consent = body.consent === true;
+  const gemeinde = clamp(body.gemeinde, 100);
 
   if (!name) return json({ ok: false, error: 'name_required' }, 400);
   if (!isValidEmail(email)) return json({ ok: false, error: 'email_invalid' }, 400);
+  const isGeneral = gemeinde === 'allgemein';
+  if (!isGeneral && !Object.hasOwn(GEMEINDEN, gemeinde)) {
+    return json({ ok: false, error: 'gemeinde_required' }, 400);
+  }
   if (!message) return json({ ok: false, error: 'message_required' }, 400);
   if (!consent) return json({ ok: false, error: 'consent_required' }, 400);
+
+  // Empfänger: Gemeinde-Kontakt, sonst (Allgemein / keine Adresse hinterlegt) info@
+  const gemeindeRecipients = isGeneral ? [] : GEMEINDEN[gemeinde].to;
+  const to = gemeindeRecipients.length ? gemeindeRecipients : [env.CONTACT_TO_EMAIL];
+  const gemeindeLabel = isGeneral ? 'Allgemein' : GEMEINDEN[gemeinde].label;
 
   // Send via Resend
   const text = [
     `Name: ${name}`,
     `E-Mail: ${email}`,
+    `Gemeinde: ${gemeindeLabel}`,
     '',
     'Nachricht:',
     message,
@@ -78,9 +93,10 @@ async function handleContact(request, env) {
     },
     body: JSON.stringify({
       from: `Kontakt kopten.de <${env.CONTACT_FROM_EMAIL}>`,
-      to: [env.CONTACT_TO_EMAIL],
+      to,
+      ...(isGeneral || !gemeindeRecipients.length ? {} : { cc: [env.CONTACT_TO_EMAIL] }),
       reply_to: email,
-      subject: `[Kontakt] ${subject}`,
+      subject: `[Kontakt${isGeneral ? '' : ' – ' + gemeindeLabel}] ${subject}`,
       text,
     }),
   });

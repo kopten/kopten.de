@@ -458,6 +458,16 @@ CONTACT_BODY = '''      <section class="page-header">
                 </div>
               </div>
               <div class="form-group">
+                <label for="gemeinde">Parish <span class="required">*</span></label>
+                <select class="form-input" id="gemeinde" name="gemeinde" required>
+                  <option value="">Please select …</option>
+                  <option value="allgemein">General</option>
+                  <!-- GEMEINDE-OPTIONS:START -->
+                  <!-- GEMEINDE-OPTIONS:END -->
+                </select>
+              </div>
+
+              <div class="form-group">
                 <label for="subject">Subject</label>
                 <input class="form-input" type="text" id="subject" name="subject" />
               </div>

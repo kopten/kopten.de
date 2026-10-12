@@ -1481,6 +1481,10 @@ p:last-child {
   transition: border-color var(--transition), box-shadow var(--transition);
 }
 
+select.form-input {
+  appearance: auto;
+}
+
 .form-input:focus,
 .form-textarea:focus {
   outline: none;

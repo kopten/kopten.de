@@ -8,6 +8,7 @@ const MESSAGES = {
   invalid_json:      'Etwas ging schief beim Senden. Bitte später erneut versuchen.',
   name_required:     'Bitte gib deinen Namen an.',
   email_invalid:     'Bitte gib eine gültige E-Mail-Adresse ein.',
+  gemeinde_required: 'Bitte wähle eine Gemeinde (oder „Allgemein“).',
   message_required:  'Bitte schreib eine kurze Nachricht.',
   consent_required:  'Bitte stimme der Datenverarbeitung zu.',
   send_failed:       'Beim Senden ist ein Fehler aufgetreten. Bitte später erneut versuchen.',
@@ -36,6 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const payload = {
       name:    form.name.value.trim(),
       email:   form.email.value.trim(),
+      gemeinde: form.gemeinde.value,
       subject: form.subject.value.trim(),
       message: form.message.value.trim(),
       consent: form.consent.checked,
@@ -46,6 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!payload.name)    return setStatus('error', MESSAGES.name_required);
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(payload.email))
                           return setStatus('error', MESSAGES.email_invalid);
+    if (!payload.gemeinde) return setStatus('error', MESSAGES.gemeinde_required);
     if (!payload.message) return setStatus('error', MESSAGES.message_required);
     if (!payload.consent) return setStatus('error', MESSAGES.consent_required);
 

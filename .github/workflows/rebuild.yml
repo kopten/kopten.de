@@ -70,7 +70,7 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add -A gemeinden/ en/communities/ sitemap.xml robots.txt worker/src/gemeinden-list.js data/gemeinden-coords.json data/files-manifest.json images/og/
+          git add -A gemeinden/ en/communities/ sitemap.xml robots.txt worker/src/gemeinden-list.js worker-api/src/gemeinden-contacts.js data/gemeinden-coords.json data/files-manifest.json images/og/
           # Asset-Version-Updates können beliebige HTML-Dateien betreffen
           git add *.html en/*.html
           # commit only if there are changes

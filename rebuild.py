@@ -23,6 +23,7 @@ STEPS = [
     ("Add share buttons + OG tags",      "add_share_and_og.py"),
     ("Refresh sitemap.xml",              "generate_sitemap.py"),
     ("Update worker gemeinde allowlist", "generate_worker_gemeinden.py"),
+    ("Contact form gemeinde list + recipients", "generate_contact_gemeinden.py"),
     ("Geocode new gemeinden (cache)",    "geocode_gemeinden.py"),
     ("Refresh asset ?v=<hash>",          "update_asset_versions.py"),
 ]
